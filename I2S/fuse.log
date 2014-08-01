@@ -1,0 +1,18 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "D:/GitHub/VHDL_Modules/I2S/I2S_Module_tbench_isim_beh.exe" -prj "D:/GitHub/VHDL_Modules/I2S/I2S_Module_tbench_beh.prj" "work.I2S_Module_tbench" 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/GitHub/VHDL_Modules/I2S/I2S_Module.vhd" into library work
+Parsing VHDL file "D:/GitHub/VHDL_Modules/I2S/I2S_Module_tbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity I2S_Module [\I2S_Module(24,'0')\]
+Compiling architecture behavior of entity i2s_module_tbench
+Time Resolution for simulation is 1ps.
+Compiled 5 VHDL Units
+Built simulation executable D:/GitHub/VHDL_Modules/I2S/I2S_Module_tbench_isim_beh.exe
+Fuse Memory Usage: 31832 KB
+Fuse CPU Usage: 483 ms

@@ -1,0 +1,433 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: I2S_Module.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "I2S_Module.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "I2S_Module"
+Output Format                      : NGC
+Target Device                      : xc3s250e-5-vq100
+
+---- Source Options
+Top Module Name                    : I2S_Module
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/GitHub/VHDL_Modules/I2S/I2S_Module.vhd" in Library work.
+Entity <i2s_module> compiled.
+Entity <i2s_module> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <I2S_Module> in library <work> (architecture <behavioral>) with generics.
+	length = 24
+	polarity = '0'
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <I2S_Module> in library <work> (Architecture <behavioral>).
+	length = 24
+	polarity = '0'
+Entity <I2S_Module> analyzed. Unit <I2S_Module> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <I2S_Module>.
+    Related source file is "D:/GitHub/VHDL_Modules/I2S/I2S_Module.vhd".
+    Found 1-bit register for signal <WS>.
+    Found 1-bit tristate buffer for signal <SD>.
+    Found 1-bit register for signal <BUSY>.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count$addsub0000>.
+    Found 32-bit comparator lessequal for signal <count$cmp_le0000> created at line 68.
+    Found 32-bit comparator less for signal <count$cmp_lt0000> created at line 91.
+    Found 48-bit register for signal <data_signal>.
+    Found 48-bit 4-to-1 multiplexer for signal <data_signal$mux0002>.
+    Found 1-bit register for signal <Mtridata_SD> created at line 43.
+    Found 32-bit comparator greatequal for signal <Mtridata_SD$cmp_ge0000> created at line 76.
+    Found 32-bit comparator greater for signal <Mtridata_SD$cmp_gt0000> created at line 68.
+    Found 1-bit register for signal <previous_lsb>.
+    Found 1-bit register for signal <state<0>>.
+    Found 32-bit comparator greater for signal <WS$cmp_gt0000> created at line 70.
+    Found 32-bit comparator less for signal <WS$cmp_lt0000> created at line 70.
+    Summary:
+	inferred  85 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+	inferred  48 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <I2S_Module> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 7
+ 1-bit register                                        : 5
+ 32-bit register                                       : 1
+ 48-bit register                                       : 1
+# Comparators                                          : 6
+ 32-bit comparator greatequal                          : 1
+ 32-bit comparator greater                             : 2
+ 32-bit comparator less                                : 2
+ 32-bit comparator lessequal                           : 1
+# Multiplexers                                         : 1
+ 48-bit 4-to-1 multiplexer                             : 1
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 85
+ Flip-Flops                                            : 85
+# Comparators                                          : 6
+ 32-bit comparator greatequal                          : 1
+ 32-bit comparator greater                             : 2
+ 32-bit comparator less                                : 2
+ 32-bit comparator lessequal                           : 1
+# Multiplexers                                         : 1
+ 48-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <I2S_Module> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block I2S_Module, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 85
+ Flip-Flops                                            : 85
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : I2S_Module.ngr
+Top Level Output File Name         : I2S_Module
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 55
+
+Cell Usage :
+# BELS                             : 318
+#      GND                         : 1
+#      INV                         : 12
+#      LUT1                        : 34
+#      LUT2                        : 7
+#      LUT2_D                      : 2
+#      LUT3                        : 93
+#      LUT3_D                      : 3
+#      LUT4                        : 50
+#      LUT4_L                      : 4
+#      MUXCY                       : 72
+#      MUXF5                       : 7
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 85
+#      FDCE                        : 49
+#      FDE                         : 1
+#      FDP                         : 1
+#      FDPE                        : 34
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 55
+#      IBUF                        : 51
+#      OBUF                        : 3
+#      OBUFT                       : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s250evq100-5 
+
+ Number of Slices:                      109  out of   2448     4%  
+ Number of Slice Flip Flops:             85  out of   4896     1%  
+ Number of 4 input LUTs:                205  out of   4896     4%  
+ Number of IOs:                          55
+ Number of bonded IOBs:                  55  out of     66    83%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CK                                 | IBUF+BUFG              | 85    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RESET                              | IBUF                   | 84    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 7.235ns (Maximum Frequency: 138.208MHz)
+   Minimum input arrival time before clock: 4.422ns
+   Maximum output required time after clock: 4.040ns
+   Maximum combinational path delay: 5.624ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CK'
+  Clock period: 7.235ns (frequency: 138.208MHz)
+  Total number of paths / destination ports: 5524 / 168
+-------------------------------------------------------------------------
+Delay:               7.235ns (Levels of Logic = 4)
+  Source:            count_2 (FF)
+  Destination:       data_signal_0 (FF)
+  Source Clock:      CK rising
+  Destination Clock: CK rising
+
+  Data Path: count_2 to data_signal_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q            23   0.514   1.091  count_2 (count_2)
+     LUT3_D:I1->O          2   0.612   0.383  Mtridata_SD_mux000011111 (N10)
+     LUT4:I3->O            1   0.612   0.000  count_cmp_eq0000_wg_lut<7> (count_cmp_eq0000_wg_lut<7>)
+     MUXCY:S->O           36   0.752   1.104  count_cmp_eq0000_wg_cy<7> (count_cmp_eq0000)
+     LUT3:I2->O           32   0.612   1.073  data_signal_not00011_1 (data_signal_not00011)
+     FDCE:CE                   0.483          data_signal_0
+    ----------------------------------------
+    Total                      7.235ns (3.585ns logic, 3.650ns route)
+                                       (49.5% logic, 50.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CK'
+  Total number of paths / destination ports: 150 / 101
+-------------------------------------------------------------------------
+Offset:              4.422ns (Levels of Logic = 2)
+  Source:            SEND (PAD)
+  Destination:       data_signal_0 (FF)
+  Destination Clock: CK rising
+
+  Data Path: SEND to data_signal_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            55   1.106   1.148  SEND_IBUF (SEND_IBUF)
+     LUT3:I1->O           32   0.612   1.073  data_signal_not00011_1 (data_signal_not00011)
+     FDCE:CE                   0.483          data_signal_0
+    ----------------------------------------
+    Total                      4.422ns (2.201ns logic, 2.221ns route)
+                                       (49.8% logic, 50.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CK'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            BUSY (FF)
+  Destination:       BUSY (PAD)
+  Source Clock:      CK rising
+
+  Data Path: BUSY to BUSY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              1   0.514   0.357  BUSY (BUSY_OBUF)
+     OBUF:I->O                 3.169          BUSY_OBUF (BUSY)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               5.624ns (Levels of Logic = 3)
+  Source:            CK (PAD)
+  Destination:       SCK (PAD)
+
+  Data Path: CK to SCK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.106   0.380  CK_IBUF (CK_IBUF1)
+     INV:I->O              1   0.612   0.357  SCK1_INV_0 (SCK_OBUF)
+     OBUF:I->O                 3.169          SCK_OBUF (SCK)
+    ----------------------------------------
+    Total                      5.624ns (4.887ns logic, 0.737ns route)
+                                       (86.9% logic, 13.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.77 secs
+ 
+--> 
+
+Total memory usage is 279696 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

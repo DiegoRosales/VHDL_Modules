@@ -1,0 +1,28 @@
+Command line:
+   I2S_Module_tbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51483
+
+Fri Aug 01 10:00:40 2014
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 523.428 Meg
+
+ Total Signals          : 21
+ Total Nets             : 107
+ Total Signal Drivers   : 12
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 5
+ Total Traceable Variables  : 11
+ Total Scalar Nets and Variables : 470
+
+ Total Simulation Time: 0.1248 sec
+
+ Current Memory Usage: 523.432 Meg
+
+Fri Aug 01 10:29:46 2014
+

@@ -1,0 +1,6 @@
+V3 3
+FL D:/GitHub/VHDL_Modules/I2S/I2S_Module.vhd 2014/08/01.10:31:06 P.28xd
+EN work/I2S_Module 1406907076 FL D:/GitHub/VHDL_Modules/I2S/I2S_Module.vhd \
+      PB ieee/std_logic_1164 1341906176
+AR work/I2S_Module/Behavioral 1406907077 \
+      FL D:/GitHub/VHDL_Modules/I2S/I2S_Module.vhd EN work/I2S_Module 1406907076

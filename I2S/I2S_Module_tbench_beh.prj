@@ -1,0 +1,2 @@
+vhdl work "I2S_Module.vhd"
+vhdl work "I2S_Module_tbench.vhd"

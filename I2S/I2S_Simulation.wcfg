@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/GitHub/VHDL_Modules/I2S/I2S_Module_tbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="i2s_module_tbench" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/i2s_module_tbench/ck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ck</obj_property>
+      <obj_property name="ObjectShortName">ck</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_module_tbench/data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data[47:0]</obj_property>
+      <obj_property name="ObjectShortName">data[47:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_module_tbench/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_module_tbench/send" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">send</obj_property>
+      <obj_property name="ObjectShortName">send</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_module_tbench/sck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sck</obj_property>
+      <obj_property name="ObjectShortName">sck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_module_tbench/ws" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ws</obj_property>
+      <obj_property name="ObjectShortName">ws</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_module_tbench/sd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sd</obj_property>
+      <obj_property name="ObjectShortName">sd</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_module_tbench/busy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_module_tbench/I2S_Inst/state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_module_tbench/I2S_Inst/sd_signal" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sd_signal</obj_property>
+      <obj_property name="ObjectShortName">sd_signal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_module_tbench/I2S_Inst/count" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">count</obj_property>
+      <obj_property name="ObjectShortName">count</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
