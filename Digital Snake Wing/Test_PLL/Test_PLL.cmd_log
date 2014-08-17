@@ -1,0 +1,25 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Test_PLL/Test_PLL.xst" -ofn "D:/GitHub/VHDL_Modules/Test_PLL/Test_PLL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test_PLL.ucf -p xc3s500e-vq100-5 Test_PLL.ngc Test_PLL.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Test_PLL_map.ncd Test_PLL.ngd Test_PLL.pcf 
+par -w -intstyle ise -ol high -t 1 Test_PLL_map.ncd Test_PLL.ncd Test_PLL.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test_PLL.ucf -p xc3s500e-vq100-5 Test_PLL.ngc Test_PLL.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Test_PLL_map.ncd Test_PLL.ngd Test_PLL.pcf 
+par -w -intstyle ise -ol high -t 1 Test_PLL_map.ncd Test_PLL.ncd Test_PLL.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test_PLL.ucf -p xc3s500e-vq100-5 Test_PLL.ngc Test_PLL.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Test_PLL_map.ncd Test_PLL.ngd Test_PLL.pcf 
+par -w -intstyle ise -ol high -t 1 Test_PLL_map.ncd Test_PLL.ncd Test_PLL.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test_PLL.ucf -p xc3s500e-vq100-5 Test_PLL.ngc Test_PLL.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Test_PLL_map.ncd Test_PLL.ngd Test_PLL.pcf 
+par -w -intstyle ise -ol high -t 1 Test_PLL_map.ncd Test_PLL.ncd Test_PLL.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test_PLL.ucf -p xc3s500e-vq100-5 Test_PLL.ngc Test_PLL.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test_PLL.ucf -p xc3s500e-vq100-5 Test_PLL.ngc Test_PLL.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Test_PLL_map.ncd Test_PLL.ngd Test_PLL.pcf 
+par -w -intstyle ise -ol high -t 1 Test_PLL_map.ncd Test_PLL.ncd Test_PLL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_PLL.twx Test_PLL.ncd -o Test_PLL.twr Test_PLL.pcf -ucf Test_PLL.ucf 
+bitgen -intstyle ise -f Test_PLL.ut Test_PLL.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/Test_PLL.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/Test_PLL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test_PLL.ucf -p xc3s500e-vq100-5 "Test_PLL.ngc" Test_PLL.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Test_PLL_map.ncd Test_PLL.ngd Test_PLL.pcf 
+par -w -intstyle ise -ol high -t 1 Test_PLL_map.ncd Test_PLL.ncd Test_PLL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_PLL.twx Test_PLL.ncd -o Test_PLL.twr Test_PLL.pcf -ucf Test_PLL.ucf 
+bitgen -intstyle ise -f Test_PLL.ut Test_PLL.ncd 

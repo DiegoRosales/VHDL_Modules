@@ -1,0 +1,2 @@
+vhdl work "DCM32to27.vhd"
+vhdl work "Test_PLL.vhd"

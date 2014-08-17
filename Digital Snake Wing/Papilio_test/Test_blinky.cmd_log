@@ -1,0 +1,56 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.xst" -ofn "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.xst" -ofn "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test_blinky.ucf -p xc3s500e-vq100-5 Test_blinky.ngc Test_blinky.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Test_blinky_map.ncd Test_blinky.ngd Test_blinky.pcf 
+par -w -intstyle ise -ol high -t 1 Test_blinky_map.ncd Test_blinky.ncd Test_blinky.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_blinky.twx Test_blinky.ncd -o Test_blinky.twr Test_blinky.pcf -ucf Test_blinky.ucf 
+bitgen -intstyle ise -f Test_blinky.ut Test_blinky.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test_blinky.ucf -p xc3s500e-vq100-5 Test_blinky.ngc Test_blinky.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Test_blinky_map.ncd Test_blinky.ngd Test_blinky.pcf 
+par -w -intstyle ise -ol high -t 1 Test_blinky_map.ncd Test_blinky.ncd Test_blinky.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_blinky.twx Test_blinky.ncd -o Test_blinky.twr Test_blinky.pcf -ucf Test_blinky.ucf 
+bitgen -intstyle ise -f Test_blinky.ut Test_blinky.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.xst" -ofn "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test_blinky.ucf -p xc3s500e-vq100-5 Test_blinky.ngc Test_blinky.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Test_blinky_map.ncd Test_blinky.ngd Test_blinky.pcf 
+par -w -intstyle ise -ol high -t 1 Test_blinky_map.ncd Test_blinky.ncd Test_blinky.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_blinky.twx Test_blinky.ncd -o Test_blinky.twr Test_blinky.pcf -ucf Test_blinky.ucf 
+bitgen -intstyle ise -f Test_blinky.ut Test_blinky.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test_blinky.ucf -p xc3s500e-vq100-5 Test_blinky.ngc Test_blinky.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Test_blinky_map.ncd Test_blinky.ngd Test_blinky.pcf 
+par -w -intstyle ise -ol high -t 1 Test_blinky_map.ncd Test_blinky.ncd Test_blinky.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_blinky.twx Test_blinky.ncd -o Test_blinky.twr Test_blinky.pcf -ucf Test_blinky.ucf 
+bitgen -intstyle ise -f Test_blinky.ut Test_blinky.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.xst" -ofn "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test_blinky.ucf -p xc3s500e-vq100-5 Test_blinky.ngc Test_blinky.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Test_blinky_map.ncd Test_blinky.ngd Test_blinky.pcf 
+par -w -intstyle ise -ol high -t 1 Test_blinky_map.ncd Test_blinky.ncd Test_blinky.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_blinky.twx Test_blinky.ncd -o Test_blinky.twr Test_blinky.pcf -ucf Test_blinky.ucf 
+bitgen -intstyle ise -f Test_blinky.ut Test_blinky.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.xst" -ofn "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.xst" -ofn "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.xst" -ofn "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.xst" -ofn "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test_blinky.ucf -p xc3s500e-vq100-5 Test_blinky.ngc Test_blinky.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test_blinky.ucf -p xc3s500e-vq100-5 Test_blinky.ngc Test_blinky.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Test_blinky_map.ncd Test_blinky.ngd Test_blinky.pcf 
+par -w -intstyle ise -ol high -t 1 Test_blinky_map.ncd Test_blinky.ncd Test_blinky.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_blinky.twx Test_blinky.ncd -o Test_blinky.twr Test_blinky.pcf -ucf Test_blinky.ucf 
+bitgen -intstyle ise -f Test_blinky.ut Test_blinky.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.xst" -ofn "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test_blinky.ucf -p xc3s500e-vq100-5 Test_blinky.ngc Test_blinky.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Test_blinky_map.ncd Test_blinky.ngd Test_blinky.pcf 
+par -w -intstyle ise -ol high -t 1 Test_blinky_map.ncd Test_blinky.ncd Test_blinky.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_blinky.twx Test_blinky.ncd -o Test_blinky.twr Test_blinky.pcf -ucf Test_blinky.ucf 
+bitgen -intstyle ise -f Test_blinky.ut Test_blinky.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test_blinky.ucf -p xc3s500e-vq100-5 Test_blinky.ngc Test_blinky.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Test_blinky_map.ncd Test_blinky.ngd Test_blinky.pcf 
+par -w -intstyle ise -ol high -t 1 Test_blinky_map.ncd Test_blinky.ncd Test_blinky.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_blinky.twx Test_blinky.ncd -o Test_blinky.twr Test_blinky.pcf -ucf Test_blinky.ucf 
+bitgen -intstyle ise -f Test_blinky.ut Test_blinky.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.xst" -ofn "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test_blinky.ucf -p xc3s500e-vq100-5 Test_blinky.ngc Test_blinky.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Test_blinky_map.ncd Test_blinky.ngd Test_blinky.pcf 
+par -w -intstyle ise -ol high -t 1 Test_blinky_map.ncd Test_blinky.ncd Test_blinky.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_blinky.twx Test_blinky.ncd -o Test_blinky.twr Test_blinky.pcf -ucf Test_blinky.ucf 
+bitgen -intstyle ise -f Test_blinky.ut Test_blinky.ncd 

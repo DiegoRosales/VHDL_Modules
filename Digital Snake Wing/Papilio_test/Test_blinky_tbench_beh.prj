@@ -1,0 +1,2 @@
+vhdl work "Test_blinky.vhd"
+vhdl work "Test_blinky_tbench.vhd"

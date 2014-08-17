@@ -1,0 +1,410 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: Test_blinky.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Test_blinky.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Test_blinky"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-vq100
+
+---- Source Options
+Top Module Name                    : Test_blinky
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.vhd" in Library work.
+Entity <test_blinky> compiled.
+Entity <test_blinky> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Test_blinky> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Test_blinky> in library <work> (Architecture <behavioral>).
+Entity <Test_blinky> analyzed. Unit <Test_blinky> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Test_blinky>.
+    Related source file is "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.vhd".
+    Found 32-bit up counter for signal <counter>.
+    Found 32-bit comparator greatequal for signal <counter$cmp_ge0000> created at line 54.
+    Found 32-bit comparator greatequal for signal <counter$cmp_ge0001> created at line 61.
+    Found 1-bit register for signal <led1_signal>.
+    Found 32-bit adder for signal <led1_signal$add0000> created at line 53.
+    Found 32-bit comparator less for signal <led1_signal$cmp_lt0000> created at line 54.
+    Found 32-bit comparator less for signal <led1_signal$cmp_lt0001> created at line 61.
+    Found 1-bit register for signal <led2_signal>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <Test_blinky> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 2
+ 1-bit register                                        : 2
+# Comparators                                          : 4
+ 32-bit comparator greatequal                          : 2
+ 32-bit comparator less                                : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+# Comparators                                          : 4
+ 32-bit comparator greatequal                          : 2
+ 32-bit comparator less                                : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Test_blinky> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Test_blinky, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 34
+ Flip-Flops                                            : 34
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Test_blinky.ngr
+Top Level Output File Name         : Test_blinky
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 5
+
+Cell Usage :
+# BELS                             : 229
+#      GND                         : 1
+#      INV                         : 10
+#      LUT1                        : 67
+#      LUT2                        : 5
+#      LUT4                        : 8
+#      MUXCY                       : 83
+#      VCC                         : 1
+#      XORCY                       : 54
+# FlipFlops/Latches                : 34
+#      FDE                         : 2
+#      FDRE                        : 32
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      IBUF                        : 2
+#      OBUF                        : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500evq100-5 
+
+ Number of Slices:                       59  out of   4656     1%  
+ Number of Slice Flip Flops:             34  out of   9312     0%  
+ Number of 4 input LUTs:                 90  out of   9312     0%  
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of     66     7%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CK                                 | BUFGP                  | 34    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 8.962ns (Maximum Frequency: 111.586MHz)
+   Minimum input arrival time before clock: 4.189ns
+   Maximum output required time after clock: 4.063ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CK'
+  Clock period: 8.962ns (frequency: 111.586MHz)
+  Total number of paths / destination ports: 32320 / 68
+-------------------------------------------------------------------------
+Delay:               8.962ns (Levels of Logic = 34)
+  Source:            counter_1 (FF)
+  Destination:       counter_0 (FF)
+  Source Clock:      CK rising
+  Destination Clock: CK rising
+
+  Data Path: counter_1 to counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.514   0.532  counter_1 (counter_1)
+     LUT1:I0->O            1   0.612   0.000  Madd_led1_signal_add0000_cy<1>_rt (Madd_led1_signal_add0000_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  Madd_led1_signal_add0000_cy<1> (Madd_led1_signal_add0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<2> (Madd_led1_signal_add0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<3> (Madd_led1_signal_add0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<4> (Madd_led1_signal_add0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<5> (Madd_led1_signal_add0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<6> (Madd_led1_signal_add0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<7> (Madd_led1_signal_add0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<8> (Madd_led1_signal_add0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<9> (Madd_led1_signal_add0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<10> (Madd_led1_signal_add0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<11> (Madd_led1_signal_add0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<12> (Madd_led1_signal_add0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<13> (Madd_led1_signal_add0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<14> (Madd_led1_signal_add0000_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<15> (Madd_led1_signal_add0000_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<16> (Madd_led1_signal_add0000_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<17> (Madd_led1_signal_add0000_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<18> (Madd_led1_signal_add0000_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<19> (Madd_led1_signal_add0000_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<20> (Madd_led1_signal_add0000_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<21> (Madd_led1_signal_add0000_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<22> (Madd_led1_signal_add0000_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<23> (Madd_led1_signal_add0000_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<24> (Madd_led1_signal_add0000_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<25> (Madd_led1_signal_add0000_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<26> (Madd_led1_signal_add0000_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<27> (Madd_led1_signal_add0000_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<28> (Madd_led1_signal_add0000_cy<28>)
+     XORCY:CI->O           2   0.699   0.532  Madd_led1_signal_add0000_xor<29> (led1_signal_add0000<29>)
+     LUT2:I0->O            1   0.612   0.000  Mcompar_led1_signal_cmp_lt0000_lut<8>1 (Mcompar_led1_signal_cmp_lt0000_lut<8>1)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_led1_signal_cmp_lt0000_cy<8>_0 (Mcompar_led1_signal_cmp_lt0000_cy<8>1)
+     MUXCY:CI->O           2   0.399   0.383  Mcompar_led1_signal_cmp_lt0000_cy<9>_0 (Mcompar_led1_signal_cmp_lt0000_cy<9>1)
+     LUT4:I3->O           32   0.612   1.073  counter_or00001 (counter_or0000)
+     FDRE:R                    0.795          counter_0
+    ----------------------------------------
+    Total                      8.962ns (6.442ns logic, 2.520ns route)
+                                       (71.9% logic, 28.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CK'
+  Total number of paths / destination ports: 132 / 66
+-------------------------------------------------------------------------
+Offset:              4.189ns (Levels of Logic = 2)
+  Source:            BTN1 (PAD)
+  Destination:       counter_0 (FF)
+  Destination Clock: CK rising
+
+  Data Path: BTN1 to counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.106   0.603  BTN1_IBUF (BTN1_IBUF)
+     LUT4:I0->O           32   0.612   1.073  counter_or00001 (counter_or0000)
+     FDRE:R                    0.795          counter_0
+    ----------------------------------------
+    Total                      4.189ns (2.513ns logic, 1.676ns route)
+                                       (60.0% logic, 40.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CK'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.063ns (Levels of Logic = 1)
+  Source:            led1_signal (FF)
+  Destination:       LED1 (PAD)
+  Source Clock:      CK rising
+
+  Data Path: led1_signal to LED1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.514   0.380  led1_signal (led1_signal)
+     OBUF:I->O                 3.169          LED1_OBUF (LED1)
+    ----------------------------------------
+    Total                      4.063ns (3.683ns logic, 0.380ns route)
+                                       (90.6% logic, 9.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.55 secs
+ 
+--> 
+
+Total memory usage is 270264 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky_tbench_isim_beh.exe" -prj "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky_tbench_beh.prj" "work.Test_blinky_tbench" 

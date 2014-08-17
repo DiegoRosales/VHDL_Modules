@@ -1,0 +1,451 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: Test_PLL.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Test_PLL.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Test_PLL"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-vq100
+
+---- Source Options
+Top Module Name                    : Test_PLL
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/Test_PLL is now defined in a different file.  It was defined in "D:/GitHub/VHDL_Modules/Test_PLL/Test_PLL.vhd", and is now defined in "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/Test_PLL.vhd".
+WARNING:HDLParsers:3607 - Unit work/Test_PLL/Behavioral is now defined in a different file.  It was defined in "D:/GitHub/VHDL_Modules/Test_PLL/Test_PLL.vhd", and is now defined in "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/Test_PLL.vhd".
+WARNING:HDLParsers:3607 - Unit work/DCM32to27 is now defined in a different file.  It was defined in "D:/GitHub/VHDL_Modules/Test_PLL/DCM32to27.vhd", and is now defined in "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/DCM32to27.vhd".
+WARNING:HDLParsers:3607 - Unit work/DCM32to27/BEHAVIORAL is now defined in a different file.  It was defined in "D:/GitHub/VHDL_Modules/Test_PLL/DCM32to27.vhd", and is now defined in "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/DCM32to27.vhd".
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/DCM32to27.vhd" in Library work.
+Architecture behavioral of Entity dcm32to27 is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/Test_PLL.vhd" in Library work.
+Architecture behavioral of Entity test_pll is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Test_PLL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DCM32to27> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Test_PLL> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/Test_PLL.vhd" line 59: Unconnected output port 'CLKIN_IBUFG_OUT' of component 'DCM32to27'.
+WARNING:Xst:753 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/Test_PLL.vhd" line 59: Unconnected output port 'CLK0_OUT' of component 'DCM32to27'.
+Entity <Test_PLL> analyzed. Unit <Test_PLL> generated.
+
+Analyzing Entity <DCM32to27> in library <work> (Architecture <behavioral>).
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <CLKIN_IBUFG_INST> in unit <DCM32to27>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <CLKIN_IBUFG_INST> in unit <DCM32to27>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <CLKIN_IBUFG_INST> in unit <DCM32to27>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CLKIN_IBUFG_INST> in unit <DCM32to27>.
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "CLKFX_DIVIDE =  32" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "CLKFX_MULTIPLY =  27" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "CLKIN_PERIOD =  31.2500000000000000" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_SP_INST> in unit <DCM32to27>.
+Entity <DCM32to27> analyzed. Unit <DCM32to27> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <DCM32to27>.
+    Related source file is "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/DCM32to27.vhd".
+Unit <DCM32to27> synthesized.
+
+
+Synthesizing Unit <Test_PLL>.
+    Related source file is "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/Test_PLL.vhd".
+    Found 32-bit up counter for signal <counter>.
+    Found 32-bit comparator greatequal for signal <counter$cmp_ge0000> created at line 72.
+    Found 32-bit comparator greatequal for signal <counter$cmp_ge0001> created at line 79.
+    Found 1-bit register for signal <led1_signal>.
+    Found 32-bit adder for signal <led1_signal$add0000> created at line 71.
+    Found 32-bit comparator less for signal <led1_signal$cmp_lt0000> created at line 72.
+    Found 32-bit comparator less for signal <led1_signal$cmp_lt0001> created at line 79.
+    Found 1-bit register for signal <led2_signal>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <Test_PLL> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 2
+ 1-bit register                                        : 2
+# Comparators                                          : 4
+ 32-bit comparator greatequal                          : 2
+ 32-bit comparator less                                : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+# Comparators                                          : 4
+ 32-bit comparator greatequal                          : 2
+ 32-bit comparator less                                : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Test_PLL> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Test_PLL, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 34
+ Flip-Flops                                            : 34
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Test_PLL.ngr
+Top Level Output File Name         : Test_PLL
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 7
+
+Cell Usage :
+# BELS                             : 242
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 67
+#      LUT2                        : 11
+#      LUT4                        : 8
+#      MUXCY                       : 87
+#      VCC                         : 1
+#      XORCY                       : 59
+# FlipFlops/Latches                : 34
+#      FDE                         : 2
+#      FDRE                        : 32
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 6
+#      IBUF                        : 2
+#      IBUFG                       : 1
+#      OBUF                        : 3
+# DCMs                             : 1
+#      DCM_SP                      : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500evq100-5 
+
+ Number of Slices:                       61  out of   4656     1%  
+ Number of Slice Flip Flops:             34  out of   9312     0%  
+ Number of 4 input LUTs:                 94  out of   9312     1%  
+ Number of IOs:                           7
+ Number of bonded IOBs:                   7  out of     66    10%  
+ Number of GCLKs:                         3  out of     24    12%  
+ Number of DCMs:                          1  out of      4    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CK384fs                            | BUFGP                  | 34    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 8.989ns (Maximum Frequency: 111.250MHz)
+   Minimum input arrival time before clock: 4.189ns
+   Maximum output required time after clock: 4.063ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CK384fs'
+  Clock period: 8.989ns (frequency: 111.250MHz)
+  Total number of paths / destination ports: 35210 / 68
+-------------------------------------------------------------------------
+Delay:               8.989ns (Levels of Logic = 34)
+  Source:            counter_1 (FF)
+  Destination:       counter_0 (FF)
+  Source Clock:      CK384fs rising
+  Destination Clock: CK384fs rising
+
+  Data Path: counter_1 to counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.514   0.532  counter_1 (counter_1)
+     LUT1:I0->O            1   0.612   0.000  Madd_led1_signal_add0000_cy<1>_rt (Madd_led1_signal_add0000_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  Madd_led1_signal_add0000_cy<1> (Madd_led1_signal_add0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<2> (Madd_led1_signal_add0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<3> (Madd_led1_signal_add0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<4> (Madd_led1_signal_add0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<5> (Madd_led1_signal_add0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<6> (Madd_led1_signal_add0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<7> (Madd_led1_signal_add0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<8> (Madd_led1_signal_add0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<9> (Madd_led1_signal_add0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<10> (Madd_led1_signal_add0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<11> (Madd_led1_signal_add0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<12> (Madd_led1_signal_add0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<13> (Madd_led1_signal_add0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<14> (Madd_led1_signal_add0000_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<15> (Madd_led1_signal_add0000_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<16> (Madd_led1_signal_add0000_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<17> (Madd_led1_signal_add0000_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<18> (Madd_led1_signal_add0000_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<19> (Madd_led1_signal_add0000_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<20> (Madd_led1_signal_add0000_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<21> (Madd_led1_signal_add0000_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<22> (Madd_led1_signal_add0000_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<23> (Madd_led1_signal_add0000_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<24> (Madd_led1_signal_add0000_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<25> (Madd_led1_signal_add0000_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<26> (Madd_led1_signal_add0000_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<27> (Madd_led1_signal_add0000_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_led1_signal_add0000_cy<28> (Madd_led1_signal_add0000_cy<28>)
+     XORCY:CI->O           2   0.699   0.532  Madd_led1_signal_add0000_xor<29> (led1_signal_add0000<29>)
+     LUT2:I0->O            1   0.612   0.000  Mcompar_led1_signal_cmp_lt0000_lut<10> (Mcompar_led1_signal_cmp_lt0000_lut<10>)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_led1_signal_cmp_lt0000_cy<10> (Mcompar_led1_signal_cmp_lt0000_cy<10>)
+     MUXCY:CI->O           2   0.399   0.410  Mcompar_led1_signal_cmp_lt0000_cy<11> (Mcompar_led1_signal_cmp_lt0000_cy<11>)
+     LUT4:I2->O           32   0.612   1.073  counter_or00001 (counter_or0000)
+     FDRE:R                    0.795          counter_0
+    ----------------------------------------
+    Total                      8.989ns (6.442ns logic, 2.547ns route)
+                                       (71.7% logic, 28.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CK384fs'
+  Total number of paths / destination ports: 132 / 66
+-------------------------------------------------------------------------
+Offset:              4.189ns (Levels of Logic = 2)
+  Source:            BTN1 (PAD)
+  Destination:       counter_0 (FF)
+  Destination Clock: CK384fs rising
+
+  Data Path: BTN1 to counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.106   0.603  BTN1_IBUF (BTN1_IBUF)
+     LUT4:I0->O           32   0.612   1.073  counter_or00001 (counter_or0000)
+     FDRE:R                    0.795          counter_0
+    ----------------------------------------
+    Total                      4.189ns (2.513ns logic, 1.676ns route)
+                                       (60.0% logic, 40.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CK384fs'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.063ns (Levels of Logic = 1)
+  Source:            led1_signal (FF)
+  Destination:       LED1 (PAD)
+  Source Clock:      CK384fs rising
+
+  Data Path: led1_signal to LED1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.514   0.380  led1_signal (led1_signal)
+     OBUF:I->O                 3.169          LED1_OBUF (LED1)
+    ----------------------------------------
+    Total                      4.063ns (3.683ns logic, 0.380ns route)
+                                       (90.6% logic, 9.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.06 secs
+ 
+--> 
+
+Total memory usage is 291384 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

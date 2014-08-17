@@ -1,0 +1,74 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Sat Aug 16 14:13:28 2014
+# Process ID: 6512
+# Log file: D:/GitHub/VHDL_Modules/Papilio_test/planAhead_run_1/planAhead.log
+# Journal file: D:/GitHub/VHDL_Modules/Papilio_test/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/GitHub/VHDL_Modules/Papilio_test/pa.fromNetlist.tcl
+# create_project -name Papilio_test -dir "D:/GitHub/VHDL_Modules/Papilio_test/planAhead_run_1" -part xc3s500evq100-5
+Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/GitHub/VHDL_Modules/Papilio_test} }
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "Test_blinky.ucf" [current_fileset -constrset]
+Adding file 'D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.ucf' to fileset 'constrs_1'
+# add_files [list {Test_blinky.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s500evq100-5
+Release 14.2 - ngc2edif P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design Test_blinky.ngc ...
+WARNING:NetListWriters:298 - No output is written to Test_blinky.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file Test_blinky.edif ...
+ngc2edif: Total memory usage is 99700 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/Papilio_test.data/cache/Test_blinky_ngc_53232823.edif]
+Finished Parsing EDIF File [./planAhead_run_1/Papilio_test.data/cache/Test_blinky_ngc_53232823.edif]
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/vq100/Package.xml
+Loading io standards from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/vq100/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+Parsing UCF File [D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.ucf]
+Finished Parsing UCF File [D:/GitHub/VHDL_Modules/Papilio_test/Test_blinky.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGP => BUFGP (HD_IBUFG, HD_BUFG): 1 instances
+
+Phase 0 | Netlist Checksum: 107a002b
+link_design: Time (s): elapsed = 00:00:09 . Memory (MB): peak = 515.613 ; gain = 97.086
+set_property iostandard LVTTL [get_ports [list BTN1]]
+set_property iostandard LVTTL [get_ports [list BTN2]]
+set_property iostandard LVCMOS33 [get_ports [list BTN1]]
+save_design -force
+set_property iostandard LVCMOS33 [get_ports [list BTN2]]
+save_design -force
+exit
+INFO: [Common 17-206] Exiting PlanAhead...
+INFO: [Common 17-83] Releasing license: PlanAhead

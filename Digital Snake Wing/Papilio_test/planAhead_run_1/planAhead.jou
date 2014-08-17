@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Sat Aug 16 14:13:28 2014
+# Process ID: 6512
+# Log file: D:/GitHub/VHDL_Modules/Papilio_test/planAhead_run_1/planAhead.log
+# Journal file: D:/GitHub/VHDL_Modules/Papilio_test/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/GitHub/VHDL_Modules/Papilio_test/pa.fromNetlist.tcl
+set_property iostandard LVTTL [get_ports [list BTN1]]
+set_property iostandard LVTTL [get_ports [list BTN2]]
+set_property iostandard LVCMOS33 [get_ports [list BTN1]]
+save_design -force
+set_property iostandard LVCMOS33 [get_ports [list BTN2]]
+save_design -force

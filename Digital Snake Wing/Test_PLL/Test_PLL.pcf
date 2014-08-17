@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map P.28xd on Sun Aug 17 08:37:13 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "LED1" LOCATE = SITE "P4" LEVEL 1;
+COMP "BTN1" LOCATE = SITE "P2" LEVEL 1;
+COMP "LED2" LOCATE = SITE "P3" LEVEL 1;
+COMP "BTN2" LOCATE = SITE "P98" LEVEL 1;
+COMP "CK32" LOCATE = SITE "P89" LEVEL 1;
+COMP "CK27" LOCATE = SITE "P9" LEVEL 1;
+COMP "CK384fs" LOCATE = SITE "P5" LEVEL 1;
+PIN CK384fs_pin<0> = BEL "CK384fs" PINNAME PAD;
+PIN "CK384fs_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "CK384fs_BUFGP/IBUFG" BEL "CK384fs_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

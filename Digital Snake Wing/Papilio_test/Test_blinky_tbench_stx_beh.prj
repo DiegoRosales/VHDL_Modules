@@ -1,0 +1,2 @@
+vhdl isim_temp "Test_blinky.vhd"
+vhdl isim_temp "Test_blinky_tbench.vhd"

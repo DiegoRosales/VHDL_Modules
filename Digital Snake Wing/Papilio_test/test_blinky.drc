@@ -1,0 +1,8 @@
+Release 14.2 Drc P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sat Aug 16 14:42:45 2014
+
+drc -z Test_blinky.ncd Test_blinky.pcf
+
+DRC detected 0 errors and 0 warnings.

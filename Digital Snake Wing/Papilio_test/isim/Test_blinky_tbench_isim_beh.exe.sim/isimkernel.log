@@ -1,0 +1,10 @@
+Command line:
+   Test_blinky_tbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51988
+
+Thu Aug 14 22:19:30 2014
+
+
+ Elaboration Time: 0.0468 sec

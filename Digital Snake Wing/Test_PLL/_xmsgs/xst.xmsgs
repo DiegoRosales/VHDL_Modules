@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Test_PLL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GitHub/VHDL_Modules/Test_PLL/Test_PLL.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/Test_PLL.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Test_PLL/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GitHub/VHDL_Modules/Test_PLL/Test_PLL.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/Test_PLL.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/DCM32to27</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GitHub/VHDL_Modules/Test_PLL/DCM32to27.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/DCM32to27.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/DCM32to27/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GitHub/VHDL_Modules/Test_PLL/DCM32to27.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/DCM32to27.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/Test_PLL.vhd</arg>&quot; line <arg fmt="%d" index="2">59</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLKIN_IBUFG_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM32to27</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/Test_PLL.vhd</arg>&quot; line <arg fmt="%d" index="2">59</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK0_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM32to27</arg>&apos;.
+</msg>
+
+</messages>
+
