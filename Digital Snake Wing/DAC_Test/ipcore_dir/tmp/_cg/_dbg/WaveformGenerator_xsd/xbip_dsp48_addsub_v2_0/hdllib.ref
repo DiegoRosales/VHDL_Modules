@@ -1,0 +1,11 @@
+EN bip_dsp48_addsub_synth NULL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_addsub_v2_0/bip_dsp48_addsub_synth.vhd" sub00/vhpl05 1408291179
+EN bip_dsp48_addsub_rtl NULL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_addsub_v2_0/bip_dsp48_addsub_rtl.vhd" sub00/vhpl03 1408291177
+PB bip_dsp48_addsub_pkg_v2_0 bip_dsp48_addsub_pkg_v2_0 "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_addsub_v2_0/bip_dsp48_addsub_pkg_v2_0.vhd" sub00/vhpl01 1408291175
+AR bip_dsp48_addsub_rtl synth "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_addsub_v2_0/bip_dsp48_addsub_rtl.vhd" sub00/vhpl04 1408291178
+AR bip_dsp48_addsub_synth synth "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_addsub_v2_0/bip_dsp48_addsub_synth.vhd" sub00/vhpl06 1408291180
+PH xbip_dsp48_addsub_v2_0_xst_comp NULL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_addsub_v2_0/xbip_dsp48_addsub_v2_0_xst_comp.vhd" sub00/vhpl02 1408291176
+PH bip_dsp48_addsub_pkg_v2_0 NULL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_addsub_v2_0/bip_dsp48_addsub_pkg_v2_0.vhd" sub00/vhpl00 1408291174
+AR xbip_dsp48_addsub_v2_0_xst synth "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_addsub_v2_0/xbip_dsp48_addsub_v2_0_xst.vhd" sub00/vhpl08 1408291182
+EN xbip_dsp48_addsub_v2_0_xst NULL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_addsub_v2_0/xbip_dsp48_addsub_v2_0_xst.vhd" sub00/vhpl07 1408291181
+EN xbip_dsp48_addsub_v2_0 NULL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_addsub_v2_0/xbip_dsp48_addsub_v2_0.vhd" sub00/vhpl09 1408291183
+AR xbip_dsp48_addsub_v2_0 xilinx "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_addsub_v2_0/xbip_dsp48_addsub_v2_0.vhd" sub00/vhpl10 1408291184

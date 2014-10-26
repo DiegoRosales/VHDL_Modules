@@ -1,0 +1,28 @@
+Command line:
+   Triangle_Wave_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  61381
+
+Wed Aug 20 11:00:13 2014
+
+
+ Elaboration Time: 0.0624 sec
+
+ Current Memory Usage: 523.502 Meg
+
+ Total Signals          : 8
+ Total Nets             : 23
+ Total Signal Drivers   : 3
+ Total Blocks           : 3
+ Total Primitive Blocks : 3
+ Total Processes        : 2
+ Total Traceable Variables  : 14
+ Total Scalar Nets and Variables : 507
+
+ Total Simulation Time: 0.078 sec
+
+ Current Memory Usage: 523.506 Meg
+
+Wed Aug 20 11:00:54 2014
+

@@ -1,0 +1,3 @@
+vhdl work "MAX5556.vhd"
+vhdl work "Square_wave.vhd"
+vhdl work "square_wave_tbench.vhd"

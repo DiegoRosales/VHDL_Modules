@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\GitHub\VHDL_Modules\Digital Snake Wing\ADC_Test\ADC_Control.ncd
+OUTFILE=D:\GitHub\VHDL_Modules\Digital Snake Wing\ADC_Test\ADC_Control.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4vq100
+WORKINGDIR=D:\GitHub\VHDL_Modules\Digital Snake Wing\ADC_Test
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,5 @@
+set -tmpdir "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/xst/projnav.tmp"
+set -xsthdpdir "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/xst"
+elaborate
+-ifn MAX5556.prj
+-ifmt mixed

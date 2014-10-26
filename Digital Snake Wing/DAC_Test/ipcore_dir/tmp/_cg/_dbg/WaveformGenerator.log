@@ -1,0 +1,358 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter xsthdpdir set to ./_cg/_dbg/WaveformGenerator_xsd
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: ./_cg/_dbg/WaveformGenerator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "./_cg/_dbg/WaveformGenerator.prj"
+Input Format                       : VHDL
+
+---- Target Parameters
+Output Format                      : NGC
+Output File Name                   : "./_cg/_dbg/WaveformGenerator.ngc"
+Target Device                      : xc3s500e-4vq100
+
+---- Source Options
+Work Library                       : work
+Entity Name                        : WaveformGenerator
+Architecture Name                  : spartan3e
+Top Module Name                    : WaveformGenerator
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Bus Delimiter                      : <>
+Library Search Order               : "./_cg/_dbg/_default.lso"
+
+---- Other Options
+flow                               : coregen
+
+=========================================================================
+
+WARNING:Xst:29 - Optimization Effort not specified
+The following parameters have been added:
+Optimization Goal                  : SPEED
+
+=========================================================================
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" in Library xbip_utils_v2_0.
+Package <bip_utils_pkg_v2_0> compiled.
+Package body <bip_utils_pkg_v2_0> compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_usecase_utils_pkg_v2_0.vhd" in Library xbip_utils_v2_0.
+Package <bip_usecase_utils_pkg_v2_0> compiled.
+Package body <bip_usecase_utils_pkg_v2_0> compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/xcc_utils_v2_0.vhd" in Library xbip_utils_v2_0.
+Package <xcc_utils_v2_0> compiled.
+Package body <xcc_utils_v2_0> compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./mult_gen_v11_0/simulation/mult_gen_v11_0_xst_comp.vhd" in Library mult_gen_v11_0.
+Package <mult_gen_v11_0_xst_comp> compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./mult_gen_v11_0/mult_gen_pkg_v11_0.vhd" in Library mult_gen_v11_0.
+Package <mult_gen_pkg_v11_0> compiled.
+Package body <mult_gen_pkg_v11_0> compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./mult_gen_v11_0/op_resize.vhd" in Library mult_gen_v11_0.
+Entity <op_resize> compiled.
+Entity <op_resize> (Architecture <xilinx>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./mult_gen_v11_0/delay_line.vhd" in Library mult_gen_v11_0.
+Entity <delay_line> compiled.
+Entity <delay_line> (Architecture <xilinx>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./mult_gen_v11_0/cc_compare.vhd" in Library mult_gen_v11_0.
+Entity <cc_compare> compiled.
+Entity <cc_compare> (Architecture <xilinx>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./mult_gen_v11_0/luts.vhd" in Library mult_gen_v11_0.
+Entity <luts> compiled.
+Entity <luts> (Architecture <xilinx>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./mult_gen_v11_0/mult18.vhd" in Library mult_gen_v11_0.
+Entity <mult18> compiled.
+Entity <mult18> (Architecture <xilinx>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./mult_gen_v11_0/dsp.vhd" in Library mult_gen_v11_0.
+Entity <dsp> compiled.
+Entity <dsp> (Architecture <xilinx>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./mult_gen_v11_0/hybrid.vhd" in Library mult_gen_v11_0.
+Entity <hybrid> compiled.
+Entity <hybrid> (Architecture <xilinx>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./mult_gen_v11_0/ccm_dist_mem.vhd" in Library mult_gen_v11_0.
+Entity <ccm_dist_mem> compiled.
+Entity <ccm_dist_mem> (Architecture <xilinx>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./mult_gen_v11_0/ccm_sp_block_mem.vhd" in Library mult_gen_v11_0.
+Entity <ccm_sp_block_mem> compiled.
+Entity <ccm_sp_block_mem> (Architecture <xilinx>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./mult_gen_v11_0/ccm_dp_block_mem.vhd" in Library mult_gen_v11_0.
+Entity <ccm_dp_block_mem> compiled.
+Entity <ccm_dp_block_mem> (Architecture <xilinx>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./mult_gen_v11_0/ccm_syncmem.vhd" in Library mult_gen_v11_0.
+Entity <ccm_syncmem> compiled.
+Entity <ccm_syncmem> (Architecture <xilinx>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./mult_gen_v11_0/ccm_scaled_adder.vhd" in Library mult_gen_v11_0.
+Entity <ccm_scaled_adder> compiled.
+Entity <ccm_scaled_adder> (Architecture <xilinx>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./mult_gen_v11_0/ccm_operation.vhd" in Library mult_gen_v11_0.
+Entity <ccm_operation> compiled.
+Entity <ccm_operation> (Architecture <xilinx>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./mult_gen_v11_0/ccm.vhd" in Library mult_gen_v11_0.
+Entity <ccm> compiled.
+Entity <ccm> (Architecture <xilinx>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./mult_gen_v11_0/mult_gen_v11_0_xst.vhd" in Library mult_gen_v11_0.
+Entity <mult_gen_v11_0_xst> compiled.
+Entity <mult_gen_v11_0_xst> (Architecture <xilinx>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./mult_gen_v11_0/mult_gen_v11_0.vhd" in Library mult_gen_v11_0.
+Entity <mult_gen_v11_0> compiled.
+Entity <mult_gen_v11_0> (Architecture <xilinx>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_pipe_v2_0/simulation/xbip_pipe_v2_0_xst_comp.vhd" in Library xbip_pipe_v2_0.
+Package <xbip_pipe_v2_0_xst_comp> compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_pipe_v2_0/xbip_pipe_v2_0_xst.vhd" in Library xbip_pipe_v2_0.
+Entity <xbip_pipe_v2_0_xst> compiled.
+Entity <xbip_pipe_v2_0_xst> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_pipe_v2_0/xbip_pipe_v2_0.vhd" in Library xbip_pipe_v2_0.
+Entity <xbip_pipe_v2_0> compiled.
+Entity <xbip_pipe_v2_0> (Architecture <xilinx>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_pkg_v2_1.vhd" in Library xbip_bram18k_v2_1.
+Package <bip_bram18k_pkg_v2_1> compiled.
+Package body <bip_bram18k_pkg_v2_1> compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/xbip_bram18k_v2_1_xst_comp.vhd" in Library xbip_bram18k_v2_1.
+Package <xbip_bram18k_v2_1_xst_comp> compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_hdl_pkg.vhd" in Library xbip_bram18k_v2_1.
+Package <bip_bram18k_hdl_pkg> compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_synth.vhd" in Library xbip_bram18k_v2_1.
+Entity <bip_bram18k_synth> compiled.
+Entity <bip_bram18k_synth> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_rtl.vhd" in Library xbip_bram18k_v2_1.
+Entity <bip_bram18k_rtl> compiled.
+Entity <bip_bram18k_rtl> (Architecture <rtl>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/xbip_bram18k_v2_1_xst.vhd" in Library xbip_bram18k_v2_1.
+Entity <xbip_bram18k_v2_1_xst> compiled.
+Entity <xbip_bram18k_v2_1_xst> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/xbip_bram18k_v2_1.vhd" in Library xbip_bram18k_v2_1.
+Entity <xbip_bram18k_v2_1> compiled.
+Entity <xbip_bram18k_v2_1> (Architecture <xilinx>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_wrapper_v2_0/bip_dsp48_wrapper_v2_0_pkg.vhd" in Library xbip_dsp48_wrapper_v2_0.
+Package <bip_dsp48_wrapper_v2_0_pkg> compiled.
+Package body <bip_dsp48_wrapper_v2_0_pkg> compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_wrapper_v2_0/xbip_dsp48a_wrapper_v2_0.vhd" in Library xbip_dsp48_wrapper_v2_0.
+Entity <xbip_dsp48a_wrapper_v2_0> compiled.
+Entity <xbip_dsp48a_wrapper_v2_0> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_wrapper_v2_0/xbip_dsp48a1_wrapper_v2_0.vhd" in Library xbip_dsp48_wrapper_v2_0.
+Entity <xbip_dsp48a1_wrapper_v2_0> compiled.
+Entity <xbip_dsp48a1_wrapper_v2_0> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_wrapper_v2_0/xbip_dsp48e_wrapper_v2_0.vhd" in Library xbip_dsp48_wrapper_v2_0.
+Entity <xbip_dsp48e_wrapper_v2_0> compiled.
+Entity <xbip_dsp48e_wrapper_v2_0> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_wrapper_v2_0/xbip_dsp48e1_wrapper_v2_0.vhd" in Library xbip_dsp48_wrapper_v2_0.
+Entity <xbip_dsp48e1_wrapper_v2_0> compiled.
+Entity <xbip_dsp48e1_wrapper_v2_0> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_wrapper_v2_0/xbip_dsp48_wrapper_v2_0.vhd" in Library xbip_dsp48_wrapper_v2_0.
+Entity <xbip_dsp48_wrapper_v2_0> compiled.
+Entity <xbip_dsp48_wrapper_v2_0> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_addsub_v2_0/bip_dsp48_addsub_pkg_v2_0.vhd" in Library xbip_dsp48_addsub_v2_0.
+Package <bip_dsp48_addsub_pkg_v2_0> compiled.
+Package body <bip_dsp48_addsub_pkg_v2_0> compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_addsub_v2_0/xbip_dsp48_addsub_v2_0_xst_comp.vhd" in Library xbip_dsp48_addsub_v2_0.
+Package <xbip_dsp48_addsub_v2_0_xst_comp> compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_addsub_v2_0/bip_dsp48_addsub_rtl.vhd" in Library xbip_dsp48_addsub_v2_0.
+Entity <bip_dsp48_addsub_rtl> compiled.
+Entity <bip_dsp48_addsub_rtl> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_addsub_v2_0/bip_dsp48_addsub_synth.vhd" in Library xbip_dsp48_addsub_v2_0.
+Entity <bip_dsp48_addsub_synth> compiled.
+Entity <bip_dsp48_addsub_synth> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_addsub_v2_0/xbip_dsp48_addsub_v2_0_xst.vhd" in Library xbip_dsp48_addsub_v2_0.
+Entity <xbip_dsp48_addsub_v2_0_xst> compiled.
+Entity <xbip_dsp48_addsub_v2_0_xst> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_addsub_v2_0/xbip_dsp48_addsub_v2_0.vhd" in Library xbip_dsp48_addsub_v2_0.
+Entity <xbip_dsp48_addsub_v2_0> compiled.
+Entity <xbip_dsp48_addsub_v2_0> (Architecture <xilinx>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_multadd_v2_0/bip_dsp48_multadd_pkg_v2_0.vhd" in Library xbip_dsp48_multadd_v2_0.
+Package <bip_dsp48_multadd_pkg_v2_0> compiled.
+Package body <bip_dsp48_multadd_pkg_v2_0> compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_multadd_v2_0/xbip_dsp48_multadd_v2_0_xst_comp.vhd" in Library xbip_dsp48_multadd_v2_0.
+Package <xbip_dsp48_multadd_v2_0_xst_comp> compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_multadd_v2_0/bip_dsp48_multadd_rtl.vhd" in Library xbip_dsp48_multadd_v2_0.
+Entity <bip_dsp48_multadd_rtl> compiled.
+Entity <bip_dsp48_multadd_rtl> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_multadd_v2_0/bip_dsp48_multadd_synth.vhd" in Library xbip_dsp48_multadd_v2_0.
+Entity <bip_dsp48_multadd_synth> compiled.
+Entity <bip_dsp48_multadd_synth> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_multadd_v2_0/xbip_dsp48_multadd_v2_0_xst.vhd" in Library xbip_dsp48_multadd_v2_0.
+Entity <xbip_dsp48_multadd_v2_0_xst> compiled.
+Entity <xbip_dsp48_multadd_v2_0_xst> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_dsp48_multadd_v2_0/xbip_dsp48_multadd_v2_0.vhd" in Library xbip_dsp48_multadd_v2_0.
+Entity <xbip_dsp48_multadd_v2_0> compiled.
+Entity <xbip_dsp48_multadd_v2_0> (Architecture <xilinx>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/pkg_dds_compiler_v4_0.vhd" in Library dds_compiler_v4_0.
+Package <pkg_dds_compiler_v4_0> compiled.
+Package body <pkg_dds_compiler_v4_0> compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_xst_comp.vhd" in Library dds_compiler_v4_0.
+Package <dds_compiler_v4_0_xst_comp> compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_hdl_comps.vhd" in Library dds_compiler_v4_0.
+Package <dds_compiler_v4_0_hdl_comps> compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dither_wrap.vhd" in Library dds_compiler_v4_0.
+Entity <dither_wrap> compiled.
+Entity <dither_wrap> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/pipe_add.vhd" in Library dds_compiler_v4_0.
+Entity <pipe_add> compiled.
+Entity <pipe_add> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/lut_ram.vhd" in Library dds_compiler_v4_0.
+Entity <lut_ram> compiled.
+Entity <lut_ram> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/sin_cos.vhd" in Library dds_compiler_v4_0.
+Entity <sin_cos> compiled.
+Entity <sin_cos> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dsp48_wrap.vhd" in Library dds_compiler_v4_0.
+Entity <dsp48_wrap> compiled.
+Entity <dsp48_wrap> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/accum.vhd" in Library dds_compiler_v4_0.
+Entity <accum> compiled.
+Entity <accum> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_multadd_wrapper.vhd" in Library dds_compiler_v4_0.
+Entity <dds_compiler_v4_0_multadd_wrapper> compiled.
+Entity <dds_compiler_v4_0_multadd_wrapper> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_eff_lut.vhd" in Library dds_compiler_v4_0.
+Entity <dds_compiler_v4_0_eff_lut> compiled.
+Entity <dds_compiler_v4_0_eff_lut> (Architecture <rtl>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_eff.vhd" in Library dds_compiler_v4_0.
+Entity <dds_compiler_v4_0_eff> compiled.
+Entity <dds_compiler_v4_0_eff> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_xst.vhd" in Library dds_compiler_v4_0.
+Entity <dds_compiler_v4_0_xst> compiled.
+Entity <dds_compiler_v4_0_xst> (Architecture <synth>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0.vhd" in Library dds_compiler_v4_0.
+Entity <dds_compiler_v4_0> compiled.
+Entity <dds_compiler_v4_0> (Architecture <xilinx>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/WaveformGenerator.vhd" in Library work.
+Entity <WaveformGenerator> compiled.
+Entity <WaveformGenerator> (Architecture <spartan3e>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <WaveformGenerator> in library <work> (architecture <spartan3e>).
+
+Analyzing hierarchy for entity <dds_compiler_v4_0> in library <dds_compiler_v4_0> (architecture <xilinx>) with generics.
+	c_accumulator_width = 16
+	c_amplitude = 1
+	c_channels = 1
+	c_has_ce = 0
+	c_has_channel_index = 0
+	c_has_phase_out = 0
+	c_has_phasegen = 0
+	c_has_rdy = 0
+	c_has_rfd = 0
+	c_has_sclr = 0
+	c_has_sincos = 1
+	c_latency = -1
+	c_mem_type = 1
+	c_negative_cosine = 0
+	c_negative_sine = 0
+	c_noise_shaping = 0
+	c_optimise_goal = 0
+	c_output_width = 16
+	c_outputs_required = 0
+	c_phase_angle_width = 16
+	c_phase_increment = 2
+	c_phase_increment_value = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+	c_phase_offset = 0
+	c_phase_offset_value = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+	c_por_mode = 0
+	c_use_dsp48 = 0
+	c_xdevicefamily = "spartan3e"
+
+Analyzing hierarchy for entity <dds_compiler_v4_0_xst> in library <dds_compiler_v4_0> (architecture <synth>) with generics.
+	C_ACCUMULATOR_WIDTH = 16
+	C_AMPLITUDE = 1
+	C_CHANNELS = 1
+	C_HAS_CE = 0
+	C_HAS_CHANNEL_INDEX = 0
+	C_HAS_PHASEGEN = 0
+	C_HAS_PHASE_OUT = 0
+	C_HAS_RDY = 0
+	C_HAS_RFD = 0
+	C_HAS_SCLR = 0
+	C_HAS_SINCOS = 1
+	C_LATENCY = -1
+	C_MEM_TYPE = 1
+	C_NEGATIVE_COSINE = 0
+	C_NEGATIVE_SINE = 0
+	C_NOISE_SHAPING = 0
+	C_OPTIMISE_GOAL = 0
+	C_OUTPUTS_REQUIRED = 0
+	C_OUTPUT_WIDTH = 16
+	C_PHASE_ANGLE_WIDTH = 16
+	C_PHASE_INCREMENT = 2
+	C_PHASE_INCREMENT_VALUE = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+	C_PHASE_OFFSET = 0
+	C_PHASE_OFFSET_VALUE = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+	C_POR_MODE = 0
+	C_USE_DSP48 = 0
+	C_XDEVICEFAMILY = "spartan3e"
+WARNING:Xst:795 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" line 1836: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" line 1842: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" line 1848: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" line 1848: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" line 1848: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" line 1848: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" line 1848: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" line 1836: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" line 1842: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" line 1848: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" line 1848: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" line 1848: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" line 1848: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" line 1848: Size of operands are different : result is <false>.
+WARNING:Xst:1748 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/pkg_dds_compiler_v4_0.vhd" line 927: VHDL Assertion Statement with non constant condition is ignored.
+WARNING:Xst:795 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" line 1836: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" line 1842: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" line 1848: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" line 1848: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" line 1848: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" line 1848: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_utils_v2_0/bip_utils_pkg_v2_0.vhd" line 1848: Size of operands are different : result is <false>.
+WARNING:Xst:1748 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/pkg_dds_compiler_v4_0.vhd" line 1326: VHDL Assertion Statement with non constant condition is ignored.
+
+Analyzing hierarchy for entity <sin_cos> in library <dds_compiler_v4_0> (architecture <synth>) with generics.
+	C_ADDR_WIDTH = 16
+	C_AMPLITUDE = 1
+	C_DATA_WIDTH = 16
+	C_EFF_BIAS = false
+	C_EFF_TO_FOLLOW = 0
+	C_HAS_CE = 0
+	C_HAS_COS = 1
+	C_HAS_SCLR = 0
+	C_HAS_SIN = 1
+	C_LATENCY = 5
+	C_MEM_TYPE = 1
+	C_NEGATIVE_COSINE = 0
+	C_NEGATIVE_SINE = 0
+	C_OUTPUTS_REQUIRED = 0
+	C_PHASE_OFFSET_REQ = false
+	C_SCALING_WIDTH = 14
+	C_XDEVICEFAMILY = "spartan3e"
+WARNING:Xst:821 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/sin_cos.vhd" line 210: Loop body will iterate zero times
+ERROR:Xst:1532 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/sin_cos.vhd" line 228: Real operand is not supported in this context.
+INTERNAL_ERROR:Xst:cmain.c:3464:1.56 -  Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.  

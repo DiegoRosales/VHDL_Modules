@@ -1,0 +1,38 @@
+#-------------------------------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Current time: 10/18/14 9:52:23 AM
+# Process ID: 6872
+# Platform: Windows
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx
+# Technical Support with this file and a testcase attached.
+#-------------------------------------------------------------------------------
+10/18/14 9:52:23 AM
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at java.awt.EventQueue.invokeAndWait(EventQueue.java:1236)
+	at javax.swing.SwingUtilities.invokeAndWait(SwingUtilities.java:1346)
+	at ui.data.design.D.bxg(SourceFile:221)
+	at ui.data.design.l.bvL(SourceFile:545)
+	at ui.data.design.l.d(SourceFile:40)
+	at ui.data.design.q.aLD(SourceFile:1173)
+	at ui.frmwork.V.run(SourceFile:158)
+	at java.lang.Thread.run(Thread.java:722)
+
+10/18/14 9:52:31 AM
+java.util.ConcurrentModificationException
+	at java.util.ArrayList$Itr.checkForComodification(ArrayList.java:819)
+	at java.util.ArrayList$Itr.next(ArrayList.java:791)
+	at ui.h.e.h(SourceFile:163)
+	at ui.h.e.g(SourceFile:105)
+	at ui.h.I.g(SourceFile:650)
+	at ui.data.design.D.bxg(SourceFile:234)
+	at ui.data.design.l.bvL(SourceFile:545)
+	at ui.data.design.l.d(SourceFile:40)
+	at ui.data.design.q.aLD(SourceFile:1173)
+	at ui.frmwork.V.run(SourceFile:158)
+	at java.lang.Thread.run(Thread.java:722)
+

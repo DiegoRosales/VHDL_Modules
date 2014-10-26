@@ -1,0 +1,4 @@
+AR uart behavioral D:/GitHub/VHDL_Modules/UART/UART.vhd sub00/vhpl01 1410646690
+EN uart_test NULL D:/GitHub/VHDL_Modules/UART/UART_test.vhd sub00/vhpl02 1410646691
+AR uart_test behavioral D:/GitHub/VHDL_Modules/UART/UART_test.vhd sub00/vhpl03 1410646692
+EN uart NULL D:/GitHub/VHDL_Modules/UART/UART.vhd sub00/vhpl00 1410646689

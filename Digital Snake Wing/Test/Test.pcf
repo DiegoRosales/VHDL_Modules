@@ -1,0 +1,15 @@
+//! **************************************************************************
+// Written by: Map P.28xd on Wed Aug 27 17:14:48 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "MCLK" LOCATE = SITE "P34" LEVEL 1;
+COMP "SDATA" LOCATE = SITE "P22" LEVEL 1;
+COMP "LRCLK" LOCATE = SITE "P32" LEVEL 1;
+COMP "SCLK" LOCATE = SITE "P25" LEVEL 1;
+COMP "CK32" LOCATE = SITE "P89" LEVEL 1;
+COMP "CKPLL" LOCATE = SITE "P5" LEVEL 1;
+PIN CKPLL_pin<0> = BEL "CKPLL" PINNAME PAD;
+PIN "CKPLL_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+SCHEMATIC END;
+

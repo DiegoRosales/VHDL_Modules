@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Wed Aug 27 17:04:57 2014
+# Process ID: 8344
+# Log file: D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/planAhead_run_1/planAhead.log
+# Journal file: D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/pa.fromNetlist.tcl}
+set_property pulltype PULLUP [get_ports [list SCLK]]
+save_design

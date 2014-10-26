@@ -1,0 +1,19 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "D:/GitHub/VHDL_Modules/Triangle_Wave/Triangle_Wave_tbench_isim_beh.exe" -prj "D:/GitHub/VHDL_Modules/Triangle_Wave/Triangle_Wave_tbench_beh.prj" "work.Triangle_Wave_tbench" 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Triangle_Wave/Triangle_Wave.vhd" into library work
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Triangle_Wave/Triangle_Wave_tbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity Triangle_Wave [\Triangle_Wave(16)\]
+Compiling architecture behavior of entity triangle_wave_tbench
+Time Resolution for simulation is 1ps.
+Compiled 6 VHDL Units
+Built simulation executable D:/GitHub/VHDL_Modules/Triangle_Wave/Triangle_Wave_tbench_isim_beh.exe
+Fuse Memory Usage: 38076 KB
+Fuse CPU Usage: 561 ms

@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Sat Sep 13 12:17:18 2014
+# Process ID: 1828
+# Log file: D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/planAhead_run_1/planAhead.log
+# Journal file: D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/pa.fromHdl.tcl}
+startgroup
+set_property package_pin P9 [get_ports CK27]
+endgroup
+startgroup
+set_property package_pin P89 [get_ports CK32]
+endgroup
+startgroup
+set_property package_pin P16 [get_ports CTRL_CK]
+endgroup
+startgroup
+set_property package_pin P15 [get_ports CTRL_DATA]
+endgroup
+startgroup
+set_property package_pin P17 [get_ports CTRL_SEL]
+endgroup
+startgroup
+set_property package_pin P3 [get_ports LED1]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports LED2]
+endgroup
+startgroup
+set_property package_pin P98 [get_ports RESET]
+endgroup
+startgroup
+set_property package_pin P2 [get_ports START]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list RESET]]
+set_property iostandard LVCMOS33 [get_ports [list START]]
+set_property iostandard LVCMOS33 [get_ports [list LED2]]
+set_property iostandard LVCMOS33 [get_ports [list LED1]]
+set_property iostandard LVCMOS33 [get_ports [list CTRL_SEL]]
+set_property iostandard LVCMOS33 [get_ports [list CTRL_DATA]]
+set_property iostandard LVCMOS33 [get_ports [list CTRL_CK]]
+set_property iostandard LVCMOS33 [get_ports [list CK27]]
+set_property slew FAST [get_ports [list CTRL_CK]]
+set_property slew FAST [get_ports [list CTRL_DATA]]
+set_property slew FAST [get_ports [list CTRL_SEL]]
+set_property slew FAST [get_ports [list LED1]]
+set_property slew FAST [get_ports [list LED2]]
+set_property pulltype PULLUP [get_ports [list RESET]]
+set_property pulltype PULLUP [get_ports [list START]]
+save_design

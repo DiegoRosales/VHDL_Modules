@@ -1,0 +1,15 @@
+set -xsthdpdir "./_cg/_dbg/WaveformGenerator_xsd"
+run
+-ifn "./_cg/_dbg/WaveformGenerator.prj"
+-ifmt VHDL
+-ofmt NGC
+-ofn "./_cg/_dbg/WaveformGenerator.ngc"
+-p xc3s500e-4vq100
+-iobuf NO
+-work_lib work
+-ent WaveformGenerator
+-arch spartan3e
+-top WaveformGenerator
+-bus_delimiter <>
+-lso "./_cg/_dbg/_default.lso"
+-flow coregen

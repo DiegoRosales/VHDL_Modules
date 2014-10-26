@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/GitHub/VHDL_Modules/UART/UART_test_tbench_isim_beh.exe" -prj "D:/GitHub/VHDL_Modules/UART/UART_test_tbench_beh.prj" "work.UART_test_tbench" 

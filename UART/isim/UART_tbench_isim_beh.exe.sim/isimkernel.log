@@ -1,0 +1,10 @@
+Command line:
+   UART_tbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  19579
+
+Sat Sep 13 16:34:15 2014
+
+
+ Elaboration Time: 0.0468 sec

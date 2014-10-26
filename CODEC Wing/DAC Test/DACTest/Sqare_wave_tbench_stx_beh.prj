@@ -1,0 +1,4 @@
+vhdl isim_temp "I2S_Master.vhd"
+vhdl isim_temp "PCM1754.vhd"
+vhdl isim_temp "Square_wave.vhd"
+vhdl isim_temp "Sqare_wave_tbench.vhd"

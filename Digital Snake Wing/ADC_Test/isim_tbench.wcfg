@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_Control_tbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="adc_control_tbench" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/adc_control_tbench/ck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ck</obj_property>
+      <obj_property name="ObjectShortName">ck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adc_control_tbench/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adc_control_tbench/ctrl_sel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ctrl_sel</obj_property>
+      <obj_property name="ObjectShortName">ctrl_sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adc_control_tbench/ctrl_ck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ctrl_ck</obj_property>
+      <obj_property name="ObjectShortName">ctrl_ck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adc_control_tbench/ctrl_data" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ctrl_data</obj_property>
+      <obj_property name="ObjectShortName">ctrl_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adc_control_tbench/ck_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">ck_period</obj_property>
+      <obj_property name="ObjectShortName">ck_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adc_control_tbench/uut/config" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">config[7:0]</obj_property>
+      <obj_property name="ObjectShortName">config[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adc_control_tbench/uut/config_vector" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">config_vector[15:0]</obj_property>
+      <obj_property name="ObjectShortName">config_vector[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adc_control_tbench/uut/id" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">id[7:0]</obj_property>
+      <obj_property name="ObjectShortName">id[7:0]</obj_property>
+   </wvobject>
+</wave_config>

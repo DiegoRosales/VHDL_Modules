@@ -1,0 +1,16 @@
+//! **************************************************************************
+// Written by: Map P.28xd on Sat Sep 13 12:41:50 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "CTRL_SEL" LOCATE = SITE "P17" LEVEL 1;
+COMP "LED1" LOCATE = SITE "P3" LEVEL 1;
+COMP "LED2" LOCATE = SITE "P4" LEVEL 1;
+COMP "CTRL_DATA" LOCATE = SITE "P15" LEVEL 1;
+COMP "CK32" LOCATE = SITE "P89" LEVEL 1;
+COMP "CK27" LOCATE = SITE "P9" LEVEL 1;
+COMP "START" LOCATE = SITE "P2" LEVEL 1;
+COMP "CTRL_CK" LOCATE = SITE "P16" LEVEL 1;
+COMP "RESET" LOCATE = SITE "P98" LEVEL 1;
+SCHEMATIC END;
+

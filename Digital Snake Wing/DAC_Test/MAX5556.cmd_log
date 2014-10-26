@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/MAX5556.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/MAX5556.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-4 "MAX5556.ngc" MAX5556.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o MAX5556_map.ncd MAX5556.ngd MAX5556.pcf 
+par -w -intstyle ise -ol high -t 1 MAX5556_map.ncd MAX5556.ncd MAX5556.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MAX5556.twx MAX5556.ncd -o MAX5556.twr MAX5556.pcf 
+vhdtdtfi -prj DAC_Test -o "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/MAX5556.vhi" -module MAX5556 -template C:/Xilinx/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work MAX5556.vhd 

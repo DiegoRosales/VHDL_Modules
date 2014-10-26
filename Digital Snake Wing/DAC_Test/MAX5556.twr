@@ -1,0 +1,136 @@
+--------------------------------------------------------------------------------
+Release 14.2 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml MAX5556.twx MAX5556.ncd -o MAX5556.twr MAX5556.pcf
+
+Design file:              MAX5556.ncd
+Physical constraint file: MAX5556.pcf
+Device,package,speed:     xc3s500e,vq100,-4 (PRODUCTION 1.27 2012-07-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CK256fs
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+DATA<0>     |    1.798(R)|   -0.231(R)|CK256fs_IBUF      |   0.000|
+DATA<1>     |    1.489(R)|    0.016(R)|CK256fs_IBUF      |   0.000|
+DATA<2>     |    1.106(R)|    0.323(R)|CK256fs_IBUF      |   0.000|
+DATA<3>     |    1.937(R)|   -0.342(R)|CK256fs_IBUF      |   0.000|
+DATA<4>     |    0.361(R)|    0.929(R)|CK256fs_IBUF      |   0.000|
+DATA<5>     |    0.287(R)|    0.988(R)|CK256fs_IBUF      |   0.000|
+DATA<6>     |    0.934(R)|    0.464(R)|CK256fs_IBUF      |   0.000|
+DATA<7>     |    1.030(R)|    0.387(R)|CK256fs_IBUF      |   0.000|
+DATA<8>     |    0.324(R)|    0.959(R)|CK256fs_IBUF      |   0.000|
+DATA<9>     |    0.897(R)|    0.501(R)|CK256fs_IBUF      |   0.000|
+DATA<10>    |    0.298(R)|    0.980(R)|CK256fs_IBUF      |   0.000|
+DATA<11>    |    0.243(R)|    1.024(R)|CK256fs_IBUF      |   0.000|
+DATA<12>    |    0.564(R)|    0.761(R)|CK256fs_IBUF      |   0.000|
+DATA<13>    |    1.071(R)|    0.354(R)|CK256fs_IBUF      |   0.000|
+DATA<14>    |    0.784(R)|    0.583(R)|CK256fs_IBUF      |   0.000|
+DATA<15>    |    0.652(R)|    0.689(R)|CK256fs_IBUF      |   0.000|
+DATA<16>    |    0.392(R)|    0.896(R)|CK256fs_IBUF      |   0.000|
+DATA<17>    |    2.188(R)|   -0.542(R)|CK256fs_IBUF      |   0.000|
+DATA<18>    |    1.141(R)|    0.288(R)|CK256fs_IBUF      |   0.000|
+DATA<19>    |    1.690(R)|   -0.150(R)|CK256fs_IBUF      |   0.000|
+DATA<20>    |    1.705(R)|   -0.161(R)|CK256fs_IBUF      |   0.000|
+DATA<21>    |    1.151(R)|    0.283(R)|CK256fs_IBUF      |   0.000|
+DATA<22>    |    1.201(R)|    0.241(R)|CK256fs_IBUF      |   0.000|
+DATA<23>    |    0.943(R)|    0.447(R)|CK256fs_IBUF      |   0.000|
+DATA<24>    |    0.794(R)|    0.566(R)|CK256fs_IBUF      |   0.000|
+DATA<25>    |    0.718(R)|    0.628(R)|CK256fs_IBUF      |   0.000|
+DATA<26>    |    0.451(R)|    0.845(R)|CK256fs_IBUF      |   0.000|
+DATA<27>    |    0.428(R)|    0.863(R)|CK256fs_IBUF      |   0.000|
+DATA<28>    |    0.210(R)|    1.038(R)|CK256fs_IBUF      |   0.000|
+DATA<29>    |    0.421(R)|    0.869(R)|CK256fs_IBUF      |   0.000|
+DATA<30>    |    0.210(R)|    1.037(R)|CK256fs_IBUF      |   0.000|
+DATA<31>    |    0.422(R)|    0.867(R)|CK256fs_IBUF      |   0.000|
+DATA<32>    |    0.761(R)|    0.603(R)|CK256fs_IBUF      |   0.000|
+DATA<33>    |    1.060(R)|    0.364(R)|CK256fs_IBUF      |   0.000|
+DATA<34>    |    0.544(R)|    0.777(R)|CK256fs_IBUF      |   0.000|
+DATA<35>    |    1.015(R)|    0.400(R)|CK256fs_IBUF      |   0.000|
+DATA<36>    |    1.846(R)|   -0.268(R)|CK256fs_IBUF      |   0.000|
+DATA<37>    |    1.128(R)|    0.307(R)|CK256fs_IBUF      |   0.000|
+DATA<38>    |    0.594(R)|    0.735(R)|CK256fs_IBUF      |   0.000|
+DATA<39>    |    0.532(R)|    0.785(R)|CK256fs_IBUF      |   0.000|
+DATA<40>    |    2.391(R)|   -0.703(R)|CK256fs_IBUF      |   0.000|
+DATA<41>    |    1.213(R)|    0.241(R)|CK256fs_IBUF      |   0.000|
+DATA<42>    |    0.698(R)|    0.653(R)|CK256fs_IBUF      |   0.000|
+DATA<43>    |    0.363(R)|    0.921(R)|CK256fs_IBUF      |   0.000|
+DATA<44>    |    0.590(R)|    0.740(R)|CK256fs_IBUF      |   0.000|
+DATA<45>    |    1.743(R)|   -0.182(R)|CK256fs_IBUF      |   0.000|
+DATA<46>    |    1.139(R)|    0.301(R)|CK256fs_IBUF      |   0.000|
+DATA<47>    |    1.279(R)|    0.189(R)|CK256fs_IBUF      |   0.000|
+RESET       |    5.962(R)|   -1.423(R)|CK256fs_IBUF      |   0.000|
+START       |    3.442(R)|    0.101(R)|CK256fs_IBUF      |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock CK256fs to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+BUSY        |    7.937(R)|CK256fs_IBUF      |   0.000|
+LRCLK       |    8.618(R)|CK256fs_IBUF      |   0.000|
+SDATA       |    8.384(R)|CK256fs_IBUF      |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CK256fs
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CK256fs        |    8.960|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+CK256fs        |MCLK           |    5.267|
+CK256fs        |SCLK           |    5.807|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Aug 21 17:12:38 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 187 MB
+
+
+

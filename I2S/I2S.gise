@@ -22,6 +22,18 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="I2S.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="I2S_Master.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="I2S_Master.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="I2S_Master.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="I2S_Master.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="I2S_Master.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="I2S_Master.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="I2S_Master.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="I2S_Master.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="I2S_Master_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="I2S_Master_tbench_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="I2S_Master_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="I2S_Master_xst.xrpt"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="I2S_Module.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="I2S_Module.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="I2S_Module.ngc"/>
@@ -55,27 +67,26 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1406905234" xil_pn:in_ck="6442334338232415129" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1406905234">
+    <transform xil_pn:end_ts="1414341879" xil_pn:in_ck="6442334338232415129" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1414341879">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="I2S_Module.vhd"/>
       <outfile xil_pn:name="I2S_Module_tbench.vhd"/>
     </transform>
     <transform xil_pn:end_ts="1406902526" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6986938682740992292" xil_pn:start_ts="1406902526">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1406902526" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2783481824281746466" xil_pn:start_ts="1406902526">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1406902526" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="7067420431542252471" xil_pn:start_ts="1406902526">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1406903521" xil_pn:in_ck="6442334338232415129" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1406903521">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -92,6 +103,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
@@ -106,6 +118,7 @@
     <transform xil_pn:end_ts="1406903525" xil_pn:in_ck="2518273408761024791" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3359437491603336711" xil_pn:start_ts="1406903524">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
@@ -117,11 +130,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1406907012" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="6762618735500599608" xil_pn:start_ts="1406907012">
+    <transform xil_pn:end_ts="1414341918" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-4587753925032744514" xil_pn:start_ts="1414341918">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1406907012" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="7067420431542252471" xil_pn:start_ts="1406907012">
+    <transform xil_pn:end_ts="1414341918" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="8474133889583481981" xil_pn:start_ts="1414341918">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -129,7 +142,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1406907012" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="1427807574787818998" xil_pn:start_ts="1406907012">
+    <transform xil_pn:end_ts="1414341918" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="8524178987964026492" xil_pn:start_ts="1414341918">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -137,25 +150,24 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1406907012" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-364456643002833727" xil_pn:start_ts="1406907012">
+    <transform xil_pn:end_ts="1414341918" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="1042256815038395783" xil_pn:start_ts="1414341918">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1406907083" xil_pn:in_ck="-7939382110650731997" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-7827173223447166060" xil_pn:start_ts="1406907073">
+    <transform xil_pn:end_ts="1414341927" xil_pn:in_ck="-7939382110650731997" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-3682605633010871654" xil_pn:start_ts="1414341918">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="I2S_Module.lso"/>
-      <outfile xil_pn:name="I2S_Module.ngc"/>
+      <outfile xil_pn:name="I2S_Master.lso"/>
+      <outfile xil_pn:name="I2S_Master.ngc"/>
+      <outfile xil_pn:name="I2S_Master.ngr"/>
+      <outfile xil_pn:name="I2S_Master.prj"/>
+      <outfile xil_pn:name="I2S_Master.stx"/>
+      <outfile xil_pn:name="I2S_Master.syr"/>
+      <outfile xil_pn:name="I2S_Master.xst"/>
+      <outfile xil_pn:name="I2S_Master_tbench_stx_beh.prj"/>
+      <outfile xil_pn:name="I2S_Master_vhdl.prj"/>
+      <outfile xil_pn:name="I2S_Master_xst.xrpt"/>
       <outfile xil_pn:name="I2S_Module.ngr"/>
-      <outfile xil_pn:name="I2S_Module.prj"/>
-      <outfile xil_pn:name="I2S_Module.stx"/>
-      <outfile xil_pn:name="I2S_Module.syr"/>
-      <outfile xil_pn:name="I2S_Module.xst"/>
-      <outfile xil_pn:name="I2S_Module_stx_beh.prj"/>
-      <outfile xil_pn:name="I2S_Module_tbench_beh.prj"/>
-      <outfile xil_pn:name="I2S_Module_tbench_stx_beh.prj"/>
-      <outfile xil_pn:name="I2S_Module_vhdl.prj"/>
-      <outfile xil_pn:name="I2S_Module_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>

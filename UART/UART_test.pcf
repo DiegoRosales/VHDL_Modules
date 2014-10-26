@@ -1,0 +1,14 @@
+//! **************************************************************************
+// Written by: Map P.28xd on Sat Sep 13 17:18:24 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "TX" LOCATE = SITE "P90" LEVEL 1;
+COMP "LED1" LOCATE = SITE "P3" LEVEL 1;
+COMP "LED2" LOCATE = SITE "P4" LEVEL 1;
+COMP "CK32" LOCATE = SITE "P89" LEVEL 1;
+COMP "START" LOCATE = SITE "P2" LEVEL 1;
+COMP "RESET" LOCATE = SITE "P92" LEVEL 1;
+NET "CK32_BUFGP/IBUFG" BEL "CK32_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

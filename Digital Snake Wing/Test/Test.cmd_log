@@ -1,0 +1,95 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test.ucf -p xc3s500e-vq100-4 "Test.ngc" Test.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Test_map.ncd Test.ngd Test.pcf 
+par -w -intstyle ise -ol high -t 1 Test_map.ncd Test.ncd Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Test.twx Test.ncd -o Test.twr Test.pcf -ucf Test.ucf 
+bitgen -intstyle ise -f Test.ut Test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test.ucf -p xc3s500e-vq100-4 "Test.ngc" Test.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Test_map.ncd Test.ngd Test.pcf 
+par -w -intstyle ise -ol high -t 1 Test_map.ncd Test.ncd Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Test.twx Test.ncd -o Test.twr Test.pcf -ucf Test.ucf 
+bitgen -intstyle ise -f Test.ut Test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test.ucf -p xc3s500e-vq100-4 "Test.ngc" Test.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Test_map.ncd Test.ngd Test.pcf 
+par -w -intstyle ise -ol high -t 1 Test_map.ncd Test.ncd Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Test.twx Test.ncd -o Test.twr Test.pcf -ucf Test.ucf 
+bitgen -intstyle ise -f Test.ut Test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test.ucf -p xc3s500e-vq100-4 "Test.ngc" Test.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Test_map.ncd Test.ngd Test.pcf 
+par -w -intstyle ise -ol high -t 1 Test_map.ncd Test.ncd Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Test.twx Test.ncd -o Test.twr Test.pcf -ucf Test.ucf 
+bitgen -intstyle ise -f Test.ut Test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test.ucf -uc DCM32to27_arwz.ucf -p xc3s500e-vq100-4 "Test.ngc" Test.ngd  
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test.ucf -p xc3s500e-vq100-4 "Test.ngc" Test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test.ucf -p xc3s500e-vq100-4 "Test.ngc" Test.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Test_map.ncd Test.ngd Test.pcf 
+par -w -intstyle ise -ol high -t 1 Test_map.ncd Test.ncd Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Test.twx Test.ncd -o Test.twr Test.pcf -ucf Test.ucf 
+bitgen -intstyle ise -f Test.ut Test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test.ucf -p xc3s500e-vq100-4 "Test.ngc" Test.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Test_map.ncd Test.ngd Test.pcf 
+par -w -intstyle ise -ol high -t 1 Test_map.ncd Test.ncd Test.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test.ucf -p xc3s500e-vq100-4 "Test.ngc" Test.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Test_map.ncd Test.ngd Test.pcf 
+par -w -intstyle ise -ol high -t 1 Test_map.ncd Test.ncd Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Test.twx Test.ncd -o Test.twr Test.pcf -ucf Test.ucf 
+bitgen -intstyle ise -f Test.ut Test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test.ucf -p xc3s500e-vq100-4 "Test.ngc" Test.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Test_map.ncd Test.ngd Test.pcf 
+par -w -intstyle ise -ol high -t 1 Test_map.ncd Test.ncd Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Test.twx Test.ncd -o Test.twr Test.pcf -ucf Test.ucf 
+bitgen -intstyle ise -f Test.ut Test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test.ucf -p xc3s500e-vq100-4 "Test.ngc" Test.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Test_map.ncd Test.ngd Test.pcf 
+par -w -intstyle ise -ol high -t 1 Test_map.ncd Test.ncd Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Test.twx Test.ncd -o Test.twr Test.pcf -ucf Test.ucf 
+bitgen -intstyle ise -f Test.ut Test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test.ucf -p xc3s500e-vq100-4 "Test.ngc" Test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test.ucf -p xc3s500e-vq100-4 "Test.ngc" Test.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Test_map.ncd Test.ngd Test.pcf 
+par -w -intstyle ise -ol high -t 1 Test_map.ncd Test.ncd Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Test.twx Test.ncd -o Test.twr Test.pcf -ucf Test.ucf 
+bitgen -intstyle ise -f Test.ut Test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test.ucf -p xc3s500e-vq100-4 "Test.ngc" Test.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Test_map.ncd Test.ngd Test.pcf 
+par -w -intstyle ise -ol high -t 1 Test_map.ncd Test.ncd Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Test.twx Test.ncd -o Test.twr Test.pcf -ucf Test.ucf 
+bitgen -intstyle ise -f Test.ut Test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test.ucf -p xc3s500e-vq100-4 "Test.ngc" Test.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Test_map.ncd Test.ngd Test.pcf 
+par -w -intstyle ise -ol high -t 1 Test_map.ncd Test.ncd Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Test.twx Test.ncd -o Test.twr Test.pcf -ucf Test.ucf 
+bitgen -intstyle ise -f Test.ut Test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test.ucf -p xc3s500e-vq100-4 "Test.ngc" Test.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Test_map.ncd Test.ngd Test.pcf 
+par -w -intstyle ise -ol high -t 1 Test_map.ncd Test.ncd Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Test.twx Test.ncd -o Test.twr Test.pcf -ucf Test.ucf 
+bitgen -intstyle ise -f Test.ut Test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test.ucf -p xc3s500e-vq100-4 "Test.ngc" Test.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Test_map.ncd Test.ngd Test.pcf 
+par -w -intstyle ise -ol high -t 1 Test_map.ncd Test.ncd Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Test.twx Test.ncd -o Test.twr Test.pcf -ucf Test.ucf 
+bitgen -intstyle ise -f Test.ut Test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test.ucf -p xc3s500e-vq100-4 "Test.ngc" Test.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Test_map.ncd Test.ngd Test.pcf 
+par -w -intstyle ise -ol high -t 1 Test_map.ncd Test.ncd Test.pcf 
+bitgen -intstyle ise -f Test.ut Test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test.ucf -p xc3s500e-vq100-4 "Test.ngc" Test.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Test_map.ncd Test.ngd Test.pcf 
+par -w -intstyle ise -ol high -t 1 Test_map.ncd Test.ncd Test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Test.twx Test.ncd -o Test.twr Test.pcf -ucf Test.ucf 
+bitgen -intstyle ise -f Test.ut Test.ncd 

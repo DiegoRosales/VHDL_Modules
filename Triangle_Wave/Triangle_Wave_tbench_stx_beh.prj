@@ -1,0 +1,2 @@
+vhdl isim_temp "Triangle_Wave.vhd"
+vhdl isim_temp "Triangle_Wave_tbench.vhd"

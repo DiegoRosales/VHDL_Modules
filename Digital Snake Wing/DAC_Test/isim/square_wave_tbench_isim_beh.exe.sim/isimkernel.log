@@ -1,0 +1,10 @@
+Command line:
+   square_wave_tbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  58106
+
+Mon Aug 25 11:03:45 2014
+
+
+ Elaboration Time: 0.0468 sec

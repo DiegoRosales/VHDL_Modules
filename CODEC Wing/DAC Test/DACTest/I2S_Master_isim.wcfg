@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/I2S_Master_tbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="i2s_master_tbench" />
+            <top_module name="std_logic_1164" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/i2s_master_tbench/mck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mck</obj_property>
+      <obj_property name="ObjectShortName">mck</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_master_tbench/lr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lr</obj_property>
+      <obj_property name="ObjectShortName">lr</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_master_tbench/sd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sd</obj_property>
+      <obj_property name="ObjectShortName">sd</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_master_tbench/uut/parallel_load" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">parallel_load</obj_property>
+      <obj_property name="ObjectShortName">parallel_load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_master_tbench/uut/data_buffer" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_buffer[23:0]</obj_property>
+      <obj_property name="ObjectShortName">data_buffer[23:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_master_tbench/uut/shift_reg_buffer" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">shift_reg_buffer[23:0]</obj_property>
+      <obj_property name="ObjectShortName">shift_reg_buffer[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

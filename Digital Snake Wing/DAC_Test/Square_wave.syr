@@ -1,0 +1,567 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: Square_wave.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Square_wave.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Square_wave"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-vq100
+
+---- Source Options
+Top Module Name                    : Square_wave
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/MAX5556.vhd" in Library work.
+Architecture behavioral of Entity max5556 is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/Square_wave.vhd" in Library work.
+Entity <square_wave> compiled.
+Entity <square_wave> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Square_wave> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MAX5556> in library <work> (architecture <behavioral>) with generics.
+	WAIT_BITS = 1
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Square_wave> in library <work> (Architecture <behavioral>).
+Entity <Square_wave> analyzed. Unit <Square_wave> generated.
+
+Analyzing generic Entity <MAX5556> in library <work> (Architecture <behavioral>).
+	WAIT_BITS = 1
+INFO:Xst:1432 - Contents of array <data_buffer> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <data_buffer> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:2679 - Register <SDATA> in unit <MAX5556> has a constant value of Z during circuit operation. The register is replaced by logic.
+Entity <MAX5556> analyzed. Unit <MAX5556> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <MAX5556>.
+    Related source file is "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/MAX5556.vhd".
+WARNING:Xst:646 - Signal <ck256fs_temp> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <bit_count_temp> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <BUSY>.
+    Found 1-bit tristate buffer for signal <SDATA>.
+    Found 1-bit 48-to-1 multiplexer for signal <$varindex0000> created at line 103.
+    Found 32-bit register for signal <bit_count>.
+    Found 32-bit adder for signal <bit_count$addsub0000> created at line 135.
+    Found 32-bit comparator greatequal for signal <bit_count$cmp_ge0000> created at line 132.
+    Found 32-bit comparator greatequal for signal <bit_count$cmp_ge0001> created at line 118.
+    Found 32-bit comparator greater for signal <bit_count$cmp_gt0000> created at line 120.
+    Found 32-bit comparator lessequal for signal <bit_count$cmp_le0000> created at line 120.
+    Found 32-bit comparator less for signal <bit_count$cmp_lt0000> created at line 118.
+    Found 32-bit register for signal <ck256fs_count>.
+    Found 32-bit adder for signal <ck256fs_count$addsub0000> created at line 137.
+    Found 32-bit 4-to-1 multiplexer for signal <ck256fs_count$mux0000>.
+    Found 48-bit register for signal <data_buffer>.
+    Found 1-bit register for signal <leftright<0>>.
+    Found 1-bit register for signal <lrclk_buffer>.
+    Found 1-bit register for signal <output_buffer>.
+    Found 32-bit comparator greatequal for signal <output_buffer$cmp_ge0000> created at line 102.
+    Found 1-bit register for signal <sclk_count>.
+    Found 1-bit register for signal <state<0>>.
+    Summary:
+	inferred 118 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+	inferred  33 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <MAX5556> synthesized.
+
+
+Synthesizing Unit <Square_wave>.
+    Related source file is "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/Square_wave.vhd".
+WARNING:Xst:653 - Signal <START> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+WARNING:Xst:653 - Signal <RESET> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <BUSY> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <CK256fs>.
+    Found 32-bit up counter for signal <ck_divider>.
+    Found 32-bit register for signal <counter>.
+    Found 32-bit adder for signal <counter$add0000> created at line 80.
+    Found 32-bit comparator greatequal for signal <counter$cmp_ge0000> created at line 71.
+    Found 32-bit 4-to-1 multiplexer for signal <counter$mux0000>.
+    Found 48-bit register for signal <sq_wave>.
+    Found 32-bit comparator less for signal <sq_wave$cmp_lt0000> created at line 71.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  81 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred  32 Multiplexer(s).
+Unit <Square_wave> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 3
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 12
+ 1-bit register                                        : 7
+ 32-bit register                                       : 3
+ 48-bit register                                       : 2
+# Comparators                                          : 8
+ 32-bit comparator greatequal                          : 4
+ 32-bit comparator greater                             : 1
+ 32-bit comparator less                                : 2
+ 32-bit comparator lessequal                           : 1
+# Multiplexers                                         : 3
+ 1-bit 48-to-1 multiplexer                             : 1
+ 32-bit 4-to-1 multiplexer                             : 2
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1426 - The value init of the FF/Latch sclk_count hinder the constant cleaning in the block Inst_MAX5556.
+   You should achieve better results by setting this init to 1.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 3
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 199
+ Flip-Flops                                            : 199
+# Comparators                                          : 8
+ 32-bit comparator greatequal                          : 4
+ 32-bit comparator greater                             : 1
+ 32-bit comparator less                                : 2
+ 32-bit comparator lessequal                           : 1
+# Multiplexers                                         : 3
+ 1-bit 48-to-1 multiplexer                             : 1
+ 32-bit 4-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch sclk_count hinder the constant cleaning in the block MAX5556.
+   You should achieve better results by setting this init to 1.
+
+Optimizing unit <Square_wave> ...
+
+Optimizing unit <MAX5556> ...
+WARNING:Xst:2677 - Node <Inst_MAX5556/BUSY> of sequential type is unconnected in block <Square_wave>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Square_wave, actual ratio is 4.
+FlipFlop Inst_MAX5556/bit_count_0 has been replicated 1 time(s)
+FlipFlop Inst_MAX5556/bit_count_4 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 232
+ Flip-Flops                                            : 232
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Square_wave.ngr
+Top Level Output File Name         : Square_wave
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 5
+
+Cell Usage :
+# BELS                             : 681
+#      GND                         : 1
+#      INV                         : 57
+#      LUT1                        : 65
+#      LUT2                        : 38
+#      LUT2_L                      : 1
+#      LUT3                        : 96
+#      LUT4                        : 87
+#      LUT4_D                      : 1
+#      LUT4_L                      : 1
+#      MUXCY                       : 177
+#      MUXF5                       : 18
+#      MUXF6                       : 6
+#      MUXF7                       : 3
+#      MUXF8                       : 1
+#      VCC                         : 1
+#      XORCY                       : 128
+# FlipFlops/Latches                : 232
+#      FD                          : 32
+#      FDCE                        : 81
+#      FDE                         : 53
+#      FDPE                        : 34
+#      FDR                         : 32
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500evq100-4 
+
+ Number of Slices:                      226  out of   4656     4%  
+ Number of Slice Flip Flops:            232  out of   9312     2%  
+ Number of 4 input LUTs:                346  out of   9312     3%  
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of     66     7%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CK33                               | BUFGP                  | 113   |
+CK256fs1                           | BUFG                   | 119   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+-------------------------------+-------+
+Control Signal                     | Buffer(FF name)               | Load  |
+-----------------------------------+-------------------------------+-------+
+N0(XST_GND:G)                      | NONE(Inst_MAX5556/bit_count_0)| 115   |
+-----------------------------------+-------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.835ns (Maximum Frequency: 101.676MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 5.545ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CK33'
+  Clock period: 8.660ns (frequency: 115.480MHz)
+  Total number of paths / destination ports: 36145 / 194
+-------------------------------------------------------------------------
+Delay:               8.660ns (Levels of Logic = 44)
+  Source:            counter_5 (FF)
+  Destination:       counter_31 (FF)
+  Source Clock:      CK33 rising
+  Destination Clock: CK33 rising
+
+  Data Path: counter_5 to counter_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.622  counter_5 (counter_5)
+     LUT1:I0->O            1   0.704   0.000  Mcompar_counter_cmp_ge0000_cy<0>_rt (Mcompar_counter_cmp_ge0000_cy<0>_rt)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_counter_cmp_ge0000_cy<0> (Mcompar_counter_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_counter_cmp_ge0000_cy<1> (Mcompar_counter_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_counter_cmp_ge0000_cy<2> (Mcompar_counter_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_counter_cmp_ge0000_cy<3> (Mcompar_counter_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_counter_cmp_ge0000_cy<4> (Mcompar_counter_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_counter_cmp_ge0000_cy<5> (Mcompar_counter_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_counter_cmp_ge0000_cy<6> (Mcompar_counter_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_counter_cmp_ge0000_cy<7> (Mcompar_counter_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_counter_cmp_ge0000_cy<8> (Mcompar_counter_cmp_ge0000_cy<8>)
+     MUXCY:CI->O          33   0.459   1.298  Mcompar_counter_cmp_ge0000_cy<9> (counter_cmp_ge0000)
+     LUT3:I2->O            1   0.704   0.000  Madd_counter_add0000_lut<0> (Madd_counter_add0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Madd_counter_add0000_cy<0> (Madd_counter_add0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<1> (Madd_counter_add0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<2> (Madd_counter_add0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<3> (Madd_counter_add0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<4> (Madd_counter_add0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<5> (Madd_counter_add0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<6> (Madd_counter_add0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<7> (Madd_counter_add0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<8> (Madd_counter_add0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<9> (Madd_counter_add0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<10> (Madd_counter_add0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<11> (Madd_counter_add0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<12> (Madd_counter_add0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<13> (Madd_counter_add0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<14> (Madd_counter_add0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<15> (Madd_counter_add0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<16> (Madd_counter_add0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<17> (Madd_counter_add0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<18> (Madd_counter_add0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<19> (Madd_counter_add0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<20> (Madd_counter_add0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<21> (Madd_counter_add0000_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<22> (Madd_counter_add0000_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<23> (Madd_counter_add0000_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<24> (Madd_counter_add0000_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<25> (Madd_counter_add0000_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<26> (Madd_counter_add0000_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<27> (Madd_counter_add0000_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<28> (Madd_counter_add0000_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<29> (Madd_counter_add0000_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  Madd_counter_add0000_cy<30> (Madd_counter_add0000_cy<30>)
+     XORCY:CI->O           1   0.804   0.000  Madd_counter_add0000_xor<31> (counter_add0000<31>)
+     FD:D                      0.308          counter_31
+    ----------------------------------------
+    Total                      8.660ns (6.740ns logic, 1.920ns route)
+                                       (77.8% logic, 22.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CK256fs1'
+  Clock period: 9.835ns (frequency: 101.676MHz)
+  Total number of paths / destination ports: 42293 / 189
+-------------------------------------------------------------------------
+Delay:               9.835ns (Levels of Logic = 38)
+  Source:            Inst_MAX5556/bit_count_2 (FF)
+  Destination:       Inst_MAX5556/ck256fs_count_31 (FF)
+  Source Clock:      CK256fs1 rising
+  Destination Clock: CK256fs1 rising
+
+  Data Path: Inst_MAX5556/bit_count_2 to Inst_MAX5556/ck256fs_count_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q            16   0.591   1.038  Inst_MAX5556/bit_count_2 (Inst_MAX5556/bit_count_2)
+     LUT4:I3->O            1   0.704   0.000  Inst_MAX5556/bit_count_cmp_eq0000_wg_lut<5> (Inst_MAX5556/bit_count_cmp_eq0000_wg_lut<5>)
+     MUXCY:S->O            1   0.464   0.000  Inst_MAX5556/bit_count_cmp_eq0000_wg_cy<5> (Inst_MAX5556/bit_count_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/bit_count_cmp_eq0000_wg_cy<6> (Inst_MAX5556/bit_count_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O          35   0.459   1.267  Inst_MAX5556/bit_count_cmp_eq0000_wg_cy<7> (Inst_MAX5556/bit_count_cmp_eq0000)
+     LUT4:I3->O            1   0.704   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_lut<0> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<0> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<1> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<2> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<3> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<4> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<5> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<6> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<7> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<8> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<9> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<10> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<11> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<12> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<13> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<14> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<15> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<16> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<17> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<18> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<19> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<20> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<21> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<22> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<23> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<24> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<25> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<26> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<27> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<28> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<29> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<30> (Inst_MAX5556/Madd_ck256fs_count_addsub0000_cy<30>)
+     XORCY:CI->O           1   0.804   0.499  Inst_MAX5556/Madd_ck256fs_count_addsub0000_xor<31> (Inst_MAX5556/ck256fs_count_addsub0000<31>)
+     LUT2:I1->O            1   0.704   0.000  Inst_MAX5556/ck256fs_count_mux0001<0>1 (Inst_MAX5556/ck256fs_count_mux0001<0>)
+     FDCE:D                    0.308          Inst_MAX5556/ck256fs_count_31
+    ----------------------------------------
+    Total                      9.835ns (7.031ns logic, 2.804ns route)
+                                       (71.5% logic, 28.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CK256fs1'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            Inst_MAX5556/lrclk_buffer (FF)
+  Destination:       LRCLK (PAD)
+  Source Clock:      CK256fs1 rising
+
+  Data Path: Inst_MAX5556/lrclk_buffer to LRCLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.420  Inst_MAX5556/lrclk_buffer (Inst_MAX5556/lrclk_buffer)
+     OBUF:I->O                 3.272          LRCLK_OBUF (LRCLK)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CK33'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.545ns (Levels of Logic = 2)
+  Source:            CK256fs (FF)
+  Destination:       SCLK (PAD)
+  Source Clock:      CK33 rising
+
+  Data Path: CK256fs to SCLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.447  CK256fs (CK256fs1)
+     INV:I->O              3   0.704   0.531  Inst_MAX5556/SCLK1_INV_0 (CK256fs_not0001)
+     OBUF:I->O                 3.272          SCLK_OBUF (SCLK)
+    ----------------------------------------
+    Total                      5.545ns (4.567ns logic, 0.978ns route)
+                                       (82.4% logic, 17.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.10 secs
+ 
+--> 
+
+Total memory usage is 275908 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

@@ -1,0 +1,13 @@
+//! **************************************************************************
+// Written by: Map P.28xd on Sat Oct 18 11:30:51 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "CK33" LOCATE = SITE "P89" LEVEL 1;
+COMP "MCLK" LOCATE = SITE "P34" LEVEL 1;
+COMP "SCLK" LOCATE = SITE "P25" LEVEL 1;
+COMP "SDATA" LOCATE = SITE "P22" LEVEL 1;
+COMP "LRCLK" LOCATE = SITE "P32" LEVEL 1;
+NET "CK33_BUFGP/IBUFG" BEL "CK33_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

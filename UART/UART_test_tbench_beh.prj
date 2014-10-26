@@ -1,0 +1,3 @@
+vhdl work "UART.vhd"
+vhdl work "UART_test.vhd"
+vhdl work "UART_test_tbench.vhd"

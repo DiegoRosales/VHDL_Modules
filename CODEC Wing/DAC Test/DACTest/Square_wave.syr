@@ -1,0 +1,638 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: Square_wave.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Square_wave.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Square_wave"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-vq100
+
+---- Source Options
+Top Module Name                    : Square_wave
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/I2S_Master.vhd" in Library work.
+Entity <i2s_master> compiled.
+Entity <i2s_master> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/PCM1754.vhd" in Library work.
+Architecture behavioral of Entity pcm1754 is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.vhd" in Library work.
+Architecture behavioral of Entity square_wave is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Square_wave> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <PCM1754> in library <work> (architecture <behavioral>) with generics.
+	BIT_COUNT = 32
+	CK_RATIO = 2
+
+Analyzing hierarchy for entity <I2S_Master> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Square_wave> in library <work> (Architecture <behavioral>).
+    Set user-defined property "KEEP =  TRUE" for signal <zeroa_signal>.
+    Set user-defined property "KEEP =  TRUE" for signal <SDATA_Chipscope>.
+    Set user-defined property "KEEP =  TRUE" for signal <SCLK_Chipscope>.
+    Set user-defined property "KEEP =  TRUE" for signal <LRCLK_Chipscope>.
+    Set user-defined property "KEEP =  TRUE" for signal <BCLK_Chipscope>.
+Entity <Square_wave> analyzed. Unit <Square_wave> generated.
+
+Analyzing generic Entity <PCM1754> in library <work> (Architecture <behavioral>).
+	BIT_COUNT = 32
+	CK_RATIO = 2
+Entity <PCM1754> analyzed. Unit <PCM1754> generated.
+
+Analyzing Entity <I2S_Master> in library <work> (Architecture <behavioral>).
+    Set user-defined property "INIT =  0" for instance <FD1> in unit <I2S_Master>.
+    Set user-defined property "INIT =  0" for instance <FD2> in unit <I2S_Master>.
+Entity <I2S_Master> analyzed. Unit <I2S_Master> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <I2S_Master>.
+    Related source file is "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/I2S_Master.vhd".
+    Found 1-bit xor2 for signal <parallel_load>.
+    Found 24-bit register for signal <shift_reg_buffer>.
+    Summary:
+	inferred  24 D-type flip-flop(s).
+Unit <I2S_Master> synthesized.
+
+
+Synthesizing Unit <PCM1754>.
+    Related source file is "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/PCM1754.vhd".
+    Register <BUSY> equivalent to <bclk_enable> has been removed
+    Register <lr_enable> equivalent to <bclk_enable> has been removed
+    Found 1-bit register for signal <bclk_enable>.
+    Found 1-bit register for signal <bclk_signal>.
+    Found 32-bit comparator greatequal for signal <bclk_signal$cmp_ge0000> created at line 114.
+    Found 32-bit up counter for signal <counter>.
+    Found 32-bit comparator greatequal for signal <counter$cmp_ge0000> created at line 95.
+    Found 32-bit up counter for signal <counter0>.
+    Found 32-bit up counter for signal <counter1>.
+    Found 48-bit register for signal <data_buffer>.
+    Found 48-bit 4-to-1 multiplexer for signal <data_buffer$mux0001>.
+    Found 1-bit register for signal <lr_signal>.
+    Found 32-bit comparator greatequal for signal <lr_signal$cmp_ge0000> created at line 127.
+    Found 1-bit register for signal <state<0>>.
+    Found 32-bit comparator less for signal <state_0$cmp_lt0000> created at line 95.
+    Summary:
+	inferred   3 Counter(s).
+	inferred  52 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred  48 Multiplexer(s).
+Unit <PCM1754> synthesized.
+
+
+Synthesizing Unit <Square_wave>.
+    Related source file is "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.vhd".
+WARNING:Xst:653 - Signal <START> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+WARNING:Xst:653 - Signal <RESET> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <BUSY> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit up counter for signal <ck_divider>.
+    Found 1-bit register for signal <CKfs>.
+    Found 32-bit register for signal <counter>.
+    Found 32-bit adder for signal <counter$add0000> created at line 114.
+    Found 32-bit comparator greatequal for signal <counter$cmp_ge0000> created at line 105.
+    Found 32-bit 4-to-1 multiplexer for signal <counter$mux0000>.
+    Found 48-bit register for signal <sq_wave>.
+    Found 32-bit comparator less for signal <sq_wave$cmp_lt0000> created at line 105.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  81 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred  32 Multiplexer(s).
+Unit <Square_wave> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 4
+ 32-bit up counter                                     : 4
+# Registers                                            : 9
+ 1-bit register                                        : 5
+ 24-bit register                                       : 1
+ 32-bit register                                       : 1
+ 48-bit register                                       : 2
+# Comparators                                          : 6
+ 32-bit comparator greatequal                          : 4
+ 32-bit comparator less                                : 2
+# Multiplexers                                         : 2
+ 32-bit 4-to-1 multiplexer                             : 1
+ 48-bit 4-to-1 multiplexer                             : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1426 - The value init of the FF/Latch bclk_enable hinder the constant cleaning in the block Inst_PCM1754.
+   You should achieve better results by setting this init to 1.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 4
+ 32-bit up counter                                     : 4
+# Registers                                            : 159
+ Flip-Flops                                            : 159
+# Comparators                                          : 6
+ 32-bit comparator greatequal                          : 4
+ 32-bit comparator less                                : 2
+# Multiplexers                                         : 2
+ 32-bit 4-to-1 multiplexer                             : 1
+ 48-bit 4-to-1 multiplexer                             : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch bclk_enable hinder the constant cleaning in the block PCM1754.
+   You should achieve better results by setting this init to 1.
+
+Optimizing unit <Square_wave> ...
+
+Optimizing unit <I2S_Master> ...
+
+Optimizing unit <PCM1754> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Square_wave, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 287
+ Flip-Flops                                            : 287
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Square_wave.ngr
+Top Level Output File Name         : Square_wave
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 14
+
+Cell Usage :
+# BELS                             : 697
+#      GND                         : 1
+#      INV                         : 63
+#      LUT1                        : 100
+#      LUT2                        : 3
+#      LUT3                        : 116
+#      LUT4                        : 29
+#      LUT4_L                      : 1
+#      MUXCY                       : 200
+#      MUXF5                       : 23
+#      VCC                         : 1
+#      XORCY                       : 160
+# FlipFlops/Latches                : 287
+#      FD                          : 56
+#      FDCE                        : 52
+#      FDE                         : 83
+#      FDR                         : 94
+#      FDS                         : 2
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 1
+#      OBUF                        : 12
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500evq100-4 
+
+ Number of Slices:                      203  out of   4656     4%  
+ Number of Slice Flip Flops:            287  out of   9312     3%  
+ Number of 4 input LUTs:                312  out of   9312     3%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of     66    21%  
+ Number of GCLKs:                         3  out of     24    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CK32                               | BUFGP                  | 113   |
+Inst_PCM1754/bclk_signal1          | BUFG                   | 59    |
+CKfs                               | BUFG                   | 115   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+---------------------------------------+-------+
+Control Signal                     | Buffer(FF name)                       | Load  |
+-----------------------------------+---------------------------------------+-------+
+N0(XST_GND:G)                      | NONE(Inst_PCM1754/Inst_I2S_Master/FD1)| 52    |
+-----------------------------------+---------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.637ns (Maximum Frequency: 103.767MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 5.804ns
+   Maximum combinational path delay: 4.910ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CK32'
+  Clock period: 9.637ns (frequency: 103.767MHz)
+  Total number of paths / destination ports: 37297 / 194
+-------------------------------------------------------------------------
+Delay:               9.637ns (Levels of Logic = 41)
+  Source:            ck_divider_8 (FF)
+  Destination:       counter_31 (FF)
+  Source Clock:      CK32 rising
+  Destination Clock: CK32 rising
+
+  Data Path: ck_divider_8 to counter_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  ck_divider_8 (ck_divider_8)
+     LUT4:I0->O            1   0.704   0.000  CKfs_cmp_eq0000_wg_lut<0> (CKfs_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  CKfs_cmp_eq0000_wg_cy<0> (CKfs_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  CKfs_cmp_eq0000_wg_cy<1> (CKfs_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  CKfs_cmp_eq0000_wg_cy<2> (CKfs_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  CKfs_cmp_eq0000_wg_cy<3> (CKfs_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  CKfs_cmp_eq0000_wg_cy<4> (CKfs_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.459   0.455  CKfs_cmp_eq0000_wg_cy<5> (CKfs_cmp_eq0000_wg_cy<5>)
+     LUT3:I2->O           66   0.704   1.352  CKfs_cmp_eq0000_wg_cy<7>1 (CKfs_cmp_eq0000)
+     LUT3:I1->O            1   0.704   0.000  Madd_counter_add0000_lut<0> (Madd_counter_add0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Madd_counter_add0000_cy<0> (Madd_counter_add0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<1> (Madd_counter_add0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<2> (Madd_counter_add0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<3> (Madd_counter_add0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<4> (Madd_counter_add0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<5> (Madd_counter_add0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<6> (Madd_counter_add0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<7> (Madd_counter_add0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<8> (Madd_counter_add0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<9> (Madd_counter_add0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<10> (Madd_counter_add0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<11> (Madd_counter_add0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<12> (Madd_counter_add0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<13> (Madd_counter_add0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<14> (Madd_counter_add0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<15> (Madd_counter_add0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<16> (Madd_counter_add0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<17> (Madd_counter_add0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<18> (Madd_counter_add0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<19> (Madd_counter_add0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<20> (Madd_counter_add0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<21> (Madd_counter_add0000_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<22> (Madd_counter_add0000_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<23> (Madd_counter_add0000_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<24> (Madd_counter_add0000_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<25> (Madd_counter_add0000_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<26> (Madd_counter_add0000_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<27> (Madd_counter_add0000_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<28> (Madd_counter_add0000_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_counter_add0000_cy<29> (Madd_counter_add0000_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  Madd_counter_add0000_cy<30> (Madd_counter_add0000_cy<30>)
+     XORCY:CI->O           1   0.804   0.000  Madd_counter_add0000_xor<31> (counter_add0000<31>)
+     FD:D                      0.308          counter_31
+    ----------------------------------------
+    Total                      9.637ns (7.208ns logic, 2.429ns route)
+                                       (74.8% logic, 25.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_PCM1754/bclk_signal1'
+  Clock period: 6.733ns (frequency: 148.533MHz)
+  Total number of paths / destination ports: 1539 / 92
+-------------------------------------------------------------------------
+Delay:               3.366ns (Levels of Logic = 2)
+  Source:            Inst_PCM1754/Inst_I2S_Master/FD1 (FF)
+  Destination:       Inst_PCM1754/Inst_I2S_Master/shift_reg_buffer_1 (FF)
+  Source Clock:      Inst_PCM1754/bclk_signal1 rising
+  Destination Clock: Inst_PCM1754/bclk_signal1 falling
+
+  Data Path: Inst_PCM1754/Inst_I2S_Master/FD1 to Inst_PCM1754/Inst_I2S_Master/shift_reg_buffer_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            48   0.591   1.442  Inst_PCM1754/Inst_I2S_Master/FD1 (Inst_PCM1754/Inst_I2S_Master/fd1_output)
+     LUT3:I0->O            1   0.704   0.000  Inst_PCM1754/Inst_I2S_Master/shift_reg_buffer_mux0001<9>_F (N70)
+     MUXF5:I0->O           1   0.321   0.000  Inst_PCM1754/Inst_I2S_Master/shift_reg_buffer_mux0001<9> (Inst_PCM1754/Inst_I2S_Master/shift_reg_buffer_mux0001<9>)
+     FD:D                      0.308          Inst_PCM1754/Inst_I2S_Master/shift_reg_buffer_9
+    ----------------------------------------
+    Total                      3.366ns (1.924ns logic, 1.442ns route)
+                                       (57.2% logic, 42.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CKfs'
+  Clock period: 8.542ns (frequency: 117.071MHz)
+  Total number of paths / destination ports: 17363 / 181
+-------------------------------------------------------------------------
+Delay:               8.542ns (Levels of Logic = 42)
+  Source:            Inst_PCM1754/counter_7 (FF)
+  Destination:       Inst_PCM1754/counter_31 (FF)
+  Source Clock:      CKfs rising
+  Destination Clock: CKfs rising
+
+  Data Path: Inst_PCM1754/counter_7 to Inst_PCM1754/counter_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.622  Inst_PCM1754/counter_7 (Inst_PCM1754/counter_7)
+     LUT1:I0->O            1   0.704   0.000  Inst_PCM1754/Mcompar_counter_cmp_ge0000_cy<0>_rt (Inst_PCM1754/Mcompar_counter_cmp_ge0000_cy<0>_rt)
+     MUXCY:S->O            1   0.464   0.000  Inst_PCM1754/Mcompar_counter_cmp_ge0000_cy<0> (Inst_PCM1754/Mcompar_counter_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcompar_counter_cmp_ge0000_cy<1> (Inst_PCM1754/Mcompar_counter_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcompar_counter_cmp_ge0000_cy<2> (Inst_PCM1754/Mcompar_counter_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcompar_counter_cmp_ge0000_cy<3> (Inst_PCM1754/Mcompar_counter_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcompar_counter_cmp_ge0000_cy<4> (Inst_PCM1754/Mcompar_counter_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcompar_counter_cmp_ge0000_cy<5> (Inst_PCM1754/Mcompar_counter_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcompar_counter_cmp_ge0000_cy<6> (Inst_PCM1754/Mcompar_counter_cmp_ge0000_cy<6>)
+     MUXCY:CI->O          34   0.459   1.298  Inst_PCM1754/Mcompar_counter_cmp_ge0000_cy<7> (Inst_PCM1754/counter_cmp_ge0000)
+     LUT3:I2->O            1   0.704   0.000  Inst_PCM1754/Mcount_counter_lut<0> (Inst_PCM1754/Mcount_counter_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Inst_PCM1754/Mcount_counter_cy<0> (Inst_PCM1754/Mcount_counter_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<1> (Inst_PCM1754/Mcount_counter_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<2> (Inst_PCM1754/Mcount_counter_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<3> (Inst_PCM1754/Mcount_counter_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<4> (Inst_PCM1754/Mcount_counter_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<5> (Inst_PCM1754/Mcount_counter_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<6> (Inst_PCM1754/Mcount_counter_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<7> (Inst_PCM1754/Mcount_counter_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<8> (Inst_PCM1754/Mcount_counter_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<9> (Inst_PCM1754/Mcount_counter_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<10> (Inst_PCM1754/Mcount_counter_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<11> (Inst_PCM1754/Mcount_counter_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<12> (Inst_PCM1754/Mcount_counter_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<13> (Inst_PCM1754/Mcount_counter_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<14> (Inst_PCM1754/Mcount_counter_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<15> (Inst_PCM1754/Mcount_counter_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<16> (Inst_PCM1754/Mcount_counter_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<17> (Inst_PCM1754/Mcount_counter_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<18> (Inst_PCM1754/Mcount_counter_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<19> (Inst_PCM1754/Mcount_counter_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<20> (Inst_PCM1754/Mcount_counter_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<21> (Inst_PCM1754/Mcount_counter_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<22> (Inst_PCM1754/Mcount_counter_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<23> (Inst_PCM1754/Mcount_counter_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<24> (Inst_PCM1754/Mcount_counter_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<25> (Inst_PCM1754/Mcount_counter_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<26> (Inst_PCM1754/Mcount_counter_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<27> (Inst_PCM1754/Mcount_counter_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<28> (Inst_PCM1754/Mcount_counter_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<29> (Inst_PCM1754/Mcount_counter_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  Inst_PCM1754/Mcount_counter_cy<30> (Inst_PCM1754/Mcount_counter_cy<30>)
+     XORCY:CI->O           1   0.804   0.000  Inst_PCM1754/Mcount_counter_xor<31> (Inst_PCM1754/Mcount_counter31)
+     FDE:D                     0.308          Inst_PCM1754/counter_31
+    ----------------------------------------
+    Total                      8.542ns (6.622ns logic, 1.920ns route)
+                                       (77.5% logic, 22.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CKfs'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.804ns (Levels of Logic = 2)
+  Source:            Inst_PCM1754/bclk_enable (FF)
+  Destination:       LRCLK_TEST (PAD)
+  Source Clock:      CKfs rising
+
+  Data Path: Inst_PCM1754/bclk_enable to LRCLK_TEST
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.591   0.706  Inst_PCM1754/bclk_enable (Inst_PCM1754/bclk_enable)
+     LUT2:I0->O            3   0.704   0.531  Inst_PCM1754/lr_t1 (LRCLK_Chipscope)
+     OBUF:I->O                 3.272          LRCLK_TEST_OBUF (LRCLK_TEST)
+    ----------------------------------------
+    Total                      5.804ns (4.567ns logic, 1.237ns route)
+                                       (78.7% logic, 21.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_PCM1754/bclk_signal1'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.624ns (Levels of Logic = 2)
+  Source:            Inst_PCM1754/lr_signal (FF)
+  Destination:       LRCLK_TEST (PAD)
+  Source Clock:      Inst_PCM1754/bclk_signal1 rising
+
+  Data Path: Inst_PCM1754/lr_signal to LRCLK_TEST
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.526  Inst_PCM1754/lr_signal (Inst_PCM1754/lr_signal)
+     LUT2:I1->O            3   0.704   0.531  Inst_PCM1754/lr_t1 (LRCLK_Chipscope)
+     OBUF:I->O                 3.272          LRCLK_TEST_OBUF (LRCLK_TEST)
+    ----------------------------------------
+    Total                      5.624ns (4.567ns logic, 1.057ns route)
+                                       (81.2% logic, 18.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CK32'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.450ns (Levels of Logic = 1)
+  Source:            CKfs (FF)
+  Destination:       SCLK (PAD)
+  Source Clock:      CK32 rising
+
+  Data Path: CKfs to SCLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              4   0.591   0.587  CKfs (CKfs)
+     OBUF:I->O                 3.272          SCLK_OBUF (SCLK)
+    ----------------------------------------
+    Total                      4.450ns (3.863ns logic, 0.587ns route)
+                                       (86.8% logic, 13.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               4.910ns (Levels of Logic = 2)
+  Source:            ZEROA (PAD)
+  Destination:       LED (PAD)
+
+  Data Path: ZEROA to LED
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.420  ZEROA_IBUF (zeroa_signal)
+     OBUF:I->O                 3.272          LED_OBUF (LED)
+    ----------------------------------------
+    Total                      4.910ns (4.490ns logic, 0.420ns route)
+                                       (91.4% logic, 8.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.85 secs
+ 
+--> 
+
+Total memory usage is 291016 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

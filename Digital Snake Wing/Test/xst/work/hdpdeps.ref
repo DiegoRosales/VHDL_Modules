@@ -1,0 +1,16 @@
+V3 11
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/DCM32to27.vhd" 2014/08/27.17:12:31 P.28xd
+EN work/DCM32to27 1409177674 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/DCM32to27.vhd" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184
+AR work/DCM32to27/BEHAVIORAL 1409177675 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/DCM32to27.vhd" \
+      EN work/DCM32to27 1409177674 CP BUFG CP IBUFG CP DCM_SP
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.vhd" 2014/08/27.17:14:27 P.28xd
+EN work/Test 1409177676 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.vhd" \
+      PB ieee/std_logic_1164 1341906176
+AR work/Test/Behavioral 1409177677 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.vhd" EN work/Test 1409177676 \
+      CP DCM32to27

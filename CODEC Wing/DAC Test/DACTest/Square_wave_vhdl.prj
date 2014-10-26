@@ -1,0 +1,3 @@
+vhdl work "D:\GitHub\VHDL_Modules\CODEC Wing\DAC Test\DACTest\I2S_Master.vhd"
+vhdl work "D:\GitHub\VHDL_Modules\CODEC Wing\DAC Test\DACTest\PCM1754.vhd"
+vhdl work "D:\GitHub\VHDL_Modules\CODEC Wing\DAC Test\DACTest\Square_wave.vhd"

@@ -1,0 +1,1 @@
+vhdtdtfi -prj DACTest -o "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/PCM1754.vhi" -module PCM1754 -template C:/Xilinx/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work PCM1754.vhd 

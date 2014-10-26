@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/I2S/I2S_Master.xst" -ofn "D:/GitHub/VHDL_Modules/I2S/I2S_Master.syr" 

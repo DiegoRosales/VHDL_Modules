@@ -1,0 +1,2 @@
+vhdl work "Triangle_Wave.vhd"
+vhdl work "Triangle_Wave_tbench.vhd"

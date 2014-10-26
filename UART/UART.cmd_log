@@ -1,0 +1,7 @@
+vhdtdtfi -prj UART -o D:/GitHub/VHDL_Modules/UART/UART.vhi -module UART -template C:/Xilinx/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work UART.vhd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART/UART.xst" -ofn "D:/GitHub/VHDL_Modules/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART/UART.xst" -ofn "D:/GitHub/VHDL_Modules/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART/UART.xst" -ofn "D:/GitHub/VHDL_Modules/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART/UART.xst" -ofn "D:/GitHub/VHDL_Modules/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART/UART.xst" -ofn "D:/GitHub/VHDL_Modules/UART/UART.syr" 
+vhdtdtfi -prj UART -o D:/GitHub/VHDL_Modules/UART/UART.vhi -module UART -template C:/Xilinx/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work UART.vhd 

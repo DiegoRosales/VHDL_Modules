@@ -1,0 +1,12 @@
+PH xbip_bram18k_v2_1_xst_comp NULL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/xbip_bram18k_v2_1_xst_comp.vhd" sub00/vhpl02 1408291152
+EN bip_bram18k_synth NULL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_synth.vhd" sub00/vhpl04 1408291154
+PB bip_bram18k_pkg_v2_1 bip_bram18k_pkg_v2_1 "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_pkg_v2_1.vhd" sub00/vhpl01 1408291151
+EN bip_bram18k_rtl NULL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_rtl.vhd" sub00/vhpl06 1408291156
+EN xbip_bram18k_v2_1 NULL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/xbip_bram18k_v2_1.vhd" sub00/vhpl10 1408291160
+AR bip_bram18k_rtl rtl "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_rtl.vhd" sub00/vhpl07 1408291157
+AR bip_bram18k_synth synth "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_synth.vhd" sub00/vhpl05 1408291155
+AR xbip_bram18k_v2_1_xst synth "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/xbip_bram18k_v2_1_xst.vhd" sub00/vhpl09 1408291159
+AR xbip_bram18k_v2_1 xilinx "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/xbip_bram18k_v2_1.vhd" sub00/vhpl11 1408291161
+PH bip_bram18k_pkg_v2_1 NULL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_pkg_v2_1.vhd" sub00/vhpl00 1408291150
+EN xbip_bram18k_v2_1_xst NULL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/xbip_bram18k_v2_1_xst.vhd" sub00/vhpl08 1408291158
+PH bip_bram18k_hdl_pkg NULL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_hdl_pkg.vhd" sub00/vhpl03 1408291153

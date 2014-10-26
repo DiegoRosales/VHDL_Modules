@@ -1,0 +1,9 @@
+V3 5
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/WaveformGenerator.vhd" 2014/08/17.10:58:13 P.28xd
+EN work/WaveformGenerator 1408291222 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/WaveformGenerator.vhd" \
+      PB ieee/std_logic_1164 1341906176 LB dds_compiler_v4_0 \
+      EN dds_compiler_v4_0/dds_compiler_v4_0 1408291220
+AR work/WaveformGenerator/spartan3e 1408291223 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/WaveformGenerator.vhd" \
+      EN work/WaveformGenerator 1408291222 CP dds_compiler_v4_0

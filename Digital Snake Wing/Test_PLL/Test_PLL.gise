@@ -118,7 +118,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="Test_PLL.lso"/>
@@ -141,6 +143,7 @@
     <transform xil_pn:end_ts="1408282630" xil_pn:in_ck="-4150155670255109088" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2580499347537648214" xil_pn:start_ts="1408282624">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Test_PLL.bld"/>
       <outfile xil_pn:name="Test_PLL.ngd"/>
       <outfile xil_pn:name="Test_PLL_ngdbuild.xrpt"/>
@@ -150,6 +153,9 @@
     <transform xil_pn:end_ts="1408282635" xil_pn:in_ck="-2482266155302124127" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="2842458847540838050" xil_pn:start_ts="1408282630">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Test_PLL.pcf"/>
       <outfile xil_pn:name="Test_PLL_map.map"/>
       <outfile xil_pn:name="Test_PLL_map.mrp"/>
@@ -164,6 +170,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Test_PLL.ncd"/>
       <outfile xil_pn:name="Test_PLL.pad"/>
       <outfile xil_pn:name="Test_PLL.par"/>
@@ -178,6 +185,7 @@
     <transform xil_pn:end_ts="1408282664" xil_pn:in_ck="4405731043906418986" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1408282650">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Test_PLL.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="test_pll.bgn"/>
@@ -190,6 +198,7 @@
     <transform xil_pn:end_ts="1408282650" xil_pn:in_ck="-1282753244581519587" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1408282647">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Test_PLL.twr"/>
       <outfile xil_pn:name="Test_PLL.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

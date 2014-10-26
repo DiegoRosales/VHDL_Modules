@@ -1,0 +1,8 @@
+Release 14.2 Drc P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sat Sep 13 17:18:46 2014
+
+drc -z UART_test.ncd UART_test.pcf
+
+DRC detected 0 errors and 0 warnings.

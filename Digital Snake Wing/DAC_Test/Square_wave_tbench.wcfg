@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/square_wave_tbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="square_wave_tbench" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/square_wave_tbench/ck33" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ck33</obj_property>
+      <obj_property name="ObjectShortName">ck33</obj_property>
+   </wvobject>
+   <wvobject fp_name="/square_wave_tbench/sdata" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sdata</obj_property>
+      <obj_property name="ObjectShortName">sdata</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/square_wave_tbench/sclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sclk</obj_property>
+      <obj_property name="ObjectShortName">sclk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/square_wave_tbench/lrclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lrclk</obj_property>
+      <obj_property name="ObjectShortName">lrclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/square_wave_tbench/mclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mclk</obj_property>
+      <obj_property name="ObjectShortName">mclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/square_wave_tbench/uut/sq_wave" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sq_wave[47:0]</obj_property>
+      <obj_property name="ObjectShortName">sq_wave[47:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/square_wave_tbench/uut/ck256fs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ck256fs</obj_property>
+      <obj_property name="ObjectShortName">ck256fs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/square_wave_tbench/uut/Inst_MAX5556/leftright" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">leftright</obj_property>
+      <obj_property name="ObjectShortName">leftright</obj_property>
+   </wvobject>
+   <wvobject fp_name="/square_wave_tbench/uut/Inst_MAX5556/ck256fs_temp" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">ck256fs_temp</obj_property>
+      <obj_property name="ObjectShortName">ck256fs_temp</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/square_wave_tbench/uut/Inst_MAX5556/bit_count_temp" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">bit_count_temp</obj_property>
+      <obj_property name="ObjectShortName">bit_count_temp</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/square_wave_tbench/uut/Inst_MAX5556/sclk_count" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sclk_count</obj_property>
+      <obj_property name="ObjectShortName">sclk_count</obj_property>
+   </wvobject>
+</wave_config>

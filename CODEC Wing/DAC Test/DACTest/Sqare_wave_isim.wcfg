@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Sqare_wave_tbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="sqare_wave_tbench" />
+            <top_module name="std_logic_1164" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/sqare_wave_tbench/ck32" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ck32</obj_property>
+      <obj_property name="ObjectShortName">ck32</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqare_wave_tbench/sdata" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sdata</obj_property>
+      <obj_property name="ObjectShortName">sdata</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqare_wave_tbench/sclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sclk</obj_property>
+      <obj_property name="ObjectShortName">sclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqare_wave_tbench/lrclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lrclk</obj_property>
+      <obj_property name="ObjectShortName">lrclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqare_wave_tbench/bclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bclk</obj_property>
+      <obj_property name="ObjectShortName">bclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqare_wave_tbench/control" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">control[2:0]</obj_property>
+      <obj_property name="ObjectShortName">control[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqare_wave_tbench/ck32_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">ck32_period</obj_property>
+      <obj_property name="ObjectShortName">ck32_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqare_wave_tbench/uut/sq_wave" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sq_wave[47:0]</obj_property>
+      <obj_property name="ObjectShortName">sq_wave[47:0]</obj_property>
+   </wvobject>
+</wave_config>

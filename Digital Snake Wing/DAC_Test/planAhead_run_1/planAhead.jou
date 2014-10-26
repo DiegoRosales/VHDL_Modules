@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Mon Sep 01 13:38:14 2014
+# Process ID: 9200
+# Log file: D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/planAhead_run_1/planAhead.log
+# Journal file: D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/pa.fromHdl.tcl}
+startgroup
+set_property package_pin P57 [get_ports CK33]
+endgroup
+startgroup
+set_property package_pin P53 [get_ports CK33]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports CK33]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports CK33]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports CK33]
+endgroup
+startgroup
+set_property package_pin P26 [get_ports CK33]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports MCLK]
+endgroup
+startgroup
+set_property package_pin P63 [get_ports CK33]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list CK33]]
+startgroup
+set_property package_pin P89 [get_ports CK33]
+endgroup

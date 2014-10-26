@@ -1,0 +1,6 @@
+AR square_wave behavioral "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.vhd" sub00/vhpl05 1414341687
+EN i2s_master NULL "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/I2S_Master.vhd" sub00/vhpl00 1414341682
+AR pcm1754 behavioral "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/PCM1754.vhd" sub00/vhpl03 1414341685
+EN square_wave NULL "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.vhd" sub00/vhpl04 1414341686
+EN pcm1754 NULL "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/PCM1754.vhd" sub00/vhpl02 1414341684
+AR i2s_master behavioral "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/I2S_Master.vhd" sub00/vhpl01 1414341683

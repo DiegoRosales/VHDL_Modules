@@ -1,0 +1,35 @@
+SET_FLAG DEBUG FALSE
+SET_FLAG MODE INTERACTIVE
+SET_FLAG STANDALONE_MODE FALSE
+SET_PREFERENCE devicefamily spartan3e
+SET_PREFERENCE device xc3s500e
+SET_PREFERENCE speedgrade -5
+SET_PREFERENCE package vq100
+SET_PREFERENCE verilogsim false
+SET_PREFERENCE vhdlsim true
+SET_PREFERENCE simulationfiles Behavioral
+SET_PREFERENCE busformat BusFormatAngleBracketNotRipped
+SET_PREFERENCE outputdirectory D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/ipcore_dir/
+SET_PREFERENCE workingdirectory D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/ipcore_dir/tmp/
+SET_PREFERENCE subworkingdirectory D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/ipcore_dir/tmp/_cg/
+SET_PREFERENCE transientdirectory D:/GitHub/VHDL_Modules/Digital Snake Wing/Test_PLL/ipcore_dir/tmp/_cg/_dbg/
+SET_PREFERENCE designentry VHDL
+SET_PREFERENCE flowvendor Other
+SET_PREFERENCE addpads false
+SET_PREFERENCE projectname coregen
+SET_PREFERENCE formalverification false
+SET_PREFERENCE asysymbol false
+SET_PREFERENCE implementationfiletype Ngc
+SET_PREFERENCE foundationsym false
+SET_PREFERENCE createndf false
+SET_PREFERENCE removerpms false
+SET_PARAMETER Component_Name Test
+SET_CORE_NAME Fifo Generator
+SET_CORE_VERSION 9.2
+SET_CORE_VLNV xilinx.com:ip:fifo_generator:9.2
+SET_CORE_CLASS com.xilinx.ip.fifo_generator_v9_2.fifo_generator_v9_2
+SET_CORE_PATH C:/Xilinx/14.2/ISE_DS/ISE/coregen/ip/xilinx/primary/com/xilinx/ip/fifo_generator_v9_2
+SET_CORE_GUIPATH C:/Xilinx/14.2/ISE_DS/ISE/coregen/ip/xilinx/primary/com/xilinx/ip/fifo_generator_v9_2/gui/fifo_generator_v9_2.tcl
+ADD_CORE_DOCUMENT <C:\Xilinx\14.2\ISE_DS\ISE\coregen\ip\xilinx\primary\com\xilinx\ip\fifo_generator_v9_2\doc\fifo_generator_v9_2_vinfo.html><fifo_generator_v9_2_vinfo.html>
+ADD_CORE_DOCUMENT <C:\Xilinx\14.2\ISE_DS\ISE\coregen\ip\xilinx\primary\com\xilinx\ip\fifo_generator_v9_2\doc\fifo_generator_v9_2_readme.txt><fifo_generator_v9_2_readme.txt>
+ADD_CORE_DOCUMENT <C:\Xilinx\14.2\ISE_DS\ISE\coregen\ip\xilinx\primary\com\xilinx\ip\fifo_generator_v9_2\doc\pg057-fifo-generator.pdf><pg057-fifo-generator.pdf>

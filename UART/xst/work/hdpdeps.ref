@@ -1,0 +1,12 @@
+V3 7
+FL D:/GitHub/VHDL_Modules/UART/UART.vhd 2014/09/13.17:15:09 P.28xd
+EN work/UART 1410646689 FL D:/GitHub/VHDL_Modules/UART/UART.vhd \
+      PB ieee/std_logic_1164 1341906176
+AR work/UART/Behavioral 1410646690 \
+      FL D:/GitHub/VHDL_Modules/UART/UART.vhd EN work/UART 1410646689
+FL D:/GitHub/VHDL_Modules/UART/UART_test.vhd 2014/09/13.17:18:03 P.28xd
+EN work/UART_test 1410646691 FL D:/GitHub/VHDL_Modules/UART/UART_test.vhd \
+      PB ieee/std_logic_1164 1341906176
+AR work/UART_test/Behavioral 1410646692 \
+      FL D:/GitHub/VHDL_Modules/UART/UART_test.vhd EN work/UART_test 1410646691 \
+      CP UART

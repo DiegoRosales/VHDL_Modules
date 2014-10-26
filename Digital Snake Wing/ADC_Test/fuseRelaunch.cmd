@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_Control_tbench_isim_beh.exe" -prj "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_Control_tbench_beh.prj" "work.ADC_Control_tbench" 

@@ -1,0 +1,64 @@
+V3 33
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_hdl_pkg.vhd" 2014/08/17.10:57:54 P.28xd
+PH xbip_bram18k_v2_1/bip_bram18k_hdl_pkg 1408291153 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_hdl_pkg.vhd" \
+      LB std PB ieee/std_logic_1164 1341906176 LB xbip_utils_v2_0 \
+      LB xbip_bram18k_v2_1 CD bip_bram18k_rtl CD bip_bram18k_synth \
+      PB xbip_utils_v2_0/bip_utils_pkg_v2_0 1408291105 \
+      PB xbip_bram18k_v2_1/bip_bram18k_pkg_v2_1 1408291151
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_pkg_v2_1.vhd" 2014/08/17.10:57:53 P.28xd
+PH xbip_bram18k_v2_1/bip_bram18k_pkg_v2_1 1408291150 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_pkg_v2_1.vhd" \
+      PB ieee/std_logic_1164 1341906176 LB xbip_utils_v2_0 CD xbip_bram18k \
+      PB xbip_utils_v2_0/bip_utils_pkg_v2_0 1408291105
+PB xbip_bram18k_v2_1/bip_bram18k_pkg_v2_1 1408291151 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_pkg_v2_1.vhd" \
+      PH xbip_bram18k_v2_1/bip_bram18k_pkg_v2_1 1408291150
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_rtl.vhd" 2014/08/17.10:57:55 P.28xd
+EN xbip_bram18k_v2_1/bip_bram18k_rtl 1408291156 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_rtl.vhd" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/STD_LOGIC_UNSIGNED 1341906179 \
+      PB ieee/NUMERIC_STD 1341906182 LB xbip_utils_v2_0 LB xbip_pipe_v2_0 \
+      LB xbip_bram18k_v2_1 PB xbip_utils_v2_0/bip_utils_pkg_v2_0 1408291105 \
+      PH xbip_pipe_v2_0/xbip_pipe_v2_0_xst_comp 1408291145 \
+      PB xbip_bram18k_v2_1/bip_bram18k_pkg_v2_1 1408291151 \
+      PH xbip_bram18k_v2_1/bip_bram18k_hdl_pkg 1408291153
+AR xbip_bram18k_v2_1/bip_bram18k_rtl/rtl 1408291157 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_rtl.vhd" \
+      EN xbip_bram18k_v2_1/bip_bram18k_rtl 1408291156 CP xbip_pipe_v2_0_xst
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_synth.vhd" 2014/08/17.10:57:54 P.28xd
+EN xbip_bram18k_v2_1/bip_bram18k_synth 1408291154 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_synth.vhd" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/STD_LOGIC_SIGNED 1341906179 \
+      PB ieee/NUMERIC_STD 1341906182 LB unisim PH unisim/VCOMPONENTS 1341906184 \
+      LB xbip_utils_v2_0 LB xbip_pipe_v2_0 LB xbip_bram18k_v2_1 \
+      PB xbip_utils_v2_0/bip_utils_pkg_v2_0 1408291105 \
+      PH xbip_pipe_v2_0/xbip_pipe_v2_0_xst_comp 1408291145 \
+      PH xbip_bram18k_v2_1/bip_bram18k_hdl_pkg 1408291153 \
+      PB xbip_bram18k_v2_1/bip_bram18k_pkg_v2_1 1408291151
+AR xbip_bram18k_v2_1/bip_bram18k_synth/synth 1408291155 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/bip_bram18k_synth.vhd" \
+      EN xbip_bram18k_v2_1/bip_bram18k_synth 1408291154 CP bip_bram18k_rtl \
+      CP RAMB16 CP xbip_pipe_v2_0_xst
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/xbip_bram18k_v2_1.vhd" 2014/08/17.10:57:56 P.28xd
+EN xbip_bram18k_v2_1/xbip_bram18k_v2_1 1408291160 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/xbip_bram18k_v2_1.vhd" \
+      PB ieee/std_logic_1164 1341906176 LB xbip_bram18k_v2_1
+AR xbip_bram18k_v2_1/xbip_bram18k_v2_1/xilinx 1408291161 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/xbip_bram18k_v2_1.vhd" \
+      EN xbip_bram18k_v2_1/xbip_bram18k_v2_1 1408291160 CP xbip_bram18k_v2_1_xst
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/xbip_bram18k_v2_1_xst.vhd" 2014/08/17.10:57:55 P.28xd
+EN xbip_bram18k_v2_1/xbip_bram18k_v2_1_xst 1408291158 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/xbip_bram18k_v2_1_xst.vhd" \
+      PB ieee/std_logic_1164 1341906176 LB xbip_bram18k_v2_1 \
+      PH xbip_bram18k_v2_1/bip_bram18k_hdl_pkg 1408291153 \
+      PB xbip_bram18k_v2_1/bip_bram18k_pkg_v2_1 1408291151
+AR xbip_bram18k_v2_1/xbip_bram18k_v2_1_xst/synth 1408291159 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/xbip_bram18k_v2_1_xst.vhd" \
+      EN xbip_bram18k_v2_1/xbip_bram18k_v2_1_xst 1408291158 CP bip_bram18k_synth \
+      CP bip_bram18k_rtl
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/xbip_bram18k_v2_1_xst_comp.vhd" 2014/08/17.10:57:53 P.28xd
+PH xbip_bram18k_v2_1/xbip_bram18k_v2_1_xst_comp 1408291152 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_bram18k_v2_1/xbip_bram18k_v2_1_xst_comp.vhd" \
+      PB ieee/std_logic_1164 1341906176 LB xbip_bram18k_v2_1 \
+      CD xbip_bram18k_v2_1_xst PB xbip_bram18k_v2_1/bip_bram18k_pkg_v2_1 1408291151

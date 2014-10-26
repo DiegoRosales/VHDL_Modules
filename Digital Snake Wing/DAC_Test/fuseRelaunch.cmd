@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/square_wave_tbench_isim_beh.exe" -prj "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/square_wave_tbench_beh.prj" "work.square_wave_tbench" 

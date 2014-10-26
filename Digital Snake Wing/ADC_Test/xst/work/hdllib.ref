@@ -1,0 +1,6 @@
+EN dcm32to27 NULL "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/DCM32to27.vhd" sub00/vhpl00 1410630095
+EN adc_test NULL "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.vhd" sub00/vhpl04 1410630099
+AR dcm32to27 behavioral "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/DCM32to27.vhd" sub00/vhpl01 1410630096
+EN adc_control NULL "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_Control.vhd" sub00/vhpl02 1410630097
+AR adc_test behavioral "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.vhd" sub00/vhpl05 1410630100
+AR adc_control behavioral "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_Control.vhd" sub00/vhpl03 1410630098

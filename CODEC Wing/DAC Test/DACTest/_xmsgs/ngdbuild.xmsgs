@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;zeroa_signal&quot; KEEP&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">zeroa_signal</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;zeroa_signal&quot; KEEP = &quot;TRUE&quot;;&gt; [Square_wave.ucf(34)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;SDATA_Chipscope&quot; KEEP&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">SDATA_Chipscope</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;SDATA_Chipscope&quot; KEEP = &quot;TRUE&quot;;&gt; [Square_wave.ucf(36)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;LRCLK_Chipscope&quot; KEEP&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">LRCLK_Chipscope</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;LRCLK_Chipscope&quot; KEEP = &quot;TRUE&quot;;&gt; [Square_wave.ucf(37)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;BCLK_Chipscope&quot; KEEP&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">BCLK_Chipscope</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;BCLK_Chipscope&quot; KEEP = &quot;TRUE&quot;;&gt; [Square_wave.ucf(38)]</arg>.
+</msg>
+
+</messages>
+

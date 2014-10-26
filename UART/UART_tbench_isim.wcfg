@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/GitHub/VHDL_Modules/UART/UART_tbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="uart_tbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/uart_tbench/rx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx</obj_property>
+      <obj_property name="ObjectShortName">rx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tbench/ck32" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ck32</obj_property>
+      <obj_property name="ObjectShortName">ck32</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tbench/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tbench/data_tx" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_tx[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_tx[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tbench/start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tbench/tx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tbench/ck32_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">ck32_period</obj_property>
+      <obj_property name="ObjectShortName">ck32_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tbench/uut/serial_clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">serial_clock</obj_property>
+      <obj_property name="ObjectShortName">serial_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tbench/uut/state_signal" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state_signal</obj_property>
+      <obj_property name="ObjectShortName">state_signal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tbench/uut/count_test" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">count_test</obj_property>
+      <obj_property name="ObjectShortName">count_test</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

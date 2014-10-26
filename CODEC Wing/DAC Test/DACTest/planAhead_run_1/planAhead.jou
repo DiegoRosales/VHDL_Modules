@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Sun Oct 26 09:57:08 2014
+# Process ID: 8276
+# Log file: D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/planAhead_run_1/planAhead.log
+# Journal file: D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/pa.fromNetlist.tcl}

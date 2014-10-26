@@ -1,0 +1,454 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: Triangle_Wave.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Triangle_Wave.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Triangle_Wave"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-vq100
+
+---- Source Options
+Top Module Name                    : Triangle_Wave
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Triangle_Wave/Triangle_Wave.vhd" in Library work.
+Architecture behavioral of Entity triangle_wave is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Triangle_Wave> in library <work> (architecture <behavioral>) with generics.
+	N = 16
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <Triangle_Wave> in library <work> (Architecture <behavioral>).
+	N = 16
+Entity <Triangle_Wave> analyzed. Unit <Triangle_Wave> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Triangle_Wave>.
+    Related source file is "D:/GitHub/VHDL_Modules/Triangle_Wave/Triangle_Wave.vhd".
+    Found 32-bit up counter for signal <counter>.
+    Found 32-bit comparator greatequal for signal <counter$cmp_ge0000> created at line 56.
+    Found 1-bit register for signal <direction<0>>.
+    Found 32-bit comparator greater for signal <direction_0$cmp_gt0000> created at line 66.
+    Found 32-bit comparator less for signal <direction_0$cmp_lt0000> created at line 59.
+    Found 32-bit comparator less for signal <direction_0$cmp_lt0001> created at line 56.
+    Found 32-bit updown counter for signal <wave_out_signal>.
+    Found 32-bit comparator greatequal for signal <wave_out_signal$cmp_ge0000> created at line 59.
+    Found 32-bit comparator lessequal for signal <wave_out_signal$cmp_le0000> created at line 66.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <Triangle_Wave> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 32-bit up counter                                     : 1
+ 32-bit updown counter                                 : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
+# Comparators                                          : 6
+ 32-bit comparator greatequal                          : 2
+ 32-bit comparator greater                             : 1
+ 32-bit comparator less                                : 2
+ 32-bit comparator lessequal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 32-bit up counter                                     : 1
+ 32-bit updown counter                                 : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Comparators                                          : 6
+ 32-bit comparator greatequal                          : 2
+ 32-bit comparator greater                             : 1
+ 32-bit comparator less                                : 2
+ 32-bit comparator lessequal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Triangle_Wave> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Triangle_Wave, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 65
+ Flip-Flops                                            : 65
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Triangle_Wave.ngr
+Top Level Output File Name         : Triangle_Wave
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 82
+
+Cell Usage :
+# BELS                             : 344
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 31
+#      LUT2                        : 97
+#      LUT3                        : 2
+#      LUT3_L                      : 1
+#      LUT4                        : 9
+#      MUXCY                       : 135
+#      VCC                         : 1
+#      XORCY                       : 64
+# FlipFlops/Latches                : 65
+#      FDCE                        : 32
+#      FDE                         : 33
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 81
+#      IBUF                        : 65
+#      OBUF                        : 16
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500evq100-4 
+
+ Number of Slices:                       77  out of   4656     1%  
+ Number of Slice Flip Flops:             65  out of   9312     0%  
+ Number of 4 input LUTs:                143  out of   9312     1%  
+ Number of IOs:                          82
+ Number of bonded IOBs:                  82  out of     66   124% (*) 
+ Number of GCLKs:                         1  out of     24     4%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CK                                 | BUFGP                  | 65    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RESET                              | IBUF                   | 32    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.645ns (Maximum Frequency: 130.801MHz)
+   Minimum input arrival time before clock: 8.341ns
+   Maximum output required time after clock: 4.450ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CK'
+  Clock period: 7.645ns (frequency: 130.801MHz)
+  Total number of paths / destination ports: 9443 / 130
+-------------------------------------------------------------------------
+Delay:               7.645ns (Levels of Logic = 34)
+  Source:            counter_0 (FF)
+  Destination:       counter_0 (FF)
+  Source Clock:      CK rising
+  Destination Clock: CK rising
+
+  Data Path: counter_0 to counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.526  counter_0 (counter_0)
+     LUT2:I1->O            1   0.704   0.000  Mcompar_direction_0_cmp_lt0001_lut<0> (Mcompar_direction_0_cmp_lt0001_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_direction_0_cmp_lt0001_cy<0> (Mcompar_direction_0_cmp_lt0001_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<1> (Mcompar_direction_0_cmp_lt0001_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<2> (Mcompar_direction_0_cmp_lt0001_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<3> (Mcompar_direction_0_cmp_lt0001_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<4> (Mcompar_direction_0_cmp_lt0001_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<5> (Mcompar_direction_0_cmp_lt0001_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<6> (Mcompar_direction_0_cmp_lt0001_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<7> (Mcompar_direction_0_cmp_lt0001_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<8> (Mcompar_direction_0_cmp_lt0001_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<9> (Mcompar_direction_0_cmp_lt0001_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<10> (Mcompar_direction_0_cmp_lt0001_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<11> (Mcompar_direction_0_cmp_lt0001_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<12> (Mcompar_direction_0_cmp_lt0001_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<13> (Mcompar_direction_0_cmp_lt0001_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<14> (Mcompar_direction_0_cmp_lt0001_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<15> (Mcompar_direction_0_cmp_lt0001_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<16> (Mcompar_direction_0_cmp_lt0001_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<17> (Mcompar_direction_0_cmp_lt0001_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<18> (Mcompar_direction_0_cmp_lt0001_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<19> (Mcompar_direction_0_cmp_lt0001_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<20> (Mcompar_direction_0_cmp_lt0001_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<21> (Mcompar_direction_0_cmp_lt0001_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<22> (Mcompar_direction_0_cmp_lt0001_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<23> (Mcompar_direction_0_cmp_lt0001_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<24> (Mcompar_direction_0_cmp_lt0001_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<25> (Mcompar_direction_0_cmp_lt0001_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<26> (Mcompar_direction_0_cmp_lt0001_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<27> (Mcompar_direction_0_cmp_lt0001_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<28> (Mcompar_direction_0_cmp_lt0001_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<29> (Mcompar_direction_0_cmp_lt0001_cy<29>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<30> (Mcompar_direction_0_cmp_lt0001_cy<30>)
+     MUXCY:CI->O           3   0.459   0.610  Mcompar_direction_0_cmp_lt0001_cy<31> (Mcompar_direction_0_cmp_lt0001_cy<31>)
+     LUT2:I1->O           32   0.704   1.262  counter_and00001 (counter_and0000)
+     FDE:CE                    0.555          counter_0
+    ----------------------------------------
+    Total                      7.645ns (5.247ns logic, 2.398ns route)
+                                       (68.6% logic, 31.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CK'
+  Total number of paths / destination ports: 3268 / 65
+-------------------------------------------------------------------------
+Offset:              8.341ns (Levels of Logic = 35)
+  Source:            COUNT_PERIOD<0> (PAD)
+  Destination:       counter_0 (FF)
+  Destination Clock: CK rising
+
+  Data Path: COUNT_PERIOD<0> to counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.595  COUNT_PERIOD_0_IBUF (COUNT_PERIOD_0_IBUF)
+     LUT2:I0->O            1   0.704   0.000  Mcompar_direction_0_cmp_lt0001_lut<0> (Mcompar_direction_0_cmp_lt0001_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_direction_0_cmp_lt0001_cy<0> (Mcompar_direction_0_cmp_lt0001_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<1> (Mcompar_direction_0_cmp_lt0001_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<2> (Mcompar_direction_0_cmp_lt0001_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<3> (Mcompar_direction_0_cmp_lt0001_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<4> (Mcompar_direction_0_cmp_lt0001_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<5> (Mcompar_direction_0_cmp_lt0001_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<6> (Mcompar_direction_0_cmp_lt0001_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<7> (Mcompar_direction_0_cmp_lt0001_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<8> (Mcompar_direction_0_cmp_lt0001_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<9> (Mcompar_direction_0_cmp_lt0001_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<10> (Mcompar_direction_0_cmp_lt0001_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<11> (Mcompar_direction_0_cmp_lt0001_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<12> (Mcompar_direction_0_cmp_lt0001_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<13> (Mcompar_direction_0_cmp_lt0001_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<14> (Mcompar_direction_0_cmp_lt0001_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<15> (Mcompar_direction_0_cmp_lt0001_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<16> (Mcompar_direction_0_cmp_lt0001_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<17> (Mcompar_direction_0_cmp_lt0001_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<18> (Mcompar_direction_0_cmp_lt0001_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<19> (Mcompar_direction_0_cmp_lt0001_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<20> (Mcompar_direction_0_cmp_lt0001_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<21> (Mcompar_direction_0_cmp_lt0001_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<22> (Mcompar_direction_0_cmp_lt0001_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<23> (Mcompar_direction_0_cmp_lt0001_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<24> (Mcompar_direction_0_cmp_lt0001_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<25> (Mcompar_direction_0_cmp_lt0001_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<26> (Mcompar_direction_0_cmp_lt0001_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<27> (Mcompar_direction_0_cmp_lt0001_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<28> (Mcompar_direction_0_cmp_lt0001_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<29> (Mcompar_direction_0_cmp_lt0001_cy<29>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_direction_0_cmp_lt0001_cy<30> (Mcompar_direction_0_cmp_lt0001_cy<30>)
+     MUXCY:CI->O           3   0.459   0.610  Mcompar_direction_0_cmp_lt0001_cy<31> (Mcompar_direction_0_cmp_lt0001_cy<31>)
+     LUT2:I1->O           32   0.704   1.262  counter_and00001 (counter_and0000)
+     FDE:CE                    0.555          counter_0
+    ----------------------------------------
+    Total                      8.341ns (5.874ns logic, 2.467ns route)
+                                       (70.4% logic, 29.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CK'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.450ns (Levels of Logic = 1)
+  Source:            wave_out_signal_15 (FF)
+  Destination:       WAVE_OUT<15> (PAD)
+  Source Clock:      CK rising
+
+  Data Path: wave_out_signal_15 to WAVE_OUT<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.591   0.587  wave_out_signal_15 (wave_out_signal_15)
+     OBUF:I->O                 3.272          WAVE_OUT_15_OBUF (WAVE_OUT<15>)
+    ----------------------------------------
+    Total                      4.450ns (3.863ns logic, 0.587ns route)
+                                       (86.8% logic, 13.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.15 secs
+ 
+--> 
+
+Total memory usage is 273144 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

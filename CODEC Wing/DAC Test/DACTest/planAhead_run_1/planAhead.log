@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Sun Oct 26 09:57:08 2014
+# Process ID: 8276
+# Log file: D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/planAhead_run_1/planAhead.log
+# Journal file: D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/pa.fromNetlist.tcl}
+# create_project -name DACTest -dir "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/planAhead_run_1" -part xc3s500evq100-4
+Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest} }
+# set_property target_constrs_file "Square_wave.ucf" [current_fileset -constrset]
+Adding file 'D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.ucf' to fileset 'constrs_1'
+# add_files [list {Square_wave.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s500evq100-4
+Release 14.2 - ngc2edif P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design Square_wave.ngc ...
+WARNING:NetListWriters:298 - No output is written to Square_wave.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Mcompar_counter_cmp_ge0000_lut<11 : 0>
+   on block Square_wave is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file Square_wave.edif ...
+ngc2edif: Total memory usage is 100740 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/DACTest.data/cache/Square_wave_ngc_a81bdcd5.edif]
+Finished Parsing EDIF File [./planAhead_run_1/DACTest.data/cache/Square_wave_ngc_a81bdcd5.edif]
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/vq100/Package.xml
+Loading io standards from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/vq100/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.ucf]
+Finished Parsing UCF File [D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGP => BUFGP (HD_IBUFG, HD_BUFG): 1 instances
+
+Phase 0 | Netlist Checksum: 87941ea8
+link_design: Time (s): elapsed = 00:00:08 . Memory (MB): peak = 546.086 ; gain = 151.699
+exit
+INFO: [Common 17-206] Exiting PlanAhead...
+INFO: [Common 17-83] Releasing license: PlanAhead

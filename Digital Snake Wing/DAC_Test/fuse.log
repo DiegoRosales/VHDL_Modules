@@ -1,0 +1,20 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/square_wave_tbench_isim_beh.exe" -prj "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/square_wave_tbench_beh.prj" "work.square_wave_tbench" 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/MAX5556.vhd" into library work
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/Square_wave.vhd" into library work
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/square_wave_tbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity MAX5556 [\MAX5556(1)\]
+Compiling architecture behavioral of entity Square_wave [square_wave_default]
+Compiling architecture behavior of entity square_wave_tbench
+Time Resolution for simulation is 1ps.
+Compiled 7 VHDL Units
+Built simulation executable D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/square_wave_tbench_isim_beh.exe
+Fuse Memory Usage: 32000 KB
+Fuse CPU Usage: 530 ms

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/GitHub/VHDL_Modules/Triangle_Wave/Triangle_Wave_tbench_isim_beh.exe" -prj "D:/GitHub/VHDL_Modules/Triangle_Wave/Triangle_Wave_tbench_beh.prj" "work.Triangle_Wave_tbench" 

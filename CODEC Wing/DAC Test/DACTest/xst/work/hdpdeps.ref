@@ -1,0 +1,23 @@
+V3 13
+FL "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/I2S_Master.vhd" 2014/10/26.10:01:26 P.28xd
+EN work/I2S_Master 1414341682 \
+      FL "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/I2S_Master.vhd" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB UNISIM \
+      PH unisim/VCOMPONENTS 1341906184
+AR work/I2S_Master/Behavioral 1414341683 \
+      FL "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/I2S_Master.vhd" \
+      EN work/I2S_Master 1414341682 CP FDCE
+FL "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/PCM1754.vhd" 2014/10/26.09:56:43 P.28xd
+EN work/PCM1754 1414341684 \
+      FL "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/PCM1754.vhd" \
+      PB ieee/std_logic_1164 1341906176
+AR work/PCM1754/Behavioral 1414341685 \
+      FL "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/PCM1754.vhd" \
+      EN work/PCM1754 1414341684 CP I2S_Master
+FL "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.vhd" 2014/10/25.20:07:16 P.28xd
+EN work/Square_wave 1414341686 \
+      FL "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.vhd" \
+      PB ieee/std_logic_1164 1341906176
+AR work/Square_wave/Behavioral 1414341687 \
+      FL "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.vhd" \
+      EN work/Square_wave 1414341686 CP PCM1754

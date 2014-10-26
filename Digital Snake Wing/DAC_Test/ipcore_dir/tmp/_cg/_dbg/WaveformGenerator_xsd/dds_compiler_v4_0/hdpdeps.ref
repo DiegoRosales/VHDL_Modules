@@ -1,0 +1,169 @@
+V3 87
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/accum.vhd" 2014/08/17.10:58:10 P.28xd
+EN dds_compiler_v4_0/accum 1408291210 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/accum.vhd" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/STD_LOGIC_SIGNED 1341906179 \
+      PB ieee/NUMERIC_STD 1341906182 LB xbip_utils_v2_0 LB xbip_pipe_v2_0 \
+      LB dds_compiler_v4_0 PB xbip_utils_v2_0/bip_utils_pkg_v2_0 1408291105 \
+      PB xbip_utils_v2_0/xcc_utils_v2_0 1408291109 \
+      PH xbip_pipe_v2_0/xbip_pipe_v2_0_xst_comp 1408291145 \
+      PB dds_compiler_v4_0/pkg_dds_compiler_v4_0 1408291197 \
+      PH dds_compiler_v4_0/dds_compiler_v4_0_hdl_comps 1408291199
+AR dds_compiler_v4_0/accum/synth 1408291211 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/accum.vhd" \
+      EN dds_compiler_v4_0/accum 1408291210 CP std_logic CP std_logic_vector \
+      CP string CP xbip_pipe_v2_0_xst CP lut_ram CP t_acc_config CP t_ram_type \
+      CP pipe_add CP boolean CP integer CP t_we_use CP dds_compiler_v4_0/dsp48_wrap
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0.vhd" 2014/08/17.10:58:12 P.28xd
+EN dds_compiler_v4_0/dds_compiler_v4_0 1408291220 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0.vhd" \
+      LB xbip_utils_v2_0 PB ieee/std_logic_1164 1341906176 LB dds_compiler_v4_0 \
+      PB xbip_utils_v2_0/bip_utils_pkg_v2_0 1408291105 \
+      PB xbip_utils_v2_0/xcc_utils_v2_0 1408291109
+AR dds_compiler_v4_0/dds_compiler_v4_0/xilinx 1408291221 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0.vhd" \
+      EN dds_compiler_v4_0/dds_compiler_v4_0 1408291220 CP dds_compiler_v4_0_xst
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_eff.vhd" 2014/08/17.10:58:11 P.28xd
+EN dds_compiler_v4_0/dds_compiler_v4_0_eff 1408291216 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_eff.vhd" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 \
+      LB xbip_utils_v2_0 LB xbip_pipe_v2_0 LB dds_compiler_v4_0 \
+      PB xbip_utils_v2_0/bip_utils_pkg_v2_0 1408291105 \
+      PB xbip_utils_v2_0/bip_usecase_utils_pkg_v2_0 1408291107 \
+      PH xbip_pipe_v2_0/xbip_pipe_v2_0_xst_comp 1408291145 \
+      PB dds_compiler_v4_0/pkg_dds_compiler_v4_0 1408291197 \
+      PH dds_compiler_v4_0/dds_compiler_v4_0_hdl_comps 1408291199
+AR dds_compiler_v4_0/dds_compiler_v4_0_eff/synth 1408291217 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_eff.vhd" \
+      EN dds_compiler_v4_0/dds_compiler_v4_0_eff 1408291216 \
+      CP dds_compiler_v4_0_multadd_wrapper CP xbip_pipe_v2_0_xst \
+      CP dds_compiler_v4_0_eff_lut
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_eff_lut.vhd" 2014/08/17.10:58:11 P.28xd
+EN dds_compiler_v4_0/dds_compiler_v4_0_eff_lut 1408291214 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_eff_lut.vhd" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 \
+      LB xbip_utils_v2_0 LB xbip_pipe_v2_0 LB xbip_bram18k_v2_1 \
+      PB xbip_utils_v2_0/bip_utils_pkg_v2_0 1408291105 \
+      PH xbip_pipe_v2_0/xbip_pipe_v2_0_xst_comp 1408291145 \
+      PH xbip_bram18k_v2_1/xbip_bram18k_v2_1_xst_comp 1408291152 \
+      PB xbip_bram18k_v2_1/bip_bram18k_pkg_v2_1 1408291151 \
+      PH xbip_bram18k_v2_1/bip_bram18k_hdl_pkg 1408291153
+AR dds_compiler_v4_0/dds_compiler_v4_0_eff_lut/rtl 1408291215 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_eff_lut.vhd" \
+      EN dds_compiler_v4_0/dds_compiler_v4_0_eff_lut 1408291214 CP integer \
+      CP string CP boolean CP std_logic_vector CP xbip_pipe_v2_0_xst \
+      CP xbip_bram18k_v2_1_xst
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_hdl_comps.vhd" 2014/08/17.10:58:06 P.28xd
+PH dds_compiler_v4_0/dds_compiler_v4_0_hdl_comps 1408291199 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_hdl_comps.vhd" \
+      LB std PB ieee/std_logic_1164 1341906176 LB xbip_utils_v2_0 \
+      LB dds_compiler_v4_0 CD lut_ram CD sin_cos \
+      CD dds_compiler_v4_0_multadd_wrapper CD dither_wrap CD pipe_add \
+      CD dds_compiler_v4_0_eff CD dds_compiler_v4_0_eff_lut \
+      PB xbip_utils_v2_0/bip_usecase_utils_pkg_v2_0 1408291107 \
+      PB dds_compiler_v4_0/pkg_dds_compiler_v4_0 1408291197
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_multadd_wrapper.vhd" 2014/08/17.10:58:10 P.28xd
+EN dds_compiler_v4_0/dds_compiler_v4_0_multadd_wrapper 1408291212 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_multadd_wrapper.vhd" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 \
+      PB ieee/STD_LOGIC_SIGNED 1341906179 LB xbip_utils_v2_0 LB xbip_pipe_v2_0 \
+      LB xbip_dsp48_multadd_v2_0 LB mult_gen_v11_0 \
+      PB xbip_utils_v2_0/bip_utils_pkg_v2_0 1408291105 \
+      PB xbip_utils_v2_0/bip_usecase_utils_pkg_v2_0 1408291107 \
+      PH xbip_pipe_v2_0/xbip_pipe_v2_0_xst_comp 1408291145 \
+      PB xbip_dsp48_multadd_v2_0/bip_dsp48_multadd_pkg_v2_0 1408291186 \
+      PH xbip_dsp48_multadd_v2_0/xbip_dsp48_multadd_v2_0_xst_comp 1408291187 \
+      PH mult_gen_v11_0/mult_gen_v11_0_xst_comp 1408291110
+AR dds_compiler_v4_0/dds_compiler_v4_0_multadd_wrapper/synth 1408291213 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_multadd_wrapper.vhd" \
+      EN dds_compiler_v4_0/dds_compiler_v4_0_multadd_wrapper 1408291212 \
+      CP xbip_dsp48_multadd_v2_0_xst CP t_dsp48_multadd_latency \
+      CP std_logic_vector CP mult_gen_v11_0_xst CP xbip_pipe_v2_0_xst
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_xst.vhd" 2014/08/17.10:58:12 P.28xd
+EN dds_compiler_v4_0/dds_compiler_v4_0_xst 1408291218 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_xst.vhd" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 \
+      PB ieee/MATH_REAL 1341906183 LB unisim PH unisim/VCOMPONENTS 1341906184 \
+      LB dds_compiler_v4_0 LB xbip_utils_v2_0 LB xbip_pipe_v2_0 \
+      PB dds_compiler_v4_0/pkg_dds_compiler_v4_0 1408291197 \
+      PH dds_compiler_v4_0/dds_compiler_v4_0_hdl_comps 1408291199 \
+      PB xbip_utils_v2_0/bip_utils_pkg_v2_0 1408291105 \
+      PB xbip_utils_v2_0/bip_usecase_utils_pkg_v2_0 1408291107 \
+      PB xbip_utils_v2_0/xcc_utils_v2_0 1408291109 \
+      PH xbip_pipe_v2_0/xbip_pipe_v2_0_xst_comp 1408291145
+AR dds_compiler_v4_0/dds_compiler_v4_0_xst/synth 1408291219 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_xst.vhd" \
+      EN dds_compiler_v4_0/dds_compiler_v4_0_xst 1408291218 \
+      CP t_latency_allocation_return CP xbip_pipe_v2_0_xst CP std_logic_vector \
+      CP integer CP string CP signal CP FDSE CP FDRE CP dds_compiler_v4_0/accum \
+      CP dither_wrap CP pipe_add CP boolean CP std_logic \
+      CP dds_compiler_v4_0/dsp48_wrap CP sin_cos CP dds_compiler_v4_0_eff
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_xst_comp.vhd" 2014/08/17.10:58:06 P.28xd
+PH dds_compiler_v4_0/dds_compiler_v4_0_xst_comp 1408291198 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dds_compiler_v4_0_xst_comp.vhd" \
+      PB ieee/std_logic_1164 1341906176 LB xbip_utils_v2_0 \
+      CD dds_compiler_v4_0_xst PB xbip_utils_v2_0/xcc_utils_v2_0 1408291109
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dither_wrap.vhd" 2014/08/17.10:58:07 P.28xd
+EN dds_compiler_v4_0/dither_wrap 1408291200 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dither_wrap.vhd" \
+      PB ieee/std_logic_1164 1341906176 LB dds_compiler_v4_0 \
+      PB dds_compiler_v4_0/pkg_dds_compiler_v4_0 1408291197
+AR dds_compiler_v4_0/dither_wrap/synth 1408291201 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dither_wrap.vhd" \
+      EN dds_compiler_v4_0/dither_wrap 1408291200
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dsp48_wrap.vhd" 2014/08/17.10:58:09 P.28xd
+EN dds_compiler_v4_0/dsp48_wrap 1408291208 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dsp48_wrap.vhd" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 LB unisim \
+      PH unisim/VCOMPONENTS 1341906184 LB xbip_utils_v2_0 LB xbip_pipe_v2_0 \
+      LB dds_compiler_v4_0 PB xbip_utils_v2_0/bip_utils_pkg_v2_0 1408291105 \
+      PB xbip_utils_v2_0/xcc_utils_v2_0 1408291109 \
+      PB dds_compiler_v4_0/pkg_dds_compiler_v4_0 1408291197
+AR dds_compiler_v4_0/dsp48_wrap/synth 1408291209 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/dsp48_wrap.vhd" \
+      EN dds_compiler_v4_0/dsp48_wrap 1408291208 CP std_logic_vector CP DSP48 \
+      CP DSP48E CP integer CP xbip_pipe_v2_0/xbip_pipe_v2_0_xst CP DSP48A
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/lut_ram.vhd" 2014/08/17.10:58:08 P.28xd
+EN dds_compiler_v4_0/lut_ram 1408291204 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/lut_ram.vhd" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/STD_LOGIC_UNSIGNED 1341906179 \
+      LB dds_compiler_v4_0 LB xbip_utils_v2_0 LB xbip_pipe_v2_0 \
+      PB dds_compiler_v4_0/pkg_dds_compiler_v4_0 1408291197 \
+      PH dds_compiler_v4_0/dds_compiler_v4_0_hdl_comps 1408291199 \
+      PB xbip_utils_v2_0/bip_utils_pkg_v2_0 1408291105 \
+      PB xbip_utils_v2_0/bip_usecase_utils_pkg_v2_0 1408291107 \
+      PH xbip_pipe_v2_0/xbip_pipe_v2_0_xst_comp 1408291145
+AR dds_compiler_v4_0/lut_ram/synth 1408291205 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/lut_ram.vhd" \
+      EN dds_compiler_v4_0/lut_ram 1408291204 CP xbip_pipe_v2_0_xst
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/pipe_add.vhd" 2014/08/17.10:58:07 P.28xd
+EN dds_compiler_v4_0/pipe_add 1408291202 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/pipe_add.vhd" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/STD_LOGIC_SIGNED 1341906179 \
+      LB dds_compiler_v4_0 PB dds_compiler_v4_0/pkg_dds_compiler_v4_0 1408291197 \
+      PH dds_compiler_v4_0/dds_compiler_v4_0_hdl_comps 1408291199
+AR dds_compiler_v4_0/pipe_add/synth 1408291203 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/pipe_add.vhd" \
+      EN dds_compiler_v4_0/pipe_add 1408291202 CP integer CP std_logic_vector
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/pkg_dds_compiler_v4_0.vhd" 2014/08/17.10:58:05 P.28xd
+PH dds_compiler_v4_0/pkg_dds_compiler_v4_0 1408291196 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/pkg_dds_compiler_v4_0.vhd" \
+      LB std PB ieee/std_logic_1164 1341906176 PB ieee/STD_LOGIC_SIGNED 1341906179 \
+      LB xbip_utils_v2_0 PB xbip_utils_v2_0/bip_utils_pkg_v2_0 1408291105
+PB dds_compiler_v4_0/pkg_dds_compiler_v4_0 1408291197 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/pkg_dds_compiler_v4_0.vhd" \
+      PH dds_compiler_v4_0/pkg_dds_compiler_v4_0 1408291196
+FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/sin_cos.vhd" 2014/08/17.10:58:09 P.28xd
+EN dds_compiler_v4_0/sin_cos 1408291206 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/sin_cos.vhd" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/STD_LOGIC_UNSIGNED 1341906179 \
+      PB ieee/std_logic_arith 1341906177 PB ieee/MATH_REAL 1341906183 LB std \
+      PB std/TEXTIO 1341906175 LB xbip_utils_v2_0 LB xbip_pipe_v2_0 \
+      LB dds_compiler_v4_0 PB xbip_utils_v2_0/bip_utils_pkg_v2_0 1408291105 \
+      PH xbip_pipe_v2_0/xbip_pipe_v2_0_xst_comp 1408291145 \
+      PB dds_compiler_v4_0/pkg_dds_compiler_v4_0 1408291197 \
+      PH dds_compiler_v4_0/dds_compiler_v4_0_hdl_comps 1408291199
+AR dds_compiler_v4_0/sin_cos/synth 1408291207 \
+      FL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/sin_cos.vhd" \
+      EN dds_compiler_v4_0/sin_cos 1408291206 CP xbip_pipe_v2_0_xst \
+      CP std_logic_vector CP std_logic CP integer CP string CP signal

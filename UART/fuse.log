@@ -1,0 +1,20 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "D:/GitHub/VHDL_Modules/UART/UART_test_tbench_isim_beh.exe" -prj "D:/GitHub/VHDL_Modules/UART/UART_test_tbench_beh.prj" "work.UART_test_tbench" 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/GitHub/VHDL_Modules/UART/UART.vhd" into library work
+Parsing VHDL file "D:/GitHub/VHDL_Modules/UART/UART_test.vhd" into library work
+Parsing VHDL file "D:/GitHub/VHDL_Modules/UART/UART_test_tbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity UART [\UART(8,2)\]
+Compiling architecture behavioral of entity UART_test [uart_test_default]
+Compiling architecture behavior of entity uart_test_tbench
+Time Resolution for simulation is 1ps.
+Compiled 7 VHDL Units
+Built simulation executable D:/GitHub/VHDL_Modules/UART/UART_test_tbench_isim_beh.exe
+Fuse Memory Usage: 31892 KB
+Fuse CPU Usage: 576 ms

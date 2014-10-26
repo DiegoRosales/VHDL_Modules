@@ -1,0 +1,4 @@
+vhdl work "I2S_Master.vhd"
+vhdl work "PCM1754.vhd"
+vhdl work "Square_wave.vhd"
+vhdl work "Sqare_wave_tbench.vhd"

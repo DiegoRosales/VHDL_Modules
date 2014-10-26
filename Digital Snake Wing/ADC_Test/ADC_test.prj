@@ -1,0 +1,3 @@
+vhdl work "DCM32to27.vhd"
+vhdl work "ADC_Control.vhd"
+vhdl work "ADC_test.vhd"

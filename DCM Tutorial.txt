@@ -1,0 +1,8 @@
+1. DCM<f1>to<f2>
+2. Single DCM_SP
+3. VHDL
+4. ONLY CLKFX
+5. Input clock frequency = 32MHz <f1>
+6. Use global buffers
+7. Output frequency <f2>
+8. Calculate and finish

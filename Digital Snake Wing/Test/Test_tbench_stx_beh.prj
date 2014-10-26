@@ -1,0 +1,3 @@
+vhdl isim_temp "DCM32to27.vhd"
+vhdl isim_temp "Test.vhd"
+vhdl isim_temp "Test_tbench.vhd"

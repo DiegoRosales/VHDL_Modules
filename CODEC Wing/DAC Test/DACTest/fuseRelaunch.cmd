@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Sqare_wave_tbench_isim_beh.exe" -prj "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Sqare_wave_tbench_beh.prj" "work.Sqare_wave_tbench" 

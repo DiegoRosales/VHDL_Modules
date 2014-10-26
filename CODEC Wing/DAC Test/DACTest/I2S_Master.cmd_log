@@ -1,0 +1,1 @@
+vhdtdtfi -prj DACTest -o "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/I2S_Master.vhi" -module I2S_Master -template C:/Xilinx/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work I2S_Master.vhd 

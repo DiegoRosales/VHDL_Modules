@@ -1,0 +1,5 @@
+EN xbip_pipe_v2_0_xst NULL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_pipe_v2_0/xbip_pipe_v2_0_xst.vhd" sub00/vhpl01 1408291146
+AR xbip_pipe_v2_0_xst synth "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_pipe_v2_0/xbip_pipe_v2_0_xst.vhd" sub00/vhpl02 1408291147
+AR xbip_pipe_v2_0 xilinx "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_pipe_v2_0/xbip_pipe_v2_0.vhd" sub00/vhpl04 1408291149
+EN xbip_pipe_v2_0 NULL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_pipe_v2_0/xbip_pipe_v2_0.vhd" sub00/vhpl03 1408291148
+PH xbip_pipe_v2_0_xst_comp NULL "D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./xbip_pipe_v2_0/simulation/xbip_pipe_v2_0_xst_comp.vhd" sub00/vhpl00 1408291145

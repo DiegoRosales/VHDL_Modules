@@ -11,5 +11,8 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GitHub/VHDL_Modules/I2S/I2S_Module.vhd&quot; into library work</arg>
 </msg>
 
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GitHub/VHDL_Modules/I2S/I2S_Module_tbench.vhd&quot; into library work</arg>
+</msg>
+
 </messages>
 

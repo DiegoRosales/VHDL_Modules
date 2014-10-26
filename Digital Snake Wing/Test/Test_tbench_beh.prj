@@ -1,0 +1,3 @@
+vhdl work "DCM32to27.vhd"
+vhdl work "Test.vhd"
+vhdl work "Test_tbench.vhd"

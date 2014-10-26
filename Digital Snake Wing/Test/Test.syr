@@ -1,0 +1,402 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: Test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Test.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Test"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-vq100
+
+---- Source Options
+Top Module Name                    : Test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/DCM32to27.vhd" in Library work.
+Architecture behavioral of Entity dcm32to27 is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.vhd" in Library work.
+Entity <test> compiled.
+Entity <test> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Test> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DCM32to27> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Test> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.vhd" line 56: Unconnected output port 'CLKIN_IBUFG_OUT' of component 'DCM32to27'.
+WARNING:Xst:753 - "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.vhd" line 56: Unconnected output port 'CLK0_OUT' of component 'DCM32to27'.
+Entity <Test> analyzed. Unit <Test> generated.
+
+Analyzing Entity <DCM32to27> in library <work> (Architecture <behavioral>).
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <CLKIN_IBUFG_INST> in unit <DCM32to27>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <CLKIN_IBUFG_INST> in unit <DCM32to27>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <CLKIN_IBUFG_INST> in unit <DCM32to27>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CLKIN_IBUFG_INST> in unit <DCM32to27>.
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "CLKFX_DIVIDE =  32" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "CLKFX_MULTIPLY =  12" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "CLKIN_PERIOD =  31.2500000000000000" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_SP_INST> in unit <DCM32to27>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_SP_INST> in unit <DCM32to27>.
+Entity <DCM32to27> analyzed. Unit <DCM32to27> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <DCM32to27>.
+    Related source file is "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/DCM32to27.vhd".
+Unit <DCM32to27> synthesized.
+
+
+Synthesizing Unit <Test>.
+    Related source file is "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.vhd".
+WARNING:Xst:647 - Input <CKPLL> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit up counter for signal <counter>.
+    Found 1-bit register for signal <lrclk_signal>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <Test> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Test> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Test, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 33
+ Flip-Flops                                            : 33
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Test.ngr
+Top Level Output File Name         : Test
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 6
+
+Cell Usage :
+# BELS                             : 114
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 31
+#      LUT4                        : 8
+#      MUXCY                       : 39
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 33
+#      FDE                         : 1
+#      FDR                         : 32
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 5
+#      IBUF                        : 1
+#      IBUFG                       : 1
+#      OBUF                        : 3
+# DCMs                             : 1
+#      DCM_SP                      : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500evq100-4 
+
+ Number of Slices:                       21  out of   4656     0%  
+ Number of Slice Flip Flops:             33  out of   9312     0%  
+ Number of 4 input LUTs:                 41  out of   9312     0%  
+ Number of IOs:                           6
+ Number of bonded IOBs:                   5  out of     66     7%  
+ Number of GCLKs:                         2  out of     24     8%  
+ Number of DCMs:                          1  out of      4    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)           | Load  |
+-----------------------------------+---------------------------------+-------+
+CK32                               | Inst_DCM32to27/DCM_SP_INST:CLKFX| 33    |
+-----------------------------------+---------------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 1.965ns (Maximum Frequency: 508.952MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.310ns
+   Maximum combinational path delay: 4.910ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CK32'
+  Clock period: 1.965ns (frequency: 508.952MHz)
+  Total number of paths / destination ports: 1585 / 66
+-------------------------------------------------------------------------
+Delay:               5.240ns (Levels of Logic = 9)
+  Source:            counter_8 (FF)
+  Destination:       counter_0 (FF)
+  Source Clock:      CK32 rising 0.4X
+  Destination Clock: CK32 rising 0.4X
+
+  Data Path: counter_8 to counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  counter_8 (counter_8)
+     LUT4:I0->O            1   0.704   0.000  counter_cmp_eq0000_wg_lut<0> (counter_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  counter_cmp_eq0000_wg_cy<0> (counter_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  counter_cmp_eq0000_wg_cy<1> (counter_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  counter_cmp_eq0000_wg_cy<2> (counter_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  counter_cmp_eq0000_wg_cy<3> (counter_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  counter_cmp_eq0000_wg_cy<4> (counter_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  counter_cmp_eq0000_wg_cy<5> (counter_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  counter_cmp_eq0000_wg_cy<6> (counter_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O          33   0.331   1.263  counter_cmp_eq0000_wg_cy<7> (counter_cmp_eq0000)
+     FDR:R                     0.911          counter_0
+    ----------------------------------------
+    Total                      5.240ns (3.355ns logic, 1.885ns route)
+                                       (64.0% logic, 36.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CK32'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            lrclk_signal (FF)
+  Destination:       LRCLK (PAD)
+  Source Clock:      CK32 rising 0.4X
+
+  Data Path: lrclk_signal to LRCLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.447  lrclk_signal (lrclk_signal)
+     OBUF:I->O                 3.272          LRCLK_OBUF (LRCLK)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               4.910ns (Levels of Logic = 2)
+  Source:            SCLK (PAD)
+  Destination:       SDATA (PAD)
+
+  Data Path: SCLK to SDATA
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.420  SCLK_IBUF (SDATA_OBUF)
+     OBUF:I->O                 3.272          SDATA_OBUF (SDATA)
+    ----------------------------------------
+    Total                      4.910ns (4.490ns logic, 0.420ns route)
+                                       (91.4% logic, 8.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.65 secs
+ 
+--> 
+
+Total memory usage is 290680 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

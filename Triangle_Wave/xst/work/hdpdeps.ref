@@ -1,0 +1,8 @@
+V3 3
+FL D:/GitHub/VHDL_Modules/Triangle_Wave/Triangle_Wave.vhd 2014/08/18.11:10:55 P.28xd
+EN work/Triangle_Wave 1408378285 \
+      FL D:/GitHub/VHDL_Modules/Triangle_Wave/Triangle_Wave.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182
+AR work/Triangle_Wave/Behavioral 1408378286 \
+      FL D:/GitHub/VHDL_Modules/Triangle_Wave/Triangle_Wave.vhd \
+      EN work/Triangle_Wave 1408378285

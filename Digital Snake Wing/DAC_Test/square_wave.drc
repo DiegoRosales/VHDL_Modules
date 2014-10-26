@@ -1,0 +1,8 @@
+Release 14.2 Drc P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sat Oct 18 11:31:17 2014
+
+drc -z Square_wave.ncd Square_wave.pcf
+
+DRC detected 0 errors and 0 warnings.

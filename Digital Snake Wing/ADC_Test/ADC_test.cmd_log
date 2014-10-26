@@ -1,0 +1,21 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ADC_Control.ucf -p xc3s500e-vq100-4 "ADC_test.ngc" ADC_test.ngd  
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ADC_test.ucf -p xc3s500e-vq100-4 "ADC_test.ngc" ADC_test.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o ADC_test_map.ncd ADC_test.ngd ADC_test.pcf 
+par -w -intstyle ise -ol high -t 1 ADC_test_map.ncd ADC_test.ncd ADC_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ADC_test.twx ADC_test.ncd -o ADC_test.twr ADC_test.pcf -ucf ADC_test.ucf 
+bitgen -intstyle ise -f ADC_test.ut ADC_test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.xst" -ofn "D:/GitHub/VHDL_Modules/Digital Snake Wing/ADC_Test/ADC_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ADC_test.ucf -p xc3s500e-vq100-4 "ADC_test.ngc" ADC_test.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o ADC_test_map.ncd ADC_test.ngd ADC_test.pcf 
+par -w -intstyle ise -ol high -t 1 ADC_test_map.ncd ADC_test.ncd ADC_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ADC_test.twx ADC_test.ncd -o ADC_test.twr ADC_test.pcf -ucf ADC_test.ucf 
+bitgen -intstyle ise -f ADC_test.ut ADC_test.ncd 

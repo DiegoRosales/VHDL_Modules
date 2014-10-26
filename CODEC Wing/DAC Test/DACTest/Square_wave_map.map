@@ -1,0 +1,78 @@
+Release 14.2 Map P.28xd (nt64)
+Xilinx Map Application Log File for Design 'Square_wave'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off
+-c 100 -o Square_wave_map.ncd Square_wave.ngd Square_wave.pcf 
+Target Device  : xc3s500e
+Target Package : vq100
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Sun Oct 26 10:41:37 2014
+
+Mapping design into LUTs...
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_Inst_PCM1754/bclk_signal/Inst_PCM1754/bclk_signal_BUFG"
+   (output signal=Inst_PCM1754/bclk_signal) has a mix of clock and non-clock
+   loads. The non-clock loads are:
+   Pin I0 of Inst_PCM1754/Inst_I2S_Master/mck_signal1
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net BCLK_Chipscope is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    2
+Logic Utilization:
+  Number of Slice Flip Flops:           287 out of   9,312    3%
+  Number of 4 input LUTs:               160 out of   9,312    1%
+Logic Distribution:
+  Number of occupied Slices:            187 out of   4,656    4%
+    Number of Slices containing only related logic:     187 out of     187 100%
+    Number of Slices containing unrelated logic:          0 out of     187   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         259 out of   9,312    2%
+    Number used as logic:               160
+    Number used as a route-thru:         99
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 14 out of      66   21%
+  Number of BUFGMUXs:                     3 out of      24   12%
+
+Average Fanout of Non-Clock Nets:                2.57
+
+Peak Memory Usage:  270 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "Square_wave_map.mrp" for details.

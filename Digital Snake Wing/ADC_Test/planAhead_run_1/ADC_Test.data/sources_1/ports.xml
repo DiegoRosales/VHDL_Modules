@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="CK32" Dir="IN"/>
+		<Port Id="RESET" Dir="IN"/>
+		<Port Id="START" Dir="IN"/>
+		<Port Id="LED1" Dir="OUT"/>
+		<Port Id="LED2" Dir="OUT"/>
+		<Port Id="CK27" Dir="OUT"/>
+		<Port Id="CTRL_SEL" Dir="OUT"/>
+		<Port Id="CTRL_CK" Dir="OUT"/>
+		<Port Id="CTRL_DATA" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

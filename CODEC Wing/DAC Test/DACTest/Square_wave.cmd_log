@@ -1,0 +1,56 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.xst" -ofn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Square_wave.ucf -p xc3s500e-vq100-4 "Square_wave.ngc" Square_wave.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Square_wave.ucf -p xc3s500e-vq100-4 "Square_wave.ngc" Square_wave.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Square_wave.ucf -p xc3s500e-vq100-4 "Square_wave.ngc" Square_wave.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Square_wave_map.ncd Square_wave.ngd Square_wave.pcf 
+par -w -intstyle ise -ol high -t 1 Square_wave_map.ncd Square_wave.ncd Square_wave.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Square_wave.twx Square_wave.ncd -o Square_wave.twr Square_wave.pcf -ucf Square_wave.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Square_wave.ucf -p xc3s500e-vq100-4 "Square_wave.ngc" Square_wave.ngd  
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.xst" -ofn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Square_wave.ucf -p xc3s500e-vq100-4 "Square_wave.ngc" Square_wave.ngd  
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.xst" -ofn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Square_wave.ucf -p xc3s500e-vq100-4 "Square_wave.ngc" Square_wave.ngd  
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.xst" -ofn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Square_wave.ucf -p xc3s500e-vq100-4 "Square_wave.ngc" Square_wave.ngd  
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.xst" -ofn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Square_wave.ucf -p xc3s500e-vq100-4 "Square_wave.ngc" Square_wave.ngd  
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.xst" -ofn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Square_wave.ucf -p xc3s500e-vq100-4 "Square_wave.ngc" Square_wave.ngd  
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.xst" -ofn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.xst" -ofn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Square_wave.ucf -p xc3s500e-vq100-4 "Square_wave.ngc" Square_wave.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Square_wave_map.ncd Square_wave.ngd Square_wave.pcf 
+par -w -intstyle ise -ol high -t 1 Square_wave_map.ncd Square_wave.ncd Square_wave.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Square_wave.twx Square_wave.ncd -o Square_wave.twr Square_wave.pcf -ucf Square_wave.ucf 
+bitgen -intstyle ise -f Square_wave.ut Square_wave.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.xst" -ofn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Square_wave.ucf -p xc3s500e-vq100-4 "Square_wave.ngc" Square_wave.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Square_wave_map.ncd Square_wave.ngd Square_wave.pcf 
+par -w -intstyle ise -ol high -t 1 Square_wave_map.ncd Square_wave.ncd Square_wave.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Square_wave.twx Square_wave.ncd -o Square_wave.twr Square_wave.pcf -ucf Square_wave.ucf 
+bitgen -intstyle ise -f Square_wave.ut Square_wave.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.xst" -ofn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Square_wave.ucf -p xc3s500e-vq100-4 "Square_wave.ngc" Square_wave.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Square_wave_map.ncd Square_wave.ngd Square_wave.pcf 
+par -w -intstyle ise -ol high -t 1 Square_wave_map.ncd Square_wave.ncd Square_wave.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Square_wave.twx Square_wave.ncd -o Square_wave.twr Square_wave.pcf -ucf Square_wave.ucf 
+bitgen -intstyle ise -f Square_wave.ut Square_wave.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.xst" -ofn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Square_wave.ucf -p xc3s500e-vq100-4 "Square_wave.ngc" Square_wave.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Square_wave_map.ncd Square_wave.ngd Square_wave.pcf 
+par -w -intstyle ise -ol high -t 1 Square_wave_map.ncd Square_wave.ncd Square_wave.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Square_wave.twx Square_wave.ncd -o Square_wave.twr Square_wave.pcf -ucf Square_wave.ucf 
+bitgen -intstyle ise -f Square_wave.ut Square_wave.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.xst" -ofn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.xst" -ofn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Square_wave.ucf -p xc3s500e-vq100-4 "Square_wave.ngc" Square_wave.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Square_wave_map.ncd Square_wave.ngd Square_wave.pcf 
+par -w -intstyle ise -ol high -t 1 Square_wave_map.ncd Square_wave.ncd Square_wave.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Square_wave.twx Square_wave.ncd -o Square_wave.twr Square_wave.pcf -ucf Square_wave.ucf 
+bitgen -intstyle ise -f Square_wave.ut Square_wave.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.xst" -ofn "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Square_wave.ucf -p xc3s500e-vq100-4 "Square_wave.ngc" Square_wave.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o Square_wave_map.ncd Square_wave.ngd Square_wave.pcf 
+par -w -intstyle ise -ol high -t 1 Square_wave_map.ncd Square_wave.ncd Square_wave.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Square_wave.twx Square_wave.ncd -o Square_wave.twr Square_wave.pcf -ucf Square_wave.ucf 
+bitgen -intstyle ise -f Square_wave.ut Square_wave.ncd 

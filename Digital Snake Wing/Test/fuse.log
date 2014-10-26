@@ -1,0 +1,34 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test_tbench_isim_beh.exe" -prj "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test_tbench_beh.prj" "work.Test_tbench" 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/DCM32to27.vhd" into library work
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test.vhd" into library work
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test_tbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package textio
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling architecture bufg_v of entity BUFG [bufg_default]
+Compiling architecture ibufg_v of entity IBUFG [\IBUFG("DONT_CARE","0",true,"DEF...]
+Compiling architecture dcm_sp_clock_divide_by_2_v of entity dcm_sp_clock_divide_by_2 [dcm_sp_clock_divide_by_2_default]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_clock_lost_v of entity dcm_sp_clock_lost [dcm_sp_clock_lost_default]
+Compiling architecture dcm_sp_v of entity DCM_SP [\DCM_SP(true,"*",true,false,2.0,...]
+Compiling architecture behavioral of entity DCM32to27 [dcm32to27_default]
+Compiling architecture behavioral of entity Test [test_default]
+Compiling architecture behavior of entity test_tbench
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 27 VHDL Units
+Built simulation executable D:/GitHub/VHDL_Modules/Digital Snake Wing/Test/Test_tbench_isim_beh.exe
+Fuse Memory Usage: 57844 KB
+Fuse CPU Usage: 1075 ms

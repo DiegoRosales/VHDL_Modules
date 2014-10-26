@@ -1,0 +1,25 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Sqare_wave_tbench_isim_beh.exe" -prj "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Sqare_wave_tbench_beh.prj" "work.Sqare_wave_tbench" 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/I2S_Master.vhd" into library work
+Parsing VHDL file "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/PCM1754.vhd" into library work
+Parsing VHDL file "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Square_wave.vhd" into library work
+Parsing VHDL file "D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Sqare_wave_tbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling architecture fdce_v of entity FDCE [\FDCE('0')\]
+Compiling architecture behavioral of entity I2S_Master [i2s_master_default]
+Compiling architecture behavioral of entity PCM1754 [\PCM1754(32,2)\]
+Compiling architecture behavioral of entity Square_wave [square_wave_default]
+Compiling architecture behavior of entity sqare_wave_tbench
+Time Resolution for simulation is 1ps.
+Compiled 13 VHDL Units
+Built simulation executable D:/GitHub/VHDL_Modules/CODEC Wing/DAC Test/DACTest/Sqare_wave_tbench_isim_beh.exe
+Fuse Memory Usage: 49704 KB
+Fuse CPU Usage: 733 ms

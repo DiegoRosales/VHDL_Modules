@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="sim" num="172" delta="new" >Generating IP...
+</msg>
+
+<msg type="info" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Pre-processing HDL files for &apos;WaveformGenerator&apos;...</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">&quot;D:/GitHub/VHDL_Modules/Digital Snake Wing/DAC_Test/ipcore_dir/tmp/./_cg/_dbg/./dds_compiler_v4_0/sin_cos.vhd&quot; line 228: Real operand is not supported in this context.</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1"> Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.  </arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" >Failed executing Tcl generator.
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" >Failed to generate &apos;WaveformGenerator&apos;.  Failed executing Tcl generator.
+
+</msg>
+
+</messages>
+
