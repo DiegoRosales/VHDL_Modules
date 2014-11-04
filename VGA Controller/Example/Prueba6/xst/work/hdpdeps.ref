@@ -1,0 +1,16 @@
+V3 7
+FL D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Imagen_1.vhd 2013/10/26.11:41:19 P.28xd
+EN work/Imagen_1 1382805684 \
+      FL D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Imagen_1.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/Imagen_1/Imagen_1 1382805685 \
+      FL D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Imagen_1.vhd \
+      EN work/Imagen_1 1382805684 CP sync
+FL D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Sync.vhd 2013/10/26.10:38:26 P.28xd
+EN work/Sync 1382805682 \
+      FL D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Sync.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/Sync/Sync 1382805683 \
+      FL D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Sync.vhd EN work/Sync 1382805682

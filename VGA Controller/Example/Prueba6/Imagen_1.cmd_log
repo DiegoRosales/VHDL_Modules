@@ -1,0 +1,34 @@
+xst -intstyle ise -ifn "D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Imagen_1.xst" -ofn "D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Imagen_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Imagen_1.ucf -p xc3s100e-cp132-4 Imagen_1.ngc Imagen_1.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Imagen_1_map.ncd Imagen_1.ngd Imagen_1.pcf 
+par -w -intstyle ise -ol high -t 1 Imagen_1_map.ncd Imagen_1.ncd Imagen_1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Imagen_1.twx Imagen_1.ncd -o Imagen_1.twr Imagen_1.pcf -ucf Imagen_1.ucf 
+bitgen -intstyle ise -f Imagen_1.ut Imagen_1.ncd 
+xst -intstyle ise -ifn "D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Imagen_1.xst" -ofn "D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Imagen_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Imagen_1.ucf -p xc3s100e-cp132-4 Imagen_1.ngc Imagen_1.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Imagen_1_map.ncd Imagen_1.ngd Imagen_1.pcf 
+par -w -intstyle ise -ol high -t 1 Imagen_1_map.ncd Imagen_1.ncd Imagen_1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Imagen_1.twx Imagen_1.ncd -o Imagen_1.twr Imagen_1.pcf -ucf Imagen_1.ucf 
+bitgen -intstyle ise -f Imagen_1.ut Imagen_1.ncd 
+xst -intstyle ise -ifn "D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Imagen_1.xst" -ofn "D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Imagen_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Imagen_1.ucf -p xc3s100e-cp132-4 Imagen_1.ngc Imagen_1.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Imagen_1_map.ncd Imagen_1.ngd Imagen_1.pcf 
+par -w -intstyle ise -ol high -t 1 Imagen_1_map.ncd Imagen_1.ncd Imagen_1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Imagen_1.twx Imagen_1.ncd -o Imagen_1.twr Imagen_1.pcf -ucf Imagen_1.ucf 
+bitgen -intstyle ise -f Imagen_1.ut Imagen_1.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Imagen_1.ucf -p xc3s100e-cp132-4 Imagen_1.ngc Imagen_1.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Imagen_1_map.ncd Imagen_1.ngd Imagen_1.pcf 
+par -w -intstyle ise -ol high -t 1 Imagen_1_map.ncd Imagen_1.ncd Imagen_1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Imagen_1.twx Imagen_1.ncd -o Imagen_1.twr Imagen_1.pcf -ucf Imagen_1.ucf 
+bitgen -intstyle ise -f Imagen_1.ut Imagen_1.ncd 
+xst -intstyle ise -ifn "D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Imagen_1.xst" -ofn "D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Imagen_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Imagen_1.ucf -p xc3s100e-cp132-4 Imagen_1.ngc Imagen_1.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Imagen_1_map.ncd Imagen_1.ngd Imagen_1.pcf 
+par -w -intstyle ise -ol high -t 1 Imagen_1_map.ncd Imagen_1.ncd Imagen_1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Imagen_1.twx Imagen_1.ncd -o Imagen_1.twr Imagen_1.pcf -ucf Imagen_1.ucf 
+bitgen -intstyle ise -f Imagen_1.ut Imagen_1.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Imagen_1.ucf -p xc3s100e-cp132-4 Imagen_1.ngc Imagen_1.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Imagen_1_map.ncd Imagen_1.ngd Imagen_1.pcf 
+par -w -intstyle ise -ol high -t 1 Imagen_1_map.ncd Imagen_1.ncd Imagen_1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Imagen_1.twx Imagen_1.ncd -o Imagen_1.twr Imagen_1.pcf -ucf Imagen_1.ucf 
+bitgen -intstyle ise -f Imagen_1.ut Imagen_1.ncd 

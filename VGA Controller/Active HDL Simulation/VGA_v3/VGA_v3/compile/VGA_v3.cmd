@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\VGA_v3\VGA_v3\library.cfg"  -j "c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\projlib.cfg"  -d "c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\compile"   -work VGA_v3  -O3 -e 100 -2002 "c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Sync.vhd" "c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_1.vhd" "c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_2.vhd"

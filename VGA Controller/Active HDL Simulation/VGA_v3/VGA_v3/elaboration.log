@@ -1,0 +1,36 @@
+Active-HDL 9.1.2354.4209  2013-10-26 22:02:13
+
+Elaboration top modules:
+Architecture                  Imagen_1(Imagen_1)
+
+
+------------------------------------------------------------------------------------------
+Entity   | Architecture | Library | Info | Compiler Version         | Compilation Options
+------------------------------------------------------------------------------------------
+Imagen_1 | Imagen_1     | vga_v3  |      | 9.1.2354.4209  (Windows) | -O3
+Sync     | sync         | vga_v3  |      | 9.1.2354.4209  (Windows) | -O3
+------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------
+VHDL Package            | Library | Info | Compiler Version         | Compilation Options
+------------------------------------------------------------------------------------------
+standard                | std     |      |                          | <unavailable>
+TEXTIO                  | std     |      | 9.1.2354.4209  (Windows) |  -2008
+std_logic_1164          | ieee    |      | 9.1.2354.4209  (Windows) |  -2008
+std_logic_arith         | ieee    |      | 9.1.2354.4209  (Windows) | 
+STD_LOGIC_UNSIGNED      | ieee    |      | 9.1.2354.4209  (Windows) | 
+------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------
+Library                 | Comment
+------------------------------------------------------------------------------------------
+ieee                    | Standard IEEE packages library
+std                     | Standard VHDL library
+vga_v3                  | None
+------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+Imagen_1 Imagen_1 Imagen_1
+
+
+The performance of simulation is reduced. Version Student Edition

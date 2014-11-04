@@ -1,0 +1,17 @@
+
+
+NET "B[0]" LOC = H13;
+NET "B[1]" LOC = J13;
+NET "G[0]" LOC = F14;
+NET "G[1]" LOC = G13;
+NET "G[2]" LOC = G14;
+NET "R[0]" LOC = C14;
+NET "R[1]" LOC = D13;
+NET "R[2]" LOC = F13;
+NET "CK" LOC = M6;
+NET "H" LOC = J14;
+NET "V" LOC = K13;
+
+
+NET "H_debug" LOC = B9;
+NET "V_debug" LOC = A9;

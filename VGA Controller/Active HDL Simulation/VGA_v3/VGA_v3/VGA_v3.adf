@@ -1,0 +1,61 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=VGA_v3
+
+[Library]
+VGA_v3=.\VGA_v3.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=Xilinx SPARTAN3E
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+VGA_v3=.
+Active_lib=SPARTAN3E
+xilinxun=SPARTAN3E
+UnlinkedDesignLibrary=SPARTAN3E
+DESIGNS=SPARTAN3E
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=imagen_1|Imagen_1|0 imagen_2|Imagen_2|0 sync|Sync|0 
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/Sync.vhd=-1
+/Imagen_1.vhd=-1
+/Imagen_2.vhd=-1
+/..\..\..\..\Telecom\P4\P4\Calculadora\src\Sync.awc=-1
+/..\..\..\..\Telecom\P4\P4\Calculadora\src\Imagen_1.awc=-1
+
+[Files.Data]
+.\src\Sync.vhd=VHDL Source Code
+.\src\Imagen_1.vhd=VHDL Source Code
+.\src\Imagen_2.vhd=VHDL Source Code
+.\..\..\..\Telecom\P4\P4\Calculadora\src\Sync.awc=Accelerated Waveform Configuration
+.\..\..\..\Telecom\P4\P4\Calculadora\src\Imagen_1.awc=Accelerated Waveform Configuration
+

@@ -1,0 +1,8 @@
+Release 14.2 Drc P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sat Oct 26 11:46:25 2013
+
+drc -z Imagen_1.ncd Imagen_1.pcf
+
+DRC detected 0 errors and 0 warnings.

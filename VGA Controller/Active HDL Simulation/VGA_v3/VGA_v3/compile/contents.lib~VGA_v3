@@ -1,0 +1,7 @@
+131
+~E 1 "./src/Imagen_1.vhd" 6 Imagen_1
+~A 1 "./src/Imagen_1.vhd" 15 Imagen_1
+~E 1 "./src/Imagen_2.vhd" 6 Imagen_2
+~A 1 "./src/Imagen_2.vhd" 15 Imagen_2
+~E 1 "./src/Sync.vhd" 6 Sync
+~A 1 "./src/Sync.vhd" 17 Sync

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Sat Oct 26 11:17:12 2013
+# Process ID: 9744
+# Log file: D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/planAhead_run_1/planAhead.log
+# Journal file: D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/pa.fromHdl.tcl
+startgroup
+set_property package_pin B8 [get_ports CK]
+endgroup
+save_design
+refresh_design
+startgroup
+set_property package_pin B8 [get_ports CK]
+endgroup
+startgroup
+set_property package_pin M6 [get_ports CK]
+endgroup
+save_design

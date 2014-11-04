@@ -1,0 +1,49 @@
+timestamp=1382842672289
+
+[imagen_1]
+A/imagen_1=A/Imagen_1 21|./src/Imagen_1.vhd|15|1*72557
+BinI32/imagen_1=3*11980
+I=0*14650
+I/imagen_1=I/Imagen_1 0*15548
+M=11|0|v98|1382802667645|./src/Imagen_1.vhd|0*14235*0x256f93ffda791dda5115bb89050abaabeefd9f71|0*14573*0xab32bc1a2daf049573e14469f634e0e6
+M/imagen_1=M/Imagen_1 21|0|v98|1382842672047|./src/Imagen_1.vhd|0*14886*0xe2ffa2e294468ab91efa5dfa88ba095c8a82f9af|0*15459*0xb33770ff1c10522f9491560174ac8e6c
+R=./src/Imagen_1.vhd|6
+Version=9.1.2354.4209  (Windows)|00000003789cd3f5370600015b00b0
+Version/imagen_1=9.1.2354.4209  (Windows)|00000003789cd3f5370600015b00b0
+
+[imagen_2]
+A/imagen_2=A/Imagen_2 21|./src/Imagen_2.vhd|15|1*76065
+BinI32/imagen_2=3*12503
+I=0*19221
+I/imagen_2=I/Imagen_2 0*23133
+M=11|0|v98|1382806626147|./src/Imagen_2.vhd|0*18806*0x6d8ad548f6bba7a0243e1e591491b5be73382ca5|0*19144*0xab32bc1a2daf049573e14469f634e0e6
+M/imagen_2=M/Imagen_2 21|0|v98|1382842672170|./src/Imagen_2.vhd|0*22393*0x55670b9c344865e1b2e496e08cc009d5d7347f08|0*23044*0xb33770ff1c10522f9491560174ac8e6c
+R=./src/Imagen_2.vhd|6
+Version=9.1.2354.4209  (Windows)|00000003789cd3f5370600015b00b0
+Version/imagen_2=9.1.2354.4209  (Windows)|00000003789cd3f5370600015b00b0
+
+[sync]
+A/sync=A/Sync 21|./src/Sync.vhd|17|1*67706
+BinI32/sync=3*10112
+I=0*16530
+I/sync=I/Sync 0*22156
+M=11|0|v98|1382806584245|./src/Sync.vhd|0*16098*0x606b80c9723f46cfb6e4608dccb2e60df00b199d|0*16461*0xab32bc1a2daf049573e14469f634e0e6
+M/sync=M/Sync 21|0|v98|1382842671901|./src/Sync.vhd|0*20601*0xca9d53eed21b128f7d0bdf3fe83b09cedc177377|0*22079*0xb33770ff1c10522f9491560174ac8e6c
+R=./src/Sync.vhd|6
+Version=9.1.2354.4209  (Windows)|00000003789cd3f5370600015b00b0
+Version/sync=9.1.2354.4209  (Windows)|00000003789cd3f5370600015b00b0
+
+[~A]
+ModifyID=131
+Version=73
+
+[~MFT]
+0=112|0VGA_v3.mgf|23133|16919
+1=36|1VGA_v3.mgf|76065|67706
+3=22|3VGA_v3.mgf|12503|10112
+
+[~U]
+imagen_1=Imagen_1 11|0*13983|
+imagen_2=Imagen_2 11|0*18554|
+sync=Sync 11|0*15844|
+

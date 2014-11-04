@@ -1,0 +1,12 @@
+[Version]
+Version=9.1
+[Designs]
+vga_v3=.\VGA_v3\VGA_v3.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+vga_v3=1

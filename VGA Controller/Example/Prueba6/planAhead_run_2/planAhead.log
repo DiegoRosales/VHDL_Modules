@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Sat Oct 26 11:13:12 2013
+# Process ID: 8832
+# Log file: D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/planAhead_run_2/planAhead.log
+# Journal file: D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/pa.fromHdl.tcl
+# create_project -name Prueba6 -dir "D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/planAhead_run_2" -part xc3s100ecp132-4
+Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "Imagen_1.ucf" [current_fileset -constrset]
+Adding file 'D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Imagen_1.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {Sync.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Imagen_1.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top Imagen_1 $srcset
+# add_files [list {Imagen_1.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s100ecp132-4
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Sync.vhd" into library work
+Parsing VHDL file "D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Imagen_1.vhd" into library work
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/cp132/Package.xml
+Loading io standards from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/cp132/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Imagen_1.ucf]
+Finished Parsing UCF File [D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Imagen_1.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: aca3a341
+open_rtl_design: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 503.418 ; gain = 91.340
+startgroup
+set_property package_pin B9 [get_ports H_debug]
+endgroup
+startgroup
+set_property package_pin A9 [get_ports V_debug]
+endgroup
+save_design
+exit
+INFO: [Common 17-206] Exiting PlanAhead...
+INFO: [Common 17-83] Releasing license: PlanAhead

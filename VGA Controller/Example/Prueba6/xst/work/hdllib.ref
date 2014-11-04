@@ -1,0 +1,4 @@
+EN imagen_1 NULL D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Imagen_1.vhd sub00/vhpl02 1382805684
+EN sync NULL D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Sync.vhd sub00/vhpl00 1382805682
+AR imagen_1 imagen_1 D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Imagen_1.vhd sub00/vhpl03 1382805685
+AR sync sync D:/Users/Diego/Documents/FPGA/VGA/Prueba6/Prueba6/Sync.vhd sub00/vhpl01 1382805683

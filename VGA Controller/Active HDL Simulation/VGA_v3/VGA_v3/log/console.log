@@ -1,0 +1,857 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -work VGA_v3 -2002  $dsn/src/Sync.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Sync.vhd
+# Compile Entity "Sync"
+# Compile Architecture "Sync" of Entity "Sync"
+# Error: COMP96_0078: Sync.vhd : (64, 2): Unknown identifier "H_GO".
+# Error: COMP96_0133: Sync.vhd : (64, 2): Cannot find object declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -work VGA_v3 -2002  $dsn/src/Sync.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Sync.vhd
+# Compile Entity "Sync"
+# Compile Architecture "Sync" of Entity "Sync"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+asim -O5 +access +r +m+Sync Sync Sync
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6134 kB (elbread=1023 elab2=5019 kernel=90 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\wave.asdb
+#  10:20 a.m., sábado, 26 de octubre de 2013
+#  Simulation has been initialized
+#  Selected Top-Level: Sync (Sync)
+# 11 signal(s) traced.
+run 3 ms
+# KERNEL: stopped at time: 3 ms
+acom -O3 -work VGA_v3 -2002  $dsn/src/Sync.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Sync.vhd
+# Compile Entity "Sync"
+# Compile Architecture "Sync" of Entity "Sync"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6134 kB (elbread=1023 elab2=5020 kernel=90 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\wave.asdb
+#  10:24 a.m., sábado, 26 de octubre de 2013
+#  Simulation has been initialized
+#  Selected Top-Level: Sync (Sync)
+# KERNEL: Signal '/Sync/CK' has already been traced
+# KERNEL: Signal '/Sync/HS' has already been traced
+# KERNEL: Signal '/Sync/VS' has already been traced
+# KERNEL: Signal '/Sync/GO' has already been traced
+# KERNEL: Signal '/Sync/X_count' has already been traced
+# KERNEL: Signal '/Sync/Y_count' has already been traced
+# KERNEL: Signal '/Sync/CK25' has already been traced
+# KERNEL: Signal '/Sync/CurrentHPos' has already been traced
+# KERNEL: Signal '/Sync/CurrentVPos' has already been traced
+# KERNEL: Signal '/Sync/H_GO' has already been traced
+# KERNEL: Signal '/Sync/V_GO' has already been traced
+run 3 ms
+# KERNEL: stopped at time: 3 ms
+acom -O3 -work VGA_v3 -2002  $dsn/src/Sync.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Sync.vhd
+# Compile Entity "Sync"
+# Compile Architecture "Sync" of Entity "Sync"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6134 kB (elbread=1023 elab2=5020 kernel=90 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\wave.asdb
+#  10:24 a.m., sábado, 26 de octubre de 2013
+#  Simulation has been initialized
+#  Selected Top-Level: Sync (Sync)
+# KERNEL: Signal '/Sync/CK' has already been traced
+# KERNEL: Signal '/Sync/HS' has already been traced
+# KERNEL: Signal '/Sync/VS' has already been traced
+# KERNEL: Signal '/Sync/GO' has already been traced
+# KERNEL: Signal '/Sync/X_count' has already been traced
+# KERNEL: Signal '/Sync/Y_count' has already been traced
+# KERNEL: Signal '/Sync/CK25' has already been traced
+# KERNEL: Signal '/Sync/CurrentHPos' has already been traced
+# KERNEL: Signal '/Sync/CurrentVPos' has already been traced
+# KERNEL: Signal '/Sync/H_GO' has already been traced
+# KERNEL: Signal '/Sync/V_GO' has already been traced
+run 3 ms
+# KERNEL: stopped at time: 3 ms
+acom -O3 -work VGA_v3 -2002  $dsn/src/Sync.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Sync.vhd
+# Compile Entity "Sync"
+# Compile Architecture "Sync" of Entity "Sync"
+# Error: COMP96_0078: Sync.vhd : (72, 2): Unknown identifier "Cuenta_X".
+# Error: COMP96_0133: Sync.vhd : (72, 2): Cannot find object declaration.
+# Error: COMP96_0078: Sync.vhd : (74, 2): Unknown identifier "Cuenta_Y".
+# Error: COMP96_0133: Sync.vhd : (74, 2): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -work VGA_v3 -2002  $dsn/src/Sync.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Sync.vhd
+# Compile Entity "Sync"
+# Compile Architecture "Sync" of Entity "Sync"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6137 kB (elbread=1023 elab2=5022 kernel=91 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\wave.asdb
+#  10:30 a.m., sábado, 26 de octubre de 2013
+#  Simulation has been initialized
+#  Selected Top-Level: Sync (Sync)
+# KERNEL: Signal '/Sync/CK' has already been traced
+# KERNEL: Signal '/Sync/HS' has already been traced
+# KERNEL: Signal '/Sync/VS' has already been traced
+# KERNEL: Signal '/Sync/GO' has already been traced
+# KERNEL: Signal '/Sync/X_count' has already been traced
+# KERNEL: Signal '/Sync/Y_count' has already been traced
+# KERNEL: Signal '/Sync/CK25' has already been traced
+# KERNEL: Signal '/Sync/CurrentHPos' has already been traced
+# KERNEL: Signal '/Sync/CurrentVPos' has already been traced
+# KERNEL: Signal '/Sync/H_GO' has already been traced
+# KERNEL: Signal '/Sync/V_GO' has already been traced
+# KERNEL: Signal '/Sync/X_count' has already been traced
+# KERNEL: Signal '/Sync/Y_count' has already been traced
+# 0 signal(s) traced.
+# 2 signal(s) traced.
+run 17 ms
+# KERNEL: stopped at time: 17 ms
+acom -O3 -work VGA_v3 -2002  $dsn/src/Sync.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Sync.vhd
+# Compile Entity "Sync"
+# Compile Architecture "Sync" of Entity "Sync"
+# Error: COMP96_0367: Sync.vhd : (79, 7): Improper array length (11). Expected length is 9.
+# Error: COMP96_0367: Sync.vhd : (80, 7): Improper array length (11). Expected length is 10.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# ULM: Warning: ULM_0021 Architecture `sync' of entity `vga_v3.sync' is not up-to-date. Please recompile file `c:\My_Designs\VGA_v3\VGA_v3\VGA_v3/src/Sync.vhd'.
+acom -O3 -work VGA_v3 -2002  $dsn/src/Sync.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Sync.vhd
+# Compile Entity "Sync"
+# Compile Architecture "Sync" of Entity "Sync"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6138 kB (elbread=1023 elab2=5023 kernel=91 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\wave.asdb
+#  10:38 a.m., sábado, 26 de octubre de 2013
+#  Simulation has been initialized
+#  Selected Top-Level: Sync (Sync)
+# KERNEL: Signal '/Sync/CK' has already been traced
+# KERNEL: Signal '/Sync/HS' has already been traced
+# KERNEL: Signal '/Sync/VS' has already been traced
+# KERNEL: Signal '/Sync/GO' has already been traced
+# KERNEL: Signal '/Sync/CK25' has already been traced
+# KERNEL: Signal '/Sync/CurrentHPos' has already been traced
+# KERNEL: Signal '/Sync/CurrentVPos' has already been traced
+# KERNEL: Signal '/Sync/H_GO' has already been traced
+# KERNEL: Signal '/Sync/V_GO' has already been traced
+# KERNEL: Signal '/Sync/Cuenta_X' has already been traced
+# KERNEL: Signal '/Sync/Cuenta_Y' has already been traced
+# Warning: WAVEFORM: Signal /Sync/X_count not found.
+# Warning: WAVEFORM: Signal /Sync/Y_count not found.
+# 2 signal(s) traced.
+run 17 ms
+# KERNEL: stopped at time: 17 ms
+acom -O3 -work VGA_v3 -2002  $dsn/src/Imagen_1.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_1.vhd
+# Compile Entity "Imagen_1"
+# Compile Architecture "Imagen_1" of Entity "Imagen_1"
+# Error: COMP96_0078: Imagen_1.vhd : (29, 60): Unknown identifier "V".
+# Error: COMP96_0413: Imagen_1.vhd : (29, 44): Actual of mode 'in' cannot be assigned to formal "HS" of mode 'out'.
+# Error: COMP96_0413: Imagen_1.vhd : (29, 51): Actual of mode 'in' cannot be assigned to formal "VS" of mode 'out'.
+# Error: COMP96_0133: Imagen_1.vhd : (29, 60): Cannot find object declaration.
+# Error: COMP96_0112: Imagen_1.vhd : (29, 60): "V" does not match the formal name.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -work VGA_v3 -2002  $dsn/src/Imagen_1.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_1.vhd
+# Compile Entity "Imagen_1"
+# Compile Architecture "Imagen_1" of Entity "Imagen_1"
+# Error: COMP96_0078: Imagen_1.vhd : (29, 60): Unknown identifier "V".
+# Error: COMP96_0133: Imagen_1.vhd : (29, 60): Cannot find object declaration.
+# Error: COMP96_0112: Imagen_1.vhd : (29, 60): "V" does not match the formal name.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work VGA_v3 -2002  $dsn/src/Imagen_1.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_1.vhd
+# Compile Entity "Imagen_1"
+# Compile Architecture "Imagen_1" of Entity "Imagen_1"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+Imagen_1 Imagen_1 Imagen_1
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 100MB
+# asim: Retval memory: 100MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6139 kB (elbread=1023 elab2=5024 kernel=91 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\wave.asdb
+#  10:51 a.m., sábado, 26 de octubre de 2013
+#  Simulation has been initialized
+#  Selected Top-Level: Imagen_1 (Imagen_1)
+# 9 signal(s) traced.
+run 17 ms
+# KERNEL: stopped at time: 17 ms
+acom -O3 -work VGA_v3 -2002  $dsn/src/Sync.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Sync.vhd
+# Compile Entity "Sync"
+# Compile Architecture "Sync" of Entity "Sync"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work VGA_v3 -2002  $dsn/src/Sync.vhd $dsn/src/Imagen_1.vhd $dsn/src/Imagen_2.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Sync.vhd
+# Compile Entity "Sync"
+# Compile Architecture "Sync" of Entity "Sync"
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_1.vhd
+# Compile Entity "Imagen_1"
+# Compile Architecture "Imagen_1" of Entity "Imagen_1"
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_2.vhd
+# Compile Entity "Imagen_2"
+# Error: COMP96_0111: Imagen_2.vhd : (13, 5): Labels do not match.
+# Compile Architecture "Imagen_2" of Entity "Imagen_2"
+# Error: COMP96_0019: Imagen_2.vhd : (38, 1): Keyword 'begin' expected.
+# Error: COMP96_0019: Imagen_2.vhd : (38, 4): Keyword 'end' expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work VGA_v3 -2002  $dsn/src/Imagen_2.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_2.vhd
+# Compile Entity "Imagen_2"
+# Error: COMP96_0018: Imagen_2.vhd : (13, 2): Identifier expected.
+# Error: COMP96_0111: Imagen_2.vhd : (14, 5): Labels do not match.
+# Compile Architecture "Imagen_2" of Entity "Imagen_2"
+# Error: COMP96_0019: Imagen_2.vhd : (39, 1): Keyword 'begin' expected.
+# Error: COMP96_0019: Imagen_2.vhd : (39, 4): Keyword 'end' expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -work VGA_v3 -2002  $dsn/src/Sync.vhd $dsn/src/Imagen_1.vhd $dsn/src/Imagen_2.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Sync.vhd
+# Compile Entity "Sync"
+# Compile Architecture "Sync" of Entity "Sync"
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_1.vhd
+# Compile Entity "Imagen_1"
+# Compile Architecture "Imagen_1" of Entity "Imagen_1"
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_2.vhd
+# Compile Entity "Imagen_2"
+# Error: COMP96_0111: Imagen_2.vhd : (14, 5): Labels do not match.
+# Compile Architecture "Imagen_2" of Entity "Imagen_2"
+# Error: COMP96_0019: Imagen_2.vhd : (39, 1): Keyword 'begin' expected.
+# Error: COMP96_0019: Imagen_2.vhd : (39, 4): Keyword 'end' expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work VGA_v3 -2002  $dsn/src/Imagen_2.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_2.vhd
+# Compile Entity "Imagen_2"
+# Error: COMP96_0018: Imagen_2.vhd : (12, 2): Identifier expected.
+# Compile Architecture "Imagen_2" of Entity "Imagen_2"
+# Error: COMP96_0019: Imagen_2.vhd : (38, 1): Keyword 'begin' expected.
+# Error: COMP96_0019: Imagen_2.vhd : (38, 4): Keyword 'end' expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -work VGA_v3 -2002  $dsn/src/Sync.vhd $dsn/src/Imagen_1.vhd $dsn/src/Imagen_2.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Sync.vhd
+# Compile Entity "Sync"
+# Compile Architecture "Sync" of Entity "Sync"
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_1.vhd
+# Compile Entity "Imagen_1"
+# Compile Architecture "Imagen_1" of Entity "Imagen_1"
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_2.vhd
+# Compile Entity "Imagen_2"
+# Compile Architecture "Imagen_2" of Entity "Imagen_2"
+# Error: COMP96_0019: Imagen_2.vhd : (38, 1): Keyword 'begin' expected.
+# Error: COMP96_0019: Imagen_2.vhd : (38, 4): Keyword 'end' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work VGA_v3 -2002  $dsn/src/Imagen_2.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_2.vhd
+# Compile Entity "Imagen_2"
+# Compile Architecture "Imagen_2" of Entity "Imagen_2"
+# Error: COMP96_0019: Imagen_2.vhd : (39, 1): Keyword 'begin' expected.
+# Error: COMP96_0019: Imagen_2.vhd : (39, 17): Keyword 'end' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -work VGA_v3 -2002  $dsn/src/Imagen_2.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_2.vhd
+# Compile Entity "Imagen_2"
+# Compile Architecture "Imagen_2" of Entity "Imagen_2"
+# Error: COMP96_0019: Imagen_2.vhd : (47, 2): Keyword 'when' expected.
+# Error: COMP96_0015: Imagen_2.vhd : (47, 2): ';' expected.
+# Error: COMP96_0015: Imagen_2.vhd : (47, 6): ';' expected.
+# Error: COMP96_0016: Imagen_2.vhd : (47, 13): Design unit declaration expected.
+# Error: COMP96_0018: Imagen_2.vhd : (51, 17): Identifier expected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -work VGA_v3 -2002  $dsn/src/Imagen_2.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_2.vhd
+# Compile Entity "Imagen_2"
+# Compile Architecture "Imagen_2" of Entity "Imagen_2"
+# Error: COMP96_0019: Imagen_2.vhd : (50, 1): Keyword 'when' expected.
+# Error: COMP96_0015: Imagen_2.vhd : (50, 1): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -work VGA_v3 -2002  $dsn/src/Imagen_2.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_2.vhd
+# Compile Entity "Imagen_2"
+# Compile Architecture "Imagen_2" of Entity "Imagen_2"
+# Error: COMP96_0617: Imagen_2.vhd : (38, 12): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: Imagen_2.vhd : (39, 9): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: Imagen_2.vhd : (40, 2): Unknown identifier "inicio_Y".
+# Error: COMP96_0133: Imagen_2.vhd : (40, 2): Cannot find object declaration.
+# Error: COMP96_0617: Imagen_2.vhd : (41, 9): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: Imagen_2.vhd : (45, 53): Unknown identifier "inicio_Y".
+# Error: COMP96_0133: Imagen_2.vhd : (45, 53): Cannot find object declaration.
+# Error: COMP96_0077: Imagen_2.vhd : (45, 18): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -work VGA_v3 -2002  $dsn/src/Imagen_2.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_2.vhd
+# Compile Entity "Imagen_2"
+# Compile Architecture "Imagen_2" of Entity "Imagen_2"
+# Error: COMP96_0149: Imagen_2.vhd : (38, 29): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0367: Imagen_2.vhd : (38, 12): Improper array length (0). Expected length is 10.
+# Error: COMP96_0617: Imagen_2.vhd : (39, 9): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: Imagen_2.vhd : (40, 2): Unknown identifier "inicio_Y".
+# Error: COMP96_0133: Imagen_2.vhd : (40, 2): Cannot find object declaration.
+# Error: COMP96_0617: Imagen_2.vhd : (41, 9): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: Imagen_2.vhd : (45, 53): Unknown identifier "inicio_Y".
+# Error: COMP96_0133: Imagen_2.vhd : (45, 53): Cannot find object declaration.
+# Error: COMP96_0077: Imagen_2.vhd : (45, 18): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile failure 9 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -work VGA_v3 -2002  $dsn/src/Imagen_2.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_2.vhd
+# Compile Entity "Imagen_2"
+# Compile Architecture "Imagen_2" of Entity "Imagen_2"
+# Error: COMP96_0617: Imagen_2.vhd : (38, 12): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: Imagen_2.vhd : (39, 9): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: Imagen_2.vhd : (40, 12): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: Imagen_2.vhd : (41, 9): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -work VGA_v3 -2002  $dsn/src/Imagen_2.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_2.vhd
+# Compile Entity "Imagen_2"
+# Compile Architecture "Imagen_2" of Entity "Imagen_2"
+# Error: COMP96_0149: Imagen_2.vhd : (38, 29): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0367: Imagen_2.vhd : (38, 12): Improper array length (0). Expected length is 10.
+# Error: COMP96_0617: Imagen_2.vhd : (39, 9): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: Imagen_2.vhd : (40, 12): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: Imagen_2.vhd : (41, 9): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -work VGA_v3 -2002  $dsn/src/Imagen_2.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_2.vhd
+# Compile Entity "Imagen_2"
+# Compile Architecture "Imagen_2" of Entity "Imagen_2"
+# Error: COMP96_0149: Imagen_2.vhd : (38, 22): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0617: Imagen_2.vhd : (38, 12): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: Imagen_2.vhd : (39, 9): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: Imagen_2.vhd : (40, 12): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: Imagen_2.vhd : (41, 9): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -work VGA_v3 -2002  $dsn/src/Imagen_2.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_2.vhd
+# Compile Entity "Imagen_2"
+# Compile Architecture "Imagen_2" of Entity "Imagen_2"
+# Error: COMP96_0617: Imagen_2.vhd : (39, 9): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: Imagen_2.vhd : (40, 12): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: Imagen_2.vhd : (41, 9): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -work VGA_v3 -2002  $dsn/src/Imagen_2.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_2.vhd
+# Compile Entity "Imagen_2"
+# Compile Architecture "Imagen_2" of Entity "Imagen_2"
+# Error: COMP96_0071: Imagen_2.vhd : (39, 12): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Imagen_2.vhd : (39, 9): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0071: Imagen_2.vhd : (40, 15): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Imagen_2.vhd : (40, 12): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0071: Imagen_2.vhd : (41, 12): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Imagen_2.vhd : (41, 9): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -work VGA_v3 -2002  $dsn/src/Imagen_2.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_2.vhd
+# Compile Entity "Imagen_2"
+# Compile Architecture "Imagen_2" of Entity "Imagen_2"
+# Error: COMP96_0071: Imagen_2.vhd : (38, 15): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Imagen_2.vhd : (38, 12): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0071: Imagen_2.vhd : (39, 12): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Imagen_2.vhd : (39, 9): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0071: Imagen_2.vhd : (40, 15): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Imagen_2.vhd : (40, 12): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0071: Imagen_2.vhd : (41, 12): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: Imagen_2.vhd : (41, 9): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -work VGA_v3 -2002  $dsn/src/Imagen_2.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_2.vhd
+# Compile Entity "Imagen_2"
+# Compile Architecture "Imagen_2" of Entity "Imagen_2"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+Imagen_2 Imagen_2 Imagen_2
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 100MB
+# asim: Retval memory: 100MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6140 kB (elbread=1023 elab2=5025 kernel=91 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\wave.asdb
+#  12:12 p.m., sábado, 26 de octubre de 2013
+#  Simulation has been initialized
+#  Selected Top-Level: Imagen_2 (Imagen_2)
+# 14 signal(s) traced.
+run 17 ms
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /Imagen_2,  Process: line__45.
+# KERNEL: stopped at time: 17 ms
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6140 kB (elbread=1023 elab2=5025 kernel=91 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\wave.asdb
+#  12:12 p.m., sábado, 26 de octubre de 2013
+#  Simulation has been initialized
+#  Selected Top-Level: Imagen_2 (Imagen_2)
+# KERNEL: Signal '/Imagen_2/CK' has already been traced
+# KERNEL: Signal '/Imagen_2/R' has already been traced
+# KERNEL: Signal '/Imagen_2/G' has already been traced
+# KERNEL: Signal '/Imagen_2/B' has already been traced
+# KERNEL: Signal '/Imagen_2/H' has already been traced
+# KERNEL: Signal '/Imagen_2/V' has already been traced
+# KERNEL: Signal '/Imagen_2/inicio_X' has already been traced
+# KERNEL: Signal '/Imagen_2/fin_X' has already been traced
+# KERNEL: Signal '/Imagen_2/inicio_Y' has already been traced
+# KERNEL: Signal '/Imagen_2/fin_Y' has already been traced
+# KERNEL: Signal '/Imagen_2/X' has already been traced
+# KERNEL: Signal '/Imagen_2/Y' has already been traced
+# KERNEL: Signal '/Imagen_2/GO' has already been traced
+# KERNEL: Signal '/Imagen_2/CK25' has already been traced
+run 17 ms
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /Imagen_2,  Process: line__45.
+# KERNEL: stopped at time: 17 ms
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+Imagen_1 Imagen_1 Imagen_1
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 100MB
+# asim: Retval memory: 100MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6140 kB (elbread=1023 elab2=5025 kernel=91 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\wave.asdb
+#  12:44 p.m., sábado, 26 de octubre de 2013
+#  Simulation has been initialized
+#  Selected Top-Level: Imagen_1 (Imagen_1)
+# 9 signal(s) traced.
+run 17 ms
+# KERNEL: stopped at time: 17 ms
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6140 kB (elbread=1023 elab2=5025 kernel=91 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\wave.asdb
+#  01:08 p.m., sábado, 26 de octubre de 2013
+#  Simulation has been initialized
+#  Selected Top-Level: Imagen_1 (Imagen_1)
+# KERNEL: Signal '/Imagen_1/CK' has already been traced
+# KERNEL: Signal '/Imagen_1/R' has already been traced
+# KERNEL: Signal '/Imagen_1/G' has already been traced
+# KERNEL: Signal '/Imagen_1/B' has already been traced
+# KERNEL: Signal '/Imagen_1/H' has already been traced
+# KERNEL: Signal '/Imagen_1/V' has already been traced
+# KERNEL: Signal '/Imagen_1/X' has already been traced
+# KERNEL: Signal '/Imagen_1/Y' has already been traced
+# KERNEL: Signal '/Imagen_1/GO' has already been traced
+run 17 ms
+endsim
+# KERNEL: stopped at time: 5137530 ns
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+Sync Sync Sync
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 100MB
+# asim: Retval memory: 100MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.6 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6138 kB (elbread=1023 elab2=5023 kernel=91 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\wave.asdb
+#  01:08 p.m., sábado, 26 de octubre de 2013
+#  Simulation has been initialized
+#  Selected Top-Level: Sync (Sync)
+# 14 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6138 kB (elbread=1023 elab2=5023 kernel=91 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\wave.asdb
+#  01:08 p.m., sábado, 26 de octubre de 2013
+#  Simulation has been initialized
+#  Selected Top-Level: Sync (Sync)
+# KERNEL: Signal '/Sync/CK' has already been traced
+# KERNEL: Signal '/Sync/HS' has already been traced
+# KERNEL: Signal '/Sync/VS' has already been traced
+# KERNEL: Signal '/Sync/GO' has already been traced
+# KERNEL: Signal '/Sync/X' has already been traced
+# KERNEL: Signal '/Sync/Y' has already been traced
+# KERNEL: Signal '/Sync/CK_25' has already been traced
+# KERNEL: Signal '/Sync/CK25' has already been traced
+# KERNEL: Signal '/Sync/CurrentHPos' has already been traced
+# KERNEL: Signal '/Sync/CurrentVPos' has already been traced
+# KERNEL: Signal '/Sync/H_GO' has already been traced
+# KERNEL: Signal '/Sync/V_GO' has already been traced
+# KERNEL: Signal '/Sync/Cuenta_X' has already been traced
+# KERNEL: Signal '/Sync/Cuenta_Y' has already been traced
+run 17 ms
+# KERNEL: stopped at time: 17 ms
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6138 kB (elbread=1023 elab2=5023 kernel=91 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\wave.asdb
+#  01:08 p.m., sábado, 26 de octubre de 2013
+#  Simulation has been initialized
+#  Selected Top-Level: Sync (Sync)
+# KERNEL: Signal '/Sync/CK' has already been traced
+# KERNEL: Signal '/Sync/HS' has already been traced
+# KERNEL: Signal '/Sync/VS' has already been traced
+# KERNEL: Signal '/Sync/GO' has already been traced
+# KERNEL: Signal '/Sync/X' has already been traced
+# KERNEL: Signal '/Sync/Y' has already been traced
+# KERNEL: Signal '/Sync/CK_25' has already been traced
+# KERNEL: Signal '/Sync/CK25' has already been traced
+# KERNEL: Signal '/Sync/CurrentHPos' has already been traced
+# KERNEL: Signal '/Sync/CurrentVPos' has already been traced
+# KERNEL: Signal '/Sync/H_GO' has already been traced
+# KERNEL: Signal '/Sync/V_GO' has already been traced
+# KERNEL: Signal '/Sync/Cuenta_X' has already been traced
+# KERNEL: Signal '/Sync/Cuenta_Y' has already been traced
+run 17 ms
+# KERNEL: stopped at time: 17 ms
+acom -O3 -work VGA_v3 -2002  $dsn/src/Sync.vhd $dsn/src/Imagen_1.vhd $dsn/src/Imagen_2.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Sync.vhd
+# Compile Entity "Sync"
+# Compile Architecture "Sync" of Entity "Sync"
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_1.vhd
+# Compile Entity "Imagen_1"
+# Compile Architecture "Imagen_1" of Entity "Imagen_1"
+# File: c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\Imagen_2.vhd
+# Compile Entity "Imagen_2"
+# Compile Architecture "Imagen_2" of Entity "Imagen_2"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6138 kB (elbread=1023 elab2=5023 kernel=91 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\wave.asdb
+#  09:59 p.m., sábado, 26 de octubre de 2013
+#  Simulation has been initialized
+#  Selected Top-Level: Sync (Sync)
+# KERNEL: Signal '/Sync/CK' has already been traced
+# KERNEL: Signal '/Sync/HS' has already been traced
+# KERNEL: Signal '/Sync/VS' has already been traced
+# KERNEL: Signal '/Sync/GO' has already been traced
+# KERNEL: Signal '/Sync/X' has already been traced
+# KERNEL: Signal '/Sync/Y' has already been traced
+# KERNEL: Signal '/Sync/CK_25' has already been traced
+# KERNEL: Signal '/Sync/CK25' has already been traced
+# KERNEL: Signal '/Sync/CurrentHPos' has already been traced
+# KERNEL: Signal '/Sync/CurrentVPos' has already been traced
+# KERNEL: Signal '/Sync/H_GO' has already been traced
+# KERNEL: Signal '/Sync/V_GO' has already been traced
+# KERNEL: Signal '/Sync/Cuenta_X' has already been traced
+# KERNEL: Signal '/Sync/Cuenta_Y' has already been traced
+run 17 ms
+# KERNEL: stopped at time: 17 ms
+# Adding file c:\My_Designs\Telecom\P4\P4\Calculadora\src\Sync.awc ... Done
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+Imagen_1 Imagen_1 Imagen_1
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 100MB
+# asim: Retval memory: 100MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6140 kB (elbread=1023 elab2=5025 kernel=91 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\VGA_v3\VGA_v3\VGA_v3\src\wave.asdb
+#  10:02 p.m., sábado, 26 de octubre de 2013
+#  Simulation has been initialized
+#  Selected Top-Level: Imagen_1 (Imagen_1)
+# 9 signal(s) traced.
+run 5 ms
+# KERNEL: stopped at time: 5 ms
+# Adding file c:\My_Designs\Telecom\P4\P4\Calculadora\src\Imagen_1.awc ... Done
+#  Simulation has been stopped
