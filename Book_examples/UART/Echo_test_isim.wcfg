@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test_tbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="echo_test_tbench" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/echo_test_tbench/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/echo_test_tbench/uut/reset_signal" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_signal</obj_property>
+      <obj_property name="ObjectShortName">reset_signal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/echo_test_tbench/rx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx</obj_property>
+      <obj_property name="ObjectShortName">rx</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/echo_test_tbench/tx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/echo_test_tbench/uut/UART_module/fifo_rx_unit/array_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">array_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">array_reg[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/echo_test_tbench/data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/echo_test_tbench/uut/read_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">read_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/echo_test_tbench/uut/start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/echo_test_tbench/uut/rx_empty_signal" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_empty_signal</obj_property>
+      <obj_property name="ObjectShortName">rx_empty_signal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/echo_test_tbench/uut/UART_module/uart_rx_unit/rx_done_tick" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_done_tick</obj_property>
+      <obj_property name="ObjectShortName">rx_done_tick</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#c0c0c0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/echo_test_tbench/uut/UART_module/fifo_rx_unit/wr_op" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_op[1:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_op[1:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/echo_test_tbench/uut/UART_module/fifo_rx_unit/empty" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">empty</obj_property>
+      <obj_property name="ObjectShortName">empty</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/echo_test_tbench/uut/UART_module/fifo_rx_unit/empty_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">empty_reg</obj_property>
+      <obj_property name="ObjectShortName">empty_reg</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/echo_test_tbench/uut/UART_module/fifo_rx_unit/full" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/echo_test_tbench/uut/UART_module/fifo_rx_unit/full_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">full_reg</obj_property>
+      <obj_property name="ObjectShortName">full_reg</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/echo_test_tbench/uut/UART_module/uart_tx_unit/state_reg" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state_reg</obj_property>
+      <obj_property name="ObjectShortName">state_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/echo_test_tbench/uut/UART_module/fifo_tx_unit/r_ptr_succ" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">r_ptr_succ[1:0]</obj_property>
+      <obj_property name="ObjectShortName">r_ptr_succ[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/echo_test_tbench/uut/UART_module/fifo_tx_unit/w_ptr_next" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w_ptr_next[1:0]</obj_property>
+      <obj_property name="ObjectShortName">w_ptr_next[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/echo_test_tbench/uut/UART_module/uart_tx_unit/tx_start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_start</obj_property>
+      <obj_property name="ObjectShortName">tx_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/echo_test_tbench/uut/UART_module/tx_empty" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_empty</obj_property>
+      <obj_property name="ObjectShortName">tx_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/echo_test_tbench/uut/UART_module/fifo_tx_unit/wr_op" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_op[1:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_op[1:0]</obj_property>
+   </wvobject>
+</wave_config>

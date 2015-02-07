@@ -1,0 +1,24 @@
+Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/GitHub/VHDL_Modules/Book_examples/Library_test/test_tbench_isim_beh.exe -prj D:/GitHub/VHDL_Modules/Book_examples/Library_test/test_tbench_beh.prj work.test_tbench 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Book_examples/Library_test/packageTest.vhd" into library Counters
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Book_examples/Library_test/binary_counter.vhd" into library Counters
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Book_examples/Library_test/test.vhd" into library work
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Book_examples/Library_test/test_tbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package packagetest
+Compiling package numeric_std
+Compiling architecture behavioral of entity binary_counter [\binary_counter(8)\]
+Compiling architecture behavioral of entity test [test_default]
+Compiling architecture behavior of entity test_tbench
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 9 VHDL Units
+Built simulation executable D:/GitHub/VHDL_Modules/Book_examples/Library_test/test_tbench_isim_beh.exe
+Fuse Memory Usage: 38300 KB
+Fuse CPU Usage: 685 ms

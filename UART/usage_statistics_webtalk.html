@@ -17,7 +17,7 @@
 </TR>
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Project ID (random number)</B></TD>
-<TD><xtag-property name="RandomID">25f8a2a45e5c420aa2152e2cf3fc7fcd</xtag-property>.<xtag-property name="ProjectID">B6473F8040B546B8A505CC2190AFBF00</xtag-property>.<xtag-property name="ProjectIteration">3</xtag-property></TD>
+<TD><xtag-property name="RandomID">25f8a2a45e5c420aa2152e2cf3fc7fcd</xtag-property>.<xtag-property name="ProjectID">B6473F8040B546B8A505CC2190AFBF00</xtag-property>.<xtag-property name="ProjectIteration">4</xtag-property></TD>
 <TD BGCOLOR='#FFFF99'><B>Target Package:</B></TD>
 <TD><xtag-property name="TargetPackage">vq100</xtag-property></TD>
 </TR>
@@ -29,7 +29,7 @@
 </TR>
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Date Generated</B></TD>
-<TD><xtag-property name="Date Generated">2014-09-13T17:18:49</xtag-property></TD>
+<TD><xtag-property name="Date Generated">2015-01-13T15:40:11</xtag-property></TD>
 <TD BGCOLOR='#FFFF99'><B>Tool Flow</B></TD>
 <TD><xtag-property name="ToolFlow">ISE</xtag-property></TD>
 </TR>
@@ -473,6 +473,12 @@
 <LI><xtag-cmdline>par -w -intstyle ise -ol high -t 1 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
 <LI><xtag-cmdline>trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
 <LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc3s500e-vq100-4 &lt;fname&gt;.ngc &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol high -t 1 &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
 <LI><xtag-cmdline>fuse</xtag-cmdline></LI>
 </xtag-section></UL></TD></TR>
 </TABLE>
@@ -490,8 +496,18 @@
 </tr>
 <tr>
   <td><xtag-program-name>bitgen</xtag-program-name></td>
-  <td><xtag-total-run-started>57</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>57</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>112</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>112</xtag-total-run-finished></td>
+  <td><xtag-total-error>0</xtag-total-error></td>
+  <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
+  <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
+  <td><xtag-total-exception>0</xtag-total-exception></td>
+  <td><xtag-total-core-dump>0</xtag-total-core-dump></td>
+</tr>
+<tr>
+  <td><xtag-program-name>cse_server</xtag-program-name></td>
+  <td><xtag-total-run-started>11</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>10</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -500,8 +516,18 @@
 </tr>
 <tr>
   <td><xtag-program-name>map</xtag-program-name></td>
-  <td><xtag-total-run-started>68</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>65</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>136</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>131</xtag-total-run-finished></td>
+  <td><xtag-total-error>0</xtag-total-error></td>
+  <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
+  <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
+  <td><xtag-total-exception>0</xtag-total-exception></td>
+  <td><xtag-total-core-dump>0</xtag-total-core-dump></td>
+</tr>
+<tr>
+  <td><xtag-program-name>netgen</xtag-program-name></td>
+  <td><xtag-total-run-started>9</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>9</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -510,8 +536,18 @@
 </tr>
 <tr>
   <td><xtag-program-name>ngc2edif</xtag-program-name></td>
-  <td><xtag-total-run-started>2</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>2</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>4</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>4</xtag-total-run-finished></td>
+  <td><xtag-total-error>0</xtag-total-error></td>
+  <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
+  <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
+  <td><xtag-total-exception>0</xtag-total-exception></td>
+  <td><xtag-total-core-dump>0</xtag-total-core-dump></td>
+</tr>
+<tr>
+  <td><xtag-program-name>ngcbuild</xtag-program-name></td>
+  <td><xtag-total-run-started>44</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>44</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -520,8 +556,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>ngdbuild</xtag-program-name></td>
-  <td><xtag-total-run-started>75</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>74</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>156</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>155</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -530,9 +566,9 @@
 </tr>
 <tr>
   <td><xtag-program-name>par</xtag-program-name></td>
-  <td><xtag-total-run-started>65</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>58</xtag-total-run-finished></td>
-  <td><xtag-total-error>7</xtag-total-error></td>
+  <td><xtag-total-run-started>129</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>120</xtag-total-run-finished></td>
+  <td><xtag-total-error>9</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
   <td><xtag-total-exception>0</xtag-total-exception></td>
@@ -540,8 +576,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>trce</xtag-program-name></td>
-  <td><xtag-total-run-started>57</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>57</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>119</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>119</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -550,8 +586,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>xst</xtag-program-name></td>
-  <td><xtag-total-run-started>127</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>125</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>268</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>266</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -564,37 +600,40 @@
 <xtag-section name="Project Statistics">
 <TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD COLSPAN=2><B>Project Statistics</B></TD></TR>
 <TR>
+<TD><xtag-process-property-name>PROPEXT_xilxSynthMaxFanout_virtex2</xtag-process-property-name>=<xtag-process-property-value>100000</xtag-process-property-value></TD>
 <TD><xtag-design-property-name>PROP_Enable_Message_Filtering</xtag-design-property-name>=<xtag-design-property-value>false</xtag-design-property-value></TD>
-<TD><xtag-process-property-name>PROP_FitterReportFormat</xtag-process-property-name>=<xtag-process-property-value>HTML</xtag-process-property-value></TD>
 
-</TR><TR><TD><xtag-design-property-name>PROP_LastAppliedGoal</xtag-design-property-name>=<xtag-design-property-value>Balanced</xtag-design-property-value></TD>
-<TD><xtag-design-property-name>PROP_LastAppliedStrategy</xtag-design-property-name>=<xtag-design-property-value>Xilinx Default (unlocked)</xtag-design-property-value></TD>
+</TR><TR><TD><xtag-process-property-name>PROP_FitterReportFormat</xtag-process-property-name>=<xtag-process-property-value>HTML</xtag-process-property-value></TD>
+<TD><xtag-design-property-name>PROP_LastAppliedGoal</xtag-design-property-name>=<xtag-design-property-value>Balanced</xtag-design-property-value></TD>
 
-</TR><TR><TD><xtag-design-property-name>PROP_ManualCompileOrderImp</xtag-design-property-name>=<xtag-design-property-value>false</xtag-design-property-value></TD>
-<TD><xtag-design-property-name>PROP_PropSpecInProjFile</xtag-design-property-name>=<xtag-design-property-value>Store all values</xtag-design-property-value></TD>
+</TR><TR><TD><xtag-design-property-name>PROP_LastAppliedStrategy</xtag-design-property-name>=<xtag-design-property-value>Xilinx Default (unlocked)</xtag-design-property-value></TD>
+<TD><xtag-design-property-name>PROP_ManualCompileOrderImp</xtag-design-property-name>=<xtag-design-property-value>false</xtag-design-property-value></TD>
 
-</TR><TR><TD><xtag-process-property-name>PROP_SelectedInstanceHierarchicalPath</xtag-process-property-name>=<xtag-process-property-value>/UART_test_tbench</xtag-process-property-value></TD>
-<TD><xtag-design-property-name>PROP_Simulator</xtag-design-property-name>=<xtag-design-property-value>ISim (VHDL/Verilog)</xtag-design-property-value></TD>
+</TR><TR><TD><xtag-design-property-name>PROP_PropSpecInProjFile</xtag-design-property-name>=<xtag-design-property-value>Store all values</xtag-design-property-value></TD>
+<TD><xtag-process-property-name>PROP_SelectedInstanceHierarchicalPath</xtag-process-property-name>=<xtag-process-property-value>/UART_test_tbench</xtag-process-property-value></TD>
 
-</TR><TR><TD><xtag-process-property-name>PROP_SynthTopFile</xtag-process-property-name>=<xtag-process-property-value>changed</xtag-process-property-value></TD>
-<TD><xtag-design-property-name>PROP_Top_Level_Module_Type</xtag-design-property-name>=<xtag-design-property-value>HDL</xtag-design-property-value></TD>
+</TR><TR><TD><xtag-design-property-name>PROP_Simulator</xtag-design-property-name>=<xtag-design-property-value>ISim (VHDL/Verilog)</xtag-design-property-value></TD>
+<TD><xtag-process-property-name>PROP_SynthTopFile</xtag-process-property-name>=<xtag-process-property-value>changed</xtag-process-property-value></TD>
 
-</TR><TR><TD><xtag-design-property-name>PROP_UseSmartGuide</xtag-design-property-name>=<xtag-design-property-value>false</xtag-design-property-value></TD>
-<TD><xtag-process-property-name>PROP_UserConstraintEditorPreference</xtag-process-property-name>=<xtag-process-property-value>Text Editor</xtag-process-property-value></TD>
+</TR><TR><TD><xtag-design-property-name>PROP_Top_Level_Module_Type</xtag-design-property-name>=<xtag-design-property-value>HDL</xtag-design-property-value></TD>
+<TD><xtag-design-property-name>PROP_UseSmartGuide</xtag-design-property-name>=<xtag-design-property-value>false</xtag-design-property-value></TD>
 
-</TR><TR><TD><xtag-process-property-name>PROP_UserEditorCustomSetting</xtag-process-property-name>=<xtag-process-property-value>C:\\Program\ Files\ (x86)\\Notepad++\\notepad++.exe $1 -n$2 -nosession</xtag-process-property-value></TD>
-<TD><xtag-process-property-name>PROP_UserEditorPreference</xtag-process-property-name>=<xtag-process-property-value>Custom</xtag-process-property-value></TD>
+</TR><TR><TD><xtag-process-property-name>PROP_UserConstraintEditorPreference</xtag-process-property-name>=<xtag-process-property-value>Text Editor</xtag-process-property-value></TD>
+<TD><xtag-process-property-name>PROP_UserEditorCustomSetting</xtag-process-property-name>=<xtag-process-property-value>C:\\Program\ Files\ (x86)\\Notepad++\\notepad++.exe $1 -n$2 -nosession</xtag-process-property-value></TD>
 
-</TR><TR><TD><xtag-design-property-name>PROP_intProjectCreationTimestamp</xtag-design-property-name>=<xtag-design-property-value>2014-09-13T15:07:44</xtag-design-property-value></TD>
-<TD><xtag-design-property-name>PROP_intWbtProjectID</xtag-design-property-name>=<xtag-design-property-value>B6473F8040B546B8A505CC2190AFBF00</xtag-design-property-value></TD>
+</TR><TR><TD><xtag-process-property-name>PROP_UserEditorPreference</xtag-process-property-name>=<xtag-process-property-value>Custom</xtag-process-property-value></TD>
+<TD><xtag-design-property-name>PROP_intProjectCreationTimestamp</xtag-design-property-name>=<xtag-design-property-value>2014-09-13T15:07:44</xtag-design-property-value></TD>
 
-</TR><TR><TD><xtag-process-property-name>PROP_intWbtProjectIteration</xtag-process-property-name>=<xtag-process-property-value>3</xtag-process-property-value></TD>
-<TD><xtag-design-property-name>PROP_intWorkingDirLocWRTProjDir</xtag-design-property-name>=<xtag-design-property-value>Same</xtag-design-property-value></TD>
+</TR><TR><TD><xtag-design-property-name>PROP_intWbtProjectID</xtag-design-property-name>=<xtag-design-property-value>B6473F8040B546B8A505CC2190AFBF00</xtag-design-property-value></TD>
+<TD><xtag-process-property-name>PROP_intWbtProjectIteration</xtag-process-property-name>=<xtag-process-property-value>4</xtag-process-property-value></TD>
 
-</TR><TR><TD><xtag-design-property-name>PROP_intWorkingDirUsed</xtag-design-property-name>=<xtag-design-property-value>No</xtag-design-property-value></TD>
-<TD><xtag-process-property-name>PROP_lockPinsUcfFile</xtag-process-property-name>=<xtag-process-property-value>changed</xtag-process-property-value></TD>
+</TR><TR><TD><xtag-design-property-name>PROP_intWorkingDirLocWRTProjDir</xtag-design-property-name>=<xtag-design-property-value>Same</xtag-design-property-value></TD>
+<TD><xtag-design-property-name>PROP_intWorkingDirUsed</xtag-design-property-name>=<xtag-design-property-value>No</xtag-design-property-value></TD>
 
-</TR><TR><TD><xtag-process-property-name>PROP_selectedSimRootSourceNode_behav</xtag-process-property-name>=<xtag-process-property-value>work.UART_test_tbench</xtag-process-property-value></TD>
+</TR><TR><TD><xtag-process-property-name>PROP_lockPinsUcfFile</xtag-process-property-name>=<xtag-process-property-value>changed</xtag-process-property-value></TD>
+<TD><xtag-process-property-name>PROP_selectedSimRootSourceNode_behav</xtag-process-property-name>=<xtag-process-property-value>work.UART_test_tbench</xtag-process-property-value></TD>
+
+</TR><TR><TD><xtag-process-property-name>PROP_xilxBitgStart_IntDone</xtag-process-property-name>=<xtag-process-property-value>true</xtag-process-property-value></TD>
 <TD><xtag-design-property-name>PROP_AutoTop</xtag-design-property-name>=<xtag-design-property-value>true</xtag-design-property-value></TD>
 
 </TR><TR><TD><xtag-design-property-name>PROP_DevFamily</xtag-design-property-name>=<xtag-design-property-value>Spartan3E</xtag-design-property-value></TD>
@@ -714,7 +753,7 @@
 <TR>
 <TD><xtag-xstoptions-param-name>-mult_style</xtag-xstoptions-param-name>=<xtag-xstoptions-param-value>Auto</xtag-xstoptions-param-value></TD>
 <TD><xtag-xstoptions-param-name>-iobuf</xtag-xstoptions-param-name>=<xtag-xstoptions-param-value>YES</xtag-xstoptions-param-value></TD>
-<TD><xtag-xstoptions-param-name>-max_fanout</xtag-xstoptions-param-name>=<xtag-xstoptions-param-value>500</xtag-xstoptions-param-value></TD>
+<TD><xtag-xstoptions-param-name>-max_fanout</xtag-xstoptions-param-name>=<xtag-xstoptions-param-value>100000</xtag-xstoptions-param-value></TD>
 <TD><xtag-xstoptions-param-name>-bufg</xtag-xstoptions-param-name>=<xtag-xstoptions-param-value>24</xtag-xstoptions-param-value></TD>
 </TR>
 <TR>
@@ -732,4 +771,4 @@
 <TR>
 <TD><xtag-xstoptions-param-name>-slice_utilization_ratio_maxmargin</xtag-xstoptions-param-name>=<xtag-xstoptions-param-value>5</xtag-xstoptions-param-value></TD>
 </xtag-section></TABLE>
-&nbsp;<BR><TABLE BORDER CELLSPACING=0 WIDTH='100%'><xtag-section name="ISimStatistics"><TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD COLSPAN=1><B>ISim Statistics</B></TD></TR><TR><TD><xtag-isim-property-name>Xilinx HDL Libraries Used</xtag-isim-property-name>=<xtag-isim-property-value>ieee</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Fuse Resource Usage</xtag-isim-property-name>=<xtag-isim-property-value>576 ms, 31892 KB</xtag-isim-property-value></TD></TR></BODY></HTML>
+&nbsp;<BR><TABLE BORDER CELLSPACING=0 WIDTH='100%'><xtag-section name="ISimStatistics"><TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD COLSPAN=1><B>ISim Statistics</B></TD></TR><TR><TD><xtag-isim-property-name>Xilinx HDL Libraries Used</xtag-isim-property-name>=<xtag-isim-property-value>ieee</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Fuse Resource Usage</xtag-isim-property-name>=<xtag-isim-property-value>576 ms, 31892 KB</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Signals</xtag-isim-property-name>=<xtag-isim-property-value>27</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Nets</xtag-isim-property-name>=<xtag-isim-property-value>37</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Blocks</xtag-isim-property-name>=<xtag-isim-property-value>4</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Processes</xtag-isim-property-name>=<xtag-isim-property-value>9</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Simulation Time</xtag-isim-property-name>=<xtag-isim-property-value>1 ms</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Simulation Resource Usage</xtag-isim-property-name>=<xtag-isim-property-value>0.078 sec, 494313 KB</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Simulation Mode</xtag-isim-property-name>=<xtag-isim-property-value>gui</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Hardware CoSim</xtag-isim-property-name>=<xtag-isim-property-value>0</xtag-isim-property-value></TD></TR></xtag-section></TABLE></BODY></HTML>

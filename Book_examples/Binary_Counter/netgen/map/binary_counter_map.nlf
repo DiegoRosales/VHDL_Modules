@@ -1,0 +1,38 @@
+Release 14.2 - netgen P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -intstyle ise -s 5 -pcf binary_counter.pcf -rpw 100 -tpw 0
+-ar Structure -tm binary_counter -w -dir netgen/map -ofmt vhdl -sim
+binary_counter_map.ncd binary_counter_map.vhd  
+
+Read and Annotate design 'binary_counter_map.ncd' ...
+Loading device for application Rf_Device from file '3s250e.nph' in environment
+C:\Xilinx\14.2\ISE_DS\ISE\.
+   "binary_counter" is an NCD, version 3.2, device xc3s250e, package vq100,
+speed -5
+Loading constraints from 'binary_counter.pcf'...
+The speed grade (-5) differs from the speed grade specified in the .ncd file
+(-5).
+The number of routable networks is 19
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing VHDL netlist
+'D:\GitHub\VHDL_Modules\Book_examples\Binary_Counter\netgen\map\binary_counter_m
+ap.vhd' ...
+Writing VHDL SDF file
+'D:\GitHub\VHDL_Modules\Book_examples\Binary_Counter\netgen\map\binary_counter_m
+ap.sdf' ...
+INFO:NetListWriters:635 - The generated VHDL netlist contains Xilinx SIMPRIM
+   simulation primitives and has to be used with SIMPRIM library for correct
+   compilation and simulation. 
+INFO:NetListWriters - Xilinx recommends running separate simulations to check
+   for setup by specifying the MAX field in the SDF file and for hold by
+   specifying the MIN field in the SDF file. Please refer to Simulator
+   documentation for more details on specifying MIN and MAX field in the SDF.
+INFO:NetListWriters:665 - For more information on how to pass the SDF switches
+   to the simulator, see your Simulator tool documentation.
+Number of warnings: 0
+Number of info messages: 3
+Total memory usage is 207464 kilobytes

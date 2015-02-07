@@ -1,0 +1,2 @@
+vhdtdtfi -lib Counters packageTest.vhd -lib work test.vhd -prj Library_test -o test.spl -module test -template C:/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib Counters packageTest.vhd -lib work test.vhd -prj Library_test -o test.spl -module test -template C:/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 

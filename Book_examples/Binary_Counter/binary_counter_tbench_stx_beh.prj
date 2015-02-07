@@ -1,0 +1,2 @@
+vhdl isim_temp "binary_counter.vhd"
+vhdl isim_temp "binary_counter_tbench.vhd"

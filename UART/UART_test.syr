@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Reading design: UART_test.prj
 
@@ -68,7 +68,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -107,8 +107,7 @@ Slice Utilization Ratio Delta      : 5
 Compiling vhdl file "D:/GitHub/VHDL_Modules/UART/UART.vhd" in Library work.
 Architecture behavioral of Entity uart is up to date.
 Compiling vhdl file "D:/GitHub/VHDL_Modules/UART/UART_test.vhd" in Library work.
-Entity <uart_test> compiled.
-Entity <uart_test> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity uart_test is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -465,11 +464,11 @@ Delay:               5.159ns (Levels of Logic = 2)
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.14 secs
+Total CPU time to Xst completion: 6.43 secs
  
 --> 
 
-Total memory usage is 269076 kilobytes
+Total memory usage is 273028 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   13 (   0 filtered)

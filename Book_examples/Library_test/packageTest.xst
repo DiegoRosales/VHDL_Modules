@@ -1,0 +1,5 @@
+set -tmpdir "D:/GitHub/VHDL_Modules/Book_examples/Library_test/xst/projnav.tmp"
+set -xsthdpdir "D:/GitHub/VHDL_Modules/Book_examples/Library_test/xst"
+elaborate
+-ifn packageTest.prj
+-ifmt mixed

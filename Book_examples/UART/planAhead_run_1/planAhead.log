@@ -1,0 +1,89 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Tue Jan 13 14:51:45 2015
+# Process ID: 7300
+# Log file: D:/GitHub/VHDL_Modules/Book_examples/UART/planAhead_run_1/planAhead.log
+# Journal file: D:/GitHub/VHDL_Modules/Book_examples/UART/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/GitHub/VHDL_Modules/Book_examples/UART/pa.fromHdl.tcl
+# create_project -name UART -dir "D:/GitHub/VHDL_Modules/Book_examples/UART/planAhead_run_1" -part xc3s250evq100-5
+Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "Echo_test.ucf" [current_fileset -constrset]
+Adding file 'D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {UART_TX.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {UART_RX.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {mod_m_counter.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {FIFO.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {UART.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Echo_test.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top Echo_test $srcset
+# add_files [list {Echo_test.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s250evq100-5
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Book_examples/UART/UART_TX.vhd" into library work
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Book_examples/UART/UART_RX.vhd" into library work
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Book_examples/UART/mod_m_counter.vhd" into library work
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Book_examples/UART/FIFO.vhd" into library work
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Book_examples/UART/UART.vhd" into library work
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.vhd" into library work
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/vq100/Package.xml
+Loading io standards from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/vq100/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+Parsing UCF File [D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.ucf]
+Finished Parsing UCF File [D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: bbea1259
+open_rtl_design: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 514.531 ; gain = 78.984
+set_property slew FAST [get_ports [list TX]]
+set_property iostandard LVCMOS33 [get_ports [list RX]]
+save_design
+set_property iostandard LVCMOS33 [get_ports [list TX]]
+set_property package_pin "" [get_ports [list  TX]]
+startgroup
+set_property package_pin P88 [get_ports RX]
+endgroup
+startgroup
+set_property package_pin P90 [get_ports TX]
+endgroup
+save_design
+exit
+INFO: [Common 17-206] Exiting PlanAhead...
+INFO: [Common 17-83] Releasing license: PlanAhead

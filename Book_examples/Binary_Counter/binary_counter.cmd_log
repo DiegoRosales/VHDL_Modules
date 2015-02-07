@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Book_examples/Binary_Counter/binary_counter.xst" -ofn "D:/GitHub/VHDL_Modules/Book_examples/Binary_Counter/binary_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-vq100-5 binary_counter.ngc binary_counter.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o binary_counter_map.ncd binary_counter.ngd binary_counter.pcf 
+par -w -intstyle ise -ol high -t 1 binary_counter_map.ncd binary_counter.ncd binary_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml binary_counter.twx binary_counter.ncd -o binary_counter.twr binary_counter.pcf 
+netgen -intstyle ise -s 5  -pcf binary_counter.pcf -rpw 100 -tpw 0 -ar Structure -tm binary_counter -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim binary_counter.ncd binary_counter_timesim.vhd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Book_examples/Binary_Counter/binary_counter.xst" -ofn "D:/GitHub/VHDL_Modules/Book_examples/Binary_Counter/binary_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc binary_counter.ucf -p xc3s250e-vq100-5 binary_counter.ngc binary_counter.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o binary_counter_map.ncd binary_counter.ngd binary_counter.pcf 
+par -w -intstyle ise -ol high -t 1 binary_counter_map.ncd binary_counter.ncd binary_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml binary_counter.twx binary_counter.ncd -o binary_counter.twr binary_counter.pcf -ucf binary_counter.ucf 
+netgen -intstyle ise -s 5  -pcf binary_counter.pcf -rpw 100 -tpw 0 -ar Structure -tm binary_counter -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim binary_counter.ncd binary_counter_timesim.vhd 
+netgen -intstyle ise -s 5  -pcf binary_counter.pcf -rpw 100 -tpw 0 -ar Structure -tm binary_counter -w -dir netgen/map -ofmt vhdl -sim binary_counter_map.ncd binary_counter_map.vhd 
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm binary_counter -w -dir netgen/translate -ofmt vhdl -sim binary_counter.ngd binary_counter_translate.vhd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Book_examples/Binary_Counter/binary_counter.xst" -ofn "D:/GitHub/VHDL_Modules/Book_examples/Binary_Counter/binary_counter.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Book_examples/Binary_Counter/binary_counter.xst" -ofn "D:/GitHub/VHDL_Modules/Book_examples/Binary_Counter/binary_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc binary_counter.ucf -p xc3s250e-vq100-5 binary_counter.ngc binary_counter.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o binary_counter_map.ncd binary_counter.ngd binary_counter.pcf 
+netgen -intstyle ise -s 5  -pcf binary_counter.pcf -rpw 100 -tpw 0 -ar Structure -tm binary_counter -w -dir netgen/map -ofmt vhdl -sim binary_counter_map.ncd binary_counter_map.vhd 

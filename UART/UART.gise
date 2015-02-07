@@ -197,11 +197,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1410646695" xil_pn:in_ck="1854257522941727447" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-3393557931316251955" xil_pn:start_ts="1410646686">
+    <transform xil_pn:end_ts="1421185176" xil_pn:in_ck="1854257522941727447" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-575281373166959271" xil_pn:start_ts="1421185166">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
@@ -225,20 +224,18 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1410646701" xil_pn:in_ck="-8653453844151244086" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6166542096388131209" xil_pn:start_ts="1410646695">
+    <transform xil_pn:end_ts="1421185182" xil_pn:in_ck="-8653453844151244086" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6166542096388131209" xil_pn:start_ts="1421185176">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="UART_test.bld"/>
       <outfile xil_pn:name="UART_test.ngd"/>
       <outfile xil_pn:name="UART_test_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1410646706" xil_pn:in_ck="-5590754606316803767" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1697458369411087007" xil_pn:start_ts="1410646701">
+    <transform xil_pn:end_ts="1421185187" xil_pn:in_ck="-5590754606316803767" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1697458369411087007" xil_pn:start_ts="1421185182">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="UART_test.pcf"/>
@@ -251,10 +248,9 @@
       <outfile xil_pn:name="UART_test_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1410646724" xil_pn:in_ck="-802447510937031422" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1410646706">
+    <transform xil_pn:end_ts="1421185205" xil_pn:in_ck="-802447510937031422" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1421185187">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="UART_test.ncd"/>
       <outfile xil_pn:name="UART_test.pad"/>
       <outfile xil_pn:name="UART_test.par"/>
@@ -266,11 +262,9 @@
       <outfile xil_pn:name="UART_test_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1410646738" xil_pn:in_ck="-2388480166162702882" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1410646724">
+    <transform xil_pn:end_ts="1421185220" xil_pn:in_ck="-2388480166162702882" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1421185205">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="UART_test.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="uart_test.bgn"/>
@@ -280,10 +274,9 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1410646724" xil_pn:in_ck="-2900316699955957179" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1410646720">
+    <transform xil_pn:end_ts="1421185205" xil_pn:in_ck="-2900316699955957179" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1421185201">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="UART_test.twr"/>
       <outfile xil_pn:name="UART_test.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

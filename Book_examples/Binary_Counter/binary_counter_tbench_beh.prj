@@ -1,0 +1,2 @@
+vhdl work "binary_counter.vhd"
+vhdl work "binary_counter_tbench.vhd"

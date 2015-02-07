@@ -1,0 +1,12 @@
+Command line:
+   binary_counter_tbench_isim_map.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/map/binary_counter_map.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  51436
+
+Wed Jan 07 18:41:26 2015
+
+
+ Elaboration Time: 0.0624 sec

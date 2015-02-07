@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.28xd on Wed Jan 07 18:38:41 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+NET "CLK_BUFGP/IBUFG" BEL "CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP CLK = BEL "r_reg_0" BEL "r_reg_1" BEL "r_reg_2" BEL "r_reg_3" BEL
+        "r_reg_4" BEL "r_reg_5" BEL "r_reg_6" BEL "r_reg_7" BEL
+        "CLK_BUFGP/BUFG.GCLKMUX" BEL "CLK_BUFGP/BUFG";
+TS_CLK = PERIOD TIMEGRP "CLK" 50 MHz HIGH 50% INPUT_JITTER 0.01 ns;
+SCHEMATIC END;
+

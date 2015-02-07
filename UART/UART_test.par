@@ -1,7 +1,7 @@
 Release 14.2 par P.28xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-DIEGO-PC::  Sat Sep 13 17:18:27 2014
+DIEGO-PC::  Tue Jan 13 15:39:48 2015
 
 par -w -intstyle ise -ol high -t 1 UART_test_map.ncd UART_test.ncd
 UART_test.pcf 
@@ -112,24 +112,24 @@ Phase  2  : 365 unrouted;      REAL time: 8 secs
 
 Phase  3  : 49 unrouted;      REAL time: 8 secs 
 
-Phase  4  : 110 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  4  : 110 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
 
 Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
 
 Updating file: UART_test.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
-Total REAL time to Router completion: 10 secs 
-Total CPU time to Router completion: 10 secs 
+Total REAL time to Router completion: 11 secs 
+Total CPU time to Router completion: 11 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -187,7 +187,7 @@ All signals are completely routed.
 Total REAL time to PAR completion: 11 secs 
 Total CPU time to PAR completion: 11 secs 
 
-Peak Memory Usage:  294 MB
+Peak Memory Usage:  300 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.

@@ -1,0 +1,6 @@
+vhdl isim_temp "UART_TX.vhd"
+vhdl isim_temp "UART_RX.vhd"
+vhdl isim_temp "mod_m_counter.vhd"
+vhdl isim_temp "FIFO.vhd"
+vhdl isim_temp "UART.vhd"
+vhdl isim_temp "Echo_test.vhd"

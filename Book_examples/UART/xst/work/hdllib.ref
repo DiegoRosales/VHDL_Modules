@@ -1,0 +1,12 @@
+AR uart_rx behavioral D:/GitHub/VHDL_Modules/Book_examples/UART/UART_RX.vhd sub00/vhpl04 1421184937
+EN echo_test NULL D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.vhd sub00/vhpl10 1421184944
+AR uart behavioral D:/GitHub/VHDL_Modules/Book_examples/UART/UART.vhd sub00/vhpl09 1421184943
+AR echo_test behavioral D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.vhd sub00/vhpl11 1421184945
+AR uart_tx behavioral D:/GitHub/VHDL_Modules/Book_examples/UART/UART_TX.vhd sub00/vhpl08 1421184941
+AR mod_m_counter behavioral D:/GitHub/VHDL_Modules/Book_examples/UART/mod_m_counter.vhd sub00/vhpl02 1421184935
+AR fifo behavioral D:/GitHub/VHDL_Modules/Book_examples/UART/FIFO.vhd sub00/vhpl06 1421184939
+EN fifo NULL D:/GitHub/VHDL_Modules/Book_examples/UART/FIFO.vhd sub00/vhpl05 1421184938
+EN uart NULL D:/GitHub/VHDL_Modules/Book_examples/UART/UART.vhd sub00/vhpl00 1421184942
+EN mod_m_counter NULL D:/GitHub/VHDL_Modules/Book_examples/UART/mod_m_counter.vhd sub00/vhpl01 1421184934
+EN uart_rx NULL D:/GitHub/VHDL_Modules/Book_examples/UART/UART_RX.vhd sub00/vhpl03 1421184936
+EN uart_tx NULL D:/GitHub/VHDL_Modules/Book_examples/UART/UART_TX.vhd sub00/vhpl07 1421184940

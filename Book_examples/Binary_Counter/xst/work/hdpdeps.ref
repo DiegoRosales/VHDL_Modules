@@ -1,0 +1,8 @@
+V3 3
+FL D:/GitHub/VHDL_Modules/Book_examples/Binary_Counter/binary_counter.vhd 2015/01/06.16:04:03 P.28xd
+EN work/binary_counter 1420677506 \
+      FL D:/GitHub/VHDL_Modules/Book_examples/Binary_Counter/binary_counter.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182
+AR work/binary_counter/Behavioral 1420677507 \
+      FL D:/GitHub/VHDL_Modules/Book_examples/Binary_Counter/binary_counter.vhd \
+      EN work/binary_counter 1420677506

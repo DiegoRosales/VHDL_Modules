@@ -1,0 +1,2 @@
+vhdl work "netgen/par/binary_counter_timesim.vhd"
+vhdl work "binary_counter_tbench.vhd"

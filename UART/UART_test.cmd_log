@@ -23,3 +23,9 @@ map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o UART_te
 par -w -intstyle ise -ol high -t 1 UART_test_map.ncd UART_test.ncd UART_test.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_test.twx UART_test.ncd -o UART_test.twr UART_test.pcf -ucf UART_test.ucf 
 bitgen -intstyle ise -f UART_test.ut UART_test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART/UART_test.xst" -ofn "D:/GitHub/VHDL_Modules/UART/UART_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_test.ucf -p xc3s500e-vq100-4 UART_test.ngc UART_test.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o UART_test_map.ncd UART_test.ngd UART_test.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_map.ncd UART_test.ncd UART_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_test.twx UART_test.ncd -o UART_test.twr UART_test.pcf -ucf UART_test.ucf 
+bitgen -intstyle ise -f UART_test.ut UART_test.ncd 

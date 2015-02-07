@@ -1,0 +1,2 @@
+vhdl isim_temp "netgen/map/binary_counter_map.vhd"
+vhdl isim_temp "binary_counter_tbench.vhd"

@@ -1,0 +1,4 @@
+vhdl Counters "packageTest.vhd"
+vhdl Counters "binary_counter.vhd"
+vhdl work "test.vhd"
+vhdl work "test_tbench.vhd"

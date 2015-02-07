@@ -9,7 +9,7 @@ Target Device  : xc3s500e
 Target Package : vq100
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Sat Sep 13 17:18:23 2014
+Mapped Date    : Tue Jan 13 15:39:43 2015
 
 Mapping design into LUTs...
 Running directed packing...
@@ -43,7 +43,7 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                3.25
 
-Peak Memory Usage:  264 MB
+Peak Memory Usage:  268 MB
 Total REAL time to MAP completion:  1 secs 
 Total CPU time to MAP completion:   1 secs 
 

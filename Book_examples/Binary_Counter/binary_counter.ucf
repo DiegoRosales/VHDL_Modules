@@ -1,0 +1,4 @@
+
+#Created by Constraints Editor (xc3s250e-vq100-5) - 2015/01/07
+NET "CLK" TNM_NET = CLK;
+TIMESPEC TS_CLK = PERIOD "CLK" 50 MHz HIGH 50% INPUT_JITTER 10 ps;

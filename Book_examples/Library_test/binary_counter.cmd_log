@@ -1,0 +1,11 @@
+vhdtdtfi -prj Library_test -o D:/GitHub/VHDL_Modules/Book_examples/Library_test/binary_counter.vhi -module binary_counter -template C:/Xilinx/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib Counters binary_counter.vhd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Book_examples/Library_test/binary_counter.xst" -ofn "D:/GitHub/VHDL_Modules/Book_examples/Library_test/binary_counter.syr" 
+vhdtdtfi -prj Library_test -o D:/GitHub/VHDL_Modules/Book_examples/Library_test/binary_counter.vhi -module binary_counter -template C:/Xilinx/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib Counters binary_counter.vhd 
+vhdtdtfi -lib Counters binary_counter.vhd -prj Library_test -o binary_counter.spl -module binary_counter -template C:/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-vq100-5 binary_counter.ngc binary_counter.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o binary_counter_map.ncd binary_counter.ngd binary_counter.pcf 
+par -w -intstyle ise -ol high -t 1 binary_counter_map.ncd binary_counter.ncd binary_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml binary_counter.twx binary_counter.ncd -o binary_counter.twr binary_counter.pcf 
+bitgen -intstyle ise -f binary_counter.ut binary_counter.ncd 
+vhdtdtfi -prj Library_test -o D:/GitHub/VHDL_Modules/Book_examples/Library_test/binary_counter.vhi -module binary_counter -template C:/Xilinx/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib Counters binary_counter.vhd 
+vhdtdtfi -prj Library_test -o D:/GitHub/VHDL_Modules/Book_examples/Library_test/binary_counter.vhi -module binary_counter -template C:/Xilinx/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib Counters binary_counter.vhd 

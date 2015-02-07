@@ -1,0 +1,37 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "D:/GitHub/VHDL_Modules/Book_examples/Binary_Counter/binary_counter_tbench_isim_map.exe" -prj "D:/GitHub/VHDL_Modules/Book_examples/Binary_Counter/binary_counter_tbench_map.prj" "work.binary_counter_tbench" 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Book_examples/Binary_Counter/netgen/map/binary_counter_map.vhd" into library work
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Book_examples/Binary_Counter/binary_counter_tbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package textio
+Compiling package vital_timing
+Compiling package vcomponents
+Compiling package vital_primitives
+Compiling package vpackage
+Compiling architecture x_zero_v of entity X_ZERO [\X_ZERO("UNPLACED")(1,8)\]
+Compiling architecture x_one_v of entity X_ONE [\X_ONE("UNPLACED")(1,8)\]
+Compiling architecture x_buf_v of entity X_BUF [\X_BUF(true,true,"UNPLACED",(0,0...]
+Compiling architecture x_xor2_v of entity X_XOR2 [\X_XOR2(true,true,"UNPLACED",(0,...]
+Compiling architecture x_mux2_v of entity X_MUX2 [\X_MUX2(true,true,"UNPLACED",(0,...]
+Compiling architecture x_and2_v of entity X_AND2 [\X_AND2(true,true,"UNPLACED",(0,...]
+Compiling architecture x_obuf_v of entity X_OBUF [\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_bufgmux_v of entity X_BUFGMUX [\X_BUFGMUX(true,"*",true,false,"...]
+Compiling architecture x_inv_v of entity X_INV [\X_INV(true,true,"UNPLACED",(0,0...]
+Compiling architecture x_lut4_v of entity X_LUT4 [\X_LUT4(true,true,"UNPLACED",(0,...]
+Compiling architecture x_ff_v of entity X_FF [\X_FF(true,true,true,"UNPLACED",...]
+Compiling architecture x_roc_v of entity X_ROC [\X_ROC("UNPLACED",100000,"*")(1,...]
+Compiling architecture x_toc_v of entity X_TOC [\X_TOC("UNPLACED",0,"*")(1,8,1,1...]
+Compiling architecture structure of entity binary_counter [binary_counter_default]
+Compiling architecture behavior of entity binary_counter_tbench
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 42 VHDL Units
+Built simulation executable D:/GitHub/VHDL_Modules/Book_examples/Binary_Counter/binary_counter_tbench_isim_map.exe
+Fuse Memory Usage: 81500 KB
+Fuse CPU Usage: 1170 ms

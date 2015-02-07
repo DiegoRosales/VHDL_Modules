@@ -1,0 +1,17 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.28xd
+#Current Working Directory:
+#:D   D:\GitHub\VHDL_Modules\Book_examples\Binary_Counter
+#Date/Time:
+#:T   Tue Jan 06 16:12:00 2015
+#------------------------------
+	#Reading binary_counter.ncd...
+	#Loading device for application Rf_Device from file '3s250e.nph' in environment C:\Xilinx\14.2\ISE_DS\ISE\.
+	#   "binary_counter" is an NCD, version 3.2, device xc3s250e, package vq100, speed -5
+	#Design creation date: 2015.01.06.22.10.58
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes

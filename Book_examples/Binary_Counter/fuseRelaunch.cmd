@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/GitHub/VHDL_Modules/Book_examples/Binary_Counter/binary_counter_tbench_isim_map.exe" -prj "D:/GitHub/VHDL_Modules/Book_examples/Binary_Counter/binary_counter_tbench_map.prj" "work.binary_counter_tbench" 

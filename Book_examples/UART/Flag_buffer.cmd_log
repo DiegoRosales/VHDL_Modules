@@ -1,0 +1,2 @@
+vhdtdtfi -lib work Flag_buffer.vhd -prj UART -o Flag_buffer.spl -module Flag_buffer -template C:/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Flag_buffer.spl D:/GitHub/VHDL_Modules/Book_examples/UART/Flag_buffer.sym 

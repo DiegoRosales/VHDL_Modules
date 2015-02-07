@@ -5,9 +5,9 @@ C:\Xilinx\14.2\ISE_DS\ISE\.
    "UART_test" is an NCD, version 3.2, device xc3s500e, package vq100, speed -4
 Opened constraints file UART_test.pcf.
 
-Sat Sep 13 17:18:46 2014
+Tue Jan 13 15:40:08 2015
 
-C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:1 -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:No -g DriveDone:No UART_test.ncd 
+C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:1 -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No UART_test.ncd 
 
 Summary of Bitgen Options:
 +----------------------+----------------------+
@@ -53,7 +53,7 @@ Summary of Bitgen Options:
 +----------------------+----------------------+
 | DriveDone            | No**                 |
 +----------------------+----------------------+
-| DonePipe             | No**                 |
+| DonePipe             | Yes                  |
 +----------------------+----------------------+
 | Security             | None**               |
 +----------------------+----------------------+

@@ -1,0 +1,8 @@
+V3 4
+FL D:/GitHub/VHDL_Modules/Book_examples/Library_test/packageTest.vhd 2015/01/10.12:04:48 P.28xd
+PH work/packageTest 1420913109 \
+      FL D:/GitHub/VHDL_Modules/Book_examples/Library_test/packageTest.vhd \
+      PB ieee/std_logic_1164 1341906176 CD binary_counter
+PB work/packageTest 1420913110 \
+      FL D:/GitHub/VHDL_Modules/Book_examples/Library_test/packageTest.vhd \
+      PH work/packageTest 1420913109

@@ -1,0 +1,30 @@
+Command line:
+   binary_counter_tbench_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/binary_counter_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  51158
+
+Wed Jan 07 18:22:48 2015
+
+
+ Elaboration Time: 0.078 sec
+
+ Current Memory Usage: 528.089 Meg
+
+ Total Signals          : 754
+ Total Nets             : 460
+ Total Signal Drivers   : 434
+ Total Blocks           : 222
+ Total Primitive Blocks : 122
+ Total Processes        : 435
+ Total Traceable Variables  : 1115
+ Total Scalar Nets and Variables : 7801
+
+ Total Simulation Time: 0.249601 sec
+
+ Current Memory Usage: 528.089 Meg
+
+Wed Jan 07 18:23:36 2015
+

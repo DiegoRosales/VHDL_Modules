@@ -1,0 +1,2 @@
+vhdl work "netgen/translate/binary_counter_translate.vhd"
+vhdl work "binary_counter_tbench.vhd"

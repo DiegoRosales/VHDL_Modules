@@ -1,0 +1,8 @@
+Release 14.2 Drc P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sat Jan 10 12:10:56 2015
+
+drc -z binary_counter.ncd binary_counter.pcf
+
+DRC detected 0 errors and 0 warnings.

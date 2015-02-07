@@ -1,0 +1,77 @@
+Release 14.2 Map P.28xd (nt64)
+Xilinx Map Application Log File for Design 'Echo_test'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off
+-c 100 -o Echo_test_map.ncd Echo_test.ngd Echo_test.pcf 
+Target Device  : xc3s250e
+Target Package : vq100
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Tue Jan 13 15:35:49 2015
+
+Mapping design into LUTs...
+Running directed packing...
+WARNING:Pack:266 - The function generator UART_module/fifo_tx_unit/Mmux_R_DATA_3
+   failed to merge with F5 multiplexer
+   UART_module/fifo_tx_unit/Mmux_R_DATA_2_f5_6.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+WARNING:PhysDesignRules:367 - The signal <RX_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    2
+Logic Utilization:
+  Total Number Slice Registers:          68 out of   4,896    1%
+    Number used as Flip Flops:           36
+    Number used as Latches:              32
+  Number of 4 input LUTs:                89 out of   4,896    1%
+Logic Distribution:
+  Number of occupied Slices:             67 out of   2,448    2%
+    Number of Slices containing only related logic:      67 out of      67 100%
+    Number of Slices containing unrelated logic:          0 out of      67   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         122 out of   4,896    2%
+    Number used as logic:                89
+    Number used as a route-thru:         33
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                  3 out of      66    4%
+  Number of BUFGMUXs:                     2 out of      24    8%
+
+Average Fanout of Non-Clock Nets:                2.69
+
+Peak Memory Usage:  264 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "Echo_test_map.mrp" for details.

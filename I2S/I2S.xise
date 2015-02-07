@@ -23,7 +23,7 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="6"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="6"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="6"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="2"/>
     </file>
   </files>
 
@@ -253,7 +253,7 @@
     <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="work.I2S_Master_tbench" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Selected Simulation Root Source Node Post-Map" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Selected Simulation Root Source Node Post-Route" xil_pn:value="" xil_pn:valueState="default"/>
-    <property xil_pn:name="Selected Simulation Root Source Node Post-Translate" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Selected Simulation Root Source Node Post-Translate" xil_pn:value="work.I2S_Master_tbench" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Selected Simulation Source Node" xil_pn:value="UUT" xil_pn:valueState="default"/>
     <property xil_pn:name="Shift Register Extraction" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Show All Models" xil_pn:value="false" xil_pn:valueState="default"/>
@@ -269,7 +269,7 @@
     <property xil_pn:name="Specify Top Level Instance Names Behavioral" xil_pn:value="work.I2S_Master_tbench" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify Top Level Instance Names Post-Map" xil_pn:value="Default" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify Top Level Instance Names Post-Route" xil_pn:value="Default" xil_pn:valueState="default"/>
-    <property xil_pn:name="Specify Top Level Instance Names Post-Translate" xil_pn:value="Default" xil_pn:valueState="default"/>
+    <property xil_pn:name="Specify Top Level Instance Names Post-Translate" xil_pn:value="work.I2S_Master_tbench" xil_pn:valueState="default"/>
     <property xil_pn:name="Speed Grade" xil_pn:value="-5" xil_pn:valueState="default"/>
     <property xil_pn:name="Starting Placer Cost Table (1-100) Map" xil_pn:value="1" xil_pn:valueState="default"/>
     <property xil_pn:name="Starting Placer Cost Table (1-100) Par" xil_pn:value="1" xil_pn:valueState="default"/>
@@ -322,7 +322,7 @@
     <property xil_pn:name="PROP_PostMapSimTop" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="PROP_PostParSimTop" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="PROP_PostSynthSimTop" xil_pn:value="" xil_pn:valueState="default"/>
-    <property xil_pn:name="PROP_PostXlateSimTop" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="PROP_PostXlateSimTop" xil_pn:value="Architecture|I2S_Master_tbench|behavior" xil_pn:valueState="non-default"/>
     <property xil_pn:name="PROP_PreSynthesis" xil_pn:value="PreSynthesis" xil_pn:valueState="default"/>
     <property xil_pn:name="PROP_intProjectCreationTimestamp" xil_pn:value="2014-07-30T10:11:25" xil_pn:valueState="non-default"/>
     <property xil_pn:name="PROP_intWbtProjectID" xil_pn:value="A414C17121214FDF8CE7971B6F4776D1" xil_pn:valueState="non-default"/>

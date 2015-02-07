@@ -1,0 +1,1 @@
+vhdtdtfi -prj UART -o D:/GitHub/VHDL_Modules/Book_examples/UART/UART_RX.vhi -module UART_RX -template C:/Xilinx/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work UART_RX.vhd 

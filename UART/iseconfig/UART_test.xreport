@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-09-26T17:54:56</DateModified>
+  <DateModified>2015-01-13T15:39:20</DateModified>
   <ModuleName>UART_test</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>D:/GitHub/VHDL_Modules/UART/iseconfig/UART_test.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/GitHub/VHDL_Modules/UART</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/GitHub/VHDL_Modules/UART\</ImplementationReportsDirectory>
   <DateInitialized>2014-09-26T17:54:55</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

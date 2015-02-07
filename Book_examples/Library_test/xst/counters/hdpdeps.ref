@@ -1,0 +1,15 @@
+V3 7
+FL D:/GitHub/VHDL_Modules/Book_examples/Library_test/binary_counter.vhd 2015/01/06.16:04:03 P.28xd
+EN Counters/binary_counter 1420916549 \
+      FL D:/GitHub/VHDL_Modules/Book_examples/Library_test/binary_counter.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182
+AR Counters/binary_counter/Behavioral 1420916550 \
+      FL D:/GitHub/VHDL_Modules/Book_examples/Library_test/binary_counter.vhd \
+      EN Counters/binary_counter 1420916549
+FL D:/GitHub/VHDL_Modules/Book_examples/Library_test/packageTest.vhd 2015/01/10.12:04:48 P.28xd
+PH Counters/packageTest 1420916551 \
+      FL D:/GitHub/VHDL_Modules/Book_examples/Library_test/packageTest.vhd \
+      PB ieee/std_logic_1164 1341906176 CD binary_counter
+PB Counters/packageTest 1420916552 \
+      FL D:/GitHub/VHDL_Modules/Book_examples/Library_test/packageTest.vhd \
+      PH Counters/packageTest 1420916551

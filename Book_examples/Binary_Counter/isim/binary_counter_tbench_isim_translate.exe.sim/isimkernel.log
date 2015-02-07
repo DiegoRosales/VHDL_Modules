@@ -1,0 +1,28 @@
+Command line:
+   binary_counter_tbench_isim_translate.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51166
+
+Wed Jan 07 18:24:50 2015
+
+
+ Elaboration Time: 0.078 sec
+
+ Current Memory Usage: 528.073 Meg
+
+ Total Signals          : 441
+ Total Nets             : 298
+ Total Signal Drivers   : 274
+ Total Blocks           : 114
+ Total Primitive Blocks : 66
+ Total Processes        : 274
+ Total Traceable Variables  : 716
+ Total Scalar Nets and Variables : 6169
+
+ Total Simulation Time: 0.1092 sec
+
+ Current Memory Usage: 528.073 Meg
+
+Wed Jan 07 18:25:48 2015
+
