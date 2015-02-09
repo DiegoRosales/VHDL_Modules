@@ -1,0 +1,3 @@
+vhdl SPI "../Library/SPI/SCLK_CE_GEN.vhd"
+vhdl SPI "../Library/SPI/mod_m_counter.vhd"
+vhdl isim_temp "SCLK_CE_GEN_tbench.vhd"

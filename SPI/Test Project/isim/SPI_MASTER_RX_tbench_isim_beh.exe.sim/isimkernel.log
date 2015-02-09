@@ -1,0 +1,28 @@
+Command line:
+   SPI_MASTER_RX_tbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52359
+
+Sun Feb 08 18:51:41 2015
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 523.649 Meg
+
+ Total Signals          : 59
+ Total Nets             : 93
+ Total Signal Drivers   : 38
+ Total Blocks           : 6
+ Total Primitive Blocks : 5
+ Total Processes        : 18
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 586
+
+ Total Simulation Time: 0.0936 sec
+
+ Current Memory Usage: 523.649 Meg
+
+Sun Feb 08 18:51:44 2015
+

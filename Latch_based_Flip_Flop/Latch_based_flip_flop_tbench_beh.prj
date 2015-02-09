@@ -1,0 +1,2 @@
+vhdl work "Latch_based_Flip_Flop.vhd"
+vhdl work "Latch_based_flip_flop_tbench.vhd"

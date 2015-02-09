@@ -1,0 +1,28 @@
+Command line:
+   Latch_based_flip_flop_tbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  24913
+
+Wed Nov 26 10:52:17 2014
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 523.42 Meg
+
+ Total Signals          : 9
+ Total Nets             : 6
+ Total Signal Drivers   : 6
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 6
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 367
+
+ Total Simulation Time: 0.0936 sec
+
+ Current Memory Usage: 523.424 Meg
+
+Wed Nov 26 10:57:26 2014
+

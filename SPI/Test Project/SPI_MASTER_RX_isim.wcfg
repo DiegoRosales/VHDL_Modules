@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/GitHub/VHDL_Modules/SPI/Test Project/SPI_MASTER_RX_tbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="spi_master_rx_tbench" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/spi_master_rx_tbench/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_master_rx_tbench/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_master_rx_tbench/miso" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">miso</obj_property>
+      <obj_property name="ObjectShortName">miso</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_master_rx_tbench/rx_start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_start</obj_property>
+      <obj_property name="ObjectShortName">rx_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_master_rx_tbench/SCLK_CS_generator/sclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sclk</obj_property>
+      <obj_property name="ObjectShortName">sclk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_master_rx_tbench/SCLK_CS_generator/ce" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_master_rx_tbench/uut/state_current" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state_current</obj_property>
+      <obj_property name="ObjectShortName">state_current</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_master_rx_tbench/uut/sclk_edge" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sclk_edge</obj_property>
+      <obj_property name="ObjectShortName">sclk_edge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_master_rx_tbench/uut/counter_current" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counter_current[3:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_current[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_master_rx_tbench/uut/cont" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cont</obj_property>
+      <obj_property name="ObjectShortName">cont</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_master_rx_tbench/uut/rx_done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_done</obj_property>
+      <obj_property name="ObjectShortName">rx_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_master_rx_tbench/uut/data_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_reg[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_master_rx_tbench/uut/data_next" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_next[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_next[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_master_rx_tbench/uut/data_rx" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_rx[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_rx[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

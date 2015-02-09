@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/GitHub/VHDL_Modules/Nokia5110_display/Nokia5110_tbench_isim_beh.exe" -prj "D:/GitHub/VHDL_Modules/Nokia5110_display/Nokia5110_tbench_beh.prj" "work.Nokia5110_tbench" 

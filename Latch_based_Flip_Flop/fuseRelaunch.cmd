@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/GitHub/VHDL_Modules/Latch_based_Flip_Flop/Latch_based_flip_flop_tbench_isim_beh.exe" -prj "D:/GitHub/VHDL_Modules/Latch_based_Flip_Flop/Latch_based_flip_flop_tbench_beh.prj" "work.Latch_based_flip_flop_tbench" 

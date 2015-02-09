@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\GitHub\VHDL_Modules\UART_test\UART_test_echo.ncd
+OUTFILE=D:\GitHub\VHDL_Modules\UART_test\UART_test_echo.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5vq100
+WORKINGDIR=D:\GitHub\VHDL_Modules\UART_test
+LICENSE=WebPack
+USER_INFO=__0_0_0

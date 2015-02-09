@@ -1,0 +1,2 @@
+vhdl isim_temp "Latch_based_Flip_Flop.vhd"
+vhdl isim_temp "Latch_based_flip_flop_tbench.vhd"

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Wed Nov 26 11:39:11 2014
+# Process ID: 10920
+# Log file: D:/GitHub/VHDL_Modules/Latch_based_Flip_Flop/planAhead_run_1/planAhead.log
+# Journal file: D:/GitHub/VHDL_Modules/Latch_based_Flip_Flop/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/GitHub/VHDL_Modules/Latch_based_Flip_Flop/pa.fromHdl.tcl

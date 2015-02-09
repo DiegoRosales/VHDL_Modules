@@ -1,0 +1,14 @@
+AR sclk_ce_gen behavioral D:/GitHub/VHDL_Modules/SPI/Library/SPI/SCLK_CE_GEN.vhd sub00/vhpl01 1423259438
+EN spi_master_module NULL D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_MODULE.vhd sub00/vhpl10 1423257041
+EN spi_master_rx NULL D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_RX.vhd sub00/vhpl06 1423257037
+EN spi_master_tx NULL D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_TX.vhd sub00/vhpl02 1423259439
+AR spi_master_module_tx behavioral D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_MODULE_TX.vhd sub00/vhpl13 1423259446
+AR spi_master_rx behavioral D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_RX.vhd sub00/vhpl07 1423257038
+EN spi_master_module_tx NULL D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_MODULE_TX.vhd sub00/vhpl12 1423259445
+AR spi_master_module behavioral D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_MODULE.vhd sub00/vhpl11 1423257042
+AR mod_m_counter behavioral D:/GitHub/VHDL_Modules/SPI/Library/SPI/mod_m_counter.vhd sub00/vhpl09 1423259444
+EN sclk_ce_gen NULL D:/GitHub/VHDL_Modules/SPI/Library/SPI/SCLK_CE_GEN.vhd sub00/vhpl00 1423259437
+AR fifo behavioral D:/GitHub/VHDL_Modules/SPI/Library/SPI/FIFO.vhd sub00/vhpl05 1423259442
+EN fifo NULL D:/GitHub/VHDL_Modules/SPI/Library/SPI/FIFO.vhd sub00/vhpl04 1423259441
+AR spi_master_tx behavioral D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_TX.vhd sub00/vhpl03 1423259440
+EN mod_m_counter NULL D:/GitHub/VHDL_Modules/SPI/Library/SPI/mod_m_counter.vhd sub00/vhpl08 1423259443

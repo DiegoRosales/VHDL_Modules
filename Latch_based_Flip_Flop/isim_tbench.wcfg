@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/GitHub/VHDL_Modules/Latch_based_Flip_Flop/Latch_based_flip_flop_tbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="latch_based_flip_flop_tbench" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/latch_based_flip_flop_tbench/d" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">d</obj_property>
+      <obj_property name="ObjectShortName">d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/latch_based_flip_flop_tbench/ck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ck</obj_property>
+      <obj_property name="ObjectShortName">ck</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/latch_based_flip_flop_tbench/q" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">q</obj_property>
+      <obj_property name="ObjectShortName">q</obj_property>
+   </wvobject>
+   <wvobject fp_name="/latch_based_flip_flop_tbench/ck_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">ck_period</obj_property>
+      <obj_property name="ObjectShortName">ck_period</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,29 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "D:/GitHub/VHDL_Modules/SPI/Test Project/SPI_MASTER_MODULE_tbench_isim_beh.exe" -prj "D:/GitHub/VHDL_Modules/SPI/Test Project/SPI_MASTER_MODULE_tbench_beh.prj" "work.SPI_MASTER_MODULE_tbench" 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/GitHub/VHDL_Modules/SPI/Test Project/../Library/SPI/SPI_MASTER_TX.vhd" into library SPI
+Parsing VHDL file "D:/GitHub/VHDL_Modules/SPI/Test Project/../Library/SPI/SPI_MASTER_RX.vhd" into library SPI
+Parsing VHDL file "D:/GitHub/VHDL_Modules/SPI/Test Project/../Library/SPI/SCLK_CE_GEN.vhd" into library SPI
+Parsing VHDL file "D:/GitHub/VHDL_Modules/SPI/Test Project/../Library/SPI/mod_m_counter.vhd" into library SPI
+Parsing VHDL file "D:/GitHub/VHDL_Modules/SPI/Test Project/../Library/SPI/FIFO.vhd" into library SPI
+Parsing VHDL file "D:/GitHub/VHDL_Modules/SPI/Test Project/../Library/SPI/SPI_MASTER_MODULE.vhd" into library SPI
+Parsing VHDL file "D:/GitHub/VHDL_Modules/SPI/Test Project/SPI_MASTER_MODULE_tbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity SCLK_CE_GEN [\SCLK_CE_GEN('1',8)\]
+Compiling architecture behavioral of entity SPI_MASTER_TX [\SPI_MASTER_TX(8,'1','0')\]
+Compiling architecture behavioral of entity FIFO [\FIFO(8,2)\]
+Compiling architecture behavioral of entity SPI_MASTER_RX [\SPI_MASTER_RX(8,'1','0')\]
+Compiling architecture behavioral of entity mod_m_counter [\mod_m_counter(4,16)\]
+Compiling architecture behavioral of entity SPI_MASTER_MODULE [\SPI_MASTER_MODULE('1','0',8,2,1...]
+Compiling architecture behavior of entity spi_master_module_tbench
+Time Resolution for simulation is 1ps.
+Compiled 16 VHDL Units
+Built simulation executable D:/GitHub/VHDL_Modules/SPI/Test Project/SPI_MASTER_MODULE_tbench_isim_beh.exe
+Fuse Memory Usage: 38624 KB
+Fuse CPU Usage: 685 ms

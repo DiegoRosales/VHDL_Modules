@@ -1,0 +1,83 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_test_repeat.ucf -p xc3s500e-vq100-4 UART_test_echo.ngc UART_test_echo.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o UART_test_echo_map.ncd UART_test_echo.ngd UART_test_echo.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_echo_map.ncd UART_test_echo.ncd UART_test_echo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_test_echo.twx UART_test_echo.ncd -o UART_test_echo.twr UART_test_echo.pcf -ucf UART_test_repeat.ucf 
+bitgen -intstyle ise -f UART_test_echo.ut UART_test_echo.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_test_repeat.ucf -p xc3s500e-vq100-4 UART_test_echo.ngc UART_test_echo.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o UART_test_echo_map.ncd UART_test_echo.ngd UART_test_echo.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_echo_map.ncd UART_test_echo.ncd UART_test_echo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_test_echo.twx UART_test_echo.ncd -o UART_test_echo.twr UART_test_echo.pcf -ucf UART_test_repeat.ucf 
+bitgen -intstyle ise -f UART_test_echo.ut UART_test_echo.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_test_repeat.ucf -p xc3s500e-vq100-4 UART_test_echo.ngc UART_test_echo.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o UART_test_echo_map.ncd UART_test_echo.ngd UART_test_echo.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_echo_map.ncd UART_test_echo.ncd UART_test_echo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_test_echo.twx UART_test_echo.ncd -o UART_test_echo.twr UART_test_echo.pcf -ucf UART_test_repeat.ucf 
+bitgen -intstyle ise -f UART_test_echo.ut UART_test_echo.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_test_repeat.ucf -p xc3s500e-vq100-4 UART_test_echo.ngc UART_test_echo.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o UART_test_echo_map.ncd UART_test_echo.ngd UART_test_echo.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_echo_map.ncd UART_test_echo.ncd UART_test_echo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_test_echo.twx UART_test_echo.ncd -o UART_test_echo.twr UART_test_echo.pcf -ucf UART_test_repeat.ucf 
+bitgen -intstyle ise -f UART_test_echo.ut UART_test_echo.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_test_repeat.ucf -p xc3s500e-vq100-4 UART_test_echo.ngc UART_test_echo.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o UART_test_echo_map.ncd UART_test_echo.ngd UART_test_echo.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_echo_map.ncd UART_test_echo.ncd UART_test_echo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_test_echo.twx UART_test_echo.ncd -o UART_test_echo.twr UART_test_echo.pcf -ucf UART_test_repeat.ucf 
+bitgen -intstyle ise -f UART_test_echo.ut UART_test_echo.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_test_repeat.ucf -p xc3s500e-vq100-4 UART_test_echo.ngc UART_test_echo.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o UART_test_echo_map.ncd UART_test_echo.ngd UART_test_echo.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_echo_map.ncd UART_test_echo.ncd UART_test_echo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_test_echo.twx UART_test_echo.ncd -o UART_test_echo.twr UART_test_echo.pcf -ucf UART_test_repeat.ucf 
+bitgen -intstyle ise -f UART_test_echo.ut UART_test_echo.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_test_repeat.ucf -p xc3s500e-vq100-5 UART_test_echo.ngc UART_test_echo.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o UART_test_echo_map.ncd UART_test_echo.ngd UART_test_echo.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_echo_map.ncd UART_test_echo.ncd UART_test_echo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml UART_test_echo.twx UART_test_echo.ncd -o UART_test_echo.twr UART_test_echo.pcf -ucf UART_test_repeat.ucf 
+bitgen -intstyle ise -f UART_test_echo.ut UART_test_echo.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_test_repeat.ucf -p xc3s500e-vq100-5 UART_test_echo.ngc UART_test_echo.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o UART_test_echo_map.ncd UART_test_echo.ngd UART_test_echo.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_echo_map.ncd UART_test_echo.ncd UART_test_echo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml UART_test_echo.twx UART_test_echo.ncd -o UART_test_echo.twr UART_test_echo.pcf -ucf UART_test_repeat.ucf 
+bitgen -intstyle ise -f UART_test_echo.ut UART_test_echo.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_test_repeat.ucf -p xc3s500e-vq100-5 UART_test_echo.ngc UART_test_echo.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o UART_test_echo_map.ncd UART_test_echo.ngd UART_test_echo.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_echo_map.ncd UART_test_echo.ncd UART_test_echo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml UART_test_echo.twx UART_test_echo.ncd -o UART_test_echo.twr UART_test_echo.pcf -ucf UART_test_repeat.ucf 
+bitgen -intstyle ise -f UART_test_echo.ut UART_test_echo.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_test_repeat.ucf -p xc3s500e-vq100-5 UART_test_echo.ngc UART_test_echo.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o UART_test_echo_map.ncd UART_test_echo.ngd UART_test_echo.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_echo_map.ncd UART_test_echo.ncd UART_test_echo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml UART_test_echo.twx UART_test_echo.ncd -o UART_test_echo.twr UART_test_echo.pcf -ucf UART_test_repeat.ucf 
+bitgen -intstyle ise -f UART_test_echo.ut UART_test_echo.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_test_repeat.ucf -p xc3s500e-vq100-5 UART_test_echo.ngc UART_test_echo.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o UART_test_echo_map.ncd UART_test_echo.ngd UART_test_echo.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_echo_map.ncd UART_test_echo.ncd UART_test_echo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml UART_test_echo.twx UART_test_echo.ncd -o UART_test_echo.twr UART_test_echo.pcf -ucf UART_test_repeat.ucf 
+bitgen -intstyle ise -f UART_test_echo.ut UART_test_echo.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_test_repeat.ucf -p xc3s500e-vq100-5 UART_test_echo.ngc UART_test_echo.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o UART_test_echo_map.ncd UART_test_echo.ngd UART_test_echo.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_echo_map.ncd UART_test_echo.ncd UART_test_echo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml UART_test_echo.twx UART_test_echo.ncd -o UART_test_echo.twr UART_test_echo.pcf -ucf UART_test_repeat.ucf 
+bitgen -intstyle ise -f UART_test_echo.ut UART_test_echo.ncd 

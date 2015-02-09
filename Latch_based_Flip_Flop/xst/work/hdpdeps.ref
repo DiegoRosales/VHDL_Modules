@@ -1,0 +1,8 @@
+V3 3
+FL D:/GitHub/VHDL_Modules/Latch_based_Flip_Flop/Latch_based_Flip_Flop.vhd 2014/11/26.10:52:07 P.28xd
+EN work/Latch_based_Flip_Flop 1417020802 \
+      FL D:/GitHub/VHDL_Modules/Latch_based_Flip_Flop/Latch_based_Flip_Flop.vhd \
+      PB ieee/std_logic_1164 1341906176
+AR work/Latch_based_Flip_Flop/Behavioral 1417020803 \
+      FL D:/GitHub/VHDL_Modules/Latch_based_Flip_Flop/Latch_based_Flip_Flop.vhd \
+      EN work/Latch_based_Flip_Flop 1417020802

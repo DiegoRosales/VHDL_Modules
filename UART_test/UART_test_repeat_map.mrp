@@ -1,0 +1,160 @@
+Release 14.2 Map P.28xd (nt64)
+Xilinx Mapping Report File for Design 'UART_test_repeat'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off
+-c 100 -o UART_test_repeat_map.ncd UART_test_repeat.ngd UART_test_repeat.pcf 
+Target Device  : xc3s500e
+Target Package : vq100
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Tue Jan 13 16:20:13 2015
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    2
+Logic Utilization:
+  Total Number Slice Registers:          68 out of   9,312    1%
+    Number used as Flip Flops:           36
+    Number used as Latches:              32
+  Number of 4 input LUTs:                90 out of   9,312    1%
+Logic Distribution:
+  Number of occupied Slices:             67 out of   4,656    1%
+    Number of Slices containing only related logic:      67 out of      67 100%
+    Number of Slices containing unrelated logic:          0 out of      67   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         123 out of   9,312    1%
+    Number used as logic:                90
+    Number used as a route-thru:         33
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                  3 out of      66    4%
+  Number of BUFGMUXs:                     2 out of      24    8%
+
+Average Fanout of Non-Clock Nets:                2.69
+
+Peak Memory Usage:  268 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Pack:266 - The function generator UART_module/fifo_tx_unit/Mmux_R_DATA_3
+   failed to merge with F5 multiplexer
+   UART_module/fifo_tx_unit/Mmux_R_DATA_2_f5_6.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:PhysDesignRules:367 - The signal <RX_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network RX_IBUF has no load.
+INFO:MapLib:562 - No environment variables are currently set.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CLK                                | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| RX                                 | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| TX                                 | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

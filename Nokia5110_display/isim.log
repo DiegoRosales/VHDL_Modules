@@ -1,0 +1,96 @@
+ISim log file
+Running: D:\GitHub\VHDL_Modules\Nokia5110_display\Nokia5110_tbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/GitHub/VHDL_Modules/Nokia5110_display/Nokia5110_tbench_isim_beh.wdb 
+ISim P.28xd (signature 0xa0883be4)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 5 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 5 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 5 ns(3), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 15 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+# restart
+# run 1.00us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 5 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 5 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 5 ns(3), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 15 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+# restart
+# run 5ms
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 5 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 5 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 5 ns(3), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 15 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+ISim P.28xd (signature 0xa0883be4)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 5 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 5 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 5 ns(3), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 15 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+# restart
+# run 5ms
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 5 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 5 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 5 ns(3), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 15 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+# restart
+# run 5ms
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 5 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 5 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 5 ns(3), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 15 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+ISim P.28xd (signature 0xa0883be4)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 5 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 5 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 5 ns(3), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 15 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+# restart
+# run 5ms
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 0 ps, Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 5 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 5 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 5 ns(3), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 15 ns(2), Instance /nokia5110_tbench/uut/SPI_MODULE/Inst_SPI_MASTER_TX/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE

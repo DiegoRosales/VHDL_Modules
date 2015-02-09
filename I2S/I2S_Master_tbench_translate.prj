@@ -1,0 +1,2 @@
+vhdl work "netgen/translate/I2S_Master_translate.vhd"
+vhdl work "I2S_Module_tbench.vhd"

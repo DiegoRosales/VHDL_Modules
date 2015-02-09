@@ -1,0 +1,28 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_repeat.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_repeat.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-vq100-5 UART_test_repeat.ngc UART_test_repeat.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o UART_test_repeat_map.ncd UART_test_repeat.ngd UART_test_repeat.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_repeat_map.ncd UART_test_repeat.ncd UART_test_repeat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml UART_test_repeat.twx UART_test_repeat.ncd -o UART_test_repeat.twr UART_test_repeat.pcf 
+bitgen -intstyle ise -f UART_test_repeat.ut UART_test_repeat.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_repeat.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_repeat.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 UART_test_repeat.ngc UART_test_repeat.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o UART_test_repeat_map.ncd UART_test_repeat.ngd UART_test_repeat.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_repeat_map.ncd UART_test_repeat.ncd UART_test_repeat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml UART_test_repeat.twx UART_test_repeat.ncd -o UART_test_repeat.twr UART_test_repeat.pcf 
+bitgen -intstyle ise -f UART_test_repeat.ut UART_test_repeat.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART_test/UART_test_repeat.xst" -ofn "D:/GitHub/VHDL_Modules/UART_test/UART_test_repeat.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-4 UART_test_repeat.ngc UART_test_repeat.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o UART_test_repeat_map.ncd UART_test_repeat.ngd UART_test_repeat.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_repeat_map.ncd UART_test_repeat.ncd UART_test_repeat.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_test_repeat.twx UART_test_repeat.ncd -o UART_test_repeat.twr UART_test_repeat.pcf 
+bitgen -intstyle ise -f UART_test_repeat.ut UART_test_repeat.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_test_repeat.ucf -p xc3s500e-vq100-4 UART_test_repeat.ngc UART_test_repeat.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o UART_test_repeat_map.ncd UART_test_repeat.ngd UART_test_repeat.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_repeat_map.ncd UART_test_repeat.ncd UART_test_repeat.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_test_repeat.ucf -p xc3s500e-vq100-4 UART_test_repeat.ngc UART_test_repeat.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o UART_test_repeat_map.ncd UART_test_repeat.ngd UART_test_repeat.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_test_repeat.ucf -p xc3s500e-vq100-4 UART_test_repeat.ngc UART_test_repeat.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o UART_test_repeat_map.ncd UART_test_repeat.ngd UART_test_repeat.pcf 
+par -w -intstyle ise -ol high -t 1 UART_test_repeat_map.ncd UART_test_repeat.ncd UART_test_repeat.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_test_repeat.twx UART_test_repeat.ncd -o UART_test_repeat.twr UART_test_repeat.pcf -ucf UART_test_repeat.ucf 
+bitgen -intstyle ise -f UART_test_repeat.ut UART_test_repeat.ncd 

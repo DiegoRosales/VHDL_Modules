@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/GitHub/VHDL_Modules/Nokia5110_display/Nokia5110_tbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="nokia5110_tbench" />
+            <top_module name="nokia5110_types" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/nokia5110_tbench/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nokia5110_tbench/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nokia5110_tbench/uut/tx_buffer" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_buffer</obj_property>
+      <obj_property name="ObjectShortName">tx_buffer</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nokia5110_tbench/uut/nokia5110_state_current" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">nokia5110_state_current</obj_property>
+      <obj_property name="ObjectShortName">nokia5110_state_current</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nokia5110_tbench/uut/nokia5110_curr_tx_current" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">nokia5110_curr_tx_current</obj_property>
+      <obj_property name="ObjectShortName">nokia5110_curr_tx_current</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nokia5110_tbench/uut/counter_x_current" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">counter_x_current</obj_property>
+      <obj_property name="ObjectShortName">counter_x_current</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nokia5110_tbench/uut/start_tx_current" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start_tx_current</obj_property>
+      <obj_property name="ObjectShortName">start_tx_current</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nokia5110_tbench/uut/counter_y_current" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">counter_y_current</obj_property>
+      <obj_property name="ObjectShortName">counter_y_current</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nokia5110_tbench/uut/output_buffer_full" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">output_buffer_full</obj_property>
+      <obj_property name="ObjectShortName">output_buffer_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nokia5110_tbench/uut/SPI_MODULE/mosi" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mosi</obj_property>
+      <obj_property name="ObjectShortName">mosi</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nokia5110_tbench/uut/SPI_MODULE/sclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sclk</obj_property>
+      <obj_property name="ObjectShortName">sclk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nokia5110_tbench/uut/SPI_MODULE/Inst_SCLK_CE_GEN/ce" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nokia5110_tbench/uut/SPI_MODULE/Inst_FIFO_TX/r_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">r_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/nokia5110_tbench/uut/data_tx" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_tx[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_tx[7:0]</obj_property>
+   </wvobject>
+</wave_config>

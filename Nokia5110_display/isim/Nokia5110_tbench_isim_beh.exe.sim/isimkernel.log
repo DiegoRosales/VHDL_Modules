@@ -1,0 +1,28 @@
+Command line:
+   Nokia5110_tbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  6919
+
+Fri Feb 06 15:41:49 2015
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 527.852 Meg
+
+ Total Signals          : 143
+ Total Nets             : 4233
+ Total Signal Drivers   : 78
+ Total Blocks           : 10
+ Total Primitive Blocks : 7
+ Total Processes        : 37
+ Total Traceable Variables  : 34
+ Total Scalar Nets and Variables : 4737
+
+ Total Simulation Time: 2.96402 sec
+
+ Current Memory Usage: 527.852 Meg
+
+Sat Feb 07 10:16:01 2015
+

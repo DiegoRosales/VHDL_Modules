@@ -1,0 +1,6 @@
+vhdl work "D:\GitHub\VHDL_Modules\UART_test\UART_TX.vhd"
+vhdl work "D:\GitHub\VHDL_Modules\UART_test\UART_RX.vhd"
+vhdl work "D:\GitHub\VHDL_Modules\UART_test\mod_m_counter.vhd"
+vhdl work "D:\GitHub\VHDL_Modules\UART_test\FIFO.vhd"
+vhdl work "D:\GitHub\VHDL_Modules\UART_test\UART.vhd"
+vhdl work "D:\GitHub\VHDL_Modules\UART_test\UART_test_repeat.vhd"

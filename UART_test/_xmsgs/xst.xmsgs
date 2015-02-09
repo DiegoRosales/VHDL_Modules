@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/GitHub/VHDL_Modules/UART_test/UART.vhd</arg>&quot; line <arg fmt="%d" index="2">50</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q</arg>&apos; of component &apos;<arg fmt="%s" index="4">mod_m_counter</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/GitHub/VHDL_Modules/UART_test/UART.vhd</arg>&quot; line <arg fmt="%d" index="2">59</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FULL</arg>&apos; of component &apos;<arg fmt="%s" index="4">FIFO</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">tx_full_signal</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+</messages>
+

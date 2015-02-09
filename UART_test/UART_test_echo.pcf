@@ -1,0 +1,134 @@
+//! **************************************************************************
+// Written by: Map P.28xd on Wed Jan 14 19:04:57 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "RX" LOCATE = SITE "P88" LEVEL 1;
+COMP "TX" LOCATE = SITE "P90" LEVEL 1;
+COMP "CLK" LOCATE = SITE "P89" LEVEL 1;
+NET "CLK_BUFGP/IBUFG" BEL "CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP CLK = BEL "reset_signal" BEL "counter_0" BEL "counter_1" BEL
+        "counter_2" BEL "counter_3" BEL "counter_4" BEL "counter_5" BEL
+        "counter_6" BEL "UART_module/baud_gen_unit/r_reg_7" BEL
+        "UART_module/baud_gen_unit/r_reg_5" BEL
+        "UART_module/baud_gen_unit/r_reg_4" BEL
+        "UART_module/baud_gen_unit/r_reg_3" BEL
+        "UART_module/baud_gen_unit/r_reg_2" BEL
+        "UART_module/baud_gen_unit/r_reg_1" BEL
+        "UART_module/baud_gen_unit/r_reg_0" BEL
+        "UART_module/uart_rx_unit/state_reg_FSM_FFd2" BEL
+        "UART_module/uart_rx_unit/state_reg_FSM_FFd1" BEL
+        "UART_module/uart_rx_unit/s_reg_3" BEL
+        "UART_module/uart_rx_unit/s_reg_2" BEL
+        "UART_module/uart_rx_unit/s_reg_1" BEL
+        "UART_module/uart_rx_unit/s_reg_0" BEL
+        "UART_module/uart_rx_unit/n_reg_2" BEL
+        "UART_module/uart_rx_unit/n_reg_1" BEL
+        "UART_module/uart_rx_unit/n_reg_0" BEL
+        "UART_module/uart_rx_unit/b_reg_7" BEL
+        "UART_module/uart_rx_unit/b_reg_6" BEL
+        "UART_module/uart_rx_unit/b_reg_5" BEL
+        "UART_module/uart_rx_unit/b_reg_4" BEL
+        "UART_module/uart_rx_unit/b_reg_3" BEL
+        "UART_module/uart_rx_unit/b_reg_2" BEL
+        "UART_module/uart_rx_unit/b_reg_1" BEL
+        "UART_module/uart_rx_unit/b_reg_0" BEL
+        "UART_module/fifo_rx_unit/r_ptr_reg_1" BEL
+        "UART_module/fifo_rx_unit/r_ptr_reg_0" BEL
+        "UART_module/fifo_rx_unit/w_ptr_reg_1" BEL
+        "UART_module/fifo_rx_unit/w_ptr_reg_0" BEL
+        "UART_module/fifo_rx_unit/full_reg" BEL
+        "UART_module/fifo_rx_unit/empty_reg" BEL
+        "UART_module/fifo_rx_unit/array_reg_3_7" BEL
+        "UART_module/fifo_rx_unit/array_reg_3_6" BEL
+        "UART_module/fifo_rx_unit/array_reg_3_5" BEL
+        "UART_module/fifo_rx_unit/array_reg_3_4" BEL
+        "UART_module/fifo_rx_unit/array_reg_3_3" BEL
+        "UART_module/fifo_rx_unit/array_reg_3_2" BEL
+        "UART_module/fifo_rx_unit/array_reg_3_1" BEL
+        "UART_module/fifo_rx_unit/array_reg_3_0" BEL
+        "UART_module/fifo_rx_unit/array_reg_1_7" BEL
+        "UART_module/fifo_rx_unit/array_reg_1_6" BEL
+        "UART_module/fifo_rx_unit/array_reg_1_5" BEL
+        "UART_module/fifo_rx_unit/array_reg_1_4" BEL
+        "UART_module/fifo_rx_unit/array_reg_1_3" BEL
+        "UART_module/fifo_rx_unit/array_reg_1_2" BEL
+        "UART_module/fifo_rx_unit/array_reg_1_1" BEL
+        "UART_module/fifo_rx_unit/array_reg_1_0" BEL
+        "UART_module/fifo_rx_unit/array_reg_0_7" BEL
+        "UART_module/fifo_rx_unit/array_reg_0_6" BEL
+        "UART_module/fifo_rx_unit/array_reg_0_5" BEL
+        "UART_module/fifo_rx_unit/array_reg_0_4" BEL
+        "UART_module/fifo_rx_unit/array_reg_0_3" BEL
+        "UART_module/fifo_rx_unit/array_reg_0_2" BEL
+        "UART_module/fifo_rx_unit/array_reg_0_1" BEL
+        "UART_module/fifo_rx_unit/array_reg_0_0" BEL
+        "UART_module/fifo_rx_unit/array_reg_2_7" BEL
+        "UART_module/fifo_rx_unit/array_reg_2_6" BEL
+        "UART_module/fifo_rx_unit/array_reg_2_5" BEL
+        "UART_module/fifo_rx_unit/array_reg_2_4" BEL
+        "UART_module/fifo_rx_unit/array_reg_2_3" BEL
+        "UART_module/fifo_rx_unit/array_reg_2_2" BEL
+        "UART_module/fifo_rx_unit/array_reg_2_1" BEL
+        "UART_module/fifo_rx_unit/array_reg_2_0" BEL
+        "UART_module/fifo_tx_unit/r_ptr_reg_1" BEL
+        "UART_module/fifo_tx_unit/r_ptr_reg_0" BEL
+        "UART_module/fifo_tx_unit/w_ptr_reg_1" BEL
+        "UART_module/fifo_tx_unit/w_ptr_reg_0" BEL
+        "UART_module/fifo_tx_unit/full_reg" BEL
+        "UART_module/fifo_tx_unit/empty_reg" BEL
+        "UART_module/fifo_tx_unit/array_reg_3_7" BEL
+        "UART_module/fifo_tx_unit/array_reg_3_6" BEL
+        "UART_module/fifo_tx_unit/array_reg_3_5" BEL
+        "UART_module/fifo_tx_unit/array_reg_3_4" BEL
+        "UART_module/fifo_tx_unit/array_reg_3_3" BEL
+        "UART_module/fifo_tx_unit/array_reg_3_2" BEL
+        "UART_module/fifo_tx_unit/array_reg_3_1" BEL
+        "UART_module/fifo_tx_unit/array_reg_3_0" BEL
+        "UART_module/fifo_tx_unit/array_reg_1_7" BEL
+        "UART_module/fifo_tx_unit/array_reg_1_6" BEL
+        "UART_module/fifo_tx_unit/array_reg_1_5" BEL
+        "UART_module/fifo_tx_unit/array_reg_1_4" BEL
+        "UART_module/fifo_tx_unit/array_reg_1_3" BEL
+        "UART_module/fifo_tx_unit/array_reg_1_2" BEL
+        "UART_module/fifo_tx_unit/array_reg_1_1" BEL
+        "UART_module/fifo_tx_unit/array_reg_1_0" BEL
+        "UART_module/fifo_tx_unit/array_reg_0_7" BEL
+        "UART_module/fifo_tx_unit/array_reg_0_6" BEL
+        "UART_module/fifo_tx_unit/array_reg_0_5" BEL
+        "UART_module/fifo_tx_unit/array_reg_0_4" BEL
+        "UART_module/fifo_tx_unit/array_reg_0_3" BEL
+        "UART_module/fifo_tx_unit/array_reg_0_2" BEL
+        "UART_module/fifo_tx_unit/array_reg_0_1" BEL
+        "UART_module/fifo_tx_unit/array_reg_0_0" BEL
+        "UART_module/fifo_tx_unit/array_reg_2_7" BEL
+        "UART_module/fifo_tx_unit/array_reg_2_6" BEL
+        "UART_module/fifo_tx_unit/array_reg_2_5" BEL
+        "UART_module/fifo_tx_unit/array_reg_2_4" BEL
+        "UART_module/fifo_tx_unit/array_reg_2_3" BEL
+        "UART_module/fifo_tx_unit/array_reg_2_2" BEL
+        "UART_module/fifo_tx_unit/array_reg_2_1" BEL
+        "UART_module/fifo_tx_unit/array_reg_2_0" BEL
+        "UART_module/uart_tx_unit/state_reg_FSM_FFd2" BEL
+        "UART_module/uart_tx_unit/state_reg_FSM_FFd1" BEL
+        "UART_module/uart_tx_unit/s_reg_3" BEL
+        "UART_module/uart_tx_unit/s_reg_2" BEL
+        "UART_module/uart_tx_unit/s_reg_1" BEL
+        "UART_module/uart_tx_unit/s_reg_0" BEL
+        "UART_module/uart_tx_unit/b_reg_7" BEL
+        "UART_module/uart_tx_unit/b_reg_6" BEL
+        "UART_module/uart_tx_unit/b_reg_5" BEL
+        "UART_module/uart_tx_unit/b_reg_4" BEL
+        "UART_module/uart_tx_unit/b_reg_3" BEL
+        "UART_module/uart_tx_unit/b_reg_2" BEL
+        "UART_module/uart_tx_unit/b_reg_1" BEL
+        "UART_module/uart_tx_unit/b_reg_0" BEL
+        "UART_module/uart_tx_unit/n_reg_2" BEL
+        "UART_module/uart_tx_unit/n_reg_1" BEL
+        "UART_module/uart_tx_unit/n_reg_0" BEL
+        "UART_module/uart_tx_unit/tx_reg" BEL
+        "UART_module/baud_gen_unit/r_reg_6" BEL "CLK_BUFGP/BUFG.GCLKMUX" BEL
+        "CLK_BUFGP/BUFG";
+TS_CLK = PERIOD TIMEGRP "CLK" 170 MHz HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,1 @@
+vhdtdtfi -prj SPI -o D:/GitHub/VHDL_Modules/SPI/mod_m_counter.vhi -module mod_m_counter -template C:/Xilinx/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mod_m_counter.vhd 

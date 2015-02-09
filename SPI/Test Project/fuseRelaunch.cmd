@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/GitHub/VHDL_Modules/SPI/Test Project/SPI_MASTER_MODULE_tbench_isim_beh.exe" -prj "D:/GitHub/VHDL_Modules/SPI/Test Project/SPI_MASTER_MODULE_tbench_beh.prj" "work.SPI_MASTER_MODULE_tbench" 

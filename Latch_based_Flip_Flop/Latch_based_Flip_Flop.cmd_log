@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Latch_based_Flip_Flop/Latch_based_Flip_Flop.xst" -ofn "D:/GitHub/VHDL_Modules/Latch_based_Flip_Flop/Latch_based_Flip_Flop.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Latch_based_Flip_Flop/Latch_based_Flip_Flop.xst" -ofn "D:/GitHub/VHDL_Modules/Latch_based_Flip_Flop/Latch_based_Flip_Flop.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Latch_based_Flip_Flop/Latch_based_Flip_Flop.xst" -ofn "D:/GitHub/VHDL_Modules/Latch_based_Flip_Flop/Latch_based_Flip_Flop.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Latch_based_Flip_Flop/Latch_based_Flip_Flop.xst" -ofn "D:/GitHub/VHDL_Modules/Latch_based_Flip_Flop/Latch_based_Flip_Flop.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-vq100-5 Latch_based_Flip_Flop.ngc Latch_based_Flip_Flop.ngd  
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Latch_based_Flip_Flop/Latch_based_Flip_Flop.xst" -ofn "D:/GitHub/VHDL_Modules/Latch_based_Flip_Flop/Latch_based_Flip_Flop.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Latch_based_Flip_Flop.ucf -p xc3s250e-vq100-5 Latch_based_Flip_Flop.ngc Latch_based_Flip_Flop.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o Latch_based_Flip_Flop_map.ncd Latch_based_Flip_Flop.ngd Latch_based_Flip_Flop.pcf 
+par -w -intstyle ise -ol high -t 1 Latch_based_Flip_Flop_map.ncd Latch_based_Flip_Flop.ncd Latch_based_Flip_Flop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Latch_based_Flip_Flop.twx Latch_based_Flip_Flop.ncd -o Latch_based_Flip_Flop.twr Latch_based_Flip_Flop.pcf -ucf Latch_based_Flip_Flop.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Latch_based_Flip_Flop.ucf -p xc3s250e-vq100-5 Latch_based_Flip_Flop.ngc Latch_based_Flip_Flop.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o Latch_based_Flip_Flop_map.ncd Latch_based_Flip_Flop.ngd Latch_based_Flip_Flop.pcf 
+par -w -intstyle ise -ol high -t 1 Latch_based_Flip_Flop_map.ncd Latch_based_Flip_Flop.ncd Latch_based_Flip_Flop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Latch_based_Flip_Flop.twx Latch_based_Flip_Flop.ncd -o Latch_based_Flip_Flop.twr Latch_based_Flip_Flop.pcf -ucf Latch_based_Flip_Flop.ucf 

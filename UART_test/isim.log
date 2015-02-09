@@ -1,0 +1,31 @@
+ISim log file
+Running: D:\GitHub\VHDL_Modules\UART_test\UART_test_repeat_tbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/GitHub/VHDL_Modules/UART_test/UART_test_repeat_tbench_isim_beh.wdb 
+ISim P.28xd (signature 0xa0883be4)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /uart_test_repeat_tbench/uut/UART_module/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /uart_test_repeat_tbench/uut/UART_module/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+# restart
+# run 100.00us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /uart_test_repeat_tbench/uut/UART_module/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /uart_test_repeat_tbench/uut/UART_module/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+# restart
+# run 1000.00us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /uart_test_repeat_tbench/uut/UART_module/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /uart_test_repeat_tbench/uut/UART_module/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+# restart
+# run all
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /uart_test_repeat_tbench/uut/UART_module/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /uart_test_repeat_tbench/uut/UART_module/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+Stopped at time : 14696406250 ps : File "D:/GitHub/VHDL_Modules/UART_test/UART_test_repeat_tbench.vhd" Line 46

@@ -1,0 +1,135 @@
+--------------------------------------------------------------------------------
+Release 14.2 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml I2S_Master.twx I2S_Master.ncd -o I2S_Master.twr
+I2S_Master.pcf
+
+Design file:              I2S_Master.ncd
+Physical constraint file: I2S_Master.pcf
+Device,package,speed:     xc3s250e,vq100,-5 (PRODUCTION 1.27 2012-07-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock MCK
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+CE          |    1.933(R)|    0.116(R)|MCK_IBUF          |   0.000|
+DATA<0>     |    1.482(F)|   -0.074(F)|MCK_IBUF          |   0.000|
+DATA<1>     |    1.731(F)|   -0.280(F)|MCK_IBUF          |   0.000|
+DATA<2>     |    1.766(F)|   -0.301(F)|MCK_IBUF          |   0.000|
+DATA<3>     |    2.017(F)|   -0.510(F)|MCK_IBUF          |   0.000|
+DATA<4>     |    1.361(F)|    0.014(F)|MCK_IBUF          |   0.000|
+DATA<5>     |    0.867(F)|    0.409(F)|MCK_IBUF          |   0.000|
+DATA<6>     |    1.108(F)|    0.216(F)|MCK_IBUF          |   0.000|
+DATA<7>     |    1.467(F)|   -0.069(F)|MCK_IBUF          |   0.000|
+DATA<8>     |    1.478(F)|   -0.079(F)|MCK_IBUF          |   0.000|
+DATA<9>     |    1.828(F)|   -0.362(F)|MCK_IBUF          |   0.000|
+DATA<10>    |    1.520(F)|   -0.116(F)|MCK_IBUF          |   0.000|
+DATA<11>    |    1.750(F)|   -0.298(F)|MCK_IBUF          |   0.000|
+DATA<12>    |    1.486(F)|   -0.088(F)|MCK_IBUF          |   0.000|
+DATA<13>    |    1.122(F)|    0.205(F)|MCK_IBUF          |   0.000|
+DATA<14>    |    1.476(F)|   -0.076(F)|MCK_IBUF          |   0.000|
+DATA<15>    |    1.149(F)|    0.186(F)|MCK_IBUF          |   0.000|
+DATA<16>    |    1.195(F)|    0.149(F)|MCK_IBUF          |   0.000|
+DATA<17>    |    1.798(F)|   -0.336(F)|MCK_IBUF          |   0.000|
+DATA<18>    |    1.933(F)|   -0.443(F)|MCK_IBUF          |   0.000|
+DATA<19>    |    1.544(F)|   -0.130(F)|MCK_IBUF          |   0.000|
+DATA<20>    |    1.652(F)|   -0.218(F)|MCK_IBUF          |   0.000|
+DATA<21>    |    0.742(F)|    0.508(F)|MCK_IBUF          |   0.000|
+DATA<22>    |    0.946(F)|    0.350(F)|MCK_IBUF          |   0.000|
+DATA<23>    |    0.976(F)|    0.326(F)|MCK_IBUF          |   0.000|
+DATA<24>    |    1.525(F)|   -0.109(F)|MCK_IBUF          |   0.000|
+DATA<25>    |    0.908(F)|    0.378(F)|MCK_IBUF          |   0.000|
+DATA<26>    |    1.159(F)|    0.184(F)|MCK_IBUF          |   0.000|
+DATA<27>    |    1.790(F)|   -0.329(F)|MCK_IBUF          |   0.000|
+DATA<28>    |    0.708(F)|    0.537(F)|MCK_IBUF          |   0.000|
+DATA<29>    |    1.226(F)|    0.122(F)|MCK_IBUF          |   0.000|
+DATA<30>    |    1.194(F)|    0.148(F)|MCK_IBUF          |   0.000|
+DATA<31>    |    1.318(F)|    0.051(F)|MCK_IBUF          |   0.000|
+DATA<32>    |    1.553(F)|   -0.139(F)|MCK_IBUF          |   0.000|
+DATA<33>    |    0.940(F)|    0.348(F)|MCK_IBUF          |   0.000|
+DATA<34>    |    0.905(F)|    0.376(F)|MCK_IBUF          |   0.000|
+DATA<35>    |    0.724(F)|    0.523(F)|MCK_IBUF          |   0.000|
+DATA<36>    |    1.595(F)|   -0.175(F)|MCK_IBUF          |   0.000|
+DATA<37>    |    1.677(F)|   -0.239(F)|MCK_IBUF          |   0.000|
+DATA<38>    |    0.863(F)|    0.415(F)|MCK_IBUF          |   0.000|
+DATA<39>    |    1.001(F)|    0.304(F)|MCK_IBUF          |   0.000|
+DATA<40>    |    1.710(F)|   -0.263(F)|MCK_IBUF          |   0.000|
+DATA<41>    |    2.172(F)|   -0.635(F)|MCK_IBUF          |   0.000|
+DATA<42>    |    2.288(F)|   -0.728(F)|MCK_IBUF          |   0.000|
+DATA<43>    |    1.434(F)|   -0.042(F)|MCK_IBUF          |   0.000|
+DATA<44>    |    1.715(F)|   -0.268(F)|MCK_IBUF          |   0.000|
+DATA<45>    |    1.618(F)|   -0.193(F)|MCK_IBUF          |   0.000|
+DATA<46>    |    1.872(F)|   -0.392(F)|MCK_IBUF          |   0.000|
+DATA<47>    |    1.922(F)|   -0.431(F)|MCK_IBUF          |   0.000|
+LR          |    1.618(R)|   -0.189(R)|MCK_IBUF          |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock MCK to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+SD          |    7.421(F)|MCK_IBUF          |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock MCK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+MCK            |    1.886|         |    2.962|    3.165|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+LR             |WS             |    4.250|
+MCK            |SCK            |    4.516|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Nov 25 07:39:56 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 176 MB
+
+
+

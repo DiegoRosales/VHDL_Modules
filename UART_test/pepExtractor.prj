@@ -1,0 +1,6 @@
+work	"FIFO.vhd"
+work	"UART.vhd"
+work	"UART_RX.vhd"
+work	"UART_TX.vhd"
+work	"UART_test_repeat.vhd"
+work	"mod_m_counter.vhd"

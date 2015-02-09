@@ -1,0 +1,14 @@
+AR uart_rx behavioral D:/GitHub/VHDL_Modules/UART_test/UART_RX.vhd sub00/vhpl03 1421283883
+AR uart behavioral D:/GitHub/VHDL_Modules/UART_test/UART.vhd sub00/vhpl09 1421283889
+AR uart_test_repeat behavioral D:/GitHub/VHDL_Modules/UART_test/UART_test_repeat.vhd sub00/vhpl11 1421187186
+EN uart_test_echo NULL D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.vhd sub00/vhpl12 1421283890
+AR uart_test_echo behavioral D:/GitHub/VHDL_Modules/UART_test/UART_test_echo.vhd sub00/vhpl13 1421283891
+EN uart_test_repeat NULL D:/GitHub/VHDL_Modules/UART_test/UART_test_repeat.vhd sub00/vhpl10 1421187185
+AR uart_tx behavioral D:/GitHub/VHDL_Modules/UART_test/UART_TX.vhd sub00/vhpl07 1421283887
+AR mod_m_counter behavioral D:/GitHub/VHDL_Modules/UART_test/mod_m_counter.vhd sub00/vhpl01 1421283881
+AR fifo behavioral D:/GitHub/VHDL_Modules/UART_test/FIFO.vhd sub00/vhpl05 1421283885
+EN fifo NULL D:/GitHub/VHDL_Modules/UART_test/FIFO.vhd sub00/vhpl04 1421283884
+EN uart NULL D:/GitHub/VHDL_Modules/UART_test/UART.vhd sub00/vhpl08 1421283888
+EN mod_m_counter NULL D:/GitHub/VHDL_Modules/UART_test/mod_m_counter.vhd sub00/vhpl00 1421283880
+EN uart_rx NULL D:/GitHub/VHDL_Modules/UART_test/UART_RX.vhd sub00/vhpl02 1421283882
+EN uart_tx NULL D:/GitHub/VHDL_Modules/UART_test/UART_TX.vhd sub00/vhpl06 1421283886

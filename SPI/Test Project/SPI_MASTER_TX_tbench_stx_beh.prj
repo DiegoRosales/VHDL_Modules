@@ -1,0 +1,4 @@
+vhdl SPI "../Library/SPI/SPI_MASTER_TX.vhd"
+vhdl SPI "../Library/SPI/SCLK_CE_GEN.vhd"
+vhdl SPI "../Library/SPI/mod_m_counter.vhd"
+vhdl isim_temp "SPI_MASTER_TX_tbench.vhd"

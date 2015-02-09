@@ -1,0 +1,6 @@
+vhdl work "UART_TX.vhd"
+vhdl work "UART_RX.vhd"
+vhdl work "mod_m_counter.vhd"
+vhdl work "FIFO.vhd"
+vhdl work "UART.vhd"
+vhdl work "UART_test_echo.vhd"

@@ -1,0 +1,28 @@
+Command line:
+   I2S_Master_tbench_isim_translate.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  14618
+
+Tue Nov 25 07:48:07 2014
+
+
+ Elaboration Time: 0.0936 sec
+
+ Current Memory Usage: 536.334 Meg
+
+ Total Signals          : 1417
+ Total Nets             : 947
+ Total Signal Drivers   : 875
+ Total Blocks           : 345
+ Total Primitive Blocks : 190
+ Total Processes        : 875
+ Total Traceable Variables  : 2156
+ Total Scalar Nets and Variables : 10038
+
+ Total Simulation Time: 0.171601 sec
+
+ Current Memory Usage: 536.338 Meg
+
+Tue Nov 25 07:48:49 2014
+
