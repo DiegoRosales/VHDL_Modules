@@ -1,0 +1,13 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "DATA_IN[0]" LOC = P11;
+NET "DATA_IN[1]" LOC = L3;
+NET "DATA_IN[2]" LOC = K3;
+NET "DATA_IN[3]" LOC = B4;
+NET "DATA_OUT[0]" LOC = M5;
+NET "DATA_OUT[1]" LOC = M11;
+NET "DATA_OUT[2]" LOC = P7;
+NET "DATA_OUT[3]" LOC = P6;
+NET "CLK" LOC = B8;
+NET "RESET" LOC = G12;

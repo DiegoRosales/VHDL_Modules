@@ -2,9 +2,9 @@ Command line:
    SPI_MASTER_MODULE_tbench_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  59944
+     -socket  32279
 
-Sun Feb 08 21:31:37 2015
+Tue Feb 17 17:07:12 2015
 
 
- Elaboration Time: 0.0468 sec
+ Elaboration Time: 0.0312 sec

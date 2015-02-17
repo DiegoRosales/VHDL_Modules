@@ -31,6 +31,7 @@ entity SPI_MASTER_MODULE_TX is
 	-- To FPGA
 		CLK, RESET : IN STD_LOGIC;
 		START_TX: IN STD_LOGIC;
+		CONT : IN STD_LOGIC;
 		DATA_OUT : IN STD_LOGIC_VECTOR(N-1 downto 0);
 		OUTPUT_BUFFER_FULL : OUT STD_LOGIC; -- '1' when the output FIFO is full, else '0'
 		OUTPUT_BUFFER_DATA : OUT STD_LOGIC; -- '1' when de output FIFO has unsent data, else '0'
@@ -57,7 +58,8 @@ architecture Behavioral of SPI_MASTER_MODULE_TX is
 			START : IN STD_LOGIC;
 			SCLK : OUT STD_LOGIC;
 			CE : OUT STD_LOGIC;
-			BUSY : OUT STD_LOGIC
+			BUSY : OUT STD_LOGIC;
+			CONT : IN STD_LOGIC
 		);
 	END COMPONENT;
 	
@@ -75,7 +77,8 @@ architecture Behavioral of SPI_MASTER_MODULE_TX is
 		CE : IN STD_LOGIC;
 		TX_START : IN STD_LOGIC;
 		DATA_TX : IN STD_LOGIC_VECTOR(N-1 downto 0);
-		TX_DONE : OUT STD_LOGIC	
+		TX_DONE : OUT STD_LOGIC;
+		CONT : IN STD_LOGIC
 	);
 	END COMPONENT;
 	
@@ -130,7 +133,8 @@ begin
 		START => start,
 		SCLK => sclk_signal,
 		CE => ce_signal,
-		BUSY => BUSY
+		BUSY => BUSY,
+		CONT => CONT
 	);
 	
 	--=== TX ===--
@@ -148,7 +152,8 @@ begin
 		CE => ce_signal,
 		TX_START => start_tx_signal,
 		DATA_TX => data_tx,
-		TX_DONE => tx_done
+		TX_DONE => tx_done,
+		CONT => CONT
 	);
 	
 	--=== TX FIFO ===--
@@ -183,6 +188,15 @@ begin
 		ss_signal(to_integer(unsigned(ADDRESS))) <= ce_signal;
 	END PROCESS;
 	
+	start_tx_process: PROCESS(fifo_tx_not_empty, ce_signal)
+	BEGIN
+		if(fifo_tx_not_empty = '1' AND ce_signal = '0') then
+			start_tx_signal <= '1';
+		else
+			start_tx_signal <= '0';
+		end if;
+	END PROCESS;
+	
 -- Ports
 	SCLK <= sclk_signal;
 	SS <= ss_signal;
@@ -190,7 +204,7 @@ begin
 	
 -- Signals
 	start <= fifo_tx_not_empty;
-	start_tx_signal <= '1' when fifo_tx_not_empty = '1' AND ce_signal = '0' else '0';
+	--start_tx_signal <= '1' when fifo_tx_not_empty = '1' AND ce_signal = '0' else '0';
 	
 	fifo_tx_not_empty <= not(fifo_tx_empty);
 	

@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Tue Feb 10 13:44:27 2015
+# Process ID: 9756
+# Log file: D:/GitHub/VHDL_Modules/P3/P3/planAhead_run_1/planAhead.log
+# Journal file: D:/GitHub/VHDL_Modules/P3/P3/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/GitHub/VHDL_Modules/P3/P3/pa.fromHdl.tcl
+startgroup
+set_property package_pin P11 [get_ports {DATA_IN[0]}]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports {DATA_IN[1]}]
+endgroup
+startgroup
+set_property package_pin K3 [get_ports {DATA_IN[2]}]
+endgroup
+startgroup
+set_property package_pin B4 [get_ports {DATA_IN[3]}]
+endgroup
+startgroup
+set_property package_pin M5 [get_ports {DATA_OUT[0]}]
+endgroup
+startgroup
+set_property package_pin M11 [get_ports {DATA_OUT[1]}]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports {DATA_OUT[2]}]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports {DATA_OUT[3]}]
+endgroup
+startgroup
+set_property package_pin B8 [get_ports CLK]
+endgroup
+startgroup
+set_property package_pin G12 [get_ports RESET]
+endgroup
+save_design

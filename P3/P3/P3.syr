@@ -1,0 +1,395 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: P3.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "P3.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "P3"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : P3
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/GitHub/VHDL_Modules/P3/P3/P3.vhd" in Library work.
+Architecture behavioral of Entity p3 is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <P3> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <P3> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "D:/GitHub/VHDL_Modules/P3/P3/P3.vhd" line 39: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <DATA_IN>
+Entity <P3> analyzed. Unit <P3> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <P3>.
+    Related source file is "D:/GitHub/VHDL_Modules/P3/P3/P3.vhd".
+    Found 24-bit register for signal <counter_current>.
+    Found 24-bit adder for signal <counter_next$addsub0000> created at line 34.
+    Found 4-bit register for signal <data_reg>.
+    Found 4-bit subtractor for signal <data_reg$sub0000> created at line 43.
+    Summary:
+	inferred  28 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <P3> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 24-bit adder                                          : 1
+ 4-bit subtractor                                      : 1
+# Registers                                            : 2
+ 24-bit register                                       : 1
+ 4-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 24-bit adder                                          : 1
+ 4-bit subtractor                                      : 1
+# Registers                                            : 28
+ Flip-Flops                                            : 28
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <P3> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block P3, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 28
+ Flip-Flops                                            : 28
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : P3.ngr
+Top Level Output File Name         : P3
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 10
+
+Cell Usage :
+# BELS                             : 116
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 23
+#      LUT2                        : 26
+#      LUT3                        : 1
+#      LUT4                        : 10
+#      MUXCY                       : 29
+#      VCC                         : 1
+#      XORCY                       : 24
+# FlipFlops/Latches                : 28
+#      FDC                         : 24
+#      FDCE                        : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 5
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                       33  out of    960     3%  
+ Number of Slice Flip Flops:             28  out of   1920     1%  
+ Number of 4 input LUTs:                 61  out of   1920     3%  
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of     83    12%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 28    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RESET                              | IBUF                   | 28    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.148ns (Maximum Frequency: 194.233MHz)
+   Minimum input arrival time before clock: 3.514ns
+   Maximum output required time after clock: 4.221ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 5.148ns (frequency: 194.233MHz)
+  Total number of paths / destination ports: 982 / 32
+-------------------------------------------------------------------------
+Delay:               5.148ns (Levels of Logic = 25)
+  Source:            counter_current_1 (FF)
+  Destination:       counter_current_23 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: counter_current_1 to counter_current_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.532  counter_current_1 (counter_current_1)
+     LUT1:I0->O            1   0.612   0.000  Madd_counter_next_addsub0000_cy<1>_rt (Madd_counter_next_addsub0000_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  Madd_counter_next_addsub0000_cy<1> (Madd_counter_next_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_counter_next_addsub0000_cy<2> (Madd_counter_next_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_counter_next_addsub0000_cy<3> (Madd_counter_next_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_counter_next_addsub0000_cy<4> (Madd_counter_next_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_counter_next_addsub0000_cy<5> (Madd_counter_next_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_counter_next_addsub0000_cy<6> (Madd_counter_next_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_counter_next_addsub0000_cy<7> (Madd_counter_next_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_counter_next_addsub0000_cy<8> (Madd_counter_next_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_counter_next_addsub0000_cy<9> (Madd_counter_next_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_counter_next_addsub0000_cy<10> (Madd_counter_next_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_counter_next_addsub0000_cy<11> (Madd_counter_next_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_counter_next_addsub0000_cy<12> (Madd_counter_next_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_counter_next_addsub0000_cy<13> (Madd_counter_next_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_counter_next_addsub0000_cy<14> (Madd_counter_next_addsub0000_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_counter_next_addsub0000_cy<15> (Madd_counter_next_addsub0000_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_counter_next_addsub0000_cy<16> (Madd_counter_next_addsub0000_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_counter_next_addsub0000_cy<17> (Madd_counter_next_addsub0000_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_counter_next_addsub0000_cy<18> (Madd_counter_next_addsub0000_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_counter_next_addsub0000_cy<19> (Madd_counter_next_addsub0000_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_counter_next_addsub0000_cy<20> (Madd_counter_next_addsub0000_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_counter_next_addsub0000_cy<21> (Madd_counter_next_addsub0000_cy<21>)
+     MUXCY:CI->O           0   0.052   0.000  Madd_counter_next_addsub0000_cy<22> (Madd_counter_next_addsub0000_cy<22>)
+     XORCY:CI->O           1   0.699   0.426  Madd_counter_next_addsub0000_xor<23> (counter_next_addsub0000<23>)
+     LUT2:I1->O            1   0.612   0.000  counter_next<23>1 (counter_next<23>)
+     FDC:D                     0.268          counter_current_23
+    ----------------------------------------
+    Total                      5.148ns (4.191ns logic, 0.958ns route)
+                                       (81.4% logic, 18.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Offset:              3.514ns (Levels of Logic = 3)
+  Source:            DATA_IN<0> (PAD)
+  Destination:       data_reg_2 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: DATA_IN<0> to data_reg_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.106   0.529  DATA_IN_0_IBUF (DATA_IN_0_IBUF)
+     LUT4:I2->O            1   0.612   0.387  Msub_data_reg_sub0000_xor<2>11_SW0 (N4)
+     LUT3:I2->O            1   0.612   0.000  Msub_data_reg_sub0000_xor<2>11 (data_reg_sub0000<2>)
+     FDCE:D                    0.268          data_reg_2
+    ----------------------------------------
+    Total                      3.514ns (2.598ns logic, 0.916ns route)
+                                       (73.9% logic, 26.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.221ns (Levels of Logic = 1)
+  Source:            data_reg_0 (FF)
+  Destination:       DATA_OUT<0> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: data_reg_0 to DATA_OUT<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.514   0.538  data_reg_0 (data_reg_0)
+     OBUF:I->O                 3.169          DATA_OUT_0_OBUF (DATA_OUT<0>)
+    ----------------------------------------
+    Total                      4.221ns (3.683ns logic, 0.538ns route)
+                                       (87.3% logic, 12.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.44 secs
+ 
+--> 
+
+Total memory usage is 270468 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/P3/P3/P3.xst" -ofn "D:/GitHub/VHDL_Modules/P3/P3/P3.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/P3/P3/P3.xst" -ofn "D:/GitHub/VHDL_Modules/P3/P3/P3.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/P3/P3/P3.xst" -ofn "D:/GitHub/VHDL_Modules/P3/P3/P3.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/P3/P3/P3.xst" -ofn "D:/GitHub/VHDL_Modules/P3/P3/P3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P3.ucf -p xc3s100e-cp132-5 P3.ngc P3.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o P3_map.ncd P3.ngd P3.pcf 
+par -w -intstyle ise -ol high -t 1 P3_map.ncd P3.ncd P3.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml P3.twx P3.ncd -o P3.twr P3.pcf -ucf P3.ucf 
+bitgen -intstyle ise -f P3.ut P3.ncd 

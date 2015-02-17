@@ -258,7 +258,7 @@ begin
 		end if;
 	END PROCESS;
 	
-	start_rx_process: PROCESS(START_RX, ce_signal)
+	start_rx_process: PROCESS(START_RX, ce_signal, start_rx_signal)
 	BEGIN
 		if(rising_edge(ce_signal)) then
 			start_rx_signal <= '0';
@@ -283,7 +283,7 @@ begin
 	SS <= ss_signal;
 	OUTPUT_BUFFER_DATA <= fifo_tx_not_empty;
 	INPUT_BUFFER_DATA <= not(fifo_rx_empty);
-	
+	BUSY <= busy_signal;
 -- Signals
 	start <= START_RX OR fifo_tx_not_empty;
 	--start_tx_signal <= fifo_tx_not_empty AND not(busy_signal);

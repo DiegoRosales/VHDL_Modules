@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/SPI/Test Project/SPI_MASTER_MODULE_TX.xst" -ofn "D:/GitHub/VHDL_Modules/SPI/Test Project/SPI_MASTER_MODULE_TX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 "SPI_MASTER_MODULE_TX.ngc" SPI_MASTER_MODULE_TX.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o SPI_MASTER_MODULE_TX_map.ncd SPI_MASTER_MODULE_TX.ngd SPI_MASTER_MODULE_TX.pcf 
+par -w -intstyle ise -ol high -t 1 SPI_MASTER_MODULE_TX_map.ncd SPI_MASTER_MODULE_TX.ncd SPI_MASTER_MODULE_TX.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPI_MASTER_MODULE_TX.twx SPI_MASTER_MODULE_TX.ncd -o SPI_MASTER_MODULE_TX.twr SPI_MASTER_MODULE_TX.pcf 
+bitgen -intstyle ise -f SPI_MASTER_MODULE_TX.ut SPI_MASTER_MODULE_TX.ncd 

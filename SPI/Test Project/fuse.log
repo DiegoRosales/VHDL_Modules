@@ -25,5 +25,5 @@ Compiling architecture behavior of entity spi_master_module_tbench
 Time Resolution for simulation is 1ps.
 Compiled 16 VHDL Units
 Built simulation executable D:/GitHub/VHDL_Modules/SPI/Test Project/SPI_MASTER_MODULE_tbench_isim_beh.exe
-Fuse Memory Usage: 38624 KB
-Fuse CPU Usage: 685 ms
+Fuse Memory Usage: 38608 KB
+Fuse CPU Usage: 733 ms

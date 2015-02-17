@@ -1,0 +1,2 @@
+vhdl isim_temp "P3.vhd"
+vhdl isim_temp "P3_tbench.vhd"

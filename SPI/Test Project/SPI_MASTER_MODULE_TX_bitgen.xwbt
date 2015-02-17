@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\GitHub\VHDL_Modules\SPI\Test Project\SPI_MASTER_MODULE_TX.ncd
+OUTFILE=D:\GitHub\VHDL_Modules\SPI\Test Project\SPI_MASTER_MODULE_TX.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5vq100
+WORKINGDIR=D:\GitHub\VHDL_Modules\SPI\Test Project
+LICENSE=WebPack
+USER_INFO=__0_0_0

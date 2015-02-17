@@ -1,0 +1,6 @@
+vhdl SPI "D:\GitHub\VHDL_Modules\SPI\Library\SPI\SPI_MASTER_TX.vhd"
+vhdl SPI "D:\GitHub\VHDL_Modules\SPI\Library\SPI\SPI_MASTER_RX.vhd"
+vhdl SPI "D:\GitHub\VHDL_Modules\SPI\Library\SPI\SCLK_CE_GEN.vhd"
+vhdl SPI "D:\GitHub\VHDL_Modules\SPI\Library\SPI\mod_m_counter.vhd"
+vhdl SPI "D:\GitHub\VHDL_Modules\SPI\Library\SPI\FIFO.vhd"
+vhdl SPI "D:\GitHub\VHDL_Modules\SPI\Library\SPI\SPI_MASTER_MODULE.vhd"

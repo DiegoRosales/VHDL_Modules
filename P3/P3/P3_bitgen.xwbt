@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\GitHub\VHDL_Modules\P3\P3\P3.ncd
+OUTFILE=D:\GitHub\VHDL_Modules\P3\P3\P3.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5cp132
+WORKINGDIR=D:\GitHub\VHDL_Modules\P3\P3
+LICENSE=WebPack
+USER_INFO=__0_0_0

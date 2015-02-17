@@ -1,0 +1,8 @@
+Release 14.2 Drc P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Tue Feb 17 17:20:07 2015
+
+drc -z SPI_MASTER_MODULE_TX.ncd SPI_MASTER_MODULE_TX.pcf
+
+DRC detected 0 errors and 0 warnings.

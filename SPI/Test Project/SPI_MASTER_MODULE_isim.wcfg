@@ -11,7 +11,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="18" />
+   <WVObjectSize size="16" />
    <wvobject fp_name="/spi_master_module_tbench/clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -38,14 +38,6 @@
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="CustomSignalColor">#ffffff</obj_property>
    </wvobject>
-   <wvobject fp_name="/spi_master_module_tbench/uut/Inst_SCLK_CE_GEN/busy" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">busy</obj_property>
-      <obj_property name="ObjectShortName">busy</obj_property>
-   </wvobject>
-   <wvobject fp_name="/spi_master_module_tbench/uut/Inst_SCLK_CE_GEN/start" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">start</obj_property>
-      <obj_property name="ObjectShortName">start</obj_property>
-   </wvobject>
    <wvobject fp_name="/spi_master_module_tbench/uut/Inst_SPI_MASTER_TX/mosi" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">mosi</obj_property>
       <obj_property name="ObjectShortName">mosi</obj_property>
@@ -57,11 +49,6 @@
       <obj_property name="ObjectShortName">data_reg[7:0]</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="CustomSignalColor">#ff0000</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/spi_master_module_tbench/uut/Inst_SPI_MASTER_TX/counter_current" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">counter_current[3:0]</obj_property>
-      <obj_property name="ObjectShortName">counter_current[3:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/spi_master_module_tbench/data_tx" type="array" db_ref_id="1">
@@ -80,22 +67,48 @@
       <obj_property name="ElementShortName">rx_done</obj_property>
       <obj_property name="ObjectShortName">rx_done</obj_property>
    </wvobject>
-   <wvobject fp_name="/spi_master_module_tbench/uut/Inst_SPI_MASTER_RX/data_reg" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">data_reg[7:0]</obj_property>
-      <obj_property name="ObjectShortName">data_reg[7:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+   <wvobject fp_name="/spi_master_module_tbench/uut/Inst_SPI_MASTER_RX/counter_current" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counter_current[3:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_current[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/spi_master_module_tbench/uut/Inst_SPI_MASTER_RX/data_rx" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">data_rx[7:0]</obj_property>
       <obj_property name="ObjectShortName">data_rx[7:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/spi_master_module_tbench/uut/start_rx_signal" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">start_rx_signal</obj_property>
-      <obj_property name="ObjectShortName">start_rx_signal</obj_property>
+   <wvobject fp_name="/spi_master_module_tbench/uut/Inst_SPI_MASTER_RX/data_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_reg[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/spi_master_module_tbench/uut/start_rx_signal2" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">start_rx_signal2</obj_property>
-      <obj_property name="ObjectShortName">start_rx_signal2</obj_property>
+   <wvobject fp_name="/spi_master_module_tbench/uut/Inst_SPI_MASTER_RX/sclk_edge" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sclk_edge</obj_property>
+      <obj_property name="ObjectShortName">sclk_edge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_master_module_tbench/uut/Inst_FIFO_RX/array_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">array_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">array_reg[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/spi_master_module_tbench/uut/Inst_FIFO_RX/array_reg[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[3]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_master_module_tbench/uut/Inst_FIFO_RX/array_reg[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[2]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_master_module_tbench/uut/Inst_FIFO_RX/array_reg[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[1]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_master_module_tbench/uut/Inst_FIFO_RX/array_reg[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
    </wvobject>
 </wave_config>

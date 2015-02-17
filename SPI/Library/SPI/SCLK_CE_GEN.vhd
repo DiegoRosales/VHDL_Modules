@@ -58,7 +58,8 @@ begin
 		end if;
 	END PROCESS;
 	
-	NEXT_STATE_PROCESS: PROCESS(state_current, sclk_current, ce_current, counter_current, START, S_TICK, busy_current)
+	NEXT_STATE_PROCESS: PROCESS(state_current, sclk_current, ce_current, counter_current, 
+								START, S_TICK, busy_current, CONT)
 	BEGIN
 		state_next <= state_current;
 		sclk_next <= sclk_current;

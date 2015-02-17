@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/GitHub/VHDL_Modules/P3/P3/P3_tbench_isim_beh.exe" -prj "D:/GitHub/VHDL_Modules/P3/P3/P3_tbench_beh.prj" "work.P3_tbench" 

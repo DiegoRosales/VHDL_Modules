@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/GitHub/VHDL_Modules/P3/P3/P3_tbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="p3_tbench" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/p3_tbench/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p3_tbench/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p3_tbench/data_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p3_tbench/data_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[3:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p3_tbench/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p3_tbench/uut/counter_current" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counter_current[23:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_current[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p3_tbench/uut/counter_done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">counter_done</obj_property>
+      <obj_property name="ObjectShortName">counter_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p3_tbench/uut/data_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data_reg[3:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p3_tbench/counter_signal" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">counter_signal</obj_property>
+      <obj_property name="ObjectShortName">counter_signal</obj_property>
+   </wvobject>
+</wave_config>

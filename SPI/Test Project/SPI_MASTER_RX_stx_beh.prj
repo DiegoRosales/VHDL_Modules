@@ -1,0 +1,1 @@
+vhdl SPI "../Library/SPI/SPI_MASTER_RX.vhd"
