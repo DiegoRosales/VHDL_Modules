@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-02-10T18:42:09</DateModified>
-  <ModuleName>SPI_MASTER_MODULE</ModuleName>
+  <DateModified>2015-02-22T14:58:17</DateModified>
+  <ModuleName>SPI_MASTER_MODULE_TX</ModuleName>
   <SummaryTimeStamp>2015-02-10T18:42:05</SummaryTimeStamp>
   <SavedFilePath>D:/GitHub/VHDL_Modules/SPI/Test Project/iseconfig/SPI_MASTER_MODULE_TX.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/GitHub/VHDL_Modules/SPI/Test Project</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/GitHub/VHDL_Modules/SPI/Test Project\</ImplementationReportsDirectory>
   <DateInitialized>2015-02-10T17:54:49</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

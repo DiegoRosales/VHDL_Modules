@@ -1,0 +1,10 @@
+AR uart_rx behavioral D:/GitHub/VHDL_Modules/UART/UART_Library/UART_RX.vhd sub00/vhpl03 1424638548
+AR uart behavioral D:/GitHub/VHDL_Modules/UART/UART_Library/UART.vhd sub00/vhpl09 1424638556
+AR uart_tx behavioral D:/GitHub/VHDL_Modules/UART/UART_Library/UART_TX.vhd sub00/vhpl07 1424638552
+AR mod_m_counter behavioral D:/GitHub/VHDL_Modules/UART/UART_Library/mod_m_counter.vhd sub00/vhpl01 1424638546
+AR fifo behavioral D:/GitHub/VHDL_Modules/UART/UART_Library/FIFO.vhd sub00/vhpl05 1424638550
+EN fifo NULL D:/GitHub/VHDL_Modules/UART/UART_Library/FIFO.vhd sub00/vhpl04 1424638549
+EN uart NULL D:/GitHub/VHDL_Modules/UART/UART_Library/UART.vhd sub00/vhpl08 1424638555
+EN mod_m_counter NULL D:/GitHub/VHDL_Modules/UART/UART_Library/mod_m_counter.vhd sub00/vhpl00 1424638545
+EN uart_rx NULL D:/GitHub/VHDL_Modules/UART/UART_Library/UART_RX.vhd sub00/vhpl02 1424638547
+EN uart_tx NULL D:/GitHub/VHDL_Modules/UART/UART_Library/UART_TX.vhd sub00/vhpl06 1424638551

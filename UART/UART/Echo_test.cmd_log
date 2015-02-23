@@ -1,0 +1,55 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.xst" -ofn "D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm UART_tbench.bmm -p xc3s250e-vq100-5 Echo_test.ngc Echo_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Echo_test.ucf -bm UART_tbench.bmm -p xc3s250e-vq100-5 Echo_test.ngc Echo_test.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o Echo_test_map.ncd Echo_test.ngd Echo_test.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.xst" -ofn "D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Echo_test.ucf -bm UART_tbench.bmm -p xc3s250e-vq100-5 Echo_test.ngc Echo_test.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o Echo_test_map.ncd Echo_test.ngd Echo_test.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Echo_test.ucf -bm UART_tbench.bmm -p xc3s250e-vq100-5 Echo_test.ngc Echo_test.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o Echo_test_map.ncd Echo_test.ngd Echo_test.pcf 
+par -w -intstyle ise -ol high -t 1 Echo_test_map.ncd Echo_test.ncd Echo_test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Echo_test.twx Echo_test.ncd -o Echo_test.twr Echo_test.pcf -ucf Echo_test.ucf 
+bitgen -intstyle ise -f Echo_test.ut Echo_test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.xst" -ofn "D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.xst" -ofn "D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Echo_test.ucf -bm UART_tbench.bmm -p xc3s250e-vq100-5 Echo_test.ngc Echo_test.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o Echo_test_map.ncd Echo_test.ngd Echo_test.pcf 
+par -w -intstyle ise -ol high -t 1 Echo_test_map.ncd Echo_test.ncd Echo_test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Echo_test.twx Echo_test.ncd -o Echo_test.twr Echo_test.pcf -ucf Echo_test.ucf 
+bitgen -intstyle ise -f Echo_test.ut Echo_test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.xst" -ofn "D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Echo_test.ucf -bm UART_tbench.bmm -p xc3s250e-vq100-5 Echo_test.ngc Echo_test.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o Echo_test_map.ncd Echo_test.ngd Echo_test.pcf 
+par -w -intstyle ise -ol high -t 1 Echo_test_map.ncd Echo_test.ncd Echo_test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Echo_test.twx Echo_test.ncd -o Echo_test.twr Echo_test.pcf -ucf Echo_test.ucf 
+bitgen -intstyle ise -f Echo_test.ut Echo_test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.xst" -ofn "D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Echo_test.ucf -bm UART_tbench.bmm -p xc3s250e-vq100-5 Echo_test.ngc Echo_test.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o Echo_test_map.ncd Echo_test.ngd Echo_test.pcf 
+par -w -intstyle ise -ol high -t 1 Echo_test_map.ncd Echo_test.ncd Echo_test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Echo_test.twx Echo_test.ncd -o Echo_test.twr Echo_test.pcf -ucf Echo_test.ucf 
+bitgen -intstyle ise -f Echo_test.ut Echo_test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.xst" -ofn "D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Echo_test.ucf -bm UART_tbench.bmm -p xc3s250e-vq100-5 Echo_test.ngc Echo_test.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o Echo_test_map.ncd Echo_test.ngd Echo_test.pcf 
+par -w -intstyle ise -ol high -t 1 Echo_test_map.ncd Echo_test.ncd Echo_test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Echo_test.twx Echo_test.ncd -o Echo_test.twr Echo_test.pcf -ucf Echo_test.ucf 
+bitgen -intstyle ise -f Echo_test.ut Echo_test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.xst" -ofn "D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Echo_test.ucf -bm UART_tbench.bmm -p xc3s250e-vq100-5 Echo_test.ngc Echo_test.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o Echo_test_map.ncd Echo_test.ngd Echo_test.pcf 
+par -w -intstyle ise -ol high -t 1 Echo_test_map.ncd Echo_test.ncd Echo_test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Echo_test.twx Echo_test.ncd -o Echo_test.twr Echo_test.pcf -ucf Echo_test.ucf 
+bitgen -intstyle ise -f Echo_test.ut Echo_test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART/UART/Echo_test.xst" -ofn "D:/GitHub/VHDL_Modules/UART/UART/Echo_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Echo_test.ucf -bm UART_tbench.bmm -p xc3s250e-vq100-5 Echo_test.ngc Echo_test.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o Echo_test_map.ncd Echo_test.ngd Echo_test.pcf 
+par -w -intstyle ise -ol high -t 1 Echo_test_map.ncd Echo_test.ncd Echo_test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Echo_test.twx Echo_test.ncd -o Echo_test.twr Echo_test.pcf -ucf Echo_test.ucf 
+bitgen -intstyle ise -f Echo_test.ut Echo_test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/UART/UART/Echo_test.xst" -ofn "D:/GitHub/VHDL_Modules/UART/UART/Echo_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Echo_test.ucf -bm UART_tbench.bmm -p xc3s250e-vq100-5 Echo_test.ngc Echo_test.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o Echo_test_map.ncd Echo_test.ngd Echo_test.pcf 
+par -w -intstyle ise -ol high -t 1 Echo_test_map.ncd Echo_test.ncd Echo_test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Echo_test.twx Echo_test.ncd -o Echo_test.twr Echo_test.pcf -ucf Echo_test.ucf 
+bitgen -intstyle ise -f Echo_test.ut Echo_test.ncd 

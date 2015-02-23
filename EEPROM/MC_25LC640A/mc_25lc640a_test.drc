@@ -1,0 +1,8 @@
+Release 14.2 Drc P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sun Feb 22 20:59:43 2015
+
+drc -z MC_25LC640A_Test.ncd MC_25LC640A_Test.pcf
+
+DRC detected 0 errors and 0 warnings.

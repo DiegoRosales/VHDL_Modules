@@ -1,0 +1,36 @@
+Release 14.2 ngdbuild P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 MC_25LC640A_Test.ngc
+MC_25LC640A_Test.ngd
+
+Reading NGO file
+"D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/MC_25LC640A_Test.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 170352 kilobytes
+
+Writing NGD file "MC_25LC640A_Test.ngd" ...
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   3 sec
+
+Writing NGDBUILD log file "MC_25LC640A_Test.bld"...

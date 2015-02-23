@@ -231,6 +231,7 @@
     <transform xil_pn:end_ts="1424215149" xil_pn:in_ck="8857035267943976951" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="1409336019160490662" xil_pn:start_ts="1424215140">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="SPI_MASTER_MODULE_TX.lso"/>
@@ -255,6 +256,7 @@
     <transform xil_pn:end_ts="1424215181" xil_pn:in_ck="1299070810653790423" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4096496016026439766" xil_pn:start_ts="1424215174">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="SPI_MASTER_MODULE_TX.bld"/>
       <outfile xil_pn:name="SPI_MASTER_MODULE_TX.ngd"/>
       <outfile xil_pn:name="SPI_MASTER_MODULE_TX_ngdbuild.xrpt"/>
@@ -264,6 +266,9 @@
     <transform xil_pn:end_ts="1424215186" xil_pn:in_ck="-3715700662802407762" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="2842458847540838050" xil_pn:start_ts="1424215181">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="SPI_MASTER_MODULE_TX.pcf"/>
       <outfile xil_pn:name="SPI_MASTER_MODULE_TX_map.map"/>
       <outfile xil_pn:name="SPI_MASTER_MODULE_TX_map.mrp"/>
@@ -277,6 +282,7 @@
     <transform xil_pn:end_ts="1424215204" xil_pn:in_ck="-6114889617151159097" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1424215186">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="SPI_MASTER_MODULE_TX.ncd"/>
       <outfile xil_pn:name="SPI_MASTER_MODULE_TX.pad"/>
       <outfile xil_pn:name="SPI_MASTER_MODULE_TX.par"/>
@@ -291,6 +297,7 @@
     <transform xil_pn:end_ts="1424215221" xil_pn:in_ck="-3715700662802407894" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1424215204">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="SPI_MASTER_MODULE_TX.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="spi_master_module_tx.bgn"/>
@@ -303,6 +310,7 @@
     <transform xil_pn:end_ts="1424215204" xil_pn:in_ck="-3715700662802407894" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1424215200">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="SPI_MASTER_MODULE_TX.twr"/>
       <outfile xil_pn:name="SPI_MASTER_MODULE_TX.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

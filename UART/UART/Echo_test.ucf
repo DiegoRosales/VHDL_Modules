@@ -1,0 +1,18 @@
+
+#Created by Constraints Editor (xc3s250e-vq100-5) - 2015/01/13
+NET "CLK" TNM_NET = "CLK";
+TIMESPEC TS_CLK = PERIOD "CLK" 32 MHz HIGH 50 %;
+
+
+NET "RX" LOC = P88;
+NET "CLK" LOC = P89;
+
+# PlanAhead Generated IO constraints 
+
+NET "TX" SLEW = FAST;
+NET "RX" IOSTANDARD = LVCMOS33;
+NET "TX" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "TX" LOC = P90;

@@ -1,0 +1,38 @@
+V3 24
+FL D:/GitHub/VHDL_Modules/Book_examples/UART/Echo_test.vhd 2015/01/13.15:35:26 P.28xd
+FL D:/GitHub/VHDL_Modules/Book_examples/UART/FIFO.vhd 2015/01/13.14:30:42 P.28xd
+EN work/FIFO 1421184938 FL D:/GitHub/VHDL_Modules/Book_examples/UART/FIFO.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182
+AR work/FIFO/Behavioral 1421184939 \
+      FL D:/GitHub/VHDL_Modules/Book_examples/UART/FIFO.vhd EN work/FIFO 1421184938
+FL D:/GitHub/VHDL_Modules/Book_examples/UART/mod_m_counter.vhd 2015/01/12.16:58:56 P.28xd
+EN work/mod_m_counter 1421184934 \
+      FL D:/GitHub/VHDL_Modules/Book_examples/UART/mod_m_counter.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182
+AR work/mod_m_counter/Behavioral 1421184935 \
+      FL D:/GitHub/VHDL_Modules/Book_examples/UART/mod_m_counter.vhd \
+      EN work/mod_m_counter 1421184934
+FL D:/GitHub/VHDL_Modules/Book_examples/UART/UART.vhd 2015/01/13.15:26:44 P.28xd
+EN work/UART 1421184942 FL D:/GitHub/VHDL_Modules/Book_examples/UART/UART.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182
+AR work/UART/Behavioral 1421184943 \
+      FL D:/GitHub/VHDL_Modules/Book_examples/UART/UART.vhd EN work/UART 1421184942 \
+      CP work/mod_m_counter CP work/UART_RX CP work/fifo CP work/uart_tx
+FL D:/GitHub/VHDL_Modules/Book_examples/UART/UART_RX.vhd 2015/01/10.15:35:32 P.28xd
+EN work/UART_RX 1421184936 \
+      FL D:/GitHub/VHDL_Modules/Book_examples/UART/UART_RX.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182
+AR work/UART_RX/Behavioral 1421184937 \
+      FL D:/GitHub/VHDL_Modules/Book_examples/UART/UART_RX.vhd EN work/UART_RX 1421184936
+FL D:/GitHub/VHDL_Modules/Book_examples/UART/UART_TX.vhd 2015/01/11.10:14:20 P.28xd
+EN work/UART_TX 1421184940 \
+      FL D:/GitHub/VHDL_Modules/Book_examples/UART/UART_TX.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182
+AR work/UART_TX/Behavioral 1421184941 \
+      FL D:/GitHub/VHDL_Modules/Book_examples/UART/UART_TX.vhd EN work/UART_TX 1421184940
+FL D:/GitHub/VHDL_Modules/UART/UART/Echo_test.vhd 2015/02/22.14:55:37 P.28xd
+EN work/Echo_test 1424638553 FL D:/GitHub/VHDL_Modules/UART/UART/Echo_test.vhd \
+      PB ieee/std_logic_1164 1341906176
+AR work/Echo_test/Behavioral 1424638554 \
+      FL D:/GitHub/VHDL_Modules/UART/UART/Echo_test.vhd EN work/Echo_test 1424638553 \
+      CP work/uart

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/GitHub/VHDL_Modules/Book_examples/UART/UART.vhd</arg>&quot; line <arg fmt="%d" index="2">50</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q</arg>&apos; of component &apos;<arg fmt="%s" index="4">mod_m_counter</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/GitHub/VHDL_Modules/Book_examples/UART/UART.vhd</arg>&quot; line <arg fmt="%d" index="2">59</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FULL</arg>&apos; of component &apos;<arg fmt="%s" index="4">FIFO</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">tx_full_signal</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">read_data</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">32</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">counter</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">array_reg_2_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">fifo_tx_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">array_reg_2_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">fifo_tx_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">array_reg_0_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">fifo_tx_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">array_reg_0_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">fifo_tx_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">array_reg_1_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">fifo_tx_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">array_reg_1_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">fifo_tx_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">array_reg_3_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">fifo_tx_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">array_reg_3_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">fifo_tx_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">UART_module/fifo_tx_unit/array_reg_3_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Echo_test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">UART_module/fifo_tx_unit/array_reg_3_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Echo_test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">UART_module/fifo_tx_unit/array_reg_1_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Echo_test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">UART_module/fifo_tx_unit/array_reg_1_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Echo_test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">UART_module/fifo_tx_unit/array_reg_0_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Echo_test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">UART_module/fifo_tx_unit/array_reg_0_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Echo_test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">UART_module/fifo_tx_unit/array_reg_2_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Echo_test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">UART_module/fifo_tx_unit/array_reg_2_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Echo_test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/uart_rx_unit/b_reg_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/uart_rx_unit/b_reg_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/uart_rx_unit/b_reg_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/uart_rx_unit/b_reg_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/uart_rx_unit/b_reg_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/uart_rx_unit/b_reg_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/uart_rx_unit/b_reg_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/uart_rx_unit/b_reg_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_3_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_3_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_3_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_3_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_3_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_3_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_3_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_3_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_1_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_1_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_1_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_1_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_1_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_1_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_1_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_0_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_0_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_0_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_0_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_0_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_0_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_0_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_0_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_2_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_2_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_2_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_2_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_2_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UART_module/fifo_rx_unit/array_reg_2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">UART_module/fifo_tx_unit/array_reg_1_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;UART_module/fifo_tx_unit/array_reg_1_5&gt; &lt;UART_module/fifo_tx_unit/array_reg_1_3&gt; &lt;UART_module/fifo_tx_unit/array_reg_1_2&gt; &lt;UART_module/fifo_tx_unit/array_reg_1_1&gt; &lt;UART_module/fifo_tx_unit/array_reg_1_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">UART_module/fifo_tx_unit/array_reg_2_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;UART_module/fifo_tx_unit/array_reg_2_5&gt; &lt;UART_module/fifo_tx_unit/array_reg_2_3&gt; &lt;UART_module/fifo_tx_unit/array_reg_2_2&gt; &lt;UART_module/fifo_tx_unit/array_reg_2_1&gt; &lt;UART_module/fifo_tx_unit/array_reg_2_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">UART_module/fifo_tx_unit/array_reg_0_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;UART_module/fifo_tx_unit/array_reg_0_5&gt; &lt;UART_module/fifo_tx_unit/array_reg_0_3&gt; &lt;UART_module/fifo_tx_unit/array_reg_0_2&gt; &lt;UART_module/fifo_tx_unit/array_reg_0_1&gt; &lt;UART_module/fifo_tx_unit/array_reg_0_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">UART_module/fifo_tx_unit/array_reg_3_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Echo_test</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;UART_module/fifo_tx_unit/array_reg_3_5&gt; &lt;UART_module/fifo_tx_unit/array_reg_3_3&gt; &lt;UART_module/fifo_tx_unit/array_reg_3_2&gt; &lt;UART_module/fifo_tx_unit/array_reg_3_1&gt; &lt;UART_module/fifo_tx_unit/array_reg_3_0&gt; </arg>
+</msg>
+
+</messages>
+

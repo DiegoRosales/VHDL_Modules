@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/GitHub/VHDL_Modules/Book_examples/UART/Flag_buffer_tbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="flag_buffer_tbench" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/flag_buffer_tbench/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flag_buffer_tbench/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flag_buffer_tbench/clr_flag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clr_flag</obj_property>
+      <obj_property name="ObjectShortName">clr_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flag_buffer_tbench/din" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flag_buffer_tbench/rx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx</obj_property>
+      <obj_property name="ObjectShortName">rx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flag_buffer_tbench/s_tick" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_tick</obj_property>
+      <obj_property name="ObjectShortName">s_tick</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flag_buffer_tbench/s_tick_next" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_tick_next</obj_property>
+      <obj_property name="ObjectShortName">s_tick_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flag_buffer_tbench/data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data[8:0]</obj_property>
+      <obj_property name="ObjectShortName">data[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flag_buffer_tbench/flag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">flag</obj_property>
+      <obj_property name="ObjectShortName">flag</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flag_buffer_tbench/dout_buf" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dout_buf[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dout_buf[7:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flag_buffer_tbench/rx_done_tick" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_done_tick</obj_property>
+      <obj_property name="ObjectShortName">rx_done_tick</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flag_buffer_tbench/dout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/flag_buffer_tbench/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+</wave_config>

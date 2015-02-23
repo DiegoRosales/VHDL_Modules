@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Book_examples/UART/UART.xst" -ofn "D:/GitHub/VHDL_Modules/Book_examples/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Book_examples/UART/UART.xst" -ofn "D:/GitHub/VHDL_Modules/Book_examples/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Book_examples/UART/UART.xst" -ofn "D:/GitHub/VHDL_Modules/Book_examples/UART/UART.syr" 
+vhdtdtfi -prj UART -o D:/GitHub/VHDL_Modules/Book_examples/UART/UART.vhi -module UART -template C:/Xilinx/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work UART_TX.vhd -lib work UART_RX.vhd -lib work mod_m_counter.vhd -lib work FIFO.vhd -lib work UART.vhd 

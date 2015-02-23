@@ -1,0 +1,8 @@
+Release 14.2 Drc P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sun Feb 22 14:56:23 2015
+
+drc -z Echo_test.ncd Echo_test.pcf
+
+DRC detected 0 errors and 0 warnings.

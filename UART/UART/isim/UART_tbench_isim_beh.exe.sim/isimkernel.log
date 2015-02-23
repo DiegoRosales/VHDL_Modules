@@ -1,0 +1,28 @@
+Command line:
+   UART_tbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  6844
+
+Tue Jan 13 12:54:19 2015
+
+
+ Elaboration Time: 0.0624 sec
+
+ Current Memory Usage: 523.653 Meg
+
+ Total Signals          : 106
+ Total Nets             : 238
+ Total Signal Drivers   : 63
+ Total Blocks           : 9
+ Total Primitive Blocks : 7
+ Total Processes        : 34
+ Total Traceable Variables  : 29
+ Total Scalar Nets and Variables : 737
+
+ Total Simulation Time: 0.249601 sec
+
+ Current Memory Usage: 523.653 Meg
+
+Tue Jan 13 13:26:36 2015
+

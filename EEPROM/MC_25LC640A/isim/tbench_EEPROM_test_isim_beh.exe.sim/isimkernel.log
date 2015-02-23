@@ -1,0 +1,10 @@
+Command line:
+   tbench_EEPROM_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  7668
+
+Sun Feb 22 20:55:49 2015
+
+
+ Elaboration Time: 0.0624 sec

@@ -1,0 +1,8 @@
+vhdl SPI "D:\GitHub\VHDL_Modules\SPI\Library\SPI\SPI_MASTER_TX.vhd"
+vhdl SPI "D:\GitHub\VHDL_Modules\SPI\Library\SPI\SPI_MASTER_RX.vhd"
+vhdl SPI "D:\GitHub\VHDL_Modules\SPI\Library\SPI\SCLK_CE_GEN.vhd"
+vhdl SPI "D:\GitHub\VHDL_Modules\SPI\Library\SPI\mod_m_counter.vhd"
+vhdl SPI "D:\GitHub\VHDL_Modules\SPI\Library\SPI\FIFO.vhd"
+vhdl SPI "D:\GitHub\VHDL_Modules\SPI\Library\SPI\SPI_MASTER_MODULE.vhd"
+vhdl MC_25LC640A_Library "D:\GitHub\VHDL_Modules\EEPROM\MC_25LC640A_Library\MC_25LC640A_TYPES.vhd"
+vhdl MC_25LC640A_Library "D:\GitHub\VHDL_Modules\EEPROM\MC_25LC640A_Library\MC_25LC640A_CONTROLLER.vhd"

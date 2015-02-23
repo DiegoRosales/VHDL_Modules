@@ -45,7 +45,7 @@ begin
 
 	sclk_edge <= '1' when (sclk_current /= sclk_prev) AND sclk_current = data_latch_mode else '0';
 	--sclk_edge_neg <= '1' when (sclk_current /= sclk_prev) AND (sclk_current /= data_latch_mode) else '0';
-	data_latch_mode <= not(POL) when PHA = '0' else POL;
+	data_latch_mode <= not(POL) when PHA = '1' else POL;
 	DATA_RX <= data_reg;
 	RX_DONE <= rx_done_current;
 	

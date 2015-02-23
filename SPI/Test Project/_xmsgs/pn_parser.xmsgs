@@ -8,7 +8,16 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_MODULE_TX.vhd&quot; into library SPI</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GitHub/VHDL_Modules/SPI/Test Project/SCLK_CE_GEN_tbench.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GitHub/VHDL_Modules/SPI/Test Project/SPI_MASTER_MODULE_tbench.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GitHub/VHDL_Modules/SPI/Test Project/SPI_MASTER_RX_tbench.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GitHub/VHDL_Modules/SPI/Test Project/SPI_MASTER_TX_tbench.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

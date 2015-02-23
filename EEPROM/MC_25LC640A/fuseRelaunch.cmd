@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/tbench_EEPROM_test_isim_beh.exe" -prj "D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/tbench_EEPROM_test_beh.prj" "work.tbench_EEPROM_test" 

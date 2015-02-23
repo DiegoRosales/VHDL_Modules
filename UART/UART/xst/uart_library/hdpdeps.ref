@@ -1,0 +1,36 @@
+V3 19
+FL D:/GitHub/VHDL_Modules/UART/UART_Library/FIFO.vhd 2015/01/13.14:30:42 P.28xd
+EN UART_Library/FIFO 1424638549 \
+      FL D:/GitHub/VHDL_Modules/UART/UART_Library/FIFO.vhd PB ieee/std_logic_1164 1341906176 \
+      PB ieee/NUMERIC_STD 1341906182
+AR UART_Library/FIFO/Behavioral 1424638550 \
+      FL D:/GitHub/VHDL_Modules/UART/UART_Library/FIFO.vhd EN UART_Library/FIFO 1424638549
+FL D:/GitHub/VHDL_Modules/UART/UART_Library/mod_m_counter.vhd 2015/01/12.16:58:56 P.28xd
+EN UART_Library/mod_m_counter 1424638545 \
+      FL D:/GitHub/VHDL_Modules/UART/UART_Library/mod_m_counter.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182
+AR UART_Library/mod_m_counter/Behavioral 1424638546 \
+      FL D:/GitHub/VHDL_Modules/UART/UART_Library/mod_m_counter.vhd \
+      EN UART_Library/mod_m_counter 1424638545
+FL D:/GitHub/VHDL_Modules/UART/UART_Library/UART.vhd 2015/01/13.15:26:44 P.28xd
+EN UART_Library/UART 1424638555 \
+      FL D:/GitHub/VHDL_Modules/UART/UART_Library/UART.vhd PB ieee/std_logic_1164 1341906176 \
+      PB ieee/NUMERIC_STD 1341906182
+AR UART_Library/UART/Behavioral 1424638556 \
+      FL D:/GitHub/VHDL_Modules/UART/UART_Library/UART.vhd EN UART_Library/UART 1424638555 \
+      CP UART_Library/mod_m_counter CP UART_Library/UART_RX CP UART_Library/fifo \
+      CP UART_Library/uart_tx
+FL D:/GitHub/VHDL_Modules/UART/UART_Library/UART_RX.vhd 2015/01/10.15:35:32 P.28xd
+EN UART_Library/UART_RX 1424638547 \
+      FL D:/GitHub/VHDL_Modules/UART/UART_Library/UART_RX.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182
+AR UART_Library/UART_RX/Behavioral 1424638548 \
+      FL D:/GitHub/VHDL_Modules/UART/UART_Library/UART_RX.vhd \
+      EN UART_Library/UART_RX 1424638547
+FL D:/GitHub/VHDL_Modules/UART/UART_Library/UART_TX.vhd 2015/01/11.10:14:20 P.28xd
+EN UART_Library/UART_TX 1424638551 \
+      FL D:/GitHub/VHDL_Modules/UART/UART_Library/UART_TX.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182
+AR UART_Library/UART_TX/Behavioral 1424638552 \
+      FL D:/GitHub/VHDL_Modules/UART/UART_Library/UART_TX.vhd \
+      EN UART_Library/UART_TX 1424638551

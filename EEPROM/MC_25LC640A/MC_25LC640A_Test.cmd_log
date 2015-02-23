@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/MC_25LC640A_Test.xst" -ofn "D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/MC_25LC640A_Test.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/MC_25LC640A_Test.xst" -ofn "D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/MC_25LC640A_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 MC_25LC640A_Test.ngc MC_25LC640A_Test.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o MC_25LC640A_Test_map.ncd MC_25LC640A_Test.ngd MC_25LC640A_Test.pcf 
+par -w -intstyle ise -ol high -t 1 MC_25LC640A_Test_map.ncd MC_25LC640A_Test.ncd MC_25LC640A_Test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MC_25LC640A_Test.twx MC_25LC640A_Test.ncd -o MC_25LC640A_Test.twr MC_25LC640A_Test.pcf 
+bitgen -intstyle ise -f MC_25LC640A_Test.ut MC_25LC640A_Test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/MC_25LC640A_Test.xst" -ofn "D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/MC_25LC640A_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 MC_25LC640A_Test.ngc MC_25LC640A_Test.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o MC_25LC640A_Test_map.ncd MC_25LC640A_Test.ngd MC_25LC640A_Test.pcf 
+par -w -intstyle ise -ol high -t 1 MC_25LC640A_Test_map.ncd MC_25LC640A_Test.ncd MC_25LC640A_Test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MC_25LC640A_Test.twx MC_25LC640A_Test.ncd -o MC_25LC640A_Test.twr MC_25LC640A_Test.pcf 
+bitgen -intstyle ise -f MC_25LC640A_Test.ut MC_25LC640A_Test.ncd 

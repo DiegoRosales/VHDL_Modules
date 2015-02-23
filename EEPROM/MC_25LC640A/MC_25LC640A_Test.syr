@@ -1,0 +1,1105 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: MC_25LC640A_Test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MC_25LC640A_Test.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MC_25LC640A_Test"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-vq100
+
+---- Source Options
+Top Module Name                    : MC_25LC640A_Test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SCLK_CE_GEN.vhd" in Library SPI.
+Architecture behavioral of Entity sclk_ce_gen is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_TX.vhd" in Library SPI.
+Architecture behavioral of Entity spi_master_tx is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/SPI/Library/SPI/FIFO.vhd" in Library SPI.
+Architecture behavioral of Entity fifo is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_RX.vhd" in Library SPI.
+Architecture behavioral of Entity spi_master_rx is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/SPI/Library/SPI/mod_m_counter.vhd" in Library SPI.
+Architecture behavioral of Entity mod_m_counter is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/UART/UART_Library/mod_m_counter.vhd" in Library UART_Library.
+Architecture behavioral of Entity mod_m_counter is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/UART/UART_Library/UART_RX.vhd" in Library UART_Library.
+Architecture behavioral of Entity uart_rx is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/UART/UART_Library/FIFO.vhd" in Library UART_Library.
+Architecture behavioral of Entity fifo is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/UART/UART_Library/UART_TX.vhd" in Library UART_Library.
+Architecture behavioral of Entity uart_tx is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_MODULE.vhd" in Library SPI.
+Architecture behavioral of Entity spi_master_module is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A_Library/MC_25LC640A_TYPES.vhd" in Library MC_25LC640A_Library.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A_Library/MC_25LC640A_CONTROLLER.vhd" in Library MC_25LC640A_Library.
+Architecture behavioral of Entity mc_25lc640a_controller is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/UART/UART_Library/UART.vhd" in Library UART_Library.
+Architecture behavioral of Entity uart is up to date.
+Architecture behavioral of Entity uart_ver_2 is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/MC_25LC640A_Test.vhd" in Library work.
+Architecture behavioral of Entity mc_25lc640a_test is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <MC_25LC640A_Test> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <UART_VER_2> in library <UART_Library> (architecture <Behavioral>) with generics.
+	DBIT = 8
+	DVSR = 17
+	DVSR_BIT = 5
+	FIFO_W = 2
+	SB_TICK = 16
+
+Analyzing hierarchy for entity <MC_25LC640A_CONTROLLER> in library <MC_25LC640A_Library> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <mod_m_counter> in library <UART_Library> (architecture <Behavioral>) with generics.
+	M = 17
+	N = 5
+
+Analyzing hierarchy for entity <UART_RX> in library <UART_Library> (architecture <Behavioral>) with generics.
+	DBIT = 8
+	SB_TICK = 16
+
+Analyzing hierarchy for entity <FIFO> in library <UART_Library> (architecture <Behavioral>) with generics.
+	B = 8
+	W = 2
+
+Analyzing hierarchy for entity <UART_TX> in library <UART_Library> (architecture <Behavioral>) with generics.
+	DBIT = 8
+	SB_TICK = 16
+
+Analyzing hierarchy for entity <SPI_MASTER_MODULE> in library <SPI> (architecture <Behavioral>) with generics.
+	ADDRESS_WIDTH = 1
+	CLK_DIV_BITS = 4
+	CLK_DIV_COUNT = 16
+	FIFO_W = 2
+	N = 8
+	PHA = '0'
+	POL = '0'
+	SLAVES = 1
+
+Analyzing hierarchy for entity <SCLK_CE_GEN> in library <SPI> (architecture <behavioral>) with generics.
+	N = 8
+	POL = '0'
+
+Analyzing hierarchy for entity <SPI_MASTER_TX> in library <SPI> (architecture <behavioral>) with generics.
+	N = 8
+	PHA = '0'
+	POL = '0'
+
+Analyzing hierarchy for entity <FIFO> in library <SPI> (architecture <behavioral>) with generics.
+	B = 8
+	W = 2
+
+Analyzing hierarchy for entity <SPI_MASTER_RX> in library <SPI> (architecture <behavioral>) with generics.
+	N = 8
+	PHA = '0'
+	POL = '0'
+
+Analyzing hierarchy for entity <mod_m_counter> in library <SPI> (architecture <behavioral>) with generics.
+	M = 16
+	N = 4
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <MC_25LC640A_Test> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/MC_25LC640A_Test.vhd" line 150: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <eeprom_operation_current>, <uart_data_rx>
+Entity <MC_25LC640A_Test> analyzed. Unit <MC_25LC640A_Test> generated.
+
+Analyzing generic Entity <UART_VER_2> in library <UART_Library> (Architecture <Behavioral>).
+	DBIT = 8
+	DVSR = 17
+	DVSR_BIT = 5
+	FIFO_W = 2
+	SB_TICK = 16
+WARNING:Xst:753 - "D:/GitHub/VHDL_Modules/UART/UART_Library/UART.vhd" line 132: Unconnected output port 'Q' of component 'mod_m_counter'.
+WARNING:Xst:753 - "D:/GitHub/VHDL_Modules/UART/UART_Library/UART.vhd" line 141: Unconnected output port 'FULL' of component 'FIFO'.
+Entity <UART_VER_2> analyzed. Unit <UART_VER_2> generated.
+
+Analyzing generic Entity <mod_m_counter.1> in library <UART_Library> (Architecture <Behavioral>).
+	M = 17
+	N = 5
+Entity <mod_m_counter.1> analyzed. Unit <mod_m_counter.1> generated.
+
+Analyzing generic Entity <UART_RX> in library <UART_Library> (Architecture <Behavioral>).
+	DBIT = 8
+	SB_TICK = 16
+Entity <UART_RX> analyzed. Unit <UART_RX> generated.
+
+Analyzing generic Entity <FIFO.1> in library <UART_Library> (Architecture <Behavioral>).
+	B = 8
+	W = 2
+Entity <FIFO.1> analyzed. Unit <FIFO.1> generated.
+
+Analyzing generic Entity <UART_TX> in library <UART_Library> (Architecture <Behavioral>).
+	DBIT = 8
+	SB_TICK = 16
+Entity <UART_TX> analyzed. Unit <UART_TX> generated.
+
+Analyzing Entity <MC_25LC640A_CONTROLLER> in library <MC_25LC640A_Library> (Architecture <Behavioral>).
+Entity <MC_25LC640A_CONTROLLER> analyzed. Unit <MC_25LC640A_CONTROLLER> generated.
+
+Analyzing generic Entity <SPI_MASTER_MODULE> in library <SPI> (Architecture <Behavioral>).
+	ADDRESS_WIDTH = 1
+	CLK_DIV_BITS = 4
+	CLK_DIV_COUNT = 16
+	FIFO_W = 2
+	N = 8
+	PHA = '0'
+	POL = '0'
+	SLAVES = 1
+WARNING:Xst:790 - "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_MODULE.vhd" line 249: Index value(s) does not match array range, simulation mismatch.
+Entity <SPI_MASTER_MODULE> analyzed. Unit <SPI_MASTER_MODULE> generated.
+
+Analyzing generic Entity <SCLK_CE_GEN> in library <SPI> (Architecture <behavioral>).
+	N = 8
+	POL = '0'
+Entity <SCLK_CE_GEN> analyzed. Unit <SCLK_CE_GEN> generated.
+
+Analyzing generic Entity <SPI_MASTER_TX> in library <SPI> (Architecture <behavioral>).
+	N = 8
+	PHA = '0'
+	POL = '0'
+Entity <SPI_MASTER_TX> analyzed. Unit <SPI_MASTER_TX> generated.
+
+Analyzing generic Entity <FIFO.2> in library <SPI> (Architecture <behavioral>).
+	B = 8
+	W = 2
+Entity <FIFO.2> analyzed. Unit <FIFO.2> generated.
+
+Analyzing generic Entity <SPI_MASTER_RX> in library <SPI> (Architecture <behavioral>).
+	N = 8
+	PHA = '0'
+	POL = '0'
+Entity <SPI_MASTER_RX> analyzed. Unit <SPI_MASTER_RX> generated.
+
+Analyzing generic Entity <mod_m_counter.2> in library <SPI> (Architecture <behavioral>).
+	M = 16
+	N = 4
+Entity <mod_m_counter.2> analyzed. Unit <mod_m_counter.2> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mod_m_counter_1>.
+    Related source file is "D:/GitHub/VHDL_Modules/UART/UART_Library/mod_m_counter.vhd".
+    Found 5-bit adder for signal <r_next$addsub0000> created at line 35.
+    Found 5-bit register for signal <r_reg>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <mod_m_counter_1> synthesized.
+
+
+Synthesizing Unit <UART_RX>.
+    Related source file is "D:/GitHub/VHDL_Modules/UART/UART_Library/UART_RX.vhd".
+    Found finite state machine <FSM_0> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 5                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RESET                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <b_reg>.
+    Found 3-bit register for signal <n_reg>.
+    Found 3-bit adder for signal <n_reg$addsub0000> created at line 76.
+    Found 4-bit register for signal <s_reg>.
+    Found 4-bit adder for signal <s_reg$share0000> created at line 52.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  15 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <UART_RX> synthesized.
+
+
+Synthesizing Unit <FIFO_1>.
+    Related source file is "D:/GitHub/VHDL_Modules/UART/UART_Library/FIFO.vhd".
+    Found 8-bit 4-to-1 multiplexer for signal <R_DATA>.
+    Found 32-bit register for signal <array_reg>.
+    Found 1-bit register for signal <empty_reg>.
+    Found 2-bit comparator equal for signal <empty_reg$cmp_eq0000> created at line 88.
+    Found 1-bit 4-to-1 multiplexer for signal <empty_reg$mux0000> created at line 82.
+    Found 1-bit register for signal <full_reg>.
+    Found 2-bit comparator equal for signal <full_reg$cmp_eq0000> created at line 96.
+    Found 1-bit 4-to-1 multiplexer for signal <full_reg$mux0000> created at line 82.
+    Found 2-bit register for signal <r_ptr_reg>.
+    Found 2-bit 4-to-1 multiplexer for signal <r_ptr_reg$mux0000> created at line 82.
+    Found 2-bit adder for signal <r_ptr_succ$add0000> created at line 70.
+    Found 2-bit register for signal <w_ptr_reg>.
+    Found 2-bit 4-to-1 multiplexer for signal <w_ptr_reg$mux0000> created at line 82.
+    Found 2-bit adder for signal <w_ptr_succ$add0000> created at line 69.
+    Summary:
+	inferred  38 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred  14 Multiplexer(s).
+Unit <FIFO_1> synthesized.
+
+
+Synthesizing Unit <UART_TX>.
+    Related source file is "D:/GitHub/VHDL_Modules/UART/UART_Library/UART_TX.vhd".
+    Found finite state machine <FSM_1> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RESET                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <b_reg>.
+    Found 3-bit register for signal <n_reg>.
+    Found 3-bit adder for signal <n_reg$addsub0000> created at line 87.
+    Found 4-bit adder for signal <s_next$add0000> created at line 75.
+    Found 4-bit register for signal <s_reg>.
+    Found 1-bit register for signal <tx_reg>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <UART_TX> synthesized.
+
+
+Synthesizing Unit <SCLK_CE_GEN>.
+    Related source file is "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SCLK_CE_GEN.vhd".
+    Found 1-bit register for signal <busy_current>.
+    Found 1-bit register for signal <ce_current>.
+    Found 4-bit comparator lessequal for signal <ce_current$cmp_le0000> created at line 93.
+    Found 4-bit register for signal <counter_current>.
+    Found 4-bit adder for signal <counter_current$addsub0000>.
+    Found 4-bit comparator greatequal for signal <counter_current$cmp_ge0000> created at line 87.
+    Found 1-bit register for signal <sclk_current>.
+    Found 1-bit register for signal <state_current<0>>.
+    Found 4-bit comparator greater for signal <state_next_0$cmp_gt0000> created at line 93.
+    Found 32-bit comparator greater for signal <state_next_0$cmp_gt0001> created at line 97.
+    Found 32-bit comparator lessequal for signal <state_next_0$cmp_le0000> created at line 93.
+    Found 4-bit comparator less for signal <state_next_0$cmp_lt0000> created at line 87.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+Unit <SCLK_CE_GEN> synthesized.
+
+
+Synthesizing Unit <SPI_MASTER_TX>.
+    Related source file is "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_TX.vhd".
+WARNING:Xst:646 - Signal <delay_current> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 4-bit register for signal <counter_current>.
+    Found 4-bit adder for signal <counter_current$addsub0000> created at line 102.
+    Found 8-bit register for signal <data_reg>.
+    Found 1-bit xor2 for signal <sclk_edge$xor0000> created at line 47.
+    Found 1-bit register for signal <sclk_prev>.
+    Found 1-bit register for signal <state_current<0>>.
+    Found 1-bit register for signal <tx_done_current>.
+    Summary:
+	inferred  15 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <SPI_MASTER_TX> synthesized.
+
+
+Synthesizing Unit <FIFO_2>.
+    Related source file is "D:/GitHub/VHDL_Modules/SPI/Library/SPI/FIFO.vhd".
+    Found 8-bit 4-to-1 multiplexer for signal <R_DATA>.
+    Found 32-bit register for signal <array_reg>.
+    Found 1-bit register for signal <empty_reg>.
+    Found 2-bit comparator equal for signal <empty_reg$cmp_eq0000> created at line 100.
+    Found 1-bit 4-to-1 multiplexer for signal <empty_reg$mux0000> created at line 94.
+    Found 1-bit register for signal <full_reg>.
+    Found 2-bit comparator equal for signal <full_reg$cmp_eq0000> created at line 108.
+    Found 1-bit 4-to-1 multiplexer for signal <full_reg$mux0000> created at line 94.
+    Found 2-bit register for signal <r_ptr_reg>.
+    Found 2-bit 4-to-1 multiplexer for signal <r_ptr_reg$mux0000> created at line 94.
+    Found 2-bit adder for signal <r_ptr_succ$add0000> created at line 82.
+    Found 2-bit register for signal <w_ptr_reg>.
+    Found 2-bit 4-to-1 multiplexer for signal <w_ptr_reg$mux0000> created at line 94.
+    Found 2-bit adder for signal <w_ptr_succ$add0000> created at line 81.
+    Summary:
+	inferred  38 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred  14 Multiplexer(s).
+Unit <FIFO_2> synthesized.
+
+
+Synthesizing Unit <SPI_MASTER_RX>.
+    Related source file is "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_RX.vhd".
+    Found 1-bit register for signal <ce_prev>.
+    Found 4-bit register for signal <counter_current>.
+    Found 4-bit adder for signal <counter_current$addsub0000> created at line 101.
+    Found 8-bit register for signal <data_reg>.
+    Found 1-bit register for signal <rx_done_current>.
+    Found 1-bit register for signal <rx_done_en_current>.
+    Found 1-bit xor2 for signal <sclk_edge$xor0000> created at line 46.
+    Found 1-bit register for signal <sclk_prev>.
+    Found 1-bit register for signal <state_current<0>>.
+    Summary:
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <SPI_MASTER_RX> synthesized.
+
+
+Synthesizing Unit <mod_m_counter_2>.
+    Related source file is "D:/GitHub/VHDL_Modules/SPI/Library/SPI/mod_m_counter.vhd".
+    Found 4-bit adder for signal <r_next$addsub0000> created at line 47.
+    Found 4-bit register for signal <r_reg>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <mod_m_counter_2> synthesized.
+
+
+Synthesizing Unit <UART_VER_2>.
+    Related source file is "D:/GitHub/VHDL_Modules/UART/UART_Library/UART.vhd".
+Unit <UART_VER_2> synthesized.
+
+
+Synthesizing Unit <SPI_MASTER_MODULE>.
+    Related source file is "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_MODULE.vhd".
+WARNING:Xst:647 - Input <ADDRESS<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <start_rx_signal>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <SPI_MASTER_MODULE> synthesized.
+
+
+Synthesizing Unit <MC_25LC640A_CONTROLLER>.
+    Related source file is "D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A_Library/MC_25LC640A_CONTROLLER.vhd".
+WARNING:Xst:1305 - Output <WP> is never assigned. Tied to value 0.
+WARNING:Xst:647 - Input <CONSEC_WR> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <output_buffer_full> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <output_buffer_data> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <input_buffer_full> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_2> for signal <exec_state_curr>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 46                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 5                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | exec_state_curr$and0000   (positive)           |
+    | Power Up State     | command                                        |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 8-bit latch for signal <spi_data_out>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 16-bit register for signal <addr_curr>.
+    Found 1-bit register for signal <busy_curr>.
+    Found 1-bit register for signal <cont_curr>.
+    Found 9-bit comparator greatequal for signal <cont_curr$cmp_ge0000> created at line 174.
+    Found 9-bit comparator greatequal for signal <cont_curr$cmp_ge0001> created at line 175.
+    Found 9-bit comparator greatequal for signal <cont_curr$cmp_ge0002> created at line 282.
+    Found 9-bit comparator greatequal for signal <cont_curr$cmp_ge0003> created at line 283.
+    Found 9-bit comparator less for signal <cont_curr$cmp_lt0000> created at line 174.
+    Found 9-bit comparator less for signal <cont_curr$cmp_lt0001> created at line 282.
+    Found 1-bit register for signal <done_current>.
+    Found 1-bit register for signal <hold_curr>.
+    Found 4-bit register for signal <opr_curr>.
+    Found 1-bit register for signal <read_data_curr>.
+    Found 9-bit up counter for signal <sclk_counter_current>.
+    Found 8-bit register for signal <spi_data_in_reg>.
+    Found 1-bit xor2 for signal <spi_sclk_edge$xor0000> created at line 77.
+    Found 1-bit register for signal <spi_sclk_prev>.
+    Found 1-bit register for signal <start_rx_curr>.
+    Found 1-bit register for signal <start_tx_curr>.
+    Found 1-bit register for signal <state_curr<0>>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  37 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <MC_25LC640A_CONTROLLER> synthesized.
+
+
+Synthesizing Unit <MC_25LC640A_Test>.
+    Related source file is "D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/MC_25LC640A_Test.vhd".
+WARNING:Xst:653 - Signal <uart_write_data> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <uart_tx_full_signal> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <uart_data_tx> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:653 - Signal <uart_buffer_rx_next> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:646 - Signal <uart_buffer_rx_current> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <tx_done> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rx_done> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <eeprom_done> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <eeprom_data_tx> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:646 - Signal <eeprom_data_rx> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <eeprom_busy> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:1799 - State waiting_tx is never reached in FSM <state_current>.
+    Found finite state machine <FSM_3> for signal <state_current>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 8                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | reset_signal              (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | instruction                                    |
+    | Power Up State     | instruction                                    |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit up counter for signal <counter>.
+    Found 16-bit register for signal <eeprom_addr_curr>.
+    Found 4-bit register for signal <eeprom_operation_current>.
+    Found 1-bit register for signal <eeprom_start_curr>.
+    Found 8-bit register for signal <instruction_buffer_current>.
+    Found 1-bit register for signal <reset_signal>.
+    Found 32-bit comparator greatequal for signal <reset_signal$cmp_ge0000> created at line 119.
+    Found 1-bit register for signal <uart_read_data_curr>.
+    Found 1-bit xor2 for signal <uart_rx_empty_edge$xor0000> created at line 57.
+    Found 1-bit register for signal <uart_rx_empty_prev>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <MC_25LC640A_Test> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 17
+ 2-bit adder                                           : 8
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 6
+ 5-bit adder                                           : 1
+# Counters                                             : 2
+ 32-bit up counter                                     : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 78
+ 1-bit register                                        : 35
+ 16-bit register                                       : 2
+ 2-bit register                                        : 8
+ 3-bit register                                        : 2
+ 4-bit register                                        : 8
+ 5-bit register                                        : 1
+ 8-bit register                                        : 22
+# Latches                                              : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 21
+ 2-bit comparator equal                                : 8
+ 32-bit comparator greatequal                          : 1
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+ 4-bit comparator greatequal                           : 1
+ 4-bit comparator greater                              : 1
+ 4-bit comparator less                                 : 1
+ 4-bit comparator lessequal                            : 1
+ 9-bit comparator greatequal                           : 4
+ 9-bit comparator less                                 : 2
+# Multiplexers                                         : 20
+ 1-bit 4-to-1 multiplexer                              : 8
+ 2-bit 4-to-1 multiplexer                              : 8
+ 8-bit 4-to-1 multiplexer                              : 4
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <state_current/FSM> on signal <state_current[1:7]> with one-hot encoding.
+--------------------------
+ State        | Encoding
+--------------------------
+ instruction  | 0000001
+ decoding     | 0000010
+ address_high | 0000100
+ address_low  | 0001000
+ data_rx      | 0010000
+ data_tx      | 0100000
+ waiting_rx   | 1000000
+ waiting_tx   | unreached
+--------------------------
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <EEPROM_MODULE/exec_state_curr/FSM> on signal <exec_state_curr[1:3]> with gray encoding.
+--------------------------
+ State        | Encoding
+--------------------------
+ command      | 000
+ address_high | 001
+ address_low  | 011
+ data         | 010
+ waiting      | 110
+--------------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <UART_MODULE/uart_tx_unit/state_reg/FSM> on signal <state_reg[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 00
+ start | 01
+ data  | 11
+ stop  | 10
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <UART_MODULE/uart_rx_unit/state_reg/FSM> on signal <state_reg[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 00
+ start | 01
+ data  | 11
+ stop  | 10
+-------------------
+INFO:Xst:2261 - The FF/Latch <array_reg_2_1> in Unit <fifo_tx_unit> is equivalent to the following 3 FFs/Latches, which will be removed : <array_reg_0_1> <array_reg_1_1> <array_reg_3_1> 
+INFO:Xst:2261 - The FF/Latch <array_reg_2_2> in Unit <fifo_tx_unit> is equivalent to the following 3 FFs/Latches, which will be removed : <array_reg_0_2> <array_reg_1_2> <array_reg_3_2> 
+INFO:Xst:2261 - The FF/Latch <array_reg_2_3> in Unit <fifo_tx_unit> is equivalent to the following 3 FFs/Latches, which will be removed : <array_reg_0_3> <array_reg_1_3> <array_reg_3_3> 
+INFO:Xst:2261 - The FF/Latch <array_reg_2_4> in Unit <fifo_tx_unit> is equivalent to the following 3 FFs/Latches, which will be removed : <array_reg_0_4> <array_reg_1_4> <array_reg_3_4> 
+INFO:Xst:2261 - The FF/Latch <array_reg_2_5> in Unit <fifo_tx_unit> is equivalent to the following 3 FFs/Latches, which will be removed : <array_reg_0_5> <array_reg_1_5> <array_reg_3_5> 
+INFO:Xst:2261 - The FF/Latch <array_reg_2_6> in Unit <fifo_tx_unit> is equivalent to the following 3 FFs/Latches, which will be removed : <array_reg_0_6> <array_reg_1_6> <array_reg_3_6> 
+INFO:Xst:2261 - The FF/Latch <array_reg_2_7> in Unit <fifo_tx_unit> is equivalent to the following 3 FFs/Latches, which will be removed : <array_reg_0_7> <array_reg_1_7> <array_reg_3_7> 
+INFO:Xst:2261 - The FF/Latch <array_reg_2_0> in Unit <fifo_tx_unit> is equivalent to the following 3 FFs/Latches, which will be removed : <array_reg_0_0> <array_reg_1_0> <array_reg_3_0> 
+WARNING:Xst:1710 - FF/Latch <array_reg_2_0> (without init value) has a constant value of 0 in block <fifo_tx_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <array_reg_2_1> (without init value) has a constant value of 0 in block <fifo_tx_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <array_reg_2_2> (without init value) has a constant value of 0 in block <fifo_tx_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <array_reg_2_3> (without init value) has a constant value of 0 in block <fifo_tx_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <array_reg_2_4> (without init value) has a constant value of 0 in block <fifo_tx_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <array_reg_2_5> (without init value) has a constant value of 0 in block <fifo_tx_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <array_reg_2_6> (without init value) has a constant value of 0 in block <fifo_tx_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <array_reg_2_7> (without init value) has a constant value of 0 in block <fifo_tx_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <opr_curr_1> has a constant value of 0 in block <EEPROM_MODULE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <opr_curr_2> has a constant value of 0 in block <EEPROM_MODULE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <opr_curr_3> has a constant value of 0 in block <EEPROM_MODULE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <eeprom_operation_current_1> has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <eeprom_operation_current_2> has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <eeprom_operation_current_3> has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 4
+# Adders/Subtractors                                   : 17
+ 2-bit adder                                           : 8
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 6
+ 5-bit adder                                           : 1
+# Counters                                             : 2
+ 32-bit up counter                                     : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 302
+ Flip-Flops                                            : 302
+# Latches                                              : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 21
+ 2-bit comparator equal                                : 8
+ 32-bit comparator greatequal                          : 1
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+ 4-bit comparator greatequal                           : 1
+ 4-bit comparator greater                              : 1
+ 4-bit comparator less                                 : 1
+ 4-bit comparator lessequal                            : 1
+ 9-bit comparator greatequal                           : 4
+ 9-bit comparator less                                 : 2
+# Multiplexers                                         : 20
+ 1-bit 4-to-1 multiplexer                              : 8
+ 2-bit 4-to-1 multiplexer                              : 8
+ 8-bit 4-to-1 multiplexer                              : 4
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <eeprom_operation_current_1> has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <eeprom_operation_current_2> has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <eeprom_operation_current_3> has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <opr_curr_1> in Unit <MC_25LC640A_CONTROLLER> is equivalent to the following 2 FFs/Latches, which will be removed : <opr_curr_2> <opr_curr_3> 
+WARNING:Xst:1293 - FF/Latch <opr_curr_1> has a constant value of 0 in block <MC_25LC640A_CONTROLLER>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <MC_25LC640A_Test> ...
+
+Optimizing unit <mod_m_counter_1> ...
+
+Optimizing unit <UART_RX> ...
+
+Optimizing unit <FIFO_1> ...
+
+Optimizing unit <UART_TX> ...
+
+Optimizing unit <SCLK_CE_GEN> ...
+
+Optimizing unit <SPI_MASTER_TX> ...
+
+Optimizing unit <FIFO_2> ...
+
+Optimizing unit <SPI_MASTER_RX> ...
+WARNING:Xst:1710 - FF/Latch <counter_current_3> (without init value) has a constant value of 0 in block <SPI_MASTER_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counter_current_3> (without init value) has a constant value of 0 in block <SPI_MASTER_RX>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <mod_m_counter_2> ...
+
+Optimizing unit <SPI_MASTER_MODULE> ...
+
+Optimizing unit <MC_25LC640A_CONTROLLER> ...
+WARNING:Xst:1710 - FF/Latch <hold_curr> (without init value) has a constant value of 1 in block <MC_25LC640A_CONTROLLER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_0_4> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_0_3> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_0_2> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_0_1> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_0_0> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_2_7> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_2_6> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_2_5> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_2_4> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_2_3> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_2_2> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_2_1> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_2_0> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/uart_tx_unit/state_reg_FSM_FFd2> has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/uart_tx_unit/b_reg_7> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/uart_tx_unit/b_reg_6> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/uart_tx_unit/b_reg_5> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/uart_tx_unit/b_reg_4> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/uart_tx_unit/b_reg_3> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/uart_tx_unit/b_reg_2> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/uart_tx_unit/b_reg_1> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/uart_tx_unit/b_reg_0> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/uart_tx_unit/tx_reg> (without init value) has a constant value of 1 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/w_ptr_reg_1> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/w_ptr_reg_0> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/full_reg> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/empty_reg> (without init value) has a constant value of 1 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_3_7> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_3_6> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_3_5> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_3_4> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_3_3> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_3_2> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_3_1> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_3_0> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_1_7> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_1_6> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_1_5> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_1_4> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_1_3> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_1_2> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_1_1> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_1_0> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_0_7> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_0_6> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UART_MODULE/fifo_tx_unit/array_reg_0_5> (without init value) has a constant value of 0 in block <MC_25LC640A_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_3_7> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_3_6> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_3_5> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_3_4> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_3_3> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_3_2> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_3_1> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_3_0> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_1_7> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_1_6> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_1_5> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_1_4> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_1_3> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_1_2> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_1_1> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_1_0> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_0_7> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_0_6> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_0_5> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_0_4> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_0_3> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_0_2> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_0_1> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_0_0> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_2_7> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_2_6> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_2_5> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_2_4> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_2_3> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_2_2> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_2_1> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/array_reg_2_0> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_SPI_MASTER_RX/data_reg_7> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_SPI_MASTER_RX/data_reg_6> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_SPI_MASTER_RX/data_reg_5> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_SPI_MASTER_RX/data_reg_4> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_SPI_MASTER_RX/data_reg_3> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_SPI_MASTER_RX/data_reg_2> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_SPI_MASTER_RX/data_reg_1> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/SPI_INST/Inst_SPI_MASTER_RX/data_reg_0> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/spi_data_in_reg_7> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/spi_data_in_reg_6> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/spi_data_in_reg_5> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/spi_data_in_reg_4> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/spi_data_in_reg_3> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/spi_data_in_reg_2> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/spi_data_in_reg_1> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/spi_data_in_reg_0> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/busy_curr> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <EEPROM_MODULE/done_current> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <UART_MODULE/fifo_tx_unit/r_ptr_reg_1> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <UART_MODULE/fifo_tx_unit/r_ptr_reg_0> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <UART_MODULE/uart_tx_unit/state_reg_FSM_FFd1> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <UART_MODULE/uart_tx_unit/s_reg_3> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <UART_MODULE/uart_tx_unit/s_reg_2> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <UART_MODULE/uart_tx_unit/s_reg_1> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <UART_MODULE/uart_tx_unit/s_reg_0> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <UART_MODULE/uart_tx_unit/n_reg_2> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <UART_MODULE/uart_tx_unit/n_reg_1> of sequential type is unconnected in block <MC_25LC640A_Test>.
+WARNING:Xst:2677 - Node <UART_MODULE/uart_tx_unit/n_reg_0> of sequential type is unconnected in block <MC_25LC640A_Test>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <EEPROM_MODULE/SPI_INST/Inst_SPI_MASTER_TX/sclk_prev> in Unit <MC_25LC640A_Test> is equivalent to the following FF/Latch, which will be removed : <EEPROM_MODULE/SPI_INST/Inst_SPI_MASTER_RX/sclk_prev> 
+Found area constraint ratio of 100 (+ 5) on block MC_25LC640A_Test, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 242
+ Flip-Flops                                            : 242
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : MC_25LC640A_Test.ngr
+Top Level Output File Name         : MC_25LC640A_Test
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 9
+
+Cell Usage :
+# BELS                             : 453
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 32
+#      LUT2                        : 40
+#      LUT2_D                      : 2
+#      LUT2_L                      : 3
+#      LUT3                        : 75
+#      LUT3_D                      : 1
+#      LUT3_L                      : 3
+#      LUT4                        : 144
+#      LUT4_D                      : 12
+#      LUT4_L                      : 9
+#      MUXCY                       : 49
+#      MUXF5                       : 34
+#      VCC                         : 1
+#      XORCY                       : 41
+# FlipFlops/Latches                : 250
+#      FDC                         : 66
+#      FDCE                        : 113
+#      FDE                         : 55
+#      FDP                         : 6
+#      FDPE                        : 1
+#      FDR                         : 1
+#      LD                          : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 7
+#      IBUF                        : 1
+#      OBUF                        : 6
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500evq100-5 
+
+ Number of Slices:                      199  out of   4656     4%  
+ Number of Slice Flip Flops:            250  out of   9312     2%  
+ Number of 4 input LUTs:                327  out of   9312     3%  
+ Number of IOs:                           9
+ Number of bonded IOBs:                   8  out of     66    12%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------+---------------------------------------------+-------+
+Clock Signal                                      | Clock buffer(FF name)                       | Load  |
+--------------------------------------------------+---------------------------------------------+-------+
+CLK                                               | BUFGP                                       | 241   |
+EEPROM_MODULE/SPI_INST/Inst_SCLK_CE_GEN/ce_current| NONE(EEPROM_MODULE/SPI_INST/start_rx_signal)| 1     |
+EEPROM_MODULE/state_curr_0                        | NONE(EEPROM_MODULE/spi_data_out_7)          | 8     |
+--------------------------------------------------+---------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------------------------+----------------------------------------------------+-------+
+Control Signal                                            | Buffer(FF name)                                    | Load  |
+----------------------------------------------------------+----------------------------------------------------+-------+
+reset_signal(reset_signal:Q)                              | NONE(EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/empty_reg)| 185   |
+EEPROM_MODULE/start_rx_curr(EEPROM_MODULE/start_rx_curr:Q)| NONE(EEPROM_MODULE/SPI_INST/start_rx_signal)       | 1     |
+----------------------------------------------------------+----------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.572ns (Maximum Frequency: 179.462MHz)
+   Minimum input arrival time before clock: 5.663ns
+   Maximum output required time after clock: 4.519ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 5.572ns (frequency: 179.462MHz)
+  Total number of paths / destination ports: 3795 / 376
+-------------------------------------------------------------------------
+Delay:               5.572ns (Levels of Logic = 3)
+  Source:            UART_MODULE/uart_rx_unit/state_reg_FSM_FFd1 (FF)
+  Destination:       UART_MODULE/fifo_rx_unit/array_reg_1_7 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: UART_MODULE/uart_rx_unit/state_reg_FSM_FFd1 to UART_MODULE/fifo_rx_unit/array_reg_1_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             20   0.514   0.940  UART_MODULE/uart_rx_unit/state_reg_FSM_FFd1 (UART_MODULE/uart_rx_unit/state_reg_FSM_FFd1)
+     LUT4:I3->O            1   0.612   0.360  UART_MODULE/baud_gen_unit/r_next_cmp_eq0000_SW3 (N87)
+     LUT4_D:I3->O         11   0.612   0.796  UART_MODULE/uart_rx_unit/s_reg_mux0000<0>72 (UART_MODULE/rx_done_tick)
+     LUT4:I3->O            8   0.612   0.643  UART_MODULE/fifo_rx_unit/array_reg_2_and00001 (UART_MODULE/fifo_rx_unit/array_reg_2_and0000)
+     FDCE:CE                   0.483          UART_MODULE/fifo_rx_unit/array_reg_2_0
+    ----------------------------------------
+    Total                      5.572ns (2.833ns logic, 2.739ns route)
+                                       (50.8% logic, 49.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'EEPROM_MODULE/state_curr_0'
+  Clock period: 3.290ns (frequency: 303.984MHz)
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Delay:               3.290ns (Levels of Logic = 3)
+  Source:            EEPROM_MODULE/spi_data_out_0 (LATCH)
+  Destination:       EEPROM_MODULE/spi_data_out_0 (LATCH)
+  Source Clock:      EEPROM_MODULE/state_curr_0 falling
+  Destination Clock: EEPROM_MODULE/state_curr_0 falling
+
+  Data Path: EEPROM_MODULE/spi_data_out_0 to EEPROM_MODULE/spi_data_out_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               6   0.588   0.572  EEPROM_MODULE/spi_data_out_0 (EEPROM_MODULE/spi_data_out_0)
+     LUT4:I3->O            1   0.612   0.000  EEPROM_MODULE/spi_data_out_mux0007<0>47_SW01 (EEPROM_MODULE/spi_data_out_mux0007<0>47_SW0)
+     MUXF5:I1->O           1   0.278   0.360  EEPROM_MODULE/spi_data_out_mux0007<0>47_SW0_f5 (N93)
+     LUT4:I3->O            1   0.612   0.000  EEPROM_MODULE/spi_data_out_mux0007<0>47 (EEPROM_MODULE/spi_data_out_mux0007<0>)
+     LD:D                      0.268          EEPROM_MODULE/spi_data_out_0
+    ----------------------------------------
+    Total                      3.290ns (2.358ns logic, 0.932ns route)
+                                       (71.7% logic, 28.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 9 / 6
+-------------------------------------------------------------------------
+Offset:              5.663ns (Levels of Logic = 6)
+  Source:            RX (PAD)
+  Destination:       UART_MODULE/uart_rx_unit/s_reg_3 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: RX to UART_MODULE/uart_rx_unit/s_reg_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.106   0.690  RX_IBUF (RX_IBUF)
+     LUT4:I0->O            1   0.612   0.000  UART_MODULE/baud_gen_unit/r_next_cmp_eq0000_SW2_F (N89)
+     MUXF5:I0->O           1   0.278   0.360  UART_MODULE/baud_gen_unit/r_next_cmp_eq0000_SW2 (N81)
+     LUT4_D:I3->O          2   0.612   0.383  UART_MODULE/uart_rx_unit/s_reg_mux0000<3>15 (UART_MODULE/uart_rx_unit/N15)
+     LUT4_L:I3->LO         1   0.612   0.130  UART_MODULE/uart_rx_unit/s_reg_mux0000<0>31_SW0 (N83)
+     LUT4:I2->O            1   0.612   0.000  UART_MODULE/uart_rx_unit/s_reg_mux0000<0>33 (UART_MODULE/uart_rx_unit/s_reg_mux0000<0>)
+     FDC:D                     0.268          UART_MODULE/uart_rx_unit/s_reg_3
+    ----------------------------------------
+    Total                      5.663ns (4.100ns logic, 1.563ns route)
+                                       (72.4% logic, 27.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.519ns (Levels of Logic = 1)
+  Source:            EEPROM_MODULE/SPI_INST/Inst_SCLK_CE_GEN/sclk_current (FF)
+  Destination:       SCK (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: EEPROM_MODULE/SPI_INST/Inst_SCLK_CE_GEN/sclk_current to SCK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            13   0.514   0.836  EEPROM_MODULE/SPI_INST/Inst_SCLK_CE_GEN/sclk_current (EEPROM_MODULE/SPI_INST/Inst_SCLK_CE_GEN/sclk_current)
+     OBUF:I->O                 3.169          SCK_OBUF (SCK)
+    ----------------------------------------
+    Total                      4.519ns (3.683ns logic, 0.836ns route)
+                                       (81.5% logic, 18.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.05 secs
+ 
+--> 
+
+Total memory usage is 292096 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  150 (   0 filtered)
+Number of infos    :   13 (   0 filtered)
+
