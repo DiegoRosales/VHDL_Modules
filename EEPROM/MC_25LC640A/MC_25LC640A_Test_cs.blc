@@ -1,0 +1,31 @@
+Release 14.2 ngcbuild P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngcbuild.exe -dd D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/_ngo -p
+xc3s500e-vq100-5 -i
+D:\GitHub\VHDL_Modules\EEPROM\MC_25LC640A\MC_25LC640A_Test.ngc
+D:\GitHub\VHDL_Modules\EEPROM\MC_25LC640A\MC_25LC640A_Test_cs.ngc
+
+Reading NGO file
+"D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/MC_25LC640A_Test.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 168160 kilobytes
+
+Writing NGC file
+"D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/MC_25LC640A_Test_cs.ngc" ...
+Total REAL time to NGCBUILD completion:  3 sec
+Total CPU time to NGCBUILD completion:   3 sec
+
+Writing NGCBUILD log file
+"D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/MC_25LC640A_Test_cs.blc"...

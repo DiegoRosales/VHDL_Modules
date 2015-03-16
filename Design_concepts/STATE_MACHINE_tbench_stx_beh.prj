@@ -1,0 +1,2 @@
+vhdl isim_temp "STATE_MACHINE.vhd"
+vhdl isim_temp "STATE_MACHINE_tbench.vhd"

@@ -54,12 +54,14 @@ architecture Behavioral of SPI_MASTER_MODULE is
 	-- SCLK and CE generator
 	COMPONENT SCLK_CE_GEN
 		GENERIC(
+		COUNTER_BITS : INTEGER := 4; -- Number of bits
+		COUNTER_MAX : INTEGER := 10; -- mod-M
 		POL : STD_LOGIC := '1';
 		N : INTEGER := 8
 		);
 		PORT(
 			CLK, RESET : IN STD_LOGIC;
-			S_TICK : IN STD_LOGIC;
+			--S_TICK : IN STD_LOGIC;
 			START : IN STD_LOGIC;
 			SCLK : OUT STD_LOGIC;
 			CE : OUT STD_LOGIC;
@@ -107,17 +109,17 @@ architecture Behavioral of SPI_MASTER_MODULE is
 	);
 	END COMPONENT;
 	
-	COMPONENT mod_m_counter
-	GENERIC(
-		N : INTEGER := 4; -- Number of bits
-		M : INTEGER := 10 -- mod-M
-	);
-	PORT(
-		CLK, RESET : IN STD_LOGIC;
-		MAX_TICK : OUT STD_LOGIC
-		--Q : OUT STD_LOGIC_VECTOR(N-1 downto 0)
-		);	
-	END COMPONENT;
+	-- COMPONENT mod_m_counter
+	-- GENERIC(
+		-- N : INTEGER := 4; -- Number of bits
+		-- M : INTEGER := 10 -- mod-M
+	-- );
+	-- PORT(
+		-- CLK, RESET : IN STD_LOGIC;
+		-- MAX_TICK : OUT STD_LOGIC
+		-- Q : OUT STD_LOGIC_VECTOR(N-1 downto 0)
+		-- );	
+	-- END COMPONENT;
 	
 	COMPONENT FIFO
 	GENERIC(
@@ -138,7 +140,7 @@ architecture Behavioral of SPI_MASTER_MODULE is
 	signal start_rx_signal, start_rx_signal2 : STD_LOGIC;
 	signal sclk_signal : STD_LOGIC;
 	signal ce_signal : STD_LOGIC;
-	signal s_tick : STD_LOGIC;	
+	--signal s_tick : STD_LOGIC;	
 	signal tx_done, rx_done : STD_LOGIC;
 	signal fifo_tx_empty, fifo_tx_not_empty : STD_LOGIC;
 	signal fifo_rx_empty : STD_LOGIC;
@@ -157,7 +159,7 @@ begin
 	PORT MAP(
 		CLK => CLK,
 		RESET => RESET,
-		S_TICK => s_tick,
+		--S_TICK => s_tick,
 		START => start,
 		SCLK => sclk_signal,
 		CE => ce_signal,
@@ -231,17 +233,17 @@ begin
 		R_DATA => DATA_IN
 	);
 	
-	Inst_mod_m_counter: mod_m_counter
-	GENERIC MAP(
-		N => CLK_DIV_BITS,
-		M => CLK_DIV_COUNT
-	)
-	PORT MAP(
-		CLK => CLK,
-		RESET => RESET,
-		MAX_TICK => s_tick
-		--Q => open
-	);
+	-- Inst_mod_m_counter: mod_m_counter
+	-- GENERIC MAP(
+		-- N => CLK_DIV_BITS,
+		-- M => CLK_DIV_COUNT
+	-- )
+	-- PORT MAP(
+		-- CLK => CLK,
+		-- RESET => RESET,
+		-- MAX_TICK => s_tick
+		-- --Q => open
+	-- );
 	
 	ss_process: PROCESS(ce_signal)
 	BEGIN

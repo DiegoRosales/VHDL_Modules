@@ -1,1 +1,0 @@
-xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/SPI_MASTER_TX.xst" -ofn "D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/SPI_MASTER_TX.syr" 

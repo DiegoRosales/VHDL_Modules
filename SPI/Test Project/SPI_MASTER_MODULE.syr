@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Reading design: SPI_MASTER_MODULE.prj
 
@@ -105,15 +105,14 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SCLK_CE_GEN.vhd" in Library SPI.
-Architecture behavioral of Entity sclk_ce_gen is up to date.
+Entity <sclk_ce_gen> compiled.
+Entity <sclk_ce_gen> (Architecture <behavioral>) compiled.
 Compiling vhdl file "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_TX.vhd" in Library SPI.
 Architecture behavioral of Entity spi_master_tx is up to date.
 Compiling vhdl file "D:/GitHub/VHDL_Modules/SPI/Library/SPI/FIFO.vhd" in Library SPI.
 Architecture behavioral of Entity fifo is up to date.
 Compiling vhdl file "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_RX.vhd" in Library SPI.
 Architecture behavioral of Entity spi_master_rx is up to date.
-Compiling vhdl file "D:/GitHub/VHDL_Modules/SPI/Library/SPI/mod_m_counter.vhd" in Library SPI.
-Architecture behavioral of Entity mod_m_counter is up to date.
 Compiling vhdl file "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_MODULE.vhd" in Library SPI.
 Entity <spi_master_module> compiled.
 Entity <spi_master_module> (Architecture <behavioral>) compiled.
@@ -132,6 +131,8 @@ Analyzing hierarchy for entity <SPI_MASTER_MODULE> in library <SPI> (architectur
 	SLAVES = 2
 
 Analyzing hierarchy for entity <SCLK_CE_GEN> in library <SPI> (architecture <behavioral>) with generics.
+	COUNTER_BITS = 4
+	COUNTER_MAX = 10
 	N = 8
 	POL = '1'
 
@@ -149,10 +150,6 @@ Analyzing hierarchy for entity <SPI_MASTER_RX> in library <SPI> (architecture <b
 	PHA = '1'
 	POL = '1'
 
-Analyzing hierarchy for entity <mod_m_counter> in library <SPI> (architecture <behavioral>) with generics.
-	M = 16
-	N = 4
-
 
 =========================================================================
 *                            HDL Analysis                               *
@@ -169,6 +166,8 @@ Analyzing generic Entity <SPI_MASTER_MODULE> in library <SPI> (Architecture <beh
 Entity <SPI_MASTER_MODULE> analyzed. Unit <SPI_MASTER_MODULE> generated.
 
 Analyzing generic Entity <SCLK_CE_GEN> in library <SPI> (Architecture <behavioral>).
+	COUNTER_BITS = 4
+	COUNTER_MAX = 10
 	N = 8
 	POL = '1'
 Entity <SCLK_CE_GEN> analyzed. Unit <SCLK_CE_GEN> generated.
@@ -190,11 +189,6 @@ Analyzing generic Entity <SPI_MASTER_RX> in library <SPI> (Architecture <behavio
 	POL = '1'
 Entity <SPI_MASTER_RX> analyzed. Unit <SPI_MASTER_RX> generated.
 
-Analyzing generic Entity <mod_m_counter> in library <SPI> (Architecture <behavioral>).
-	M = 16
-	N = 4
-Entity <mod_m_counter> analyzed. Unit <mod_m_counter> generated.
-
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -206,19 +200,22 @@ Synthesizing Unit <SCLK_CE_GEN>.
     Related source file is "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SCLK_CE_GEN.vhd".
     Found 1-bit register for signal <busy_current>.
     Found 1-bit register for signal <ce_current>.
-    Found 4-bit comparator lessequal for signal <ce_current$cmp_le0000> created at line 93.
+    Found 4-bit comparator lessequal for signal <ce_current$cmp_le0000> created at line 111.
     Found 4-bit register for signal <counter_current>.
     Found 4-bit adder for signal <counter_current$addsub0000>.
-    Found 4-bit comparator greatequal for signal <counter_current$cmp_ge0000> created at line 87.
+    Found 4-bit comparator greatequal for signal <counter_current$cmp_ge0000> created at line 105.
+    Found 8-bit adder for signal <r_next$addsub0000> created at line 137.
+    Found 8-bit register for signal <r_reg>.
+    Found 1-bit register for signal <reset_counter_current>.
     Found 1-bit register for signal <sclk_current>.
     Found 1-bit register for signal <state_current<0>>.
-    Found 4-bit comparator greater for signal <state_next_0$cmp_gt0000> created at line 93.
-    Found 32-bit comparator greater for signal <state_next_0$cmp_gt0001> created at line 97.
-    Found 32-bit comparator lessequal for signal <state_next_0$cmp_le0000> created at line 93.
-    Found 4-bit comparator less for signal <state_next_0$cmp_lt0000> created at line 87.
+    Found 4-bit comparator greater for signal <state_next_0$cmp_gt0000> created at line 111.
+    Found 32-bit comparator greater for signal <state_next_0$cmp_gt0001> created at line 115.
+    Found 32-bit comparator lessequal for signal <state_next_0$cmp_le0000> created at line 111.
+    Found 4-bit comparator less for signal <state_next_0$cmp_lt0000> created at line 105.
     Summary:
-	inferred   8 D-type flip-flop(s).
-	inferred   1 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
 	inferred   6 Comparator(s).
 Unit <SCLK_CE_GEN> synthesized.
 
@@ -241,25 +238,25 @@ Unit <SPI_MASTER_TX> synthesized.
 
 Synthesizing Unit <FIFO>.
     Related source file is "D:/GitHub/VHDL_Modules/SPI/Library/SPI/FIFO.vhd".
-    Found 8-bit 4-to-1 multiplexer for signal <R_DATA>.
-    Found 32-bit register for signal <array_reg>.
+    Found 4x8-bit dual-port RAM <Mram_array_reg> for signal <array_reg>.
     Found 1-bit register for signal <empty_reg>.
-    Found 2-bit comparator equal for signal <empty_reg$cmp_eq0000> created at line 100.
-    Found 1-bit 4-to-1 multiplexer for signal <empty_reg$mux0000> created at line 94.
+    Found 2-bit comparator equal for signal <empty_reg$cmp_eq0000> created at line 88.
+    Found 1-bit 4-to-1 multiplexer for signal <empty_reg$mux0001> created at line 82.
     Found 1-bit register for signal <full_reg>.
-    Found 2-bit comparator equal for signal <full_reg$cmp_eq0000> created at line 108.
-    Found 1-bit 4-to-1 multiplexer for signal <full_reg$mux0000> created at line 94.
+    Found 2-bit comparator equal for signal <full_reg$cmp_eq0000> created at line 96.
+    Found 1-bit 4-to-1 multiplexer for signal <full_reg$mux0001> created at line 82.
     Found 2-bit register for signal <r_ptr_reg>.
-    Found 2-bit 4-to-1 multiplexer for signal <r_ptr_reg$mux0000> created at line 94.
-    Found 2-bit adder for signal <r_ptr_succ$add0000> created at line 82.
+    Found 2-bit 4-to-1 multiplexer for signal <r_ptr_reg$mux0001> created at line 82.
+    Found 2-bit adder for signal <r_ptr_succ$add0000> created at line 70.
     Found 2-bit register for signal <w_ptr_reg>.
-    Found 2-bit 4-to-1 multiplexer for signal <w_ptr_reg$mux0000> created at line 94.
-    Found 2-bit adder for signal <w_ptr_succ$add0000> created at line 81.
+    Found 2-bit 4-to-1 multiplexer for signal <w_ptr_reg$mux0001> created at line 82.
+    Found 2-bit adder for signal <w_ptr_succ$add0000> created at line 69.
     Summary:
-	inferred  38 D-type flip-flop(s).
+	inferred   1 RAM(s).
+	inferred   6 D-type flip-flop(s).
 	inferred   2 Adder/Subtractor(s).
 	inferred   2 Comparator(s).
-	inferred  14 Multiplexer(s).
+	inferred   6 Multiplexer(s).
 Unit <FIFO> synthesized.
 
 
@@ -280,16 +277,6 @@ Synthesizing Unit <SPI_MASTER_RX>.
 Unit <SPI_MASTER_RX> synthesized.
 
 
-Synthesizing Unit <mod_m_counter>.
-    Related source file is "D:/GitHub/VHDL_Modules/SPI/Library/SPI/mod_m_counter.vhd".
-    Found 4-bit adder for signal <r_next$addsub0000> created at line 47.
-    Found 4-bit register for signal <r_reg>.
-    Summary:
-	inferred   4 D-type flip-flop(s).
-	inferred   1 Adder/Subtractor(s).
-Unit <mod_m_counter> synthesized.
-
-
 Synthesizing Unit <SPI_MASTER_MODULE>.
     Related source file is "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_MODULE.vhd".
     Found 1-bit register for signal <start_rx_signal>.
@@ -303,14 +290,17 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
+# RAMs                                                 : 2
+ 4x8-bit dual-port RAM                                 : 2
 # Adders/Subtractors                                   : 8
  2-bit adder                                           : 4
- 4-bit adder                                           : 4
-# Registers                                            : 36
- 1-bit register                                        : 18
+ 4-bit adder                                           : 3
+ 8-bit adder                                           : 1
+# Registers                                            : 29
+ 1-bit register                                        : 19
  2-bit register                                        : 4
- 4-bit register                                        : 4
- 8-bit register                                        : 10
+ 4-bit register                                        : 3
+ 8-bit register                                        : 3
 # Comparators                                          : 10
  2-bit comparator equal                                : 4
  32-bit comparator greater                             : 1
@@ -319,10 +309,9 @@ Macro Statistics
  4-bit comparator greater                              : 1
  4-bit comparator less                                 : 1
  4-bit comparator lessequal                            : 1
-# Multiplexers                                         : 10
+# Multiplexers                                         : 8
  1-bit 4-to-1 multiplexer                              : 4
  2-bit 4-to-1 multiplexer                              : 4
- 8-bit 4-to-1 multiplexer                              : 2
 # Xors                                                 : 2
  1-bit xor2                                            : 2
 
@@ -333,15 +322,38 @@ Macro Statistics
 =========================================================================
 
 
+Synthesizing (advanced) Unit <FIFO>.
+INFO:Xst:3231 - The small RAM <Mram_array_reg> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 8-bit                      |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to signal <wr_en>         | high     |
+    |     addrA          | connected to signal <w_ptr_reg>     |          |
+    |     diA            | connected to signal <W_DATA>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 4-word x 8-bit                      |          |
+    |     addrB          | connected to signal <r_ptr_reg>     |          |
+    |     doB            | connected to signal <R_DATA>        |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3217 - HDL ADVISOR - Register <data_reg> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_array_reg> for implementation on block RAM resources if you made this reset synchronous instead.
+Unit <FIFO> synthesized (advanced).
+
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
+# RAMs                                                 : 2
+ 4x8-bit dual-port distributed RAM                     : 2
 # Adders/Subtractors                                   : 8
  2-bit adder                                           : 4
- 4-bit adder                                           : 4
-# Registers                                            : 122
- Flip-Flops                                            : 122
+ 4-bit adder                                           : 3
+ 8-bit adder                                           : 1
+# Registers                                            : 63
+ Flip-Flops                                            : 63
 # Comparators                                          : 10
  2-bit comparator equal                                : 4
  32-bit comparator greater                             : 1
@@ -350,10 +362,9 @@ Macro Statistics
  4-bit comparator greater                              : 1
  4-bit comparator less                                 : 1
  4-bit comparator lessequal                            : 1
-# Multiplexers                                         : 10
+# Multiplexers                                         : 8
  1-bit 4-to-1 multiplexer                              : 4
  2-bit 4-to-1 multiplexer                              : 4
- 8-bit 4-to-1 multiplexer                              : 2
 # Xors                                                 : 2
  1-bit xor2                                            : 2
 
@@ -375,12 +386,10 @@ Optimizing unit <SPI_MASTER_RX> ...
 WARNING:Xst:1710 - FF/Latch <counter_current_3> (without init value) has a constant value of 0 in block <SPI_MASTER_RX>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <counter_current_3> (without init value) has a constant value of 0 in block <SPI_MASTER_RX>. This FF/Latch will be trimmed during the optimization process.
 
-Optimizing unit <mod_m_counter> ...
-
 Mapping all equations...
 Building and optimizing final netlist ...
 INFO:Xst:2261 - The FF/Latch <Inst_SPI_MASTER_TX/sclk_prev> in Unit <SPI_MASTER_MODULE> is equivalent to the following FF/Latch, which will be removed : <Inst_SPI_MASTER_RX/sclk_prev> 
-Found area constraint ratio of 100 (+ 5) on block SPI_MASTER_MODULE, actual ratio is 2.
+Found area constraint ratio of 100 (+ 5) on block SPI_MASTER_MODULE, actual ratio is 1.
 
 Final Macro Processing ...
 
@@ -388,8 +397,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 120
- Flip-Flops                                            : 120
+# Registers                                            : 61
+ Flip-Flops                                            : 61
 
 =========================================================================
 
@@ -418,23 +427,30 @@ Design Statistics
 # IOs                              : 33
 
 Cell Usage :
-# BELS                             : 148
+# BELS                             : 113
 #      GND                         : 1
 #      INV                         : 4
-#      LUT2                        : 15
-#      LUT2_D                      : 3
-#      LUT2_L                      : 6
-#      LUT3                        : 51
-#      LUT3_L                      : 2
-#      LUT4                        : 42
-#      LUT4_D                      : 3
-#      LUT4_L                      : 5
-#      MUXF5                       : 16
-# FlipFlops/Latches                : 120
-#      FDC                         : 19
-#      FDCE                        : 94
-#      FDP                         : 5
-#      FDPE                        : 2
+#      LUT2                        : 16
+#      LUT2_D                      : 4
+#      LUT2_L                      : 9
+#      LUT3                        : 21
+#      LUT3_D                      : 1
+#      LUT3_L                      : 3
+#      LUT4                        : 43
+#      LUT4_D                      : 4
+#      LUT4_L                      : 6
+#      MUXF5                       : 1
+# FlipFlops/Latches                : 61
+#      FDC                         : 5
+#      FDCE                        : 19
+#      FDE                         : 11
+#      FDP                         : 3
+#      FDPE                        : 3
+#      FDR                         : 16
+#      FDRS                        : 2
+#      FDS                         : 2
+# RAMS                             : 16
+#      RAM16X1D                    : 16
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 32
@@ -447,9 +463,11 @@ Device utilization summary:
 
 Selected Device : 3s500evq100-5 
 
- Number of Slices:                      102  out of   4656     2%  
- Number of Slice Flip Flops:            120  out of   9312     1%  
- Number of 4 input LUTs:                131  out of   9312     1%  
+ Number of Slices:                       58  out of   4656     1%  
+ Number of Slice Flip Flops:             61  out of   9312     0%  
+ Number of 4 input LUTs:                143  out of   9312     1%  
+    Number used as logic:               111
+    Number used as RAMs:                 32
  Number of IOs:                          33
  Number of bonded IOBs:                  33  out of     66    50%  
  Number of GCLKs:                         1  out of     24     4%  
@@ -476,7 +494,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
 Inst_SCLK_CE_GEN/ce_current        | NONE(start_rx_signal)  | 1     |
-CLK                                | BUFGP                  | 119   |
+CLK                                | BUFGP                  | 76    |
 -----------------------------------+------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -485,7 +503,7 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-RESET                              | IBUF                   | 119   |
+RESET                              | IBUF                   | 29    |
 START_RX                           | IBUF                   | 1     |
 -----------------------------------+------------------------+-------+
 
@@ -493,10 +511,10 @@ Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 5.004ns (Maximum Frequency: 199.848MHz)
-   Minimum input arrival time before clock: 5.305ns
-   Maximum output required time after clock: 6.019ns
-   Maximum combinational path delay: 5.693ns
+   Minimum period: 5.066ns (Maximum Frequency: 197.385MHz)
+   Minimum input arrival time before clock: 5.406ns
+   Maximum output required time after clock: 5.597ns
+   Maximum combinational path delay: 5.776ns
 
 Timing Detail:
 --------------
@@ -504,76 +522,75 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 5.004ns (frequency: 199.848MHz)
-  Total number of paths / destination ports: 810 / 182
+  Clock period: 5.066ns (frequency: 197.385MHz)
+  Total number of paths / destination ports: 685 / 190
 -------------------------------------------------------------------------
-Delay:               5.004ns (Levels of Logic = 3)
+Delay:               5.066ns (Levels of Logic = 3)
   Source:            Inst_SCLK_CE_GEN/sclk_current (FF)
-  Destination:       Inst_SPI_MASTER_TX/counter_current_3 (FF)
+  Destination:       Inst_SPI_MASTER_TX/data_reg_7 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: Inst_SCLK_CE_GEN/sclk_current to Inst_SPI_MASTER_TX/counter_current_3
+  Data Path: Inst_SCLK_CE_GEN/sclk_current to Inst_SPI_MASTER_TX/data_reg_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDPE:C->Q            12   0.514   0.886  Inst_SCLK_CE_GEN/sclk_current (Inst_SCLK_CE_GEN/sclk_current)
-     LUT2:I1->O            1   0.612   0.360  Inst_SPI_MASTER_TX/data_reg_and00022_SW0_SW0 (N35)
-     LUT4_D:I3->O          1   0.612   0.426  Inst_SPI_MASTER_TX/data_reg_and00022 (Inst_SPI_MASTER_TX/N4)
-     LUT2:I1->O            4   0.612   0.499  Inst_SPI_MASTER_TX/counter_current_not00021 (Inst_SPI_MASTER_TX/counter_current_not0002)
-     FDCE:CE                   0.483          Inst_SPI_MASTER_TX/counter_current_0
+     FDPE:C->Q            12   0.514   0.820  Inst_SCLK_CE_GEN/sclk_current (Inst_SCLK_CE_GEN/sclk_current)
+     LUT4:I3->O            1   0.612   0.387  Inst_SPI_MASTER_TX/data_reg_and00022_SW0_SW1 (N33)
+     LUT4:I2->O            2   0.612   0.383  Inst_SPI_MASTER_TX/data_reg_and00022 (Inst_SPI_MASTER_TX/N4)
+     LUT4:I3->O            8   0.612   0.643  Inst_SPI_MASTER_TX/data_reg_not00011 (Inst_SPI_MASTER_TX/data_reg_not0001)
+     FDCE:CE                   0.483          Inst_SPI_MASTER_TX/data_reg_0
     ----------------------------------------
-    Total                      5.004ns (2.833ns logic, 2.171ns route)
-                                       (56.6% logic, 43.4% route)
+    Total                      5.066ns (2.833ns logic, 2.233ns route)
+                                       (55.9% logic, 44.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 111 / 107
+  Total number of paths / destination ports: 87 / 83
 -------------------------------------------------------------------------
-Offset:              5.305ns (Levels of Logic = 4)
+Offset:              5.406ns (Levels of Logic = 4)
   Source:            CONT (PAD)
-  Destination:       Inst_SPI_MASTER_TX/counter_current_3 (FF)
+  Destination:       Inst_SPI_MASTER_TX/data_reg_7 (FF)
   Destination Clock: CLK rising
 
-  Data Path: CONT to Inst_SPI_MASTER_TX/counter_current_3
+  Data Path: CONT to Inst_SPI_MASTER_TX/data_reg_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             5   1.106   0.568  CONT_IBUF (CONT_IBUF)
-     LUT4:I2->O            1   0.612   0.387  Inst_SPI_MASTER_TX/data_reg_and00022_SW0_SW1 (N36)
-     LUT4_D:I2->O          1   0.612   0.426  Inst_SPI_MASTER_TX/data_reg_and00022 (Inst_SPI_MASTER_TX/N4)
-     LUT2:I1->O            4   0.612   0.499  Inst_SPI_MASTER_TX/counter_current_not00021 (Inst_SPI_MASTER_TX/counter_current_not0002)
-     FDCE:CE                   0.483          Inst_SPI_MASTER_TX/counter_current_0
+     LUT4:I2->O            1   0.612   0.387  Inst_SPI_MASTER_TX/data_reg_and00022_SW0_SW1 (N33)
+     LUT4:I2->O            2   0.612   0.383  Inst_SPI_MASTER_TX/data_reg_and00022 (Inst_SPI_MASTER_TX/N4)
+     LUT4:I3->O            8   0.612   0.643  Inst_SPI_MASTER_TX/data_reg_not00011 (Inst_SPI_MASTER_TX/data_reg_not0001)
+     FDCE:CE                   0.483          Inst_SPI_MASTER_TX/data_reg_0
     ----------------------------------------
-    Total                      5.305ns (3.425ns logic, 1.880ns route)
-                                       (64.6% logic, 35.4% route)
+    Total                      5.406ns (3.425ns logic, 1.981ns route)
+                                       (63.4% logic, 36.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 65 / 17
+  Total number of paths / destination ports: 33 / 17
 -------------------------------------------------------------------------
-Offset:              6.019ns (Levels of Logic = 3)
-  Source:            Inst_FIFO_RX/r_ptr_reg_0 (FF)
-  Destination:       DATA_IN<7> (PAD)
+Offset:              5.597ns (Levels of Logic = 2)
+  Source:            Inst_SCLK_CE_GEN/ce_current (FF)
+  Destination:       SS<0> (PAD)
   Source Clock:      CLK rising
 
-  Data Path: Inst_FIFO_RX/r_ptr_reg_0 to DATA_IN<7>
+  Data Path: Inst_SCLK_CE_GEN/ce_current to SS<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             20   0.514   1.089  Inst_FIFO_RX/r_ptr_reg_0 (Inst_FIFO_RX/r_ptr_reg_0)
-     LUT3:I0->O            1   0.612   0.000  Inst_FIFO_RX/Mmux_R_DATA_3 (Inst_FIFO_RX/Mmux_R_DATA_3)
-     MUXF5:I1->O           1   0.278   0.357  Inst_FIFO_RX/Mmux_R_DATA_2_f5 (DATA_IN_0_OBUF)
-     OBUF:I->O                 3.169          DATA_IN_0_OBUF (DATA_IN<0>)
+     FDPE:C->Q            11   0.514   0.945  Inst_SCLK_CE_GEN/ce_current (Inst_SCLK_CE_GEN/ce_current)
+     LUT2:I0->O            1   0.612   0.357  ss_signal_0_mux00001 (SS_0_OBUF)
+     OBUF:I->O                 3.169          SS_0_OBUF (SS<0>)
     ----------------------------------------
-    Total                      6.019ns (4.573ns logic, 1.446ns route)
-                                       (76.0% logic, 24.0% route)
+    Total                      5.597ns (4.295ns logic, 1.302ns route)
+                                       (76.7% logic, 23.3% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Delay:               5.693ns (Levels of Logic = 3)
+Delay:               5.776ns (Levels of Logic = 3)
   Source:            ADDRESS<0> (PAD)
   Destination:       SS<1> (PAD)
 
@@ -581,24 +598,24 @@ Delay:               5.693ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.106   0.449  ADDRESS_0_IBUF (ADDRESS_0_IBUF)
-     LUT2:I1->O            1   0.612   0.357  ss_signal_1_mux00001 (SS_1_OBUF)
+     IBUF:I->O             2   1.106   0.532  ADDRESS_0_IBUF (ADDRESS_0_IBUF)
+     LUT2:I0->O            1   0.612   0.357  ss_signal_1_mux00001 (SS_1_OBUF)
      OBUF:I->O                 3.169          SS_1_OBUF (SS<1>)
     ----------------------------------------
-    Total                      5.693ns (4.887ns logic, 0.806ns route)
-                                       (85.8% logic, 14.2% route)
+    Total                      5.776ns (4.887ns logic, 0.889ns route)
+                                       (84.6% logic, 15.4% route)
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.01 secs
+Total CPU time to Xst completion: 6.44 secs
  
 --> 
 
-Total memory usage is 276608 kilobytes
+Total memory usage is 276072 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)
-Number of infos    :    3 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
 

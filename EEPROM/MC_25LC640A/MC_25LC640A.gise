@@ -22,19 +22,8 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="MC_25LC640A.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="MC_25LC640A_CONTROLLER.cmd_log"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="MC_25LC640A_CONTROLLER.lso"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="MC_25LC640A_CONTROLLER.ngc"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="MC_25LC640A_CONTROLLER.ngr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MC_25LC640A_CONTROLLER.prj"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="MC_25LC640A_CONTROLLER.stx"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="MC_25LC640A_CONTROLLER.syr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="MC_25LC640A_CONTROLLER.xst"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MC_25LC640A_CONTROLLER_envsettings.html"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MC_25LC640A_CONTROLLER_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MC_25LC640A_CONTROLLER_summary.html"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MC_25LC640A_CONTROLLER_vhdl.prj"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MC_25LC640A_CONTROLLER_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FIFO_VER_2_stx_beh.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="MC_25LC640A_Test.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="MC_25LC640A_Test.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="MC_25LC640A_Test.lso"/>
@@ -55,7 +44,8 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="MC_25LC640A_Test.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="MC_25LC640A_Test.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="MC_25LC640A_Test.xst"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MC_25LC640A_Test_envsettings.html"/>
+    <file xil_pn:fileType="FILE_BLIF" xil_pn:name="MC_25LC640A_Test_cs.blc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="MC_25LC640A_Test_cs.ngc"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="MC_25LC640A_Test_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="MC_25LC640A_Test_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="MC_25LC640A_Test_map.mrp" xil_pn:subbranch="Map"/>
@@ -66,23 +56,13 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="MC_25LC640A_Test_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="MC_25LC640A_Test_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MC_25LC640A_Test_par.xrpt"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MC_25LC640A_Test_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MC_25LC640A_Test_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="MC_25LC640A_Test_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="MC_25LC640A_Test_usage.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MC_25LC640A_Test_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MC_25LC640A_Test_xst.xrpt"/>
-    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="SPI_MASTER_TX.cmd_log"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="SPI_MASTER_TX.lso"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="SPI_MASTER_TX.ngc"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="SPI_MASTER_TX.ngr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SPI_MASTER_TX.prj"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="SPI_MASTER_TX.stx"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="SPI_MASTER_TX.syr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="SPI_MASTER_TX.xst"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="SPI_MASTER_TX_summary.html"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SPI_MASTER_TX_vhdl.prj"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SPI_MASTER_TX_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SPI_MASTER_MODULE_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="UART_VER_2_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="UART_VER_2_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -110,11 +90,44 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1424638818" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1424638818">
+    <transform xil_pn:end_ts="1426357045" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1426357045">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1424660094" xil_pn:in_ck="3124751586849426842" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1424660094">
+    <transform xil_pn:end_ts="1426443320" xil_pn:in_ck="3124751586849426842" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1426443320">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../../SPI/Library/SPI/FIFO.vhd"/>
+      <outfile xil_pn:name="../../SPI/Library/SPI/SCLK_CE_GEN.vhd"/>
+      <outfile xil_pn:name="../../SPI/Library/SPI/SPI_MASTER_MODULE.vhd"/>
+      <outfile xil_pn:name="../../SPI/Library/SPI/SPI_MASTER_MODULE_TX.vhd"/>
+      <outfile xil_pn:name="../../SPI/Library/SPI/SPI_MASTER_RX.vhd"/>
+      <outfile xil_pn:name="../../SPI/Library/SPI/SPI_MASTER_TX.vhd"/>
+      <outfile xil_pn:name="../../SPI/Library/SPI/mod_m_counter.vhd"/>
+      <outfile xil_pn:name="../../UART/UART_Library/FIFO.vhd"/>
+      <outfile xil_pn:name="../../UART/UART_Library/UART.vhd"/>
+      <outfile xil_pn:name="../../UART/UART_Library/UART_RX.vhd"/>
+      <outfile xil_pn:name="../../UART/UART_Library/UART_TX.vhd"/>
+      <outfile xil_pn:name="../../UART/UART_Library/mod_m_counter.vhd"/>
+      <outfile xil_pn:name="../MC_25LC640A_Library/MC_25LC640A_CONTROLLER.vhd"/>
+      <outfile xil_pn:name="../MC_25LC640A_Library/MC_25LC640A_TYPES.vhd"/>
+      <outfile xil_pn:name="MC_25LC640A_Test.vhd"/>
+      <outfile xil_pn:name="tbench_EEPROM_test.vhd"/>
+      <outfile xil_pn:name="tbench_MC_25LC640A_CONTROLLER.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1426357045" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6641971288331008368" xil_pn:start_ts="1426357045">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1426357045" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="405112046530197650" xil_pn:start_ts="1426357045">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1426357045" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-6402689485718461663" xil_pn:start_ts="1426357045">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1426357045" xil_pn:in_ck="3124751586849426842" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1426357045">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -139,46 +152,7 @@
       <outfile xil_pn:name="tbench_EEPROM_test.vhd"/>
       <outfile xil_pn:name="tbench_MC_25LC640A_CONTROLLER.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1424640433" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6641971288331008368" xil_pn:start_ts="1424640433">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1424640433" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="405112046530197650" xil_pn:start_ts="1424640433">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1424640118" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="186490667269739346" xil_pn:start_ts="1424640118">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-    </transform>
-    <transform xil_pn:end_ts="1424640433" xil_pn:in_ck="3124751586849426842" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1424640433">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="../../SPI/Library/SPI/FIFO.vhd"/>
-      <outfile xil_pn:name="../../SPI/Library/SPI/SCLK_CE_GEN.vhd"/>
-      <outfile xil_pn:name="../../SPI/Library/SPI/SPI_MASTER_MODULE.vhd"/>
-      <outfile xil_pn:name="../../SPI/Library/SPI/SPI_MASTER_MODULE_TX.vhd"/>
-      <outfile xil_pn:name="../../SPI/Library/SPI/SPI_MASTER_RX.vhd"/>
-      <outfile xil_pn:name="../../SPI/Library/SPI/SPI_MASTER_TX.vhd"/>
-      <outfile xil_pn:name="../../SPI/Library/SPI/mod_m_counter.vhd"/>
-      <outfile xil_pn:name="../../UART/UART_Library/FIFO.vhd"/>
-      <outfile xil_pn:name="../../UART/UART_Library/UART.vhd"/>
-      <outfile xil_pn:name="../../UART/UART_Library/UART_RX.vhd"/>
-      <outfile xil_pn:name="../../UART/UART_Library/UART_TX.vhd"/>
-      <outfile xil_pn:name="../../UART/UART_Library/mod_m_counter.vhd"/>
-      <outfile xil_pn:name="../MC_25LC640A_Library/MC_25LC640A_CONTROLLER.vhd"/>
-      <outfile xil_pn:name="../MC_25LC640A_Library/MC_25LC640A_TYPES.vhd"/>
-      <outfile xil_pn:name="MC_25LC640A_Test.vhd"/>
-      <outfile xil_pn:name="tbench_EEPROM_test.vhd"/>
-      <outfile xil_pn:name="tbench_MC_25LC640A_CONTROLLER.vhd"/>
-    </transform>
-    <transform xil_pn:end_ts="1424640440" xil_pn:in_ck="3124751586849426842" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-863711326863734782" xil_pn:start_ts="1424640433">
+    <transform xil_pn:end_ts="1426357051" xil_pn:in_ck="3124751586849426842" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-863711326863734782" xil_pn:start_ts="1426357045">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -193,7 +167,7 @@
       <outfile xil_pn:name="tbench_EEPROM_test_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1424640440" xil_pn:in_ck="8259718162345912969" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3911572948396529457" xil_pn:start_ts="1424640440">
+    <transform xil_pn:end_ts="1426357051" xil_pn:in_ck="8259718162345912969" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3911572948396529457" xil_pn:start_ts="1426357051">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
@@ -203,41 +177,37 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="tbench_EEPROM_test_isim_beh.wdb"/>
     </transform>
-    <transform xil_pn:end_ts="1424640805" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1424640805">
+    <transform xil_pn:end_ts="1426207457" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="4980181637705435716" xil_pn:start_ts="1426207457">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1424660209" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="4980181637705435716" xil_pn:start_ts="1424660209">
+    <transform xil_pn:end_ts="1426207457" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-6402689485718461663" xil_pn:start_ts="1426207457">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1424660333" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-6402689485718461663" xil_pn:start_ts="1424660333">
+    <transform xil_pn:end_ts="1426207457" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1426207457">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1424660209" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1424660209">
+    <transform xil_pn:end_ts="1426207457" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="5124611601497589122" xil_pn:start_ts="1426207457">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1424660209" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="5124611601497589122" xil_pn:start_ts="1424660209">
+    <transform xil_pn:end_ts="1426207457" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297138737980" xil_pn:start_ts="1426207457">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1424660333" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297138737980" xil_pn:start_ts="1424660333">
+    <transform xil_pn:end_ts="1426207457" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="3546362389340713899" xil_pn:start_ts="1426207457">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1424660333" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="3546362389340713899" xil_pn:start_ts="1424660333">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1424660345" xil_pn:in_ck="5483479912101187690" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="8744876229286300606" xil_pn:start_ts="1424660333">
+    <transform xil_pn:end_ts="1426443344" xil_pn:in_ck="5483479912101187690" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="8744876229286300606" xil_pn:start_ts="1426443329">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="MC_25LC640A_CONTROLLER.ngr"/>
+      <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="MC_25LC640A_Test.lso"/>
       <outfile xil_pn:name="MC_25LC640A_Test.ngc"/>
       <outfile xil_pn:name="MC_25LC640A_Test.ngr"/>
@@ -245,30 +215,34 @@
       <outfile xil_pn:name="MC_25LC640A_Test.stx"/>
       <outfile xil_pn:name="MC_25LC640A_Test.syr"/>
       <outfile xil_pn:name="MC_25LC640A_Test.xst"/>
-      <outfile xil_pn:name="MC_25LC640A_Test_stx_beh.prj"/>
       <outfile xil_pn:name="MC_25LC640A_Test_vhdl.prj"/>
       <outfile xil_pn:name="MC_25LC640A_Test_xst.xrpt"/>
-      <outfile xil_pn:name="SPI_MASTER_TX.ngr"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1424660237" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-471201964896868489" xil_pn:start_ts="1424660237">
+    <transform xil_pn:end_ts="1426207470" xil_pn:in_ck="2141825944058866059" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-471201964896868489" xil_pn:start_ts="1426207470">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1424660351" xil_pn:in_ck="-8067301612466152010" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4650293256150293230" xil_pn:start_ts="1424660345">
+    <transform xil_pn:end_ts="1426443358" xil_pn:in_ck="-1502626425828029043" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4650293256150293230" xil_pn:start_ts="1426443344">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="MC_25LC640A_Test.bld"/>
       <outfile xil_pn:name="MC_25LC640A_Test.ngd"/>
+      <outfile xil_pn:name="MC_25LC640A_Test_cs.blc"/>
+      <outfile xil_pn:name="MC_25LC640A_Test_cs.ngc"/>
       <outfile xil_pn:name="MC_25LC640A_Test_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1424660356" xil_pn:in_ck="2141825944058858566" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="2842458847540838050" xil_pn:start_ts="1424660351">
+    <transform xil_pn:end_ts="1426443364" xil_pn:in_ck="2084806752934212817" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="2842458847540838050" xil_pn:start_ts="1426443358">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="MC_25LC640A_Test.pcf"/>
       <outfile xil_pn:name="MC_25LC640A_Test_map.map"/>
       <outfile xil_pn:name="MC_25LC640A_Test_map.mrp"/>
@@ -279,7 +253,7 @@
       <outfile xil_pn:name="MC_25LC640A_Test_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1424660381" xil_pn:in_ck="-6506567198016434593" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1424660356">
+    <transform xil_pn:end_ts="1426443382" xil_pn:in_ck="-3450360373811754774" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1426443364">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -294,8 +268,9 @@
       <outfile xil_pn:name="MC_25LC640A_Test_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1424660395" xil_pn:in_ck="2141825944058858434" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1424660381">
+    <transform xil_pn:end_ts="1426443401" xil_pn:in_ck="2141825944058858434" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1426443382">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="MC_25LC640A_Test.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
@@ -306,7 +281,13 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1424660381" xil_pn:in_ck="2141825944058858434" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1424660377">
+    <transform xil_pn:end_ts="1426356029" xil_pn:in_ck="613564882986211916" xil_pn:name="TRAN_analyzeDesignUsingChipscope" xil_pn:prop_ck="4650293256150293230" xil_pn:start_ts="1426356029">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1426443382" xil_pn:in_ck="-7100888842063214003" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1426443378">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="MC_25LC640A_Test.twr"/>

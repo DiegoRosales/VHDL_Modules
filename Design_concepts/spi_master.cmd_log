@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/spi_master.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/spi_master.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/spi_master.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/spi_master.syr" 

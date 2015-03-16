@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Fri Mar 06 17:09:35 2015
+# Process ID: 12216
+# Log file: D:/GitHub/VHDL_Modules/Wings_test/planAhead_run_1/planAhead.log
+# Journal file: D:/GitHub/VHDL_Modules/Wings_test/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/GitHub/VHDL_Modules/Wings_test/pa.fromHdl.tcl
+startgroup
+set_property package_pin P5 [get_ports RAM_B]
+endgroup
+startgroup
+set_property package_pin P53 [get_ports RAM_B]
+endgroup
+startgroup
+set_property package_pin P53 [get_ports RAM_B]
+endgroup
+startgroup
+set_property package_pin P57 [get_ports LED]
+endgroup
+set_property package_pin "" [get_ports [list  DISP_B2]]
+startgroup
+set_property package_pin P17 [get_ports EEPROM_B1]
+endgroup
+startgroup
+set_property package_pin P16 [get_ports EEPROM_B2]
+endgroup
+startgroup
+set_property package_pin P63 [get_ports DISP_B1]
+endgroup
+startgroup
+set_property package_pin P66 [get_ports DISP_B2]
+endgroup
+startgroup
+set_property package_pin P89 [get_ports CLK]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list DISP_B1]]
+set_property iostandard LVCMOS33 [get_ports [list DISP_B2]]
+set_property iostandard LVCMOS33 [get_ports [list EEPROM_B1]]
+set_property iostandard LVCMOS33 [get_ports [list EEPROM_B2]]
+set_property iostandard LVCMOS33 [get_ports [list LED]]
+set_property iostandard LVCMOS33 [get_ports [list RAM_B]]
+set_property pulltype PULLUP [get_ports [list EEPROM_B1]]
+set_property pulltype PULLUP [get_ports [list EEPROM_B2]]
+set_property pulltype PULLUP [get_ports [list RAM_B]]
+set_property pulltype PULLUP [get_ports [list DISP_B1]]
+set_property pulltype PULLUP [get_ports [list DISP_B2]]
+save_design

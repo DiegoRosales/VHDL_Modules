@@ -12,94 +12,62 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="22" />
+   <WVObjectSize size="11" />
    <wvobject fp_name="/tbench_eeprom_test/clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/tbench_eeprom_test/uut/reset_signal" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">reset_signal</obj_property>
-      <obj_property name="ObjectShortName">reset_signal</obj_property>
-   </wvobject>
    <wvobject fp_name="/tbench_eeprom_test/uut/rx" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">rx</obj_property>
       <obj_property name="ObjectShortName">rx</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
    </wvobject>
-   <wvobject fp_name="/tbench_eeprom_test/uut/UART_MODULE/tx_done" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">tx_done</obj_property>
-      <obj_property name="ObjectShortName">tx_done</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tbench_eeprom_test/uut/UART_MODULE/rx_done" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">rx_done</obj_property>
-      <obj_property name="ObjectShortName">rx_done</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tbench_eeprom_test/uut/UART_MODULE/uart_rx_unit/state_reg" type="other" db_ref_id="1">
-      <obj_property name="ElementShortName">state_reg</obj_property>
-      <obj_property name="ObjectShortName">state_reg</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tbench_eeprom_test/uut/UART_MODULE/uart_rx_unit/dout" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">dout[7:0]</obj_property>
-      <obj_property name="ObjectShortName">dout[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tbench_eeprom_test/uut/UART_MODULE/r_data" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">r_data[7:0]</obj_property>
-      <obj_property name="ObjectShortName">r_data[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tbench_eeprom_test/uut/instruction_buffer_current" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">instruction_buffer_current[7:0]</obj_property>
-      <obj_property name="ObjectShortName">instruction_buffer_current[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tbench_eeprom_test/uut/UART_MODULE/uart_rx_unit/n_reg" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">n_reg[2:0]</obj_property>
-      <obj_property name="ObjectShortName">n_reg[2:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tbench_eeprom_test/uut/eeprom_addr_curr" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">eeprom_addr_curr[15:0]</obj_property>
-      <obj_property name="ObjectShortName">eeprom_addr_curr[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tbench_eeprom_test/uut/state_current" type="other" db_ref_id="1">
-      <obj_property name="ElementShortName">state_current</obj_property>
-      <obj_property name="ObjectShortName">state_current</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tbench_eeprom_test/uut/instruction_buffer_current" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">instruction_buffer_current[7:0]</obj_property>
-      <obj_property name="ObjectShortName">instruction_buffer_current[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tbench_eeprom_test/uut/eeprom_addr_curr" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">eeprom_addr_curr[15:0]</obj_property>
-      <obj_property name="ObjectShortName">eeprom_addr_curr[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tbench_eeprom_test/uut/EEPROM_MODULE/start" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">start</obj_property>
-      <obj_property name="ObjectShortName">start</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tbench_eeprom_test/uut/EEPROM_MODULE/opr_curr" type="other" db_ref_id="1">
-      <obj_property name="ElementShortName">opr_curr</obj_property>
-      <obj_property name="ObjectShortName">opr_curr</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tbench_eeprom_test/uut/EEPROM_MODULE/state_curr" type="other" db_ref_id="1">
-      <obj_property name="ElementShortName">state_curr</obj_property>
-      <obj_property name="ObjectShortName">state_curr</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tbench_eeprom_test/uut/EEPROM_MODULE/exec_state_curr" type="other" db_ref_id="1">
-      <obj_property name="ElementShortName">exec_state_curr</obj_property>
-      <obj_property name="ObjectShortName">exec_state_curr</obj_property>
+   <wvobject fp_name="/tbench_eeprom_test/tx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
    </wvobject>
    <wvobject fp_name="/tbench_eeprom_test/uut/si" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">si</obj_property>
       <obj_property name="ObjectShortName">si</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
    </wvobject>
    <wvobject fp_name="/tbench_eeprom_test/uut/so" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">so</obj_property>
       <obj_property name="ObjectShortName">so</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
    </wvobject>
    <wvobject fp_name="/tbench_eeprom_test/uut/sck" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">sck</obj_property>
       <obj_property name="ObjectShortName">sck</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_SCLK_CE_GEN/max_tick_signal" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">max_tick_signal</obj_property>
+      <obj_property name="ObjectShortName">max_tick_signal</obj_property>
    </wvobject>
    <wvobject fp_name="/tbench_eeprom_test/uut/cs" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">cs</obj_property>
       <obj_property name="ObjectShortName">cs</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/unread_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">unread_data[1:0]</obj_property>
+      <obj_property name="ObjectShortName">unread_data[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/new_data" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">new_data</obj_property>
+      <obj_property name="ObjectShortName">new_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/array_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">array_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">array_reg[3:0]</obj_property>
    </wvobject>
 </wave_config>

@@ -1,0 +1,28 @@
+Command line:
+   FIFO_V2_tbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  45387
+
+Sun Mar 01 10:11:09 2015
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 519.598 Meg
+
+ Total Signals          : 31
+ Total Nets             : 75
+ Total Signal Drivers   : 22
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 15
+ Total Traceable Variables  : 16
+ Total Scalar Nets and Variables : 561
+
+ Total Simulation Time: 0.0936 sec
+
+ Current Memory Usage: 519.598 Meg
+
+Sun Mar 01 14:31:28 2015
+

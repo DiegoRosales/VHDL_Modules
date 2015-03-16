@@ -29,18 +29,18 @@ int main(int argc, char **argv)
     ieee_p_2592010699_init();
     mc_25lc640a_library_p_1396835567_init();
     ieee_p_1242562249_init();
-    uart_library_a_4140323202_3212880686_init();
+    uart_library_a_3450209770_3212880686_init();
     uart_library_a_2292769034_3212880686_init();
-    uart_library_a_2090800054_3212880686_init();
+    uart_library_a_1963931772_3212880686_init();
     uart_library_a_4222785664_3212880686_init();
     uart_library_a_0586551877_3212880686_init();
-    spi_a_2431581248_3212880686_init();
+    spi_a_3379804237_3212880686_init();
     spi_a_0852731450_3212880686_init();
     spi_a_2090800054_3212880686_init();
     spi_a_3390172556_3212880686_init();
-    spi_a_1012328464_3212880686_init();
     spi_a_1639252690_3212880686_init();
     mc_25lc640a_library_a_1205673475_3212880686_init();
+    uart_library_a_1347959530_3212880686_init();
     work_a_3796989329_3212880686_init();
     work_a_3404702035_2372691052_init();
 

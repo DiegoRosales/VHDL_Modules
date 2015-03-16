@@ -45,7 +45,7 @@ begin
 
 	sclk_edge <= '1' when (sclk_current /= sclk_prev) AND sclk_current = data_latch_mode else '0';
 	--sclk_edge_neg <= '1' when (sclk_current /= sclk_prev) AND (sclk_current /= data_latch_mode) else '0';
-	data_latch_mode <= not(POL) when PHA = '1' else POL;
+	data_latch_mode <= not(POL) when PHA = '0' else POL;
 	DATA_RX <= data_reg;
 	RX_DONE <= rx_done_current;
 	
@@ -54,10 +54,10 @@ begin
 		if (RESET = '1') then
 			rx_done_current <= '0';
 			state_current <= IDLE;
-			data_reg <= (others => '0');
+			--data_reg <= (others => '0');
 			sclk_prev <= POL;
 			ce_prev <= '1';
-			counter_current <= (others => '0');
+			--counter_current <= (others => '0');
 			rx_done_en_current <= '0';
 		elsif (rising_edge(CLK)) then
 			rx_done_current <= rx_done_next;
@@ -110,23 +110,5 @@ begin
 			end if;
 		END CASE;
 	END PROCESS;
-	
-	-- RX_DONE_PROCESS: PROCESS(counter_current, sclk_edge)
-	-- BEGIN
-		-- if(counter_current = N-1
-	-- END PROCESS;
-	
-	-- RX_DONE_NEXT_PROCESS: PROCESS(rx_done_en_current, counter_current, CONT, sclk_current)
-	-- BEGIN
-		-- rx_done_en_next <= rx_done_en_current;
-		-- if(rx_done_en_current = '1') then
-			-- rx_done_en_next <= '0';
-		-- elsif(rising_edge(sclk_current)) then
-			-- if(CONT = '1' AND counter_current = N-1) then
-				-- rx_done_en_next <= '1';
-			-- end if;
-		-- end if;
-
-	-- END PROCESS;
 end Behavioral;
 

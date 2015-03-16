@@ -3,7 +3,7 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/testbench_isim_beh.wdb" id="1" type="auto">
+      <db_ref path="D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/testbench_isim_beh1.wdb" id="1" type="auto">
          <top_modules>
             <top_module name="mc_25lc640a_types" />
             <top_module name="numeric_std" />
@@ -12,7 +12,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="21" />
+   <WVObjectSize size="14" />
    <wvobject fp_name="/testbench/clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -25,29 +25,9 @@
       <obj_property name="ElementShortName">opr_curr</obj_property>
       <obj_property name="ObjectShortName">opr_curr</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/uut/exec_state_curr" type="other" db_ref_id="1">
-      <obj_property name="ElementShortName">exec_state_curr</obj_property>
-      <obj_property name="ObjectShortName">exec_state_curr</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/uut/busy" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">busy</obj_property>
-      <obj_property name="ObjectShortName">busy</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/uut/SPI_INST/start_tx" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">start_tx</obj_property>
-      <obj_property name="ObjectShortName">start_tx</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/uut/SPI_INST/start_rx" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">start_rx</obj_property>
-      <obj_property name="ObjectShortName">start_rx</obj_property>
-   </wvobject>
    <wvobject fp_name="/testbench/uut/SPI_INST/Inst_SPI_MASTER_TX/state_current" type="other" db_ref_id="1">
       <obj_property name="ElementShortName">state_current</obj_property>
       <obj_property name="ObjectShortName">state_current</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/uut/spi_data_out" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">spi_data_out[7:0]</obj_property>
-      <obj_property name="ObjectShortName">spi_data_out[7:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/uut/hold" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">hold</obj_property>
@@ -96,16 +76,8 @@
       <obj_property name="ElementShortName">state_current</obj_property>
       <obj_property name="ObjectShortName">state_current</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/uut/data_in" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
-      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/uut/read_data_curr" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">read_data_curr</obj_property>
-      <obj_property name="ObjectShortName">read_data_curr</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/uut/SPI_INST/data_in" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
-      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   <wvobject fp_name="/testbench/uut/SPI_INST/Inst_SPI_MASTER_RX/data_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_reg[7:0]</obj_property>
    </wvobject>
 </wave_config>

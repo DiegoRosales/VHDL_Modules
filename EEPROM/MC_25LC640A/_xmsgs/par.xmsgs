@@ -5,14 +5,11 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Par" num="282" delta="old" >No user timing constraints were detected or you have set the option to ignore timing constraints (&quot;par -x&quot;). Place and Route will run in &quot;Performance Evaluation Mode&quot; to automatically improve the performance of all internal clocks in this design. Because there are not defined timing requirements, a timing score will not be reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock. Note: For the fastest runtime, set the effort level to &quot;std&quot;.  For best performance, set the effort level to &quot;high&quot;.
+<msg type="warning" file="Route" num="455" delta="old" >CLK Net:<arg fmt="%s" index="1">icon_control0&lt;13&gt;</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">1</arg> CLK pins and <arg fmt="%d" index="3">3</arg> NON_CLK pins failed to route using a CLK template.
 </msg>
 
-<msg type="warning" file="Route" num="455" delta="old" >CLK Net:<arg fmt="%s" index="1">EEPROM_MODULE/state_curr&lt;0&gt;</arg> may have excessive skew because 
-   <arg fmt="%d" index="2">0</arg> CLK pins and <arg fmt="%d" index="3">22</arg> NON_CLK pins failed to route using a CLK template.
-</msg>
-
-<msg type="warning" file="Route" num="455" delta="old" >CLK Net:<arg fmt="%s" index="1">EEPROM_MODULE/SPI_INST/Inst_SCLK_CE_GEN/ce_current</arg> may have excessive skew because 
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">EEPROM_MODULE/SPI_INST/Inst_SCLK_CE_GEN/ce_current</arg> may have excessive skew because 
    <arg fmt="%d" index="2">1</arg> CLK pins and <arg fmt="%d" index="3">9</arg> NON_CLK pins failed to route using a CLK template.
 </msg>
 

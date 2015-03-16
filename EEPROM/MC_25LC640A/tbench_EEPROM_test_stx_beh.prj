@@ -1,7 +1,6 @@
 vhdl SPI "../../SPI/Library/SPI/SPI_MASTER_TX.vhd"
 vhdl SPI "../../SPI/Library/SPI/SPI_MASTER_RX.vhd"
 vhdl SPI "../../SPI/Library/SPI/SCLK_CE_GEN.vhd"
-vhdl SPI "../../SPI/Library/SPI/mod_m_counter.vhd"
 vhdl SPI "../../SPI/Library/SPI/FIFO.vhd"
 vhdl UART_Library "../../UART/UART_Library/UART_TX.vhd"
 vhdl UART_Library "../../UART/UART_Library/UART_RX.vhd"

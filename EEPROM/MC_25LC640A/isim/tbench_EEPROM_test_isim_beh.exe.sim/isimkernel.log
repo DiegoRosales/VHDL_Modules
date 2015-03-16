@@ -2,9 +2,27 @@ Command line:
    tbench_EEPROM_test_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  7668
+     -socket  22010
 
-Sun Feb 22 20:55:49 2015
+Sun Mar 15 11:52:28 2015
 
 
- Elaboration Time: 0.0624 sec
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 527.823 Meg
+
+ Total Signals          : 376
+ Total Nets             : 771
+ Total Signal Drivers   : 240
+ Total Blocks           : 19
+ Total Primitive Blocks : 14
+ Total Processes        : 113
+ Total Traceable Variables  : 60
+ Total Scalar Nets and Variables : 1319
+
+ Total Simulation Time: 0.530403 sec
+
+ Current Memory Usage: 527.823 Meg
+
+Sun Mar 15 19:54:00 2015
+

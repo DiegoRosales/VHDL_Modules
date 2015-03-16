@@ -1,0 +1,2 @@
+vhdl isim_temp "../Basic/Basic_library/FIFO_BLOCK_RAM.vhd"
+vhdl isim_temp "FIFO_V2_tbench.vhd"

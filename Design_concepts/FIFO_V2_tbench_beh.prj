@@ -1,0 +1,2 @@
+vhdl work "../Basic/Basic_library/FIFO_BLOCK_RAM.vhd"
+vhdl work "FIFO_V2_tbench.vhd"

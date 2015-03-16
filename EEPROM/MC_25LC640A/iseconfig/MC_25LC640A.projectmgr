@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!--This is an ISE project configuration file.-->
 <!--It holds project specific layout data for the projectmgr plugin.-->
 <!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
@@ -8,8 +8,11 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/MC_25LC640A_CONTROLLER - Behavioral D:|GitHub|VHDL_Modules|EEPROM|MC_25LC640A_Library|MC_25LC640A_CONTROLLER.vhd</ClosedNode>
+         <ClosedNode>/MC_25LC640A_Test - Behavioral D:|GitHub|VHDL_Modules|EEPROM|MC_25LC640A|MC_25LC640A_Test.vhd/EEPROM_MODULE - MC_25LC640A_CONTROLLER - Behavioral</ClosedNode>
+         <ClosedNode>/MC_25LC640A_Test - Behavioral D:|GitHub|VHDL_Modules|EEPROM|MC_25LC640A|MC_25LC640A_Test.vhd/UART_MODULE - UART - Behavioral</ClosedNode>
          <ClosedNode>/SPI_MASTER_MODULE - Behavioral D:|GitHub|VHDL_Modules|SPI|Library|SPI|SPI_MASTER_MODULE.vhd</ClosedNode>
          <ClosedNode>/SPI_MASTER_MODULE_TX - Behavioral D:|GitHub|VHDL_Modules|SPI|Library|SPI|SPI_MASTER_MODULE_TX.vhd</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules</ClosedNode>
          <ClosedNode>/Unassigned User Library Modules/SPI_MASTER_MODULE - Behavioral</ClosedNode>
          <ClosedNode>/Unassigned User Library Modules/SPI_MASTER_MODULE_TX - Behavioral</ClosedNode>
       </ClosedNodes>
@@ -18,7 +21,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000274000000020000000000000000000000000200000064ffffffff000000810000000300000002000002740000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002e6000000020000000000000000000000000200000064ffffffff000000810000000300000002000002e60000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>MC_25LC640A_Test - Behavioral (D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/MC_25LC640A_Test.vhd)</CurrentItem>
    </ItemView>
@@ -28,13 +31,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018a0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -43,7 +46,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000018a000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000000be0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000028e000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000001c20000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>..\..\SPI\Library\SPI\FIFO.vhd</CurrentItem>
    </ItemView>
@@ -51,30 +54,38 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>SPI</ClosedNode>
+         <ClosedNode>UART_Library</ClosedNode>
          <ClosedNode>work</ClosedNode>
       </ClosedNodes>
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000018a000000010001000100000000000000000000000064ffffffff0000008100000000000000010000018a0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>..\MC_25LC640A_Library\MC_25LC640A_TYPES.vhd</CurrentItem>
+      <CurrentItem>MC_25LC640A_Library</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/MC_25LC640A_Test - Behavioral D:|GitHub|VHDL_Modules|EEPROM|MC_25LC640A|MC_25LC640A_Test.vhd/EEPROM_MODULE - MC_25LC640A_CONTROLLER - Behavioral</ClosedNode>
+         <ClosedNode>/MC_25LC640A_Test - Behavioral D:|GitHub|VHDL_Modules|EEPROM|MC_25LC640A|MC_25LC640A_Test.vhd/UART_MODULE - UART - Behavioral</ClosedNode>
+         <ClosedNode>/MC_25LC640A_Test - Behavioral D:|GitHub|VHDL_Modules|EEPROM|MC_25LC640A|MC_25LC640A_Test.vhd/UART_module - UART - Behavioral</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules</ClosedNode>
          <ClosedNode>/Unassigned User Library Modules/SPI_MASTER_MODULE - Behavioral</ClosedNode>
          <ClosedNode>/Unassigned User Library Modules/SPI_MASTER_MODULE_TX - Behavioral</ClosedNode>
-         <ClosedNode>/testbench - behavior D:|GitHub|VHDL_Modules|EEPROM|MC_25LC640A|tbench_MC_25LC640A_CONTROLLER.vhd</ClosedNode>
+         <ClosedNode>/tbench_EEPROM_test - behavior D:|GitHub|VHDL_Modules|EEPROM|MC_25LC640A|tbench_EEPROM_test.vhd/uut - MC_25LC640A_Test - Behavioral/UART_MODULE - UART - Behavioral</ClosedNode>
+         <ClosedNode>/tbench_EEPROM_test - behavior D:|GitHub|VHDL_Modules|EEPROM|MC_25LC640A|tbench_EEPROM_test.vhd/uut - MC_25LC640A_Test - Behavioral/UART_MODULE - UART_VER_2 - Behavioral</ClosedNode>
+         <ClosedNode>/testbench - behavior D:|GitHub|VHDL_Modules|EEPROM|MC_25LC640A|tbench_MC_25LC640A_CONTROLLER.vhd/uut - MC_25LC640A_CONTROLLER - Behavioral</ClosedNode>
+         <ClosedNode>/testbench - behavior D:|GitHub|VHDL_Modules|EEPROM|MC_25LC640A|tbench_MC_25LC640A_CONTROLLER.vhd/uut - MC_25LC640A_CONTROLLER - Behavioral/SPI_INST - SPI_MASTER_MODULE - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>MC_25LC640A_Test - Behavioral (D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/MC_25LC640A_Test.vhd)</SelectedItem>
+         <SelectedItem>tbench_EEPROM_test - behavior (D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/tbench_EEPROM_test.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000023a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000023a0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002fa000000020000000000000000000000000200000064ffffffff000000810000000300000002000002fa0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>MC_25LC640A_Test - Behavioral (D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/MC_25LC640A_Test.vhd)</CurrentItem>
+      <CurrentItem>tbench_EEPROM_test - behavior (D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/tbench_EEPROM_test.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -82,13 +93,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018a0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -108,32 +119,115 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000171000000010000000100000000000000000000000064ffffffff000000810000000000000001000001710000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Configure Target Device</ClosedNode>
          <ClosedNode>Design Utilities</ClosedNode>
          <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
          <ClosedNode>Synthesize - XST</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Generate Programming File</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000179000000010000000100000000000000000000000064ffffffff000000810000000000000001000001790000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Generate Programming File</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000000cf000000b701000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="ManualCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>xc3s500e-5vq100</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000201000000020000000000000000000000000000000064ffffffff000000810000000000000002000001910000000100000000000000700000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>xc3s500e-5vq100</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>User Constraints</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018a0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>User Constraints</CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff0000000000000002000000e00000006501000000050100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="PostRouteSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/tbench_EEPROM_test - behavior D:|GitHub|VHDL_Modules|EEPROM|MC_25LC640A|tbench_EEPROM_test.vhd</ClosedNode>
+         <ClosedNode>/testbench - behavior D:|GitHub|VHDL_Modules|EEPROM|MC_25LC640A|tbench_MC_25LC640A_CONTROLLER.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>tbench_EEPROM_test - behavior (D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/tbench_EEPROM_test.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000198000000020000000000000000000000000200000064ffffffff000000810000000300000002000001980000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>tbench_EEPROM_test - behavior (D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/tbench_EEPROM_test.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Utilities</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Utilities</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>ISim Simulator</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ISim Simulator</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_CDC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
 </Project>

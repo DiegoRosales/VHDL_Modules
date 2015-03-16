@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/STATE_MACHINE.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/STATE_MACHINE.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/STATE_MACHINE.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/STATE_MACHINE.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/STATE_MACHINE.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/STATE_MACHINE.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/STATE_MACHINE.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/STATE_MACHINE.syr" 

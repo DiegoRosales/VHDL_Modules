@@ -1,0 +1,8 @@
+Release 14.2 Drc P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Thu Feb 26 18:23:14 2015
+
+drc -z BLOCK_RAM.ncd BLOCK_RAM.pcf
+
+DRC detected 0 errors and 0 warnings.

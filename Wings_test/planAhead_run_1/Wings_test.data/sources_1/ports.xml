@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="CLK" Dir="IN"/>
+		<Port Id="DISP_B1" Dir="IN"/>
+		<Port Id="DISP_B2" Dir="IN"/>
+		<Port Id="RAM_B" Dir="IN"/>
+		<Port Id="EEPROM_B1" Dir="IN"/>
+		<Port Id="EEPROM_B2" Dir="IN"/>
+		<Port Id="LED" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

@@ -1,0 +1,14 @@
+//! **************************************************************************
+// Written by: Map P.28xd on Fri Mar 06 17:21:52 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "LED" LOCATE = SITE "P57" LEVEL 1;
+COMP "EEPROM_B1" LOCATE = SITE "P17" LEVEL 1;
+COMP "EEPROM_B2" LOCATE = SITE "P16" LEVEL 1;
+COMP "DISP_B1" LOCATE = SITE "P63" LEVEL 1;
+COMP "DISP_B2" LOCATE = SITE "P66" LEVEL 1;
+COMP "RAM_B" LOCATE = SITE "P53" LEVEL 1;
+COMP "CLK" LOCATE = SITE "P89" LEVEL 1;
+SCHEMATIC END;
+

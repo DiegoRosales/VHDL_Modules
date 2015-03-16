@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-02-17T17:18:53</DateModified>
-  <ModuleName>SPI_MASTER_MODULE_TX</ModuleName>
-  <SummaryTimeStamp>2015-02-17T17:09:27</SummaryTimeStamp>
+  <DateModified>2015-03-16T10:41:51</DateModified>
+  <ModuleName>SPI_MASTER_MODULE</ModuleName>
+  <SummaryTimeStamp>2015-03-12T14:29:23</SummaryTimeStamp>
   <SavedFilePath>D:/GitHub/VHDL_Modules/SPI/Test Project/iseconfig/SPI_MASTER_MODULE.xreport</SavedFilePath>
   <ImplementationReportsDirectory>D:/GitHub/VHDL_Modules/SPI/Test Project\</ImplementationReportsDirectory>
   <DateInitialized>2015-02-17T17:18:52</DateInitialized>

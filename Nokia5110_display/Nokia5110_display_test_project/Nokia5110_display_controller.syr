@@ -1,0 +1,1383 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: Nokia5110_display_controller.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Nokia5110_display_controller.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Nokia5110_display_controller"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-vq100
+
+---- Source Options
+Top Module Name                    : Nokia5110_display_controller
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SCLK_CE_GEN.vhd" in Library SPI.
+Architecture behavioral of Entity sclk_ce_gen is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_TX.vhd" in Library SPI.
+Architecture behavioral of Entity spi_master_tx is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/SPI/Library/SPI/FIFO.vhd" in Library SPI.
+Architecture behavioral of Entity fifo is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/SPI/Library/SPI/mod_m_counter.vhd" in Library SPI.
+Architecture behavioral of Entity mod_m_counter is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_MODULE_TX.vhd" in Library SPI.
+Architecture behavioral of Entity spi_master_module_tx is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Nokia5110_display/Nokia5110_display_test_project/Nokia5110_types.vhd" in Library work.
+Architecture nokia5110_types of Entity nokia5110_types is up to date.
+Compiling vhdl file "D:/GitHub/VHDL_Modules/Nokia5110_display/Nokia5110_display_test_project/Nokia5110_display_controller.vhd" in Library work.
+Entity <nokia5110_display_controller> compiled.
+Entity <nokia5110_display_controller> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Nokia5110_display_controller> in library <work> (architecture <behavioral>) with generics.
+	DISP_ADDR = 0
+
+Analyzing hierarchy for entity <SPI_MASTER_MODULE_TX> in library <SPI> (architecture <Behavioral>) with generics.
+	ADDRESS_WIDTH = 1
+	CLK_DIV_BITS = 4
+	CLK_DIV_COUNT = 16
+	FIFO_W = 2
+	N = 8
+	PHA = '0'
+	POL = '0'
+	SLAVES = 1
+
+Analyzing hierarchy for entity <SCLK_CE_GEN> in library <SPI> (architecture <behavioral>) with generics.
+	N = 8
+	POL = '0'
+
+Analyzing hierarchy for entity <SPI_MASTER_TX> in library <SPI> (architecture <behavioral>) with generics.
+	N = 8
+	PHA = '0'
+	POL = '0'
+
+Analyzing hierarchy for entity <FIFO> in library <SPI> (architecture <behavioral>) with generics.
+	B = 8
+	W = 2
+
+Analyzing hierarchy for entity <mod_m_counter> in library <SPI> (architecture <behavioral>) with generics.
+	M = 16
+	N = 4
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <Nokia5110_display_controller> in library <work> (Architecture <behavioral>).
+	DISP_ADDR = 0
+Entity <Nokia5110_display_controller> analyzed. Unit <Nokia5110_display_controller> generated.
+
+Analyzing generic Entity <SPI_MASTER_MODULE_TX> in library <SPI> (Architecture <Behavioral>).
+	ADDRESS_WIDTH = 1
+	CLK_DIV_BITS = 4
+	CLK_DIV_COUNT = 16
+	FIFO_W = 2
+	N = 8
+	PHA = '0'
+	POL = '0'
+	SLAVES = 1
+WARNING:Xst:790 - "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_MODULE_TX.vhd" line 188: Index value(s) does not match array range, simulation mismatch.
+Entity <SPI_MASTER_MODULE_TX> analyzed. Unit <SPI_MASTER_MODULE_TX> generated.
+
+Analyzing generic Entity <SCLK_CE_GEN> in library <SPI> (Architecture <behavioral>).
+	N = 8
+	POL = '0'
+Entity <SCLK_CE_GEN> analyzed. Unit <SCLK_CE_GEN> generated.
+
+Analyzing generic Entity <SPI_MASTER_TX> in library <SPI> (Architecture <behavioral>).
+	N = 8
+	PHA = '0'
+	POL = '0'
+Entity <SPI_MASTER_TX> analyzed. Unit <SPI_MASTER_TX> generated.
+
+Analyzing generic Entity <FIFO> in library <SPI> (Architecture <behavioral>).
+	B = 8
+	W = 2
+Entity <FIFO> analyzed. Unit <FIFO> generated.
+
+Analyzing generic Entity <mod_m_counter> in library <SPI> (Architecture <behavioral>).
+	M = 16
+	N = 4
+Entity <mod_m_counter> analyzed. Unit <mod_m_counter> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <SCLK_CE_GEN>.
+    Related source file is "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SCLK_CE_GEN.vhd".
+    Found 1-bit register for signal <busy_current>.
+    Found 1-bit register for signal <ce_current>.
+    Found 4-bit comparator lessequal for signal <ce_current$cmp_le0000> created at line 93.
+    Found 4-bit register for signal <counter_current>.
+    Found 4-bit adder for signal <counter_current$addsub0000>.
+    Found 4-bit comparator greatequal for signal <counter_current$cmp_ge0000> created at line 87.
+    Found 1-bit register for signal <sclk_current>.
+    Found 1-bit register for signal <state_current<0>>.
+    Found 4-bit comparator greater for signal <state_next_0$cmp_gt0000> created at line 93.
+    Found 32-bit comparator greater for signal <state_next_0$cmp_gt0001> created at line 97.
+    Found 32-bit comparator lessequal for signal <state_next_0$cmp_le0000> created at line 93.
+    Found 4-bit comparator less for signal <state_next_0$cmp_lt0000> created at line 87.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+Unit <SCLK_CE_GEN> synthesized.
+
+
+Synthesizing Unit <SPI_MASTER_TX>.
+    Related source file is "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_TX.vhd".
+WARNING:Xst:646 - Signal <delay_current> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 4-bit up counter for signal <counter_current>.
+    Found 8-bit register for signal <data_reg>.
+    Found 1-bit xor2 for signal <sclk_edge$xor0000> created at line 47.
+    Found 1-bit register for signal <sclk_prev>.
+    Found 1-bit register for signal <state_current<0>>.
+    Found 1-bit register for signal <tx_done_current>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  11 D-type flip-flop(s).
+Unit <SPI_MASTER_TX> synthesized.
+
+
+Synthesizing Unit <FIFO>.
+    Related source file is "D:/GitHub/VHDL_Modules/SPI/Library/SPI/FIFO.vhd".
+    Found 4x8-bit dual-port RAM <Mram_array_reg> for signal <array_reg>.
+    Found 1-bit register for signal <empty_reg>.
+    Found 2-bit comparator equal for signal <empty_reg$cmp_eq0000> created at line 88.
+    Found 1-bit 4-to-1 multiplexer for signal <empty_reg$mux0001> created at line 82.
+    Found 1-bit register for signal <full_reg>.
+    Found 2-bit comparator equal for signal <full_reg$cmp_eq0000> created at line 96.
+    Found 1-bit 4-to-1 multiplexer for signal <full_reg$mux0001> created at line 82.
+    Found 2-bit register for signal <r_ptr_reg>.
+    Found 2-bit 4-to-1 multiplexer for signal <r_ptr_reg$mux0001> created at line 82.
+    Found 2-bit adder for signal <r_ptr_succ$add0000> created at line 70.
+    Found 2-bit register for signal <w_ptr_reg>.
+    Found 2-bit 4-to-1 multiplexer for signal <w_ptr_reg$mux0001> created at line 82.
+    Found 2-bit adder for signal <w_ptr_succ$add0000> created at line 69.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   6 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   6 Multiplexer(s).
+Unit <FIFO> synthesized.
+
+
+Synthesizing Unit <mod_m_counter>.
+    Related source file is "D:/GitHub/VHDL_Modules/SPI/Library/SPI/mod_m_counter.vhd".
+    Found 4-bit adder for signal <r_next$addsub0000> created at line 47.
+    Found 4-bit register for signal <r_reg>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <mod_m_counter> synthesized.
+
+
+Synthesizing Unit <SPI_MASTER_MODULE_TX>.
+    Related source file is "D:/GitHub/VHDL_Modules/SPI/Library/SPI/SPI_MASTER_MODULE_TX.vhd".
+WARNING:Xst:647 - Input <ADDRESS<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <SPI_MASTER_MODULE_TX> synthesized.
+
+
+Synthesizing Unit <Nokia5110_display_controller>.
+    Related source file is "D:/GitHub/VHDL_Modules/Nokia5110_display/Nokia5110_display_test_project/Nokia5110_display_controller.vhd".
+WARNING:Xst:1306 - Output <RESET_DISP> is never assigned.
+WARNING:Xst:1306 - Output <DC_DISP> is never assigned.
+WARNING:Xst:1780 - Signal <SCLK> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <OUTPUT_BUFFER_DATA> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <BUSY> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <ADDRESS<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+    Found finite state machine <FSM_0> for signal <nokia5110_curr_tx_current>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 3                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 2                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | nokia5110_curr_tx_current$not0000 (positive)       |
+    | Reset              | RESET                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | x_pos                                          |
+    | Power Up State     | x_pos                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 8-bit latch for signal <data_tx>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <start_tx_next>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 7-bit register for signal <counter_x_current>.
+    Found 7-bit adder for signal <counter_x_current$addsub0000> created at line 158.
+    Found 7-bit comparator greatequal for signal <counter_x_current$cmp_ge0000> created at line 147.
+    Found 3-bit register for signal <counter_y_current>.
+    Found 3-bit adder for signal <counter_y_current$addsub0000> created at line 150.
+    Found 8-bit 84-to-1 multiplexer for signal <data_tx$mux0002> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0004> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0005> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0006> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0007> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0008> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0009> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0010> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0011> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0012> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0013> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0014> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0015> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0016> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0017> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0018> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0019> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0020> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0021> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0022> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0023> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0024> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0025> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0026> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0027> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0028> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0029> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0030> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0031> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0032> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0033> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0034> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0035> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0036> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0037> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0038> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0039> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0040> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0041> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0042> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0043> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0044> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0045> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0046> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0047> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0048> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0049> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0050> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0051> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0052> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0053> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0054> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0055> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0056> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0057> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0058> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0059> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0060> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0061> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0062> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0063> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0064> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0065> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0066> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0067> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0068> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0069> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0070> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0071> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0072> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0073> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0074> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0075> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0076> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0077> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0078> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0079> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0080> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0081> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0082> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0083> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0084> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0085> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0086> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0087> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0088> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0089> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0090> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0091> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0092> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0093> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0094> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0095> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0096> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0097> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0098> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0099> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0100> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0101> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0102> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0103> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0104> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0105> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0106> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0107> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0108> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0109> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0110> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0111> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0112> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0113> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0114> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0115> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0116> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0117> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0118> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0119> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0120> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0121> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0122> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0123> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0124> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0125> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0126> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0127> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0128> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0129> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0130> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0131> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0132> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0133> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0134> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0135> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0136> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0137> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0138> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0139> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0140> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0141> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0142> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0143> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0144> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0145> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0146> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0147> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0148> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0149> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0150> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0151> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0152> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0153> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0154> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0155> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0156> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0157> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0158> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0159> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0160> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0161> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0162> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0163> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0164> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0165> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0166> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0167> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0168> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0169> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0170> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0171> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0172> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0173> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0174> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0175> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0176> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0177> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0178> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0179> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0180> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0181> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0182> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0183> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0184> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0185> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0186> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0187> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0188> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0189> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0190> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0191> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0192> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0193> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0194> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0195> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0196> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0197> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0198> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0199> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0200> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0201> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0202> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0203> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0204> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0205> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0206> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0207> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0208> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0209> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0210> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0211> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0212> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0213> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0214> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0215> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0216> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0217> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0218> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0219> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0220> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0221> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0222> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0223> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0224> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0225> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0226> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0227> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0228> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0229> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0230> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0231> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0232> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0233> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0234> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0235> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0236> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0237> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0238> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0239> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0240> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0241> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0242> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0243> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0244> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0245> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0246> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0247> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0248> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0249> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0250> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0251> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0252> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0253> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0254> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0255> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0256> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0257> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0258> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0259> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0260> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0261> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0262> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0263> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0264> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0265> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0266> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0267> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0268> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0269> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0270> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0271> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0272> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0273> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0274> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0275> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0276> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0277> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0278> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0279> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0280> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0281> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0282> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0283> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0284> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0285> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0286> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0287> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0288> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0289> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0290> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0291> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0292> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0293> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0294> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0295> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0296> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0297> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0298> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0299> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0300> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0301> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0302> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0303> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0304> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0305> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0306> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0307> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0308> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0309> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0310> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0311> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0312> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0313> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0314> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0315> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0316> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0317> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0318> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0319> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0320> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0321> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0322> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0323> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0324> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0325> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0326> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0327> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0328> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0329> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0330> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0331> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0332> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0333> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0334> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0335> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0336> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0337> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0338> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0339> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0340> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0341> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0342> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0343> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0344> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0345> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0346> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0347> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0348> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0349> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0350> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0351> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0352> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0353> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0354> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0355> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0356> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0357> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0358> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0359> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0360> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0361> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0362> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0363> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0364> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0365> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0366> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0367> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0368> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0369> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0370> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0371> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0372> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0373> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0374> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0375> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0376> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0377> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0378> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0379> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0380> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0381> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0382> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0383> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0384> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0385> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0386> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0387> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0388> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0389> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0390> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0391> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0392> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0393> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0394> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0395> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0396> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0397> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0398> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0399> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0400> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0401> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0402> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0403> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0404> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0405> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0406> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0407> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0408> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0409> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0410> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0411> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0412> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0413> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0414> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0415> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0416> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0417> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0418> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0419> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0420> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0421> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0422> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0423> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0424> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0425> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0426> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0427> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0428> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0429> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0430> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0431> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0432> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0433> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0434> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0435> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0436> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0437> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0438> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0439> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0440> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0441> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0442> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0443> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0444> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0445> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0446> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0447> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0448> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0449> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0450> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0451> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0452> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0453> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0454> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0455> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0456> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0457> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0458> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0459> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0460> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0461> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0462> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0463> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0464> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0465> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0466> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0467> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0468> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0469> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0470> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0471> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0472> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0473> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0474> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0475> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0476> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0477> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0478> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0479> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0480> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0481> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0482> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0483> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0484> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0485> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0486> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0487> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0488> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0489> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0490> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0491> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0492> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0493> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0494> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0495> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0496> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0497> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0498> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0499> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0500> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0501> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0502> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0503> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0504> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0505> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0506> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0507> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0508> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0509> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0510> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0511> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0512> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0513> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0514> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0515> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0516> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0517> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0518> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0519> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0520> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0521> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0522> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0523> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0524> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0525> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0526> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0527> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0528> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0529> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0530> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0531> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0532> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0533> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0534> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0535> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0536> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0537> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0538> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0539> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0540> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0541> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0542> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0543> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0544> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0545> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0546> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0547> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0548> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0549> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0550> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0551> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0552> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0553> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0554> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0555> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0556> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0557> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0558> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0559> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0560> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0561> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0562> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0563> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0564> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0565> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0566> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0567> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0568> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0569> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0570> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0571> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0572> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0573> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0574> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0575> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0576> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0577> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0578> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0579> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0580> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0581> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0582> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0583> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0584> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0585> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0586> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0587> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0588> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0589> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0590> created at line 131.
+    Found 1-bit 8-to-1 multiplexer for signal <data_tx$mux0591> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0592> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0593> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0594> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0595> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0596> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0597> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0598> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0599> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0600> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0601> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0602> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0603> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0604> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0605> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0606> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0607> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0608> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0609> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0610> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0611> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0612> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0613> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0614> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0615> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0616> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0617> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0618> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0619> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0620> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0621> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0622> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0623> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0624> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0625> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0626> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0627> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0628> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0629> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0630> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0631> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0632> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0633> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0634> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0635> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0636> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0637> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0638> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0639> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0640> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0641> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0642> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0643> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0644> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0645> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0646> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0647> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0648> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0649> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0650> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0651> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0652> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0653> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0654> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0655> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0656> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0657> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0658> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0659> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0660> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0661> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0662> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0663> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0664> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0665> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0666> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0667> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0668> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0669> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0670> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0671> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0672> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0673> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0674> created at line 131.
+    Found 1-bit 6-to-1 multiplexer for signal <data_tx$mux0675> created at line 131.
+    Found 1-bit register for signal <delay_tx_current>.
+    Found 672-bit register for signal <display_buffer_current<0>>.
+    Found 672-bit register for signal <display_buffer_current<1>>.
+    Found 672-bit register for signal <display_buffer_current<2>>.
+    Found 672-bit register for signal <display_buffer_current<3>>.
+    Found 672-bit register for signal <display_buffer_current<4>>.
+    Found 672-bit register for signal <display_buffer_current<5>>.
+    Found 1-bit register for signal <nokia5110_state_current<0>>.
+    Found 1-bit register for signal <start_tx_current>.
+    Found 1-bit register for signal <tx_done_current>.
+    Found 3-bit comparator less for signal <tx_done_current$cmp_lt0000> created at line 148.
+INFO:Xst:738 - HDL ADVISOR - 672 flip-flops were inferred for signal <display_buffer_current<0>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:738 - HDL ADVISOR - 672 flip-flops were inferred for signal <display_buffer_current<1>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:738 - HDL ADVISOR - 672 flip-flops were inferred for signal <display_buffer_current<2>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:738 - HDL ADVISOR - 672 flip-flops were inferred for signal <display_buffer_current<3>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:738 - HDL ADVISOR - 672 flip-flops were inferred for signal <display_buffer_current<4>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:738 - HDL ADVISOR - 672 flip-flops were inferred for signal <display_buffer_current<5>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred 4046 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred 680 Multiplexer(s).
+Unit <Nokia5110_display_controller> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x8-bit dual-port RAM                                 : 1
+# Adders/Subtractors                                   : 6
+ 2-bit adder                                           : 2
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 2
+ 7-bit adder                                           : 1
+# Registers                                            : 524
+ 1-bit register                                        : 13
+ 2-bit register                                        : 2
+ 3-bit register                                        : 1
+ 4-bit register                                        : 2
+ 7-bit register                                        : 1
+ 8-bit register                                        : 505
+# Latches                                              : 2
+ 1-bit latch                                           : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 10
+ 2-bit comparator equal                                : 2
+ 3-bit comparator less                                 : 1
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+ 4-bit comparator greatequal                           : 1
+ 4-bit comparator greater                              : 1
+ 4-bit comparator less                                 : 1
+ 4-bit comparator lessequal                            : 1
+ 7-bit comparator greatequal                           : 1
+# Multiplexers                                         : 684
+ 1-bit 4-to-1 multiplexer                              : 2
+ 1-bit 6-to-1 multiplexer                              : 84
+ 1-bit 8-to-1 multiplexer                              : 588
+ 1-bit 84-to-1 multiplexer                             : 8
+ 2-bit 4-to-1 multiplexer                              : 2
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <nokia5110_curr_tx_current/FSM> on signal <nokia5110_curr_tx_current[1:3]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ x_pos | 001
+ y_pos | 010
+ data  | 100
+-------------------
+
+Synthesizing (advanced) Unit <FIFO>.
+INFO:Xst:3231 - The small RAM <Mram_array_reg> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 8-bit                      |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to signal <wr_en>         | high     |
+    |     addrA          | connected to signal <w_ptr_reg>     |          |
+    |     diA            | connected to signal <W_DATA>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 4-word x 8-bit                      |          |
+    |     addrB          | connected to signal <r_ptr_reg>     |          |
+    |     doB            | connected to signal <R_DATA>        |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3217 - HDL ADVISOR - Register <data_reg> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_array_reg> for implementation on block RAM resources if you made this reset synchronous instead.
+Unit <FIFO> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# RAMs                                                 : 1
+ 4x8-bit dual-port distributed RAM                     : 1
+# Adders/Subtractors                                   : 6
+ 2-bit adder                                           : 2
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 2
+ 7-bit adder                                           : 1
+# Registers                                            : 4075
+ Flip-Flops                                            : 4075
+# Latches                                              : 2
+ 1-bit latch                                           : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 10
+ 2-bit comparator equal                                : 2
+ 3-bit comparator less                                 : 1
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+ 4-bit comparator greatequal                           : 1
+ 4-bit comparator greater                              : 1
+ 4-bit comparator less                                 : 1
+ 4-bit comparator lessequal                            : 1
+ 7-bit comparator greatequal                           : 1
+# Multiplexers                                         : 684
+ 1-bit 4-to-1 multiplexer                              : 2
+ 1-bit 6-to-1 multiplexer                              : 84
+ 1-bit 8-to-1 multiplexer                              : 588
+ 1-bit 84-to-1 multiplexer                             : 8
+ 2-bit 4-to-1 multiplexer                              : 2
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Nokia5110_display_controller> ...
+
+Optimizing unit <SCLK_CE_GEN> ...
+
+Optimizing unit <SPI_MASTER_TX> ...
+
+Optimizing unit <FIFO> ...
+
+Optimizing unit <mod_m_counter> ...
+WARNING:Xst:2677 - Node <SPI_MODULE/Inst_SCLK_CE_GEN/busy_current> of sequential type is unconnected in block <Nokia5110_display_controller>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Nokia5110_display_controller, actual ratio is 72.
+FlipFlop counter_x_current_0 has been replicated 1 time(s)
+FlipFlop counter_x_current_1 has been replicated 1 time(s)
+FlipFlop counter_x_current_2 has been replicated 1 time(s)
+FlipFlop counter_x_current_3 has been replicated 1 time(s)
+FlipFlop counter_y_current_0 has been replicated 1 time(s)
+FlipFlop counter_y_current_1 has been replicated 1 time(s)
+FlipFlop counter_y_current_2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 4084
+ Flip-Flops                                            : 4084
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Nokia5110_display_controller.ngr
+Top Level Output File Name         : Nokia5110_display_controller
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 28
+
+Cell Usage :
+# BELS                             : 4665
+#      GND                         : 1
+#      INV                         : 2
+#      LUT2                        : 16
+#      LUT2_D                      : 1
+#      LUT2_L                      : 5
+#      LUT3                        : 2512
+#      LUT3_D                      : 1
+#      LUT3_L                      : 1
+#      LUT4                        : 808
+#      LUT4_D                      : 3
+#      LUT4_L                      : 3
+#      MUXF5                       : 1024
+#      MUXF6                       : 168
+#      MUXF7                       : 80
+#      MUXF8                       : 40
+# FlipFlops/Latches                : 4093
+#      FDC                         : 10
+#      FDCE                        : 34
+#      FDE                         : 4032
+#      FDPE                        : 2
+#      FDR                         : 5
+#      FDS                         : 1
+#      LDCP                        : 1
+#      LDE                         : 8
+# RAMS                             : 8
+#      RAM16X1D                    : 8
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 24
+#      IBUF                        : 20
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500evq100-5 
+
+ Number of Slices:                     3385  out of   4656    72%  
+ Number of Slice Flip Flops:           4093  out of   9312    43%  
+ Number of 4 input LUTs:               3368  out of   9312    36%  
+    Number used as logic:              3352
+    Number used as RAMs:                 16
+ Number of IOs:                          28
+ Number of bonded IOBs:                  26  out of     66    39%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+WR_BUFFER                          | BUFGP                  | 4032  |
+CLK                                | BUFGP                  | 60    |
+start_tx_current                   | NONE(start_tx_next)    | 1     |
+nokia5110_state_current_0          | NONE(data_tx_0)        | 8     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------+------------------------+-------+
+Control Signal                                           | Buffer(FF name)        | Load  |
+---------------------------------------------------------+------------------------+-------+
+RESET                                                    | IBUF                   | 46    |
+data_tx_and0000(data_tx_and00001:O)                      | NONE(start_tx_next)    | 1     |
+start_tx_next_0_not0000(start_tx_next_0_not00001_INV_0:O)| NONE(start_tx_next)    | 1     |
+---------------------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.505ns (Maximum Frequency: 221.978MHz)
+   Minimum input arrival time before clock: 7.300ns
+   Maximum output required time after clock: 4.221ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.505ns (frequency: 221.978MHz)
+  Total number of paths / destination ports: 569 / 127
+-------------------------------------------------------------------------
+Delay:               4.505ns (Levels of Logic = 3)
+  Source:            SPI_MODULE/Inst_mod_m_counter/r_reg_0 (FF)
+  Destination:       SPI_MODULE/Inst_SCLK_CE_GEN/counter_current_3 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: SPI_MODULE/Inst_mod_m_counter/r_reg_0 to SPI_MODULE/Inst_SCLK_CE_GEN/counter_current_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.514   0.541  SPI_MODULE/Inst_mod_m_counter/r_reg_0 (SPI_MODULE/Inst_mod_m_counter/r_reg_0)
+     LUT4_D:I3->O          4   0.612   0.502  SPI_MODULE/Inst_mod_m_counter/r_next_cmp_eq00001 (SPI_MODULE/s_tick)
+     LUT4_L:I3->LO         1   0.612   0.130  SPI_MODULE/Inst_SCLK_CE_GEN/counter_current_not0002_SW1 (N181)
+     LUT4:I2->O            4   0.612   0.499  SPI_MODULE/Inst_SCLK_CE_GEN/counter_current_not0002 (SPI_MODULE/Inst_SCLK_CE_GEN/counter_current_not0002)
+     FDCE:CE                   0.483          SPI_MODULE/Inst_SCLK_CE_GEN/counter_current_0
+    ----------------------------------------
+    Total                      4.505ns (2.833ns logic, 1.672ns route)
+                                       (62.9% logic, 37.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'WR_BUFFER'
+  Total number of paths / destination ports: 44352 / 8064
+-------------------------------------------------------------------------
+Offset:              7.300ns (Levels of Logic = 4)
+  Source:            X_ADDR<2> (PAD)
+  Destination:       display_buffer_current<2>_80_0 (FF)
+  Destination Clock: WR_BUFFER rising
+
+  Data Path: X_ADDR<2> to display_buffer_current<2>_80_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   1.106   0.988  X_ADDR_2_IBUF (X_ADDR_2_IBUF)
+     LUT2:I0->O           21   0.612   1.111  display_buffer_current<2>_80_cmp_eq0000111 (N10)
+     LUT4:I0->O           24   0.612   1.133  display_buffer_current<2>_80_cmp_eq000011 (N5)
+     LUT4:I1->O            8   0.612   0.643  display_buffer_current<5>_83_and00001 (display_buffer_current<5>_83_and0000)
+     FDE:CE                    0.483          display_buffer_current<5>_83_0
+    ----------------------------------------
+    Total                      7.300ns (3.425ns logic, 3.875ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              3.007ns (Levels of Logic = 2)
+  Source:            TX_BUFFER (PAD)
+  Destination:       delay_tx_current (FF)
+  Destination Clock: CLK rising
+
+  Data Path: TX_BUFFER to delay_tx_current
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.106   0.449  TX_BUFFER_IBUF (TX_BUFFER_IBUF)
+     LUT3:I1->O            1   0.612   0.357  delay_tx_current_not00011 (delay_tx_current_not0001)
+     FDCE:CE                   0.483          delay_tx_current
+    ----------------------------------------
+    Total                      3.007ns (2.201ns logic, 0.806ns route)
+                                       (73.2% logic, 26.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.221ns (Levels of Logic = 1)
+  Source:            SPI_MODULE/Inst_SCLK_CE_GEN/sclk_current (FF)
+  Destination:       SCK_DISP (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: SPI_MODULE/Inst_SCLK_CE_GEN/sclk_current to SCK_DISP
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.514   0.538  SPI_MODULE/Inst_SCLK_CE_GEN/sclk_current (SPI_MODULE/Inst_SCLK_CE_GEN/sclk_current)
+     OBUF:I->O                 3.169          SCK_DISP_OBUF (SCK_DISP)
+    ----------------------------------------
+    Total                      4.221ns (3.683ns logic, 0.538ns route)
+                                       (87.3% logic, 12.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 34.00 secs
+Total CPU time to Xst completion: 34.24 secs
+ 
+--> 
+
+Total memory usage is 430340 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/BLOCK_RAM.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/BLOCK_RAM.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/BLOCK_RAM.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/BLOCK_RAM.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/BLOCK_RAM.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/BLOCK_RAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 BLOCK_RAM.ngc BLOCK_RAM.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o BLOCK_RAM_map.ncd BLOCK_RAM.ngd BLOCK_RAM.pcf 
+par -w -intstyle ise -ol high -t 1 BLOCK_RAM_map.ncd BLOCK_RAM.ncd BLOCK_RAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml BLOCK_RAM.twx BLOCK_RAM.ncd -o BLOCK_RAM.twr BLOCK_RAM.pcf 
+bitgen -intstyle ise -f BLOCK_RAM.ut BLOCK_RAM.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/BLOCK_RAM.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/BLOCK_RAM.syr" 

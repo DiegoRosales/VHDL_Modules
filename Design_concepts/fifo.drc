@@ -1,0 +1,8 @@
+Release 14.2 Drc P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Fri Feb 27 17:32:57 2015
+
+drc -z FIFO.ncd FIFO.pcf
+
+DRC detected 0 errors and 0 warnings.

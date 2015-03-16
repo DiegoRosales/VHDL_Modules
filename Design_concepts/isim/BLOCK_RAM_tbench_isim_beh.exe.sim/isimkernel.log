@@ -1,0 +1,10 @@
+Command line:
+   BLOCK_RAM_tbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60491
+
+Thu Feb 26 18:03:22 2015
+
+
+ Elaboration Time: 0.0468 sec

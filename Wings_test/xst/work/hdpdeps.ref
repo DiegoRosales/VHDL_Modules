@@ -1,0 +1,6 @@
+V3 3
+FL D:/GitHub/VHDL_Modules/Wings_test/Wings_test.vhd 2015/03/06.17:21:32 P.28xd
+EN work/Wings_test 1426209300 FL D:/GitHub/VHDL_Modules/Wings_test/Wings_test.vhd \
+      PB ieee/std_logic_1164 1341906176
+AR work/Wings_test/Behavioral 1426209301 \
+      FL D:/GitHub/VHDL_Modules/Wings_test/Wings_test.vhd EN work/Wings_test 1426209300

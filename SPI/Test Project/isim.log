@@ -21,41 +21,7 @@ Finished circuit initialization process.
 at 5 ns(2), Instance /spi_master_module_tbench/uut/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 5 ns(2), Instance /spi_master_module_tbench/uut/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # restart
-# run 8.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /spi_master_module_tbench/uut/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /spi_master_module_tbench/uut/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 5 ns(2), Instance /spi_master_module_tbench/uut/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 5 ns(2), Instance /spi_master_module_tbench/uut/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 8.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /spi_master_module_tbench/uut/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /spi_master_module_tbench/uut/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 5 ns(2), Instance /spi_master_module_tbench/uut/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 5 ns(2), Instance /spi_master_module_tbench/uut/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-ISim P.28xd (signature 0xa0883be4)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /spi_master_module_tbench/uut/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /spi_master_module_tbench/uut/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 5 ns(2), Instance /spi_master_module_tbench/uut/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 5 ns(2), Instance /spi_master_module_tbench/uut/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 8.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /spi_master_module_tbench/uut/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /spi_master_module_tbench/uut/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 5 ns(2), Instance /spi_master_module_tbench/uut/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 5 ns(2), Instance /spi_master_module_tbench/uut/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# run 8.00us
-# restart
-# run 8.00us
+# run 10.00us
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /spi_master_module_tbench/uut/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 0 ps, Instance /spi_master_module_tbench/uut/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0

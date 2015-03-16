@@ -17,205 +17,6 @@ at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : War
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # restart
-# run 1.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 10.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-ISim P.28xd (signature 0xa0883be4)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 10.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-ISim P.28xd (signature 0xa0883be4)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 10.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-ISim P.28xd (signature 0xa0883be4)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 10.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-ISim P.28xd (signature 0xa0883be4)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 10.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 10.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-ISim P.28xd (signature 0xa0883be4)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 10.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# run 10.00us
-# run 10.00us
-# run 10.00us
-# restart
-# run 10.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 100.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 100.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # restart
 # run 1000.00us
 Simulator is doing circuit initialization process.
@@ -228,71 +29,8 @@ at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : War
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-ISim P.28xd (signature 0xa0883be4)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # restart
-# run 1000.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-ISim P.28xd (signature 0xa0883be4)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# run 1000.00us
-# restart
-# run 1100.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 1100.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 1100.00us
+# run 500.00us
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -317,19 +55,7 @@ at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : War
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # restart
-# run 1100.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 1100.00us
+# run 500.00us
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -354,7 +80,31 @@ at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : War
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # restart
-# run 1100.00us
+# run 500.00us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# restart
+# run 500.00us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# restart
+# run 500.00us
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -379,47 +129,7 @@ at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : War
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # restart
-# run 1100.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# run 1100.00us
-ISim P.28xd (signature 0xa0883be4)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 1100.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# run 1100.00us
-ISim P.28xd (signature 0xa0883be4)
-This is a Full version of ISim.
-# run 1000 ns
+# run 500.00us
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -444,46 +154,7 @@ at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : War
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # restart
-# run 1100.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 1100.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# run 1100.00us
-# run 1100.00us
-ISim P.28xd (signature 0xa0883be4)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 3100.00us
+# run 500.00us
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -508,31 +179,7 @@ at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : War
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # restart
-# run 3100.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 3500.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 3500.00us
+# run 500.00us
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -557,7 +204,7 @@ at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : War
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # restart
-# run 3500.00us
+# run 500.00us
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -569,7 +216,7 @@ at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : War
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # restart
-# run 3500.00us
+# run 500.00us
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -580,8 +227,9 @@ at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : War
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 3500.00us
+ISim P.28xd (signature 0xa0883be4)
+This is a Full version of ISim.
+# run 1000 ns
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -606,19 +254,7 @@ at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : War
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # restart
-# run 3500.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 350.00us
+# run 500.00us
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -643,7 +279,7 @@ at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : War
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # restart
-# run 350.00us
+# run 500.00us
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -655,7 +291,7 @@ at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : War
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # restart
-# run 350.00us
+# run 500.00us
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -680,156 +316,7 @@ at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : War
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # restart
-# run 350.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-ISim P.28xd (signature 0xa0883be4)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 350.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-ISim P.28xd (signature 0xa0883be4)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 350.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 350.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 350.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-ISim P.28xd (signature 0xa0883be4)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 350.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-ISim P.28xd (signature 0xa0883be4)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 350.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-ISim P.28xd (signature 0xa0883be4)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_TX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 15625 ps(2), Instance /tbench_eeprom_test/uut/EEPROM_MODULE/SPI_INST/Inst_FIFO_RX/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# restart
-# run 350.00us
+# run 500.00us
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_rx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 0 ps, Instance /tbench_eeprom_test/uut/UART_MODULE/fifo_tx_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0

@@ -24,23 +24,23 @@ Compiling package standard
 Compiling package std_logic_1164
 Compiling package mc_25lc640a_types
 Compiling package numeric_std
-Compiling architecture behavioral of entity mod_m_counter [\mod_m_counter(5,17)\]
+Compiling architecture behavioral of entity mod_m_counter_v2 [\mod_m_counter_v2(5,17)\]
 Compiling architecture behavioral of entity UART_RX [\UART_RX(8,16)\]
-Compiling architecture behavioral of entity FIFO [\FIFO(8,2)\]
+Compiling architecture behavioral of entity FIFO_VER_2 [\FIFO_VER_2(8,2)\]
 Compiling architecture behavioral of entity UART_TX [\UART_TX(8,16)\]
 Compiling architecture behavioral of entity UART_VER_2 [\UART_VER_2(8,16,17,5,2)\]
-Compiling architecture behavioral of entity SCLK_CE_GEN [\SCLK_CE_GEN('0',8)\]
+Compiling architecture behavioral of entity SCLK_CE_GEN [\SCLK_CE_GEN(4,10,'0',8)\]
 Compiling architecture behavioral of entity SPI_MASTER_TX [\SPI_MASTER_TX(8,'0','0')\]
 Compiling architecture behavioral of entity FIFO [\FIFO(8,2)\]
 Compiling architecture behavioral of entity SPI_MASTER_RX [\SPI_MASTER_RX(8,'0','0')\]
-Compiling architecture behavioral of entity mod_m_counter [\mod_m_counter(4,16)\]
 Compiling architecture behavioral of entity SPI_MASTER_MODULE [\SPI_MASTER_MODULE('0','0',8,1,1...]
 Compiling architecture behavioral of entity MC_25LC640A_CONTROLLER [mc_25lc640a_controller_default]
+Compiling architecture behavioral of entity mod_m_counter [\mod_m_counter(2,2)\]
 Compiling architecture behavioral of entity MC_25LC640A_Test [mc_25lc640a_test_default]
 Compiling architecture behavior of entity tbench_eeprom_test
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 31 VHDL Units
 Built simulation executable D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/tbench_EEPROM_test_isim_beh.exe
-Fuse Memory Usage: 39284 KB
-Fuse CPU Usage: 826 ms
+Fuse Memory Usage: 39388 KB
+Fuse CPU Usage: 1014 ms

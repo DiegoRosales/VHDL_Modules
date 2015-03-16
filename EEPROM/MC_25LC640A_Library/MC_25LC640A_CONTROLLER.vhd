@@ -58,7 +58,7 @@ architecture Behavioral of MC_25LC640A_CONTROLLER is
 	signal read_data_curr, read_data_next : STD_LOGIC;
 	signal spi_data_in : STD_LOGIC_VECTOR(7 downto 0);
 	signal spi_data_in_reg, spi_data_in_next : STD_LOGIC_VECTOR(7 downto 0);
-	signal spi_data_out : STD_LOGIC_VECTOR(7 downto 0);
+	signal spi_data_out_current, spi_data_out_next : STD_LOGIC_VECTOR(7 downto 0);
 	signal input_buffer_full, input_buffer_data : STD_LOGIC;
 	signal output_buffer_full, output_buffer_data : STD_LOGIC;
 	signal spi_busy : STD_LOGIC;
@@ -77,41 +77,44 @@ begin
 	spi_sclk_edge <= '1' when spi_sclk_curr = '1' AND (spi_sclk_curr /= spi_sclk_prev) else '0';
 	DONE <= done_current;
 	
-	RESET_PROCESS : PROCESS(CLK, RESET)
+	RESET_PROCESS : PROCESS(CLK)
 	BEGIN
-		if(RESET = '1') then
-			state_curr <= IDLE;
-			busy_curr <= '0';
-			start_rx_curr <= '0';
-			start_tx_curr <= '0';
-			cont_curr <= '0';
-			sclk_counter_current <= (others => '0');
-			spi_data_in_reg <= (others => '0');
-			read_data_curr <= '0';
-			hold_curr <= '1';
-			done_current <= '0';
-		elsif(rising_edge(CLK)) then
-			state_curr <= state_next;
-			busy_curr <= busy_next;
-			addr_curr <= addr_next;
-			opr_curr <= opr_next;
-			exec_state_curr <= exec_state_next;
-			start_rx_curr <= start_rx_next;
-			start_tx_curr <= start_tx_next;
-			cont_curr <= cont_next;
-			sclk_counter_current <= sclk_counter_next;
-			spi_data_in_reg <= spi_data_in_next;
-			read_data_curr <= read_data_next;
-			hold_curr <= hold_next;
-			spi_sclk_prev <= spi_sclk_curr;
-			done_current <= done_next;
+		if(rising_edge(CLK)) then
+			if(RESET = '1') then
+				state_curr <= IDLE;
+				busy_curr <= '0';
+				start_rx_curr <= '0';
+				start_tx_curr <= '0';
+				cont_curr <= '0';
+				--sclk_counter_current <= (others => '0');
+				--spi_data_in_reg <= (others => '0');
+				read_data_curr <= '0';
+				hold_curr <= '1';
+				done_current <= '0';
+			else
+				state_curr <= state_next;
+				busy_curr <= busy_next;
+				addr_curr <= addr_next;
+				opr_curr <= opr_next;
+				exec_state_curr <= exec_state_next;
+				start_rx_curr <= start_rx_next;
+				start_tx_curr <= start_tx_next;
+				cont_curr <= cont_next;
+				sclk_counter_current <= sclk_counter_next;
+				spi_data_in_reg <= spi_data_in_next;
+				read_data_curr <= read_data_next;
+				hold_curr <= hold_next;
+				spi_sclk_prev <= spi_sclk_curr;
+				done_current <= done_next;
+				spi_data_out_current <= spi_data_out_next;
+			end if;
 		end if;
 	END PROCESS;	
 	
 	NEXT_STATE_PROCESS : PROCESS(CLK, START, OPR, ADDR, DATA_OUT, opr_curr, state_curr, busy_curr, addr_curr, exec_state_curr,
 								start_rx_curr, start_tx_curr, cont_curr, spi_data_in_reg, read_data_curr,
 								hold_curr, spi_busy, sclk_counter_current, input_buffer_data, spi_data_in,
-								done_current)
+								done_current, spi_data_out_current)
 	BEGIN
 		opr_next <= opr_curr;
 		state_next <= state_curr;
@@ -125,6 +128,7 @@ begin
 		read_data_next <= read_data_curr;
 		hold_next <= hold_curr;
 		done_next <= done_current;
+		spi_data_out_next <= spi_data_out_current;
 		
 		CASE state_curr IS
 		WHEN IDLE =>
@@ -151,11 +155,11 @@ begin
 						start_tx_next <= '0';
 						exec_state_next <= ADDRESS_HIGH;
 					else
-						spi_data_out <= "0000" & RD_COMMAND;
+						spi_data_out_next <= "0000" & RD_COMMAND;
 						start_tx_next <= '1';
 					end if;					
 				WHEN ADDRESS_HIGH =>
-					spi_data_out <= addr_curr(15 downto 8);
+					spi_data_out_next <= addr_curr(15 downto 8);
 					if(start_tx_curr = '1') then
 						start_tx_next <= '0';						
 						exec_state_next <= ADDRESS_LOW;
@@ -163,7 +167,7 @@ begin
 						start_tx_next <= '1';
 					end if;		
 				WHEN ADDRESS_LOW =>
-					spi_data_out <= addr_curr(7 downto 0);
+					spi_data_out_next <= addr_curr(7 downto 0);
 					if(start_tx_curr = '1') then
 						start_tx_next <= '0';
 						exec_state_next <= DATA;
@@ -193,11 +197,11 @@ begin
 						start_tx_next <= '0';
 						exec_state_next <= ADDRESS_HIGH;
 					else
-						spi_data_out <= "0000" & WR_COMMAND;
+						spi_data_out_next <= "0000" & WR_COMMAND;
 						start_tx_next <= '1';
 					end if;					
 				WHEN ADDRESS_HIGH =>
-					spi_data_out <= addr_curr(15 downto 8);
+					spi_data_out_next <= addr_curr(15 downto 8);
 					if(start_tx_curr = '1') then
 						start_tx_next <= '0';						
 						exec_state_next <= ADDRESS_LOW;
@@ -205,7 +209,7 @@ begin
 						start_tx_next <= '1';
 					end if;		
 				WHEN ADDRESS_LOW =>
-					spi_data_out <= addr_curr(7 downto 0);
+					spi_data_out_next <= addr_curr(7 downto 0);
 					if(start_tx_curr = '1') then
 						start_tx_next <= '0';
 						exec_state_next <= DATA;
@@ -213,7 +217,7 @@ begin
 						start_tx_next <= '1';
 					end if;					
 				WHEN DATA =>	
-					spi_data_out <= DATA_OUT;
+					spi_data_out_next <= DATA_OUT;
 					if(start_tx_curr = '1') then
 						start_tx_next <= '0';
 						exec_state_next <= WAITING;
@@ -238,7 +242,7 @@ begin
 						start_tx_next <= '0';
 						exec_state_next <= WAITING;
 					else
-						spi_data_out <= "0000" & WRDI_COMMAND;
+						spi_data_out_next <= "0000" & WRDI_COMMAND;
 						start_tx_next <= '1';
 					end if;		
 				WHEN WAITING =>
@@ -257,7 +261,7 @@ begin
 						start_tx_next <= '0';
 						exec_state_next <= WAITING;
 					else
-						spi_data_out <= "0000" & WREN_COMMAND;
+						spi_data_out_next <= "0000" & WREN_COMMAND;
 						start_tx_next <= '1';
 					end if;		
 				WHEN WAITING =>
@@ -275,7 +279,7 @@ begin
 						start_tx_next <= '0';
 						exec_state_next <= DATA;
 					else
-						spi_data_out <= "0000" & RDSR_COMMAND;
+						spi_data_out_next <= "0000" & RDSR_COMMAND;
 						start_tx_next <= '1';
 					end if;									
 				WHEN DATA =>	
@@ -301,11 +305,11 @@ begin
 						start_tx_next <= '0';
 						exec_state_next <= DATA;
 					else
-						spi_data_out <= "0000" & WRSR_COMMAND;
+						spi_data_out_next <= "0000" & WRSR_COMMAND;
 						start_tx_next <= '1';
 					end if;									
 				WHEN DATA =>	
-					spi_data_out <= DATA_OUT;
+					spi_data_out_next <= DATA_OUT;
 					if(start_tx_curr = '1') then
 						start_tx_next <= '0';
 						exec_state_next <= WAITING;
@@ -364,7 +368,7 @@ begin
 		START_TX => start_tx_curr, 
 		START_RX => start_rx_curr,
 		CONT => cont_curr,
-		DATA_OUT => spi_data_out,
+		DATA_OUT => spi_data_out_next,
 		DATA_IN => spi_data_in,
 		READ_DATA => read_data_curr,
 		INPUT_BUFFER_DATA => input_buffer_data, -- '1' when there is data not read in the input FIFO, else '0'

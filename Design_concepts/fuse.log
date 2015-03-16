@@ -1,0 +1,19 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "D:/GitHub/VHDL_Modules/Design_concepts/FIFO_V2_tbench_isim_beh.exe" -prj "D:/GitHub/VHDL_Modules/Design_concepts/FIFO_V2_tbench_beh.prj" "work.FIFO_V2_tbench" 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Design_concepts/../Basic/Basic_library/FIFO_BLOCK_RAM.vhd" into library work
+Parsing VHDL file "D:/GitHub/VHDL_Modules/Design_concepts/FIFO_V2_tbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity FIFO_V2 [\FIFO_V2(8,2)\]
+Compiling architecture behavior of entity fifo_v2_tbench
+Time Resolution for simulation is 1ps.
+Compiled 6 VHDL Units
+Built simulation executable D:/GitHub/VHDL_Modules/Design_concepts/FIFO_V2_tbench_isim_beh.exe
+Fuse Memory Usage: 38184 KB
+Fuse CPU Usage: 639 ms

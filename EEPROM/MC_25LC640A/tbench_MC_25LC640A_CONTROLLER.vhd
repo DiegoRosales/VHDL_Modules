@@ -92,7 +92,7 @@ USE MC_25LC640A_Library.MC_25LC640A_TYPES.ALL;
 			end if;
 		end if;
 	END PROCESS;
-	OPR <= RD;
+	OPR <= RDSR;
 	ADDR <= X"0F32";
 	SO <= '1';
 	DATA_OUT <= X"AB";

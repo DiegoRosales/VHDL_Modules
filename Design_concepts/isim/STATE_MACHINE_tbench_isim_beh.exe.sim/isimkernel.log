@@ -1,0 +1,10 @@
+Command line:
+   STATE_MACHINE_tbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  15773
+
+Mon Feb 23 18:36:21 2015
+
+
+ Elaboration Time: 0.0468 sec

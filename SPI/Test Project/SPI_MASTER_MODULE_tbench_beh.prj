@@ -1,7 +1,6 @@
 vhdl SPI "../Library/SPI/SPI_MASTER_TX.vhd"
 vhdl SPI "../Library/SPI/SPI_MASTER_RX.vhd"
 vhdl SPI "../Library/SPI/SCLK_CE_GEN.vhd"
-vhdl SPI "../Library/SPI/mod_m_counter.vhd"
 vhdl SPI "../Library/SPI/FIFO.vhd"
 vhdl SPI "../Library/SPI/SPI_MASTER_MODULE.vhd"
 vhdl work "SPI_MASTER_MODULE_tbench.vhd"

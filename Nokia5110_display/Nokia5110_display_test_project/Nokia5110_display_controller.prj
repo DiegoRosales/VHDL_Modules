@@ -1,0 +1,7 @@
+vhdl SPI "../../SPI/Library/SPI/SPI_MASTER_TX.vhd"
+vhdl SPI "../../SPI/Library/SPI/SCLK_CE_GEN.vhd"
+vhdl SPI "../../SPI/Library/SPI/mod_m_counter.vhd"
+vhdl SPI "../../SPI/Library/SPI/FIFO.vhd"
+vhdl SPI "../../SPI/Library/SPI/SPI_MASTER_MODULE_TX.vhd"
+vhdl work "Nokia5110_types.vhd"
+vhdl work "Nokia5110_display_controller.vhd"

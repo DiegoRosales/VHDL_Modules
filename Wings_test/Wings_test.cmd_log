@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Wings_test/Wings_test.xst" -ofn "D:/GitHub/VHDL_Modules/Wings_test/Wings_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Wings_test.ucf -p xc3s500e-vq100-5 Wings_test.ngc Wings_test.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Wings_test_map.ncd Wings_test.ngd Wings_test.pcf 
+par -w -intstyle ise -ol high -t 1 Wings_test_map.ncd Wings_test.ncd Wings_test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Wings_test.twx Wings_test.ncd -o Wings_test.twr Wings_test.pcf -ucf Wings_test.ucf 
+bitgen -intstyle ise -f Wings_test.ut Wings_test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Wings_test/Wings_test.xst" -ofn "D:/GitHub/VHDL_Modules/Wings_test/Wings_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Wings_test.ucf -p xc3s500e-vq100-5 Wings_test.ngc Wings_test.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Wings_test_map.ncd Wings_test.ngd Wings_test.pcf 
+par -w -intstyle ise -ol high -t 1 Wings_test_map.ncd Wings_test.ncd Wings_test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Wings_test.twx Wings_test.ncd -o Wings_test.twr Wings_test.pcf -ucf Wings_test.ucf 
+bitgen -intstyle ise -f Wings_test.ut Wings_test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Wings_test/Wings_test.xst" -ofn "D:/GitHub/VHDL_Modules/Wings_test/Wings_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Wings_test.ucf -p xc3s500e-vq100-5 Wings_test.ngc Wings_test.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Wings_test_map.ncd Wings_test.ngd Wings_test.pcf 
+par -w -intstyle ise -ol high -t 1 Wings_test_map.ncd Wings_test.ncd Wings_test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Wings_test.twx Wings_test.ncd -o Wings_test.twr Wings_test.pcf -ucf Wings_test.ucf 
+bitgen -intstyle ise -f Wings_test.ut Wings_test.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Wings_test/Wings_test.xst" -ofn "D:/GitHub/VHDL_Modules/Wings_test/Wings_test.syr" 

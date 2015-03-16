@@ -1,0 +1,5 @@
+vhdl UART_Library "../../UART/UART_Library/UART_TX.vhd"
+vhdl UART_Library "../../UART/UART_Library/UART_RX.vhd"
+vhdl UART_Library "../../UART/UART_Library/mod_m_counter.vhd"
+vhdl UART_Library "../../UART/UART_Library/FIFO.vhd"
+vhdl UART_Library "../../UART/UART_Library/UART.vhd"

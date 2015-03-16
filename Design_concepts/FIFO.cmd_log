@@ -1,0 +1,21 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 FIFO.ngc FIFO.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o FIFO_map.ncd FIFO.ngd FIFO.pcf 
+par -w -intstyle ise -ol high -t 1 FIFO_map.ncd FIFO.ncd FIFO.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml FIFO.twx FIFO.ncd -o FIFO.twr FIFO.pcf 
+bitgen -intstyle ise -f FIFO.ut FIFO.ncd 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-5 FIFO.ngc FIFO.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o FIFO_map.ncd FIFO.ngd FIFO.pcf 
+par -w -intstyle ise -ol high -t 1 FIFO_map.ncd FIFO.ncd FIFO.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml FIFO.twx FIFO.ncd -o FIFO.twr FIFO.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.xst" -ofn "D:/GitHub/VHDL_Modules/Design_concepts/FIFO.syr" 

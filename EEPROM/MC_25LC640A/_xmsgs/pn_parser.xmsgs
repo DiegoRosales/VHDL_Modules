@@ -11,5 +11,8 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/tbench_EEPROM_test.vhd&quot; into library work</arg>
 </msg>
 
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GitHub/VHDL_Modules/EEPROM/MC_25LC640A/tbench_MC_25LC640A_CONTROLLER.vhd&quot; into library work</arg>
+</msg>
+
 </messages>
 
